@@ -278,7 +278,7 @@ module.exports = {
     compile: {
       collapseWhitespace: true
     },
-    extensions: ["html", "json"],
+    extensions: ["html"],
     excludeFolders: ["_layouts", "_includes", "_macros", "_bower_components", "_data"]
   },
   // 打包
