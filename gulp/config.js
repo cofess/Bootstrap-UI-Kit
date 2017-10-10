@@ -8,10 +8,10 @@ var production        = 'build/production';
 var developmentAssets = 'build/assets';
 var productionAssets  = 'build/production/assets';
 var stylesheet        = {
-      // type: 'less',
-      // extensions: ["less" ,"css"],
-      type: 'sass',
-      extensions: ["sass", "scss", "css"],
+      type: 'less',
+      extensions: ["less" ,"css"],
+      // type: 'sass',
+      // extensions: ["sass", "scss", "css"],
     }
 
 // gulp 任务配置
