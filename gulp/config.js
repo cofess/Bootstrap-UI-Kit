@@ -278,8 +278,8 @@ module.exports = {
     compile: {
       collapseWhitespace: true
     },
-    extensions: ["html"],
-    excludeFolders: ["_layouts", "_includes", "_macros", "_bower_components", "_data"]
+    extensions: ["html", "json"],
+    excludeFolders: ["_layouts", "_includes", "_macros", "_bower_components", "_data","_static"]
   },
   // 打包
   gzip: {
