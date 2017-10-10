@@ -14,9 +14,10 @@ gulp.task('build', function(callback) {
       'images',
       'html'
     ],
-    [
-      'manifest',
-      'cssmin'
+    [   
+      'cssmin',
+      'jsmin',
+      'manifest'
     ],
     'base64',
     callback);
