@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	font-size: 100%;
+}
+
+*,
+*:before,
+*:after { box-sizing: border-box; }
+
+html,
+body { position: relative; }
+html { overflow-y: scroll; }
+
+body {
+  font-size: $--basefont;
+  line-height: $--baseline;
+}
+
+h1 { font-size: 3em; }
+h2 { font-size: 2.5em; }
+h3 { font-size: 2em; }
+h4 { font-size: 1.75em; }
+h5 { font-size: 1.5em; }
+p,
+h6 { font-size: 1em; }
+small { font-size: .75em; }
+
+a { text-decoration: none; }
+ul,
+ol { list-style: none; }
+img { max-width: 100%; }
+
+a {
+  color: $link-dark-color;
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+  &.active {
+    color: $link-hover-color;
+  }
+}
+
+.active {
+  > a {
+    color: $link-hover-color;
+  }
+}
+
+input,
+button,
+select,
+textarea,
+.btn {
+  outline: none!important;
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none!important;
+  }
+}
+
+/*----------------------------------------------------
+ * clear
+ *---------------------------------------------------*/
+
+.clear {
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/*------------------ Fluidity response ------------------------------*/
+
+img,
+canvas,
+iframe,
+video,
+svg {
+  max-width: 100%;
+  height: auto
+}
+
+
+// img {
+//   position: relative;
+// }
+
+// img:before {
+//   position: absolute;
+//   content: "回";
+//   // content: "We're sorry, the image below is broken :(";
+//   display: block;
+//   width: 100%;
+//   text-align: center;
+//   color: #ccc;
+// }
+
+// img:after {
+//   content: "(url: " attr(src) ")";
+//   display: block;
+//   font-size: 12px
+// }
+
+

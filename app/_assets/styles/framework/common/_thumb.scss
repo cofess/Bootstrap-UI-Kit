@@ -1,0 +1,12 @@
+/*----------------------------------------------------
+ * thumb
+ *---------------------------------------------------*/
+.thumb { width: 16px; display: inline-block;overflow:hidden }
+.thumb-xs { width: 32px; display: inline-block;overflow:hidden }
+.thumb-sm { width: 48px; display: inline-block;overflow:hidden }
+.thumb-md { width: 64px; display: inline-block;overflow:hidden }
+.thumb-lg { width: 96px; display: inline-block;overflow:hidden }
+.thumb-xl { width: 128px; display: inline-block;overflow:hidden }
+.thumb-wrapper { padding: 2px; border: 1px solid #dbe2e7; }
+.thumb img, .thumb-0x img, .thumb-1x img, .thumb-2x img, .thumb-3x img, .thumb-4x img, .thumb-5x img, .thumb-6x img, .thumb-btn img { height: auto; max-width: 100%; vertical-align: middle; }
+

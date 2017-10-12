@@ -1,0 +1,174 @@
+/*----------------------------------------------------
+ * text color
+ *---------------------------------------------------*/
+
+// basic text color
+.text-main {
+  color: $main-color
+}
+
+.text-sub {
+  color: $sub-color
+}
+
+.text-mix {
+  color: $mix-color
+}
+
+.text-dif {
+  color: $dif-color
+}
+
+// brand text color
+.text-primary {
+  color: $brand-primary
+}
+
+.text-success {
+  color: $brand-success
+}
+
+.text-info {
+  color: $brand-info
+}
+
+.text-warning {
+  color: $brand-warning
+}
+
+.text-danger {
+  color: $brand-danger
+}
+
+// basic monochrome text color
+.text-white {
+  color: $--white
+}
+
+.text-white a:hover,
+.text-white a:hover i,
+.text-white:hover {
+  color: rgba(256, 256, 256, 0.8)
+}
+
+.text-white a.list-group-item.active i {
+  color: #fff
+}
+
+.text-smoke {
+  color: $--whitesmoke
+}
+
+.text-light {
+  color: $--lightgray
+}
+
+.text-silver {
+  color: $--silver
+}
+
+.text-gray,
+.text-grey {
+  color: $--gray
+}
+
+.text-dark {
+  color: $--darkgray
+}
+
+.text-black {
+  color: $--black
+}
+
+
+/*----------------------------------------------------
+ * background-color
+ *---------------------------------------------------*/
+
+// basic background color
+.bg-main {
+  background-color: $main-color
+}
+
+.bg-sub {
+  background-color: $sub-color
+}
+
+.bg-mix {
+  background-color: $mix-color
+}
+
+.bg-dif {
+  background-color: $dif-color
+}
+
+// brand background color
+.bg-primary {
+  background-color: $brand-primary
+}
+
+.bg-success {
+  background-color: $brand-success
+}
+
+.bg-info {
+  background-color: $brand-info
+}
+
+.bg-warning {
+  background-color: $brand-warning
+}
+
+.bg-danger {
+  background-color: $brand-danger
+}
+
+// basic monochrome background color
+.bg-white {
+  background-color: $--white
+}
+
+.bg-smoke {
+  background-color: $--whitesmoke
+}
+
+.bg-light {
+  background-color: $--lightgray
+}
+
+.bg-silver {
+  background-color: $--silver
+}
+
+.bg-gray,
+.bg-grey {
+  background-color: $--gray
+}
+
+.bg-dark {
+  background-color: $--darkgray
+}
+
+.bg-black {
+  background-color: $--black
+}
+
+// other
+.bg-no {
+  background: none!important
+}
+
+.bg-alpha {
+  background-color: transparent!important
+}
+
+.bg-inverse,
+.bg-inverse a {
+  color: #fff
+}
+
+.btn.bg-inverse:hover,
+.btn.bg-inverse:focus,
+.btn.bg-inverse.focus {
+  color: rgba(255, 255, 255, 0.8)
+}
