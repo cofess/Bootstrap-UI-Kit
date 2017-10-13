@@ -1,0 +1,234 @@
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+$font-family-default: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif !default;
+$font-family-nice: "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif !default;
+$font-family-arial: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif: 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif!default;
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
+
+$font-family-base:			 $font-family-default !default;
+/*----------------------------------------------------
+ * base
+ *---------------------------------------------------*/
+$font-size-base:          	 14px !default;
+$line-height-base:        	 1.428571429 !default; // 20/14
+$--regular: 			  	 400 !default;
+$--bold:                  	 600 !default;
+
+/*----------------------------------------------------
+ * box
+ *---------------------------------------------------*/
+$--box-1:                 	 8px !default;
+$--box-2:                 	 16px !default;
+$--box-3:                 	 24px !default;
+$--box-4:                 	 32px !default;
+$--box-5:   			  	 64px !default;
+$--box-6: 				  	 128px !default;
+
+/*----------------------------------------------------
+ * height
+ *---------------------------------------------------*/
+$--height-1: 			  	 32px !default; // 16px * 2
+$--height-2: 			  	 48px !default; // 16px * 3
+$--height-3: 			  	 80px !default; // 16px * 5
+$--height-4: 			  	 128px !default; // 16px * 8
+$--height-5: 			  	 208px !default; // 16px * 13
+$--height-6: 			  	 336px !default; // 16px * 21
+
+/*----------------------------------------------------
+ * width
+ *---------------------------------------------------*/
+$--width-1: 			  	 32px !default;
+$--width-2: 			  	 48px !default;
+$--width-3: 			  	 80px !default;
+$--width-4: 			  	 128px !default;
+$--width-5:	 			  	 208px !default;
+$--width-6: 			  	 336px !default;
+
+/*----------------------------------------------------
+ * padding
+ *---------------------------------------------------*/
+$padding-base:			  	 5px !default;
+$padding-1:				  	 $padding-base*1 !default;
+$padding-2:				  	 $padding-base*2 !default;
+$padding-3:				  	 $padding-base*3 !default;
+$padding-4:				  	 $padding-base*4 !default;
+$padding-5:				  	 $padding-base*6 !default;
+$padding-6:				  	 $padding-base*12 !default;
+$padding-max:			  	 $padding-base*20 !default;
+
+/*----------------------------------------------------
+ * margin
+ *---------------------------------------------------*/
+$margin-base:			  	 5px !default;
+$margin-1:				  	 $margin-base*1 !default;
+$margin-2:				  	 $margin-base*2 !default;
+$margin-3:				  	 $margin-base*3 !default;
+$margin-4:				  	 $margin-base*4 !default;
+$margin-5:				  	 $margin-base*6 !default;
+$margin-6:				  	 $margin-base*12 !default;
+$margin-max:			  	 $margin-base*20 !default;
+
+/*----------------------------------------------------
+ * border
+ *---------------------------------------------------*/
+$border-base-color: 	  	 #ddd !default;
+$border-1: 				  	 2px !default;
+$border-2: 				  	 3px !default;
+$border-3: 				  	 5px !default;
+$border-4: 				  	 10px !default;
+$border-5: 				  	 15px !default;
+$border-max: 			  	 60px !default;
+
+/*----------------------------------------------------
+ * border-radius
+ *---------------------------------------------------*/
+$border-radius-1: 		  	 3px !default;
+$border-radius-2: 		  	 6px !default;
+$border-radius-3: 		  	 9px !default;
+$border-radius-4: 		  	 15px !default;
+$border-radius-5: 		  	 24px !default;
+$border-radius-rounded:   	 2em !default;
+$border-radius-max: 	  	 9999px !default;
+
+/*----------------------------------------------------
+ * z-index
+ *---------------------------------------------------*/
+$z-index-1:        		  	 9 !default;
+$z-index-2: 			  	 19 !default;
+$z-index-3: 			  	 29 !default;
+$z-index-4: 			  	 39 !default;
+$z-index-5: 			  	 49 !default;
+$z-index-6: 			  	 59 !default;
+$z-index-7: 			  	 69 !default;
+$z-index-8: 			  	 79 !default;
+$z-index-9: 			  	 89 !default;
+$z-index-10: 			  	 99 !default;
+$z-index-max: 			  	 9999 !default;
+
+/*----------------------------------------------------
+ * Gray and brand colors
+ *---------------------------------------------------*/
+// basic color
+$main-color: 			  	 #0a8 !default; // 主色
+$sub-color: 			  	 #0ae !default; // 辅助色,互补色
+$mix-color: 			  	 #aed !default; // 融合色
+$dif-color: 			  	 #aed !default; // 对比色
+
+// Basic monochrome color
+$--white: 			  	   	 white !default;
+$--whitesmoke: 			  	 whitesmoke !default;
+$--lightgray: 			   	 lightgray !default;
+$--silver: 			  	  	 silver !default;
+$--gray: 				  	 gray !default;
+$--darkgray: 			  	 darkgray !default;
+$--black: 				  	 black !default;
+
+// brand colors
+$brand-primary:           	 #2196f3 !default;
+$brand-success:           	 #5cb85c !default;
+$brand-info:              	 #5bc0de !default;
+$brand-warning:           	 #f0ad4e !default;
+$brand-danger:            	 #d9534f !default;
+
+/*----------------------------------------------------
+ * Global textual link color.
+ *---------------------------------------------------*/
+$link-color:              	 $brand-primary !default;
+$link-normal-color:       	 $--gray !default;
+$link-dark-color:         	 $--darkgray !default;
+$link-hover-color:        	 darken($link-color, 15%) !default;
+
+/*----------------------------------------------------
+ * Media queries breakpoints
+ * ## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+ *---------------------------------------------------*/
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-xl:                  1440px !default;
+$screen-xl-min:              $screen-xl !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-xl-desktop:          $screen-xl-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+$screen-lg-max:              ($screen-xl-min - 1) !default;
+
+/*----------------------------------------------------
+ * text nowrap
+ *---------------------------------------------------*/
+$text-nowrap-height-base: 	 24px !default;
+$text-nowrap-height-1: 		 $text-nowrap-height-base * 1 !default;
+$text-nowrap-height-2: 		 $text-nowrap-height-base * 2 !default;
+$text-nowrap-height-3: 		 $text-nowrap-height-base * 3 !default;
+$text-nowrap-height-4: 		 $text-nowrap-height-base * 4 !default;
+$text-nowrap-height-5: 		 $text-nowrap-height-base * 5 !default;
+
+/*----------------------------------------------------
+ * text line-height
+ *---------------------------------------------------*/
+$text-height-base: 			 $line-height-base !default;
+$text-height-1: 			 $text-height-base * 1 !default;
+$text-height-2: 			 $text-height-base * 2 !default;
+$text-height-3: 			 $text-height-base * 3 !default;
+$text-height-4: 			 $text-height-base * 4 !default;
+$text-height-5: 			 $text-height-base * 5 !default;
+
+/*----------------------------------------------------
+ * text font size
+ *---------------------------------------------------*/
+$font-size-base: 			 8px !default;
+$font-size-normal: 			 14px !default;
+$font-size-1: 				 $font-size-base * 2 !default;
+$font-size-2: 				 $font-size-base * 3 !default;
+$font-size-3: 				 $font-size-base * 4 !default;
+$font-size-4: 				 $font-size-base * 6 !default;
+$font-size-5: 				 $font-size-base * 8 !default;
+$font-size-min: 			 12px !default;
+$font-size-max: 			 $font-size-base * 12 !default;
+
+/*----------------------------------------------------
+ * thumb
+ *---------------------------------------------------*/
+$--thumb-base: 				 8px !default;
+$--thumb: 					 $--thumb-base * 3 !default;
+$--thumb-1: 				 $--thumb-base * 4 !default;
+$--thumb-2: 				 $--thumb-base * 6 !default;
+$--thumb-3: 				 $--thumb-base * 8 !default;
+$--thumb-4: 				 $--thumb-base * 12 !default;
+$--thumb-5: 				 $--thumb-base * 16 !default;
+$--thumb-max: 				 $--thumb-base * 32 !default;
