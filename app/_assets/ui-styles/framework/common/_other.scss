@@ -33,3 +33,11 @@
   -moz-transform: none!important;
   transform: none!important;
 }
+
+.form-required{
+  &:after{
+    content:'*';
+    color:#f00;
+    margin-left:5px
+  }
+}

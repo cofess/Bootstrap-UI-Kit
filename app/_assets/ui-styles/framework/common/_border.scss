@@ -3,33 +3,33 @@
  *---------------------------------------------------*/
 
 .b {
-  border: 1px solid $border-base-color
+  border: 1px solid $border-base-color!important
 }
 
 .bt {
-  border-top: solid 1px $border-base-color
+  border-top: solid 1px $border-base-color!important
 }
 
 .br {
-  border-right: solid 1px $border-base-color
+  border-right: solid 1px $border-base-color!important
 }
 
 .bb {
-  border-bottom: solid 1px $border-base-color
+  border-bottom: solid 1px $border-base-color!important
 }
 
 .bl {
-  border-left: solid 1px $border-base-color
+  border-left: solid 1px $border-base-color!important
 }
 
 .bx {
-  border-left: solid 1px $border-base-color;
-  border-right: solid 1px $border-base-color
+  border-left: solid 1px $border-base-color!important;
+  border-right: solid 1px $border-base-color!important
 }
 
 .by {
-  border-top: solid 1px $border-base-color;
-  border-bottom: solid 1px $border-base-color
+  border-top: solid 1px $border-base-color!important;
+  border-bottom: solid 1px $border-base-color!important
 }
 
 
@@ -87,23 +87,23 @@
  *---------------------------------------------------*/
 
 .b-dashed {
-  border-style: dashed
+  border-style: dashed!important
 }
 
 .b-dotted {
-  border-style: dotted
+  border-style: dotted!important
 }
 
 .b-double {
-  border-style: double
+  border-style: double!important
 }
 
 .b-inset {
-  border-style: inset
+  border-style: inset!important
 }
 
 .b-outset {
-  border-style: outset
+  border-style: outset!important
 }
 
 
@@ -113,70 +113,70 @@
 
 // basic border color
 .b-main {
-  border-color: $main-color
+  border-color: $main-color!important
 }
 
 .b-sub {
-  border-color: $sub-color
+  border-color: $sub-color!important
 }
 
 .b-mix {
-  border-color: $mix-color
+  border-color: $mix-color!important
 }
 
 .b-dif {
-  border-color: $dif-color
+  border-color: $dif-color!important
 }
 
 // brand border color
 .b-primary {
-  border-color: $brand-primary
+  border-color: $brand-primary!important
 }
 
 .b-success {
-  border-color: $brand-success
+  border-color: $brand-success!important
 }
 
 .b-info {
-  border-color: $brand-info
+  border-color: $brand-info!important
 }
 
 .b-warning {
-  border-color: $brand-warning
+  border-color: $brand-warning!important
 }
 
 .b-danger {
-  border-color: $brand-danger
+  border-color: $brand-danger!important
 }
 
 // basic monochrome border color
 .b-white {
-  border-color: $--white
+  border-color: $--white!important
 }
 
 .b-smoke {
-  border-color: $--whitesmoke
+  border-color: $--whitesmoke!important
 }
 
 .b-light {
-  border-color: $--lightgray
+  border-color: $--lightgray!important
 }
 
 .b-silver {
-  border-color: $--silver
+  border-color: $--silver!important
 }
 
 .b-gray,
 .b-grey {
-  border-color: $--gray
+  border-color: $--gray!important
 }
 
 .b-dark {
-  border-color: $--darkgray
+  border-color: $--darkgray!important
 }
 
 .b-black {
-  border-color: $--black
+  border-color: $--black!important
 }
 
 .b-alpha {

@@ -32,4 +32,12 @@
  *---------------------------------------------------*/
 @import "framework/responsive/responsive-margin";
 @import "framework/responsive/responsive-padding";
+@import "framework/responsive/responsive-float";
 @import "framework/responsive/responsive-type";
+
+/*----------------------------------------------------
+ * component
+ *---------------------------------------------------*/
+@import "framework/component/hoverEffect";
+@import "framework/component/button";
+@import "framework/component/radio";

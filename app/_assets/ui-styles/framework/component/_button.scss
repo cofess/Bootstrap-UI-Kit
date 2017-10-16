@@ -1,0 +1,45 @@
+/*btn dark*/
+
+.btn-dark {
+  color: #fff !important;
+  background-color: #5a6a7a;
+  border-color: #5a6a7a;
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active,
+.btn-dark.active,
+.open .dropdown-toggle.btn-dark {
+  color: #fff !important;
+  background-color: #4f5d6b;
+  border-color: #495663;
+}
+
+.btn-dark:active,
+.btn-dark.active,
+.open .dropdown-toggle.btn-dark {
+  background-image: none;
+}
+
+.btn-dark.disabled,
+.btn-dark.disabled:hover,
+.btn-dark.disabled:focus,
+.btn-dark.disabled:active,
+.btn-dark.disabled.active,
+.btn-dark[disabled],
+.btn-dark[disabled]:hover,
+.btn-dark[disabled]:focus,
+.btn-dark[disabled]:active,
+.btn-dark[disabled].active,
+fieldset[disabled] .btn-dark,
+fieldset[disabled] .btn-dark:hover,
+fieldset[disabled] .btn-dark:focus,
+fieldset[disabled] .btn-dark:active,
+fieldset[disabled] .btn-dark.active {
+  background-color: #5a6a7a;
+  border-color: #5a6a7a;
+}
+
+
+/*btn dark end here*/

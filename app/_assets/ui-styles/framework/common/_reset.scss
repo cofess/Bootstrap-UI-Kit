@@ -15,7 +15,7 @@ body {
   position: relative;
 }
 
-html { 
+html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
@@ -33,19 +33,21 @@ body {
 
 ul,
 ol {
-  list-style: none;
+  list-style: inside;
 }
+
 
 /*----------------------------------------------------
  * Hyperlink
  *---------------------------------------------------*/
+
 a {
   color: $link-dark-color;
   text-decoration: none;
   &:focus,
   &:hover {
     color: $link-hover-color;
-    text-decoration: none;
+    text-decoration: none!important;
   }
   &.active {
     color: $link-hover-color;
@@ -65,6 +67,16 @@ a:not([href]):not([tabindex]):focus {
 
 .active {
   > a {
+    color: $link-hover-color;
+  }
+}
+
+.link-normal,
+.link-normal a {
+  color: $link-normal-color;
+  &:focus,
+  &:hover,
+  &.active {
     color: $link-hover-color;
   }
 }
@@ -97,9 +109,11 @@ a:not([href]):not([tabindex]):focus {
   *zoom: 1;
 }
 
+
 /*----------------------------------------------------
  * form element
  *---------------------------------------------------*/
+
 ::-webkit-input-placeholder {
   color: #999
 }
@@ -115,6 +129,7 @@ a:not([href]):not([tabindex]):focus {
 :-ms-input-placeholder {
   color: #ccc
 }
+
 input,
 button,
 select,
@@ -181,9 +196,11 @@ input[type=time] {
   -webkit-appearance: button
 }
 
+
 /*----------------------------------------------------
  * Fluidity response
  *---------------------------------------------------*/
+
 img,
 canvas,
 iframe,

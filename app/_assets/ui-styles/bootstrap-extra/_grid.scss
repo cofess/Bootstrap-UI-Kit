@@ -18,11 +18,11 @@
 .col-xl-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: ceil(($grid-gutter-width / 2));
+  padding-left: floor(($grid-gutter-width / 2));
 }
 
-// x Large grid
+// Extra Large grid
 //
 // Columns, offsets, pushes, and pulls for the large desktop device range.
 @media (min-width: $screen-xl-min) {
