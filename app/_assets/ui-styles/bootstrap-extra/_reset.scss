@@ -3,3 +3,30 @@
 .media img {
   max-width: inherit
 }
+
+@media (max-width: $screen-xs-max) {
+  .table-responsive {
+    .table {
+      table-layout: inherit;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .modal-center {
+    text-align: center;
+    padding: 0!important
+  }
+  .modal-center:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px
+  }
+  .modal-center .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle
+  }
+}
