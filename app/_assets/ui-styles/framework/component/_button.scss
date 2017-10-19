@@ -1,45 +1,19 @@
-/*btn dark*/
+.btn-main {
+  @include button-variant($btn-main-color, $btn-main-bg, $btn-main-border);
+}
+
+.btn-sub {
+  @include button-variant($btn-sub-color, $btn-sub-bg, $btn-sub-border);
+}
+
+.btn-mix {
+  @include button-variant($btn-mix-color, $btn-mix-bg, $btn-mix-border);
+}
+
+.btn-dif {
+  @include button-variant($btn-dif-color, $btn-dif-bg, $btn-dif-border);
+}
 
 .btn-dark {
-  color: #fff !important;
-  background-color: #5a6a7a;
-  border-color: #5a6a7a;
+  @include button-variant($btn-dark-color, $btn-dark-bg, $btn-dark-border);
 }
-
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active,
-.btn-dark.active,
-.open .dropdown-toggle.btn-dark {
-  color: #fff !important;
-  background-color: #4f5d6b;
-  border-color: #495663;
-}
-
-.btn-dark:active,
-.btn-dark.active,
-.open .dropdown-toggle.btn-dark {
-  background-image: none;
-}
-
-.btn-dark.disabled,
-.btn-dark.disabled:hover,
-.btn-dark.disabled:focus,
-.btn-dark.disabled:active,
-.btn-dark.disabled.active,
-.btn-dark[disabled],
-.btn-dark[disabled]:hover,
-.btn-dark[disabled]:focus,
-.btn-dark[disabled]:active,
-.btn-dark[disabled].active,
-fieldset[disabled] .btn-dark,
-fieldset[disabled] .btn-dark:hover,
-fieldset[disabled] .btn-dark:focus,
-fieldset[disabled] .btn-dark:active,
-fieldset[disabled] .btn-dark.active {
-  background-color: #5a6a7a;
-  border-color: #5a6a7a;
-}
-
-
-/*btn dark end here*/

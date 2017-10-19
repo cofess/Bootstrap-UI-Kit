@@ -25,11 +25,11 @@ html {
   overflow-y: scroll;
 }
 
-body {
-  font-family: $font-family-base;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
-}
+// body {
+//   font-family: $font-family-base;
+//   font-size: $font-size-base;
+//   line-height: $line-height-base;
+// }
 
 ul,
 ol {
@@ -42,7 +42,7 @@ ol {
  *---------------------------------------------------*/
 
 a {
-  color: $link-dark-color;
+  color: $link-color;
   text-decoration: none;
   &:focus,
   &:hover {

@@ -7,11 +7,15 @@ var development       = 'build/development';
 var production        = 'build/production';
 var developmentAssets = 'build/assets';
 var productionAssets  = 'build/production/assets';
+var sourcemaps        = {
+      css: true,
+      js: false
+    }
 var stylesheet        = {
-      type: 'less',
-      extensions: ["less" ,"css"],
-      // type: 'sass',
-      // extensions: ["sass", "scss", "css"],
+      // type: 'less',
+      // extensions: ["less" ,"css"],
+      type: 'sass',
+      extensions: ["sass", "scss", "css"],
     }
 
 // gulp 任务配置
@@ -112,7 +116,7 @@ module.exports = {
       '!' + srcAssets + '/styles/_*.{' + stylesheet.extensions + '}',
     ],
     dest: developmentAssets + '/css',
-    sourcemap: false, //是否生成sourcemap
+    sourcemap: sourcemaps.css, //是否生成sourcemap
     less: {
       extensions: ["less" ,"css"],
       compile: {
@@ -195,10 +199,12 @@ module.exports = {
       '!' + srcAssets + '/scripts/**/_*.js',
     ],
     dest: developmentAssets + '/js/',
-    sourcemap: true, //是否生成sourcemap
+    sourcemap: sourcemaps.js, //是否生成sourcemap
     concat: {
+      merge: true, // 是否合并子目录文件
       folder: concatFolder,
       excludeFolders: [
+        'debug-modules',
         'bootstrap'
       ],
       dest: developmentAssets + '/js/',
@@ -240,7 +246,7 @@ module.exports = {
     src: srcAssets + '/images/sprites',
     // src: srcAssets + '/images/sprites/icon/*.png',
     dest: {
-      css: srcAssets + '/styles/partials/sprites/',
+      css: srcAssets + '/styles/application/sprites/',
       image: developmentAssets + '/images'
     },
     options: {

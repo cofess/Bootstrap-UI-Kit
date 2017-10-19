@@ -10,13 +10,70 @@ $font-family-serif: Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
 $font-family-base:			 $font-family-default !default;
+
 /*----------------------------------------------------
  * base
  *---------------------------------------------------*/
 $font-size-base:          	 14px !default;
 $line-height-base:        	 1.428571429 !default; // 20/14
+$border-color:        		 #eee !default;
 $--regular: 			  	 400 !default;
 $--bold:                  	 600 !default;
+
+/*----------------------------------------------------
+ * Gray and brand colors
+ *---------------------------------------------------*/
+// basic color
+$main-color: 			  	 #ff5500 !default; // 主色
+$sub-color: 			  	 #ff9600 !default; // 辅助色,互补色
+$mix-color: 			  	 #e6e6e6 !default; // 融合色,浅色（浅白、高级灰）
+$dif-color: 			  	 #0080ff !default; // 对比色
+
+// Basic monochrome color
+$--white: 			  	   	 white !default;
+$--whitesmoke: 			  	 whitesmoke !default;
+$--lightgray: 			   	 lightgray !default;
+$--silver: 			  	  	 silver !default;
+$--gray: 				  	 gray !default;
+$--darkgray: 			  	 darkgray !default;
+$--black: 				  	 black !default;
+
+// brand colors
+$brand-primary:           	 #2196f3 !default;
+$brand-success:           	 #5cb85c !default;
+$brand-info:              	 #5bc0de !default;
+$brand-warning:           	 #f0ad4e !default;
+$brand-danger:            	 #d9534f !default;
+
+/*----------------------------------------------------
+ * Global textual link color.
+ *---------------------------------------------------*/
+$link-color:              	 $brand-primary !default;
+$link-normal-color:       	 #555 !default;
+$link-hover-color:        	 darken($link-color, 10%) !default;
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+$btn-main-color:              #fff !default;
+$btn-main-bg:                 $main-color !default;
+$btn-main-border:             darken($main-color, 5%) !default;
+
+$btn-sub-color:              #fff !default;
+$btn-sub-bg:                 $sub-color !default;
+$btn-sub-border:             darken($sub-color, 5%) !default;
+
+$btn-mix-color:              #333 !default;
+$btn-mix-bg:                 $mix-color !default;
+$btn-mix-border:             darken($mix-color, 5%) !default;
+
+$btn-dif-color:              #fff !default;
+$btn-dif-bg:                 $dif-color !default;
+$btn-dif-border:             darken($dif-color, 5%) !default;
+
+$btn-dark-color:              #fff !default;
+$btn-dark-bg:                 #5a6a7a !default;
+$btn-dark-border:             darken(#5a6a7a, 5%) !default;
 
 /*----------------------------------------------------
  * box
@@ -108,39 +165,6 @@ $z-index-8: 			  	 79 !default;
 $z-index-9: 			  	 89 !default;
 $z-index-10: 			  	 99 !default;
 $z-index-max: 			  	 9999 !default;
-
-/*----------------------------------------------------
- * Gray and brand colors
- *---------------------------------------------------*/
-// basic color
-$main-color: 			  	 #0a8 !default; // 主色
-$sub-color: 			  	 #0ae !default; // 辅助色,互补色
-$mix-color: 			  	 #aed !default; // 融合色
-$dif-color: 			  	 #aed !default; // 对比色
-
-// Basic monochrome color
-$--white: 			  	   	 white !default;
-$--whitesmoke: 			  	 whitesmoke !default;
-$--lightgray: 			   	 lightgray !default;
-$--silver: 			  	  	 silver !default;
-$--gray: 				  	 gray !default;
-$--darkgray: 			  	 darkgray !default;
-$--black: 				  	 black !default;
-
-// brand colors
-$brand-primary:           	 #2196f3 !default;
-$brand-success:           	 #5cb85c !default;
-$brand-info:              	 #5bc0de !default;
-$brand-warning:           	 #f0ad4e !default;
-$brand-danger:            	 #d9534f !default;
-
-/*----------------------------------------------------
- * Global textual link color.
- *---------------------------------------------------*/
-$link-color:              	 $brand-primary !default;
-$link-normal-color:       	 $--gray !default;
-$link-dark-color:         	 $--darkgray !default;
-$link-hover-color:        	 darken($link-color, 15%) !default;
 
 /*----------------------------------------------------
  * Media queries breakpoints
