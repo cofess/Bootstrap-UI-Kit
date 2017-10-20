@@ -4,6 +4,14 @@
   max-width: inherit
 }
 
+.media-middle {
+  .media-body,
+  .media-left,
+  .media-right {
+    vertical-align: middle;
+  }
+}
+
 @media (max-width: $screen-xs-max) {
   .table-responsive {
     .table {
@@ -12,7 +20,7 @@
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: $screen-sm-min) {
   .modal-center {
     text-align: center;
     padding: 0!important
