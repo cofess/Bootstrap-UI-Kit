@@ -4,7 +4,7 @@
  */
 
 .alert {
-  .border-radius(3px);
+  @include border-radius(3px);
   h4 {
     font-weight: 600;
   }
@@ -13,9 +13,9 @@
   }
   .close {
     color: #000;
-    .opacity(.2);
+    @include opacity(.2);
     &:hover {
-      .opacity(.5);
+      @include opacity(.5);
     }
   }
   a {
@@ -26,22 +26,22 @@
 
 //Alert Variants
 .alert-success {
-  &:extend(.bg-green);
-  border-color: darken(@green, 5%);
+  @extend .bg-green;
+  border-color: darken($green, 5%);
 }
 
 .alert-danger,
 .alert-error {
-  &:extend(.bg-red);
-  border-color: darken(@red, 5%);
+  @extend .bg-red;
+  border-color: darken($red, 5%);
 }
 
 .alert-warning {
-  &:extend(.bg-yellow);
-  border-color: darken(@yellow, 5%);
+  @extend .bg-yellow;
+  border-color: darken($yellow, 5%);
 }
 
 .alert-info {
-  &:extend(.bg-aqua);
-  border-color: darken(@aqua, 5%);
+  @extend .bg-aqua;
+  border-color: darken($aqua, 5%);
 }

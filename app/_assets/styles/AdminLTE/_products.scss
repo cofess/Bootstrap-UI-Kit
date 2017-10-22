@@ -7,9 +7,9 @@
   margin: 0;
   padding: 0;
   > .item {
-    .border-radius(@box-border-radius);
-    .box-shadow(@box-boxshadow);
-    .clearfix();
+    @include border-radius($box-border-radius);
+    @include box-shadow($box-boxshadow);
+    @include clearfix();
     padding: 10px 0;
     background: #fff;
   }
@@ -36,9 +36,9 @@
 }
 
 .product-list-in-box > .item {
-  .box-shadow(none);
-  .border-radius(0);
-  border-bottom: 1px solid @box-border-color;
+  @include box-shadow(none);
+  @include border-radius(0);
+  border-bottom: 1px solid $box-border-color;
   &:last-of-type {
     border-bottom-width: 0;
   }
