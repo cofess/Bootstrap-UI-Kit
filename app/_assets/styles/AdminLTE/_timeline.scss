@@ -19,19 +19,19 @@
     background: #ddd;
     left: 31px;
     margin: 0;
-    .border-radius(2px);
+    @include border-radius(2px);
   }
 
   > li {
     position: relative;
     margin-right: 10px;
     margin-bottom: 15px;
-    .clearfix();
+    @include clearfix;
 
     // The content
     > .timeline-item {
-      .box-shadow(@box-boxshadow);
-      .border-radius(@box-border-radius);
+      @include box-shadow($box-boxshadow);
+      @include border-radius($box-border-radius);
       margin-top: 0;
       background: #fff;
       color: #444;
@@ -50,7 +50,7 @@
       > .timeline-header {
         margin: 0;
         color: #555;
-        border-bottom: 1px solid @box-border-color;
+        border-bottom: 1px solid $box-border-color;
         padding: 10px;
         font-size: 16px;
         line-height: 1.1;
@@ -75,7 +75,7 @@
       line-height: 30px;
       position: absolute;
       color: #666;
-      background: @gray-lte;
+      background: $gray-lte;
       border-radius: 50%;
       text-align: center;
       left: 18px;
@@ -91,7 +91,7 @@
       display: inline-block;
       background-color: #fff;
 
-      .border-radius(4px);
+      @include border-radius(4px);
     }
   }
 }
@@ -101,7 +101,7 @@
     > .timeline-item {
       background: #f0f0f0;
       border: 1px solid #ddd;
-      .box-shadow(none);
+      @include box-shadow(none);
       > .timeline-header {
         border-bottom-color: #ddd;
       }

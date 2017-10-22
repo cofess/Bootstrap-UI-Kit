@@ -4,31 +4,31 @@
  */
 .box {
   position: relative;
-  .border-radius(@box-border-radius);
+  @include border-radius($box-border-radius);
   background: #ffffff;
-  border-top: 3px solid @box-default-border-top-color;
+  border-top: 3px solid $box-default-border-top-color;
   margin-bottom: 20px;
   width: 100%;
-  box-shadow: @box-boxshadow;
+  box-shadow: $box-boxshadow;
 
   // Box color variations
   &.box-primary {
-    border-top-color: @light-blue;
+    border-top-color: $light-blue;
   }
   &.box-info {
-    border-top-color: @aqua;
+    border-top-color: $aqua;
   }
   &.box-danger {
-    border-top-color: @red;
+    border-top-color: $red;
   }
   &.box-warning {
-    border-top-color: @yellow;
+    border-top-color: $yellow;
   }
   &.box-success {
-    border-top-color: @green;
+    border-top-color: $green;
   }
   &.box-default {
-    border-top-color: @gray-lte;
+    border-top-color: $gray-lte;
   }
 
   // collapsed mode
@@ -41,7 +41,7 @@
 
   .nav-stacked {
     > li {
-      border-bottom: 1px solid @box-border-color;
+      border-bottom: 1px solid $box-border-color;
       margin: 0;
       &:last-of-type {
         border-bottom: none;
@@ -58,10 +58,10 @@
   }
 
   .border-right {
-    border-right: 1px solid @box-border-color;
+    border-right: 1px solid $box-border-color;
   }
   .border-left {
-    border-left: 1px solid @box-border-color;
+    border-left: 1px solid $box-border-color;
   }
 
   //SOLID BOX
@@ -84,22 +84,22 @@
 
     // Box color variations
     &.box-default {
-      .box-solid-variant(@gray-lte, #444);
+      @include box-solid-variant($gray-lte, #444);
     }
     &.box-primary {
-      .box-solid-variant(@light-blue);
+      @include box-solid-variant($light-blue);
     }
     &.box-info {
-      .box-solid-variant(@aqua);
+      @include box-solid-variant($aqua);
     }
     &.box-danger {
-      .box-solid-variant(@red);
+      @include box-solid-variant($red);
     }
     &.box-warning {
-      .box-solid-variant(@yellow);
+      @include box-solid-variant($yellow);
     }
     &.box-success {
-      .box-solid-variant(@green);
+      @include box-solid-variant($green);
     }
 
     > .box-header > .box-tools .btn {
@@ -148,7 +148,7 @@
   .overlay {
     z-index: 50;
     background: rgba(255, 255, 255, 0.7);
-    .border-radius(@box-border-radius);
+    @include border-radius($box-border-radius);
     > .fa {
       position: absolute;
       top: 50%;
@@ -169,19 +169,19 @@
 .box-header,
 .box-body,
 .box-footer {
-  .clearfix();
+  @include clearfix;
 }
 
 //Box header
 .box-header {
   color: #444;
   display: block;
-  padding: @box-padding;
+  padding: $box-padding;
   position: relative;
 
   //Add bottom border
   &.with-border {
-    border-bottom: 1px solid @box-border-color;
+    border-bottom: 1px solid $box-border-color;
     .collapsed-box & {
       border-bottom: none;
     }
@@ -228,10 +228,10 @@
   padding: 5px;
   font-size: 12px;
   background: transparent;
-  color: darken(@box-default-border-top-color, 20%);
+  color: darken($box-default-border-top-color, 20%);
   .open &,
   &:hover {
-    color: darken(@box-default-border-top-color, 40%);
+    color: darken($box-default-border-top-color, 40%);
   }
   &.btn:active {
     box-shadow: none;
@@ -240,10 +240,10 @@
 
 //Box Body
 .box-body {
-  .border-radius(0; 0; @box-border-radius; @box-border-radius);
-  padding: @box-padding;
+  @include border-radius(0, 0, $box-border-radius, $box-border-radius);
+  padding: $box-padding;
   .no-header & {
-    .border-top-radius(@box-border-radius);
+    @include border-top-radius($box-border-radius);
   }
   // Tables within the box body
   > .table {
@@ -263,26 +263,26 @@
   }
 
   .box-pane {
-    .border-radius(0; 0; @box-border-radius; 0);
+    @include border-radius(0, 0, $box-border-radius, 0);
   }
   .box-pane-right {
-    .border-radius(0; 0; 0; @box-border-radius);
+    @include border-radius(0, 0, 0, $box-border-radius);
   }
 }
 
 //Box footer
 .box-footer {
-  .border-radius(0; 0; @box-border-radius; @box-border-radius);
-  border-top: 1px solid @box-border-color;
-  padding: @box-padding;
-  background-color: @box-footer-bg;
+  @include border-radius(0, 0, $box-border-radius, $box-border-radius);
+  border-top: 1px solid $box-border-color;
+  padding: $box-padding;
+  background-color: $box-footer-bg;
 }
 
 .chart-legend {
-  &:extend(.list-unstyled);
+  @extend .list-unstyled;
   margin: 10px 0;
   > li {
-    @media (max-width: @screen-sm-max) {
+    @media (max-width: $screen-sm-max) {
       float: left;
       margin-right: 10px;
     }
@@ -293,7 +293,7 @@
 .box-comments {
   background: #f7f7f7;
   .box-comment {
-    .clearfix();
+    @include clearfix;
     padding: 8px 0;
     border-bottom: 1px solid #eee;
     &:last-of-type {
@@ -303,7 +303,7 @@
       padding-top: 0;
     }
     img {
-      &:extend(.img-sm);
+      @extend .img-sm;
       float: left;
     }
   }
@@ -334,7 +334,7 @@
   overflow: auto;
   // Todo list element
   > li {
-    .border-radius(2px);
+    @include border-radius(2px);
     padding: 10px;
     background: #f4f4f4;
     margin-bottom: 2px;
@@ -364,7 +364,7 @@
     .tools {
       display: none;
       float: right;
-      color: @red;
+      color: $red;
       // icons
       > .fa, > .glyphicon, > .ion {
         margin-right: 5px;
@@ -384,26 +384,26 @@
       }
 
       .label {
-        background: @gray-lte !important;
+        background: $gray-lte !important;
       }
     }
   }
 
   // Color varaity
   .danger {
-    border-left-color: @red;
+    border-left-color: $red;
   }
   .warning {
-    border-left-color: @yellow;
+    border-left-color: $yellow;
   }
   .info {
-    border-left-color: @aqua;
+    border-left-color: $aqua;
   }
   .success {
-    border-left-color: @green;
+    border-left-color: $green;
   }
   .primary {
-    border-left-color: @light-blue;
+    border-left-color: $light-blue;
   }
 
   .handle {
@@ -421,21 +421,21 @@
   padding: 5px 20px 5px 10px;
 
   .item {
-    .clearfix();
+    @include clearfix;
     margin-bottom: 10px;
     // The image
     > img {
       width: 40px;
       height: 40px;
       border: 2px solid transparent;
-      .border-radius(50%);
+      @include border-radius(50%);
     }
 
     > .online {
-      border: 2px solid @green;
+      border: 2px solid $green;
     }
     > .offline {
-      border: 2px solid @red;
+      border: 2px solid $red;
     }
 
     // The message body
@@ -450,7 +450,7 @@
 
     // The attachment
     > .attachment {
-      .border-radius(@attachment-border-radius);
+      @include border-radius($attachment-border-radius);
       background: #f4f4f4;
       margin-left: 65px;
       margin-right: 15px;
@@ -467,7 +467,7 @@
         margin: 0;
 
       }
-      .clearfix();
+      @include clearfix;
     }
   }
 

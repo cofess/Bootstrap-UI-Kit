@@ -4,8 +4,8 @@
  */
 
 .btn {
-  .border-radius(@btn-border-radius);
-  .box-shadow(@btn-boxshadow);
+  @include border-radius($btn-border-radius);
+  @include box-shadow($btn-boxshadow);
   border: 1px solid transparent;
 
   &.uppercase {
@@ -14,7 +14,7 @@
 
   // Flat buttons
   &.btn-flat {
-    .border-radius(0);
+    @include border-radius(0);
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -44,7 +44,7 @@
       min-height: 100%;
       font-size: 100px;
       text-align: right;
-      .opacity(0);
+      @include opacity(0);
       outline: none;
       background: white;
       cursor: inherit;
@@ -66,42 +66,42 @@
 }
 
 .btn-primary {
-  background-color: @light-blue;
-  border-color: darken(@light-blue, 5%);
+  background-color: $light-blue;
+  border-color: darken($light-blue, 5%);
   &:hover, &:active, &.hover {
-    background-color: darken(@light-blue, 5%);
+    background-color: darken($light-blue, 5%);
   }
 }
 
 .btn-success {
-  background-color: @green;
-  border-color: darken(@green, 5%);
+  background-color: $green;
+  border-color: darken($green, 5%);
   &:hover, &:active, &.hover {
-    background-color: darken(@green, 5%);
+    background-color: darken($green, 5%);
   }
 }
 
 .btn-info {
-  background-color: @aqua;
-  border-color: darken(@aqua, 5%);
+  background-color: $aqua;
+  border-color: darken($aqua, 5%);
   &:hover, &:active, &.hover {
-    background-color: darken(@aqua, 5%);
+    background-color: darken($aqua, 5%);
   }
 }
 
 .btn-danger {
-  background-color: @red;
-  border-color: darken(@red, 5%);
+  background-color: $red;
+  border-color: darken($red, 5%);
   &:hover, &:active, &.hover {
-    background-color: darken(@red, 5%);
+    background-color: darken($red, 5%);
   }
 }
 
 .btn-warning {
-  background-color: @yellow;
-  border-color: darken(@yellow, 5%);
+  background-color: $yellow;
+  border-color: darken($yellow, 5%);
   &:hover, &:active, &.hover {
-    background-color: darken(@yellow, 5%);
+    background-color: darken($yellow, 5%);
   }
 }
 
@@ -118,17 +118,17 @@
 }
 
 .btn-link {
-  .box-shadow(none);
+  @include box-shadow(none);
 }
 
 //General .btn with bg class
 .btn[class*='bg-']:hover {
-  .box-shadow(inset 0 0 100px rgba(0, 0, 0, 0.2));
+  @include box-shadow(inset 0 0 100px rgba(0, 0, 0, 0.2));
 }
 
 // Application buttons
 .btn-app {
-  .border-radius(3px);
+  @include border-radius(3px);
   position: relative;
   padding: 15px 5px;
   margin: 0 0 10px 10px;
