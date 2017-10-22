@@ -112,8 +112,8 @@ module.exports = {
   styles: {
     type: stylesheet.type,
     src:  [
-      srcAssets + '/styles/*.{' + stylesheet.extensions + '}',
-      '!' + srcAssets + '/styles/_*.{' + stylesheet.extensions + '}',
+      srcAssets + '/styles/**/*.{' + stylesheet.extensions + '}',
+      '!' + srcAssets + '/styles/**/_*.{' + stylesheet.extensions + '}',
     ],
     dest: developmentAssets + '/css',
     sourcemap: sourcemaps.css, //是否生成sourcemap
