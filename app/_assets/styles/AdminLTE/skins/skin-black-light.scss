@@ -2,50 +2,50 @@
  * Skin: Black
  * -----------
  */
-@import "../../bootstrap-less/mixins.less";
-@import "../../bootstrap-less/variables.less";
-@import "../variables.less";
-@import "../mixins.less";
+@import "../../skeleton/bootstrap/mixins";
+@import "../../skeleton/bootstrap/variables";
+@import "../variables";
+@import "../mixins";
 
 /* skin-black navbar */
 .skin-black-light {
   //Navbar & Logo
   .main-header {
     //.box-shadow(0px 1px 1px rgba(0, 0, 0, 0.05));
-    border-bottom: 1px solid @gray-lte;
+    border-bottom: 1px solid $gray-lte;
     .navbar-toggle {
       color: #333;
     }
     .navbar-brand {
       color: #333;
-      border-right: 1px solid @gray-lte;
+      border-right: 1px solid $gray-lte;
     }
     .navbar {
-      .navbar-variant(#fff; #333; #999; #fff);
+      @include navbar-variant(#fff, #333, #999, #fff);
       > .sidebar-toggle {
         color: #333;
-        border-right: 1px solid @gray-lte;
+        border-right: 1px solid $gray-lte;
       }
       .navbar-nav {
         > li > a {
-          border-right: 1px solid @gray-lte;
+          border-right: 1px solid $gray-lte;
         }
       }
       .navbar-custom-menu .navbar-nav,
       .navbar-right {
         > li {
           > a {
-            border-left: 1px solid @gray-lte;
+            border-left: 1px solid $gray-lte;
             border-right-width: 0;
           }
         }
       }
     }
     > .logo {
-      .logo-variant(#fff; #333);
-      border-right: 1px solid @gray-lte;
-      @media (max-width: @screen-header-collapse) {
-        .logo-variant(#222; #fff);
+      @include logo-variant(#fff, #333);
+      border-right: 1px solid $gray-lte;
+      @media (max-width: $screen-header-collapse) {
+        @include logo-variant(#222, #fff);
         border-right: none;
       }
     }
@@ -61,5 +61,5 @@
     box-shadow: none;
   }
   //Create the sidebar skin
-  .skin-light-sidebar(#fff);
+  @include skin-light-sidebar(#fff);
 }

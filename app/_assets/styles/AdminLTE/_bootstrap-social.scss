@@ -8,19 +8,19 @@
  */
 
 // Import variables and mixins as a reference for separate plugins version
-@import (reference) "../bootstrap-less/mixins";
-@import (reference) "../bootstrap-less/variables";
-@import (reference) "variables";
-@import (reference) "mixins";
+@import "../skeleton/bootstrap/mixins";
+@import "../skeleton/bootstrap/variables";
+@import "variables";
+@import "mixins";
 
-@bs-height-base: (@line-height-computed + @padding-base-vertical * 2);
-@bs-height-lg: (floor(@font-size-large * @line-height-base) + @padding-large-vertical * 2);
-@bs-height-sm: (floor(@font-size-small * 1.5) + @padding-small-vertical * 2);
-@bs-height-xs: (floor(@font-size-small * 1.2) + @padding-small-vertical + 1);
+$bs-height-base: ($line-height-computed + $padding-base-vertical * 2);
+$bs-height-lg: (floor($font-size-large * $line-height-base) + $padding-large-vertical * 2);
+$bs-height-sm: (floor($font-size-small * 1.5) + $padding-small-vertical * 2);
+$bs-height-xs: (floor($font-size-small * 1.2) + $padding-small-vertical + 1);
 
 .btn-social {
   position: relative;
-  padding-left: (@bs-height-base + @padding-base-horizontal);
+  padding-left: ($bs-height-base + $padding-base-horizontal);
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
@@ -30,33 +30,33 @@
     left: 0;
     top: 0;
     bottom: 0;
-    width: @bs-height-base;
-    line-height: (@bs-height-base + 2);
+    width: $bs-height-base;
+    line-height: ($bs-height-base + 2);
     font-size: 1.6em;
     text-align: center;
     border-right: 1px solid rgba(0, 0, 0, 0.2);
   }
   &.btn-lg {
-    padding-left: (@bs-height-lg + @padding-large-horizontal);
+    padding-left: ($bs-height-lg + $padding-large-horizontal);
     > :first-child {
-      line-height: @bs-height-lg;
-      width: @bs-height-lg;
+      line-height: $bs-height-lg;
+      width: $bs-height-lg;
       font-size: 1.8em;
     }
   }
   &.btn-sm {
-    padding-left: (@bs-height-sm + @padding-small-horizontal);
+    padding-left: ($bs-height-sm + $padding-small-horizontal);
     > :first-child {
-      line-height: @bs-height-sm;
-      width: @bs-height-sm;
+      line-height: $bs-height-sm;
+      width: $bs-height-sm;
       font-size: 1.4em;
     }
   }
   &.btn-xs {
-    padding-left: (@bs-height-xs + @padding-small-horizontal);
+    padding-left: ($bs-height-xs + $padding-small-horizontal);
     > :first-child {
-      line-height: @bs-height-xs;
-      width: @bs-height-xs;
+      line-height: $bs-height-xs;
+      width: $bs-height-xs;
       font-size: 1.2em;
     }
   }
@@ -64,8 +64,8 @@
 
 .btn-social-icon {
   .btn-social;
-  height: (@bs-height-base + 2);
-  width: (@bs-height-base + 2);
+  height: ($bs-height-base + 2);
+  width: ($bs-height-base + 2);
   padding: 0;
   > :first-child {
     border: none;
@@ -73,26 +73,26 @@
     width: 100%;
   }
   &.btn-lg {
-    height: @bs-height-lg;
-    width: @bs-height-lg;
+    height: $bs-height-lg;
+    width: $bs-height-lg;
     padding-left: 0;
     padding-right: 0;
   }
   &.btn-sm {
-    height: (@bs-height-sm + 2);
-    width: (@bs-height-sm + 2);
+    height: ($bs-height-sm + 2);
+    width: ($bs-height-sm + 2);
     padding-left: 0;
     padding-right: 0;
   }
   &.btn-xs {
-    height: (@bs-height-xs + 2);
-    width: (@bs-height-xs + 2);
+    height: ($bs-height-xs + 2);
+    width: ($bs-height-xs + 2);
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-.btn-social(@color-bg, @color: #fff) {
+.btn-social($color-bg, @color: #fff) {
   background-color: @color-bg;
   .button-variant(@color, @color-bg, rgba(0, 0, 0, .2));
 }

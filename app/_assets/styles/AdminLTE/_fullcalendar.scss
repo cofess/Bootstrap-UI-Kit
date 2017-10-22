@@ -3,10 +3,10 @@
  * ---------------------
  */
 // Import variables and mixins as a reference for separate plugins version
-@import (reference) "../bootstrap-less/mixins";
-@import (reference) "../bootstrap-less/variables";
-@import (reference) "variables";
-@import (reference) "mixins";
+@import "../skeleton/bootstrap/mixins";
+@import "../skeleton/bootstrap/variables";
+@import "variables";
+@import "mixins";
 
 // Fullcalendar buttons
 .fc-button {
@@ -60,7 +60,7 @@
 }
 
 .fc-toolbar {
-  padding: @box-padding;
+  padding: $box-padding;
   margin: 0;
 }
 
@@ -80,25 +80,25 @@
     margin-right: 5px;
     line-height: 30px;
     .fa {
-      .transition-transform(linear .3s);
+      @include transition-transform(linear .3s);
       &:hover {
-        .rotate(30deg);
+        @include rotate(30deg);
       }
     }
   }
 }
 
 #add-new-event {
-  .transition(all linear .3s);
+  @include transition(all linear .3s);
 }
 
 .external-event {
   padding: 5px 10px;
   font-weight: bold;
   margin-bottom: 4px;
-  box-shadow: @box-boxshadow;
-  text-shadow: @box-boxshadow;
-  border-radius: @box-border-radius;
+  box-shadow: $box-boxshadow;
+  text-shadow: $box-boxshadow;
+  border-radius: $box-border-radius;
   cursor: move;
   &:hover {
     box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.2);

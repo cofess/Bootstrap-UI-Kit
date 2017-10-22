@@ -165,7 +165,7 @@
   }
   //The sidebar search form
   .sidebar-form {
-    @include border-radius(3px);
+    border-radius: 3px;
     border: 1px solid lighten($sidebar-dark-bg, 10%);
     margin: 10px 10px;
     input[type="text"], .btn {
@@ -274,7 +274,7 @@
   }
   //The sidebar search form
   .sidebar-form {
-    @include border-radius(3px);
+    border-radius: 3px;
     border: 1px solid $gray-lte;  //darken($sidebar-light-bg, 5%);
     margin: 10px 10px;
     input[type="text"],

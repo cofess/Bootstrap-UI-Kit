@@ -3,10 +3,10 @@
  * ---------------
  */
 // Import variables and mixins as a reference for separate plugins version
-@import (reference) "../bootstrap-less/mixins";
-@import (reference) "../bootstrap-less/variables";
-@import (reference) "variables";
-@import (reference) "mixins";
+@import "../skeleton/bootstrap/mixins";
+@import "../skeleton/bootstrap/variables";
+@import "variables";
+@import "mixins";
 
 //Signle select
 .select2-container--default,
@@ -17,24 +17,24 @@
     outline: none;
   }
   .select2-selection--single {
-    border: 1px solid @gray-lte;
-    border-radius: @input-radius;
+    border: 1px solid $gray-lte;
+    border-radius: $input-radius;
     padding: 6px 12px;
     height: 34px;
   }
 }
 
 .select2-container--default.select2-container--open {
-  border-color: @light-blue;
+  border-color: $light-blue;
 }
 
 .select2-dropdown {
-  border: 1px solid @gray-lte;
-  border-radius: @input-radius;
+  border: 1px solid $gray-lte;
+  border-radius: $input-radius;
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background-color: @light-blue;
+  background-color: $light-blue;
   color: white;
 }
 
@@ -68,7 +68,7 @@
 .select2-dropdown,
 .select2-search--inline {
   .select2-search__field {
-    border: 1px solid @gray-lte;
+    border: 1px solid $gray-lte;
     &:focus {
       outline: none;
       //border: 1px solid @light-blue;
@@ -78,7 +78,7 @@
 
 .select2-container--default.select2-container--focus .select2-selection--multiple,
 .select2-container--default .select2-search--dropdown .select2-search__field {
-  border-color: @light-blue !important;
+  border-color: $light-blue !important;
 }
 
 .select2-container--default .select2-results__option[aria-disabled=true] {
@@ -96,20 +96,20 @@
 //Multiple select
 .select2-container--default {
   .select2-selection--multiple {
-    border: 1px solid @gray-lte;
-    border-radius: @input-radius;
+    border: 1px solid $gray-lte;
+    border-radius: $input-radius;
     &:focus {
-      border-color: @light-blue;
+      border-color: $light-blue;
     }
   }
   &.select2-container--focus .select2-selection--multiple {
-    border-color: @gray-lte;
+    border-color: $gray-lte;
   }
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
-  background-color: @light-blue;
-  border-color: darken(@light-blue, 5%);
+  background-color: $light-blue;
+  border-color: darken($light-blue, 5%);
   padding: 1px 10px;
   color: #fff;
 }
