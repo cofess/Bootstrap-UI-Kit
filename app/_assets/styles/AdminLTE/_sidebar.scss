@@ -9,30 +9,30 @@
   left: 0;
   padding-top: 50px;
   min-height: 100%;
-  width: @sidebar-width;
+  width: $sidebar-width;
   z-index: 810;
 
   // Using disposable variable to join statements with a comma
-  @transition-rule: @transition-speed @transition-fn, width @transition-speed @transition-fn;
-  .transition-transform(@transition-rule);
+  $transition-rule: $transition-speed $transition-fn, width $transition-speed $transition-fn;
+  @include transition-transform($transition-rule);
 
-  @media (max-width: @screen-header-collapse) {
+  @media (max-width: $screen-header-collapse) {
     padding-top: 100px;
   }
 
-  @media (max-width: @screen-xs-max) {
-    .translate(-@sidebar-width, 0);
+  @media (max-width: $screen-xs-max) {
+    @include translate(-$sidebar-width, 0);
   }
 
   .sidebar-collapse & {
-    @media (min-width: @screen-sm) {
-      .translate(-@sidebar-width, 0);
+    @media (min-width: $screen-sm) {
+      @include translate(-$sidebar-width, 0);
     }
   }
 
   .sidebar-open & {
-    @media (max-width: @screen-xs-max) {
-      .translate(0, 0);
+    @media (max-width: $screen-xs-max) {
+      @include translate(0, 0);
     }
   }
 }
@@ -54,7 +54,7 @@
   width: 100%;
   padding: 10px;
   overflow: hidden;
-  .clearfix();
+  @include clearfix;
   > .image > img {
     width: 100%;
     max-width: 45px;
@@ -120,7 +120,7 @@
     height: auto;
     padding: 0;
     margin-right: 10px;
-    .transition(transform .5s ease);
+    @include transition(transform .5s ease);
   }
   li > a > .fa-angle-left {
     position: absolute;
@@ -132,7 +132,7 @@
   .menu-open {
     > a > .fa-angle-left,
     > a > .pull-right-container > .fa-angle-left {
-      .rotate(-90deg);
+      @include rotate(-90deg);
     }
   }
   .active > .treeview-menu {

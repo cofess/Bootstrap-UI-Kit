@@ -9,11 +9,11 @@
   z-index: 1030;
   //Navbar
   .navbar {
-    .transition(margin-left @transition-speed @transition-fn);
+    @include transition(margin-left $transition-speed $transition-fn);
     margin-bottom: 0;
-    margin-left: @sidebar-width;
+    margin-left: $sidebar-width;
     border: none;
-    min-height: @navbar-height;
+    min-height: $navbar-height;
     border-radius: 0;
     .layout-top-nav & {
       margin-left: 0;
@@ -43,7 +43,7 @@
   .navbar-custom-menu,
   .navbar-right {
     float: right;
-    @media (max-width: @screen-sm-max) {
+    @media (max-width: $screen-sm-max) {
       a {
         color: inherit;
         background: transparent;
@@ -51,7 +51,7 @@
     }
   }
   .navbar-right {
-    @media (max-width: @screen-header-collapse) {
+    @media (max-width: $screen-header-collapse) {
       float: none;
       .navbar-collapse & {
         margin: 7.5px -15px;
@@ -68,7 +68,7 @@
     float: left;
     background-color: transparent;
     background-image: none;
-    padding: @navbar-padding-vertical @navbar-padding-horizontal;
+    padding: $navbar-padding-vertical $navbar-padding-horizontal;
     //Add the fontawesome bars icon
     font-family: fontAwesome;
     &:before {
@@ -107,14 +107,14 @@
 
   //Logo bar
   .logo {
-    .transition(width @transition-speed @transition-fn);
+    @include transition(width $transition-speed $transition-fn);
     display: block;
     float: left;
-    height: @navbar-height;
+    height: $navbar-height;
     font-size: 20px;
     line-height: 50px;
     text-align: center;
-    width: @sidebar-width;
+    width: $sidebar-width;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 0 15px;
     font-weight: 300;
@@ -161,7 +161,7 @@
     position: absolute;
     top: 15px;
     right: 10px;
-    .border-radius(2px);
+    @include border-radius(2px);
     > li > a {
       color: #444;
       text-decoration: none;
@@ -175,17 +175,17 @@
     }
   }
 
-  @media (max-width: @screen-sm-max) {
+  @media (max-width: $screen-sm-max) {
     > .breadcrumb {
       position: relative;
       margin-top: 5px;
       top: 0;
       right: 0;
       float: none;
-      background: @gray-lte;
+      background: $gray-lte;
       padding-left: 10px;
       li:before {
-        color: darken(@gray-lte, 20%);
+        color: darken($gray-lte, 20%);
       }
     }
   }
@@ -195,11 +195,11 @@
   color: #fff;
   border: 0;
   margin: 0;
-  padding: @navbar-padding-vertical @navbar-padding-horizontal;
+  padding: $navbar-padding-vertical $navbar-padding-horizontal;
 }
 
 //Control navbar scaffolding on x-small screens
-@media (max-width: @screen-sm-max) {
+@media (max-width: $screen-sm-max) {
   .navbar-custom-menu .navbar-nav > li {
     float: left;
   }
@@ -218,7 +218,7 @@
 }
 
 // Collapse header
-@media (max-width: @screen-header-collapse) {
+@media (max-width: $screen-header-collapse) {
   .main-header {
     position: relative;
     .logo,
@@ -236,7 +236,7 @@
 }
 
 .navbar-collapse.pull-left {
-  @media (max-width: @screen-sm-max) {
+  @media (max-width: $screen-sm-max) {
     float: none !important;
     + .navbar-custom-menu {
       display: block;

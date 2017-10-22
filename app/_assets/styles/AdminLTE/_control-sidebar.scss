@@ -13,19 +13,19 @@
 .control-sidebar-bg,
 .control-sidebar {
   top: 0;
-  right: -@control-sidebar-width;
-  width: @control-sidebar-width;
-  .transition(right @transition-speed ease-in-out);
+  right: -$control-sidebar-width;
+  width: $control-sidebar-width;
+  @include transition(right $transition-speed ease-in-out);
 }
 
 // The sidebar
 .control-sidebar {
   position: absolute;
-  padding-top: @navbar-height;
+  padding-top: $navbar-height;
   z-index: 1010;
   // Fix position after header collapse
-  @media (max-width: @screen-sm) {
-    padding-top: @navbar-height + 50;
+  @media (max-width: $screen-sm) {
+    padding-top: $navbar-height + 50;
   }
   // Tab panes
   > .tab-content {
@@ -46,11 +46,11 @@
   .control-sidebar {
     right: 0;
   }
-  @media (min-width: @screen-sm) {
+  @media (min-width: $screen-sm) {
     .content-wrapper,
     .right-side,
     .main-footer {
-      margin-right: @control-sidebar-width;
+      margin-right: $control-sidebar-width;
     }
   }
 }
@@ -76,7 +76,7 @@
       }
     }
     > a {
-      .border-radius(0);
+      @include border-radius(0);
 
       // Hover and active states
       &,
@@ -105,7 +105,7 @@
     }
   }
   // Remove responsiveness on small screens
-  @media (max-width: @screen-sm) {
+  @media (max-width: $screen-sm) {
     display: table;
     > li {
       display: table-cell;
@@ -134,7 +134,7 @@
   padding: 0;
   margin: 0 -15px;
   > li > a {
-    .clearfix();
+    @include clearfix;
     display: block;
     padding: 10px 15px;
     > .control-sidebar-subheading {
@@ -167,30 +167,30 @@
 
 // Dark skin
 .control-sidebar-dark {
-  color: @sidebar-dark-color;
+  color: $sidebar-dark-color;
   //  Background
   &,
   + .control-sidebar-bg {
-    background: @sidebar-dark-bg;
+    background: $sidebar-dark-bg;
   }
   //  Sidebar tabs
   .nav-tabs.control-sidebar-tabs {
-    border-bottom: darken(@sidebar-dark-bg, 3%);
+    border-bottom: darken($sidebar-dark-bg, 3%);
     > li {
       > a {
-        background: darken(@sidebar-dark-bg, 5%);
-        color: @sidebar-dark-color;
+        background: darken($sidebar-dark-bg, 5%);
+        color: $sidebar-dark-color;
         // Hover and active states
         &,
         &:hover,
         &:focus {
-          border-left-color: darken(@sidebar-dark-bg, 7%);
-          border-bottom-color: darken(@sidebar-dark-bg, 7%);
+          border-left-color: darken($sidebar-dark-bg, 7%);
+          border-bottom-color: darken($sidebar-dark-bg, 7%);
         }
         &:hover,
         &:focus,
         &:active {
-          background: darken(@sidebar-dark-bg, 3%);
+          background: darken($sidebar-dark-bg, 3%);
         }
         &:hover {
           color: #fff;
@@ -203,7 +203,7 @@
           &:hover,
           &:focus,
           &:active {
-            background: @sidebar-dark-bg;
+            background: $sidebar-dark-bg;
             color: #fff;
           }
         }
@@ -220,11 +220,11 @@
     > li {
       > a {
         &:hover {
-          background: @sidebar-dark-hover-bg;
+          background: $sidebar-dark-hover-bg;
         }
         .menu-info {
           > p {
-            color: @sidebar-dark-color;
+            color: $sidebar-dark-color;
           }
         }
       }
@@ -234,31 +234,31 @@
 
 // Light skin
 .control-sidebar-light {
-  color: lighten(@sidebar-light-color, 10%);
+  color: lighten($sidebar-light-color, 10%);
   //  Background
   &,
   + .control-sidebar-bg {
-    background: @sidebar-light-bg;
-    border-left: 1px solid @gray-lte;
+    background: $sidebar-light-bg;
+    border-left: 1px solid $gray-lte;
   }
   //  Sidebar tabs
   .nav-tabs.control-sidebar-tabs {
-    border-bottom: @gray-lte;
+    border-bottom: $gray-lte;
     > li {
       > a {
-        background: darken(@sidebar-light-bg, 5%);
-        color: @sidebar-light-color;
+        background: darken($sidebar-light-bg, 5%);
+        color: $sidebar-light-color;
         // Hover and active states
         &,
         &:hover,
         &:focus {
-          border-left-color: @gray-lte;
-          border-bottom-color: @gray-lte;
+          border-left-color: $gray-lte;
+          border-bottom-color: $gray-lte;
         }
         &:hover,
         &:focus,
         &:active {
-          background: darken(@sidebar-light-bg, 3%);
+          background: darken($sidebar-light-bg, 3%);
         }
       }
       // Active state
@@ -268,7 +268,7 @@
           &:hover,
           &:focus,
           &:active {
-            background: @sidebar-light-bg;
+            background: $sidebar-light-bg;
             color: #111;
           }
         }
@@ -286,11 +286,11 @@
     > li {
       > a {
         &:hover {
-          background: @sidebar-light-hover-bg;
+          background: $sidebar-light-hover-bg;
         }
         .menu-info {
           > p {
-            color: lighten(@sidebar-light-color, 10%);
+            color: lighten($sidebar-light-color, 10%);
           }
         }
       }
