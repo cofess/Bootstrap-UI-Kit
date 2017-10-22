@@ -14,7 +14,7 @@
   .widget-user-header {
     padding: 20px;
     height: 120px;
-    .border-top-radius(@box-border-radius);
+    @include border-top-radius($box-border-radius);
   }
   //User name
   .widget-user-username {
@@ -50,7 +50,7 @@
   //User name container
   .widget-user-header {
     padding: 20px;
-    .border-top-radius(@box-border-radius);
+    @include border-top-radius($box-border-radius);
   }
   //User name
   .widget-user-username {

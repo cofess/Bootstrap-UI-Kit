@@ -83,7 +83,7 @@
 
 .bg-gray {
   color: #000;
-  background-color: @gray-lte !important;
+  background-color: $gray-lte !important;
 }
 
 .bg-gray-light {
@@ -91,206 +91,206 @@
 }
 
 .bg-black {
-  background-color: @black !important;
+  background-color: $black !important;
 }
 
 .bg-red {
-  background-color: @red !important;
+  background-color: $red !important;
 }
 
 .bg-yellow {
-  background-color: @yellow !important;
+  background-color: $yellow !important;
 }
 
 .bg-aqua {
-  background-color: @aqua !important;
+  background-color: $aqua !important;
 }
 
 .bg-blue {
-  background-color: @blue !important;
+  background-color: $blue !important;
 }
 
 .bg-light-blue {
-  background-color: @light-blue !important;
+  background-color: $light-blue !important;
 }
 
 .bg-green {
-  background-color: @green !important;
+  background-color: $green !important;
 }
 
 .bg-navy {
-  background-color: @navy !important;
+  background-color: $navy !important;
 }
 
 .bg-teal {
-  background-color: @teal !important;
+  background-color: $teal !important;
 }
 
 .bg-olive {
-  background-color: @olive !important;
+  background-color: $olive !important;
 }
 
 .bg-lime {
-  background-color: @lime !important;
+  background-color: $lime !important;
 }
 
 .bg-orange {
-  background-color: @orange !important;
+  background-color: $orange !important;
 }
 
 .bg-fuchsia {
-  background-color: @fuchsia !important;
+  background-color: $fuchsia !important;
 }
 
 .bg-purple {
-  background-color: @purple !important;
+  background-color: $purple !important;
 }
 
 .bg-maroon {
-  background-color: @maroon !important;
+  background-color: $maroon !important;
 }
 
 //Set of Active Background Colors
 .bg-gray-active {
   color: #000;
-  background-color: darken(@gray-lte, 10%) !important;
+  background-color: darken($gray-lte, 10%) !important;
 }
 
 .bg-black-active {
-  background-color: darken(@black, 10%) !important;
+  background-color: darken($black, 10%) !important;
 }
 
 .bg-red-active {
-  background-color: darken(@red , 6%) !important;
+  background-color: darken($red , 6%) !important;
 }
 
 .bg-yellow-active {
-  background-color: darken(@yellow , 6%) !important;
+  background-color: darken($yellow , 6%) !important;
 }
 
 .bg-aqua-active {
-  background-color: darken(@aqua , 6%) !important;
+  background-color: darken($aqua , 6%) !important;
 }
 
 .bg-blue-active {
-  background-color: darken(@blue , 10%) !important;
+  background-color: darken($blue , 10%) !important;
 }
 
 .bg-light-blue-active {
-  background-color: darken(@light-blue , 6%) !important;
+  background-color: darken($light-blue , 6%) !important;
 }
 
 .bg-green-active {
-  background-color: darken(@green , 5%) !important;
+  background-color: darken($green , 5%) !important;
 }
 
 .bg-navy-active {
-  background-color: darken(@navy , 2%) !important;
+  background-color: darken($navy , 2%) !important;
 }
 
 .bg-teal-active {
-  background-color: darken(@teal , 5%) !important;
+  background-color: darken($teal , 5%) !important;
 }
 
 .bg-olive-active {
-  background-color: darken(@olive , 5%) !important;
+  background-color: darken($olive , 5%) !important;
 }
 
 .bg-lime-active {
-  background-color: darken(@lime , 5%) !important;
+  background-color: darken($lime , 5%) !important;
 }
 
 .bg-orange-active {
-  background-color: darken(@orange , 5%) !important;
+  background-color: darken($orange , 5%) !important;
 }
 
 .bg-fuchsia-active {
-  background-color: darken(@fuchsia , 5%) !important;
+  background-color: darken($fuchsia , 5%) !important;
 }
 
 .bg-purple-active {
-  background-color: darken(@purple , 5%) !important;
+  background-color: darken($purple , 5%) !important;
 }
 
 .bg-maroon-active {
-  background-color: darken(@maroon , 3%) !important;
+  background-color: darken($maroon , 3%) !important;
 }
 
 //Disabled!
 [class^="bg-"].disabled {
-  .opacity(.65);
+  @include opacity(.65);
 }
 
 // Text colors
 .text-red {
-  color: @red !important;
+  color: $red !important;
 }
 
 .text-yellow {
-  color: @yellow !important;
+  color: $yellow !important;
 }
 
 .text-aqua {
-  color: @aqua !important;
+  color: $aqua !important;
 }
 
 .text-blue {
-  color: @blue !important;
+  color: $blue !important;
 }
 
 .text-black {
-  color: @black !important;
+  color: $black !important;
 }
 
 .text-light-blue {
-  color: @light-blue !important;
+  color: $light-blue !important;
 }
 
 .text-green {
-  color: @green !important;
+  color: $green !important;
 }
 
 .text-gray {
-  color: @gray-lte !important;
+  color: $gray-lte !important;
 }
 
 .text-navy {
-  color: @navy !important;
+  color: $navy !important;
 }
 
 .text-teal {
-  color: @teal !important;
+  color: $teal !important;
 }
 
 .text-olive {
-  color: @olive !important;
+  color: $olive !important;
 }
 
 .text-lime {
-  color: @lime !important;
+  color: $lime !important;
 }
 
 .text-orange {
-  color: @orange !important;
+  color: $orange !important;
 }
 
 .text-fuchsia {
-  color: @fuchsia !important;
+  color: $fuchsia !important;
 }
 
 .text-purple {
-  color: @purple !important;
+  color: $purple !important;
 }
 
 .text-maroon {
-  color: @maroon !important;
+  color: $maroon !important;
 }
 
 .link-muted {
-  color: darken(@gray-lte, 30%);
+  color: darken($gray-lte, 30%);
   &:hover,
   &:focus {
-    color: darken(@gray-lte, 40%);
+    color: darken($gray-lte, 40%);
   }
 }
 
@@ -346,7 +346,7 @@
 
 // Remove border radius
 .flat {
-  .border-radius(0) !important;
+  @include border-radius(0!important);
 }
 
 .text-bold {
@@ -368,52 +368,52 @@
 
 // Gradient Background colors
 .bg-teal-gradient {
-  .gradient(@teal; @teal; lighten(@teal, 16%)) !important;
+  @include gradient($teal, $teal, lighten($teal, 16%) !important);
   color: #fff;
 }
 
 .bg-light-blue-gradient {
-  .gradient(@light-blue; @light-blue; lighten(@light-blue, 12%)) !important;
+  @include gradient($light-blue, $light-blue, lighten($light-blue, 12%) !important);
   color: #fff;
 }
 
 .bg-blue-gradient {
-  .gradient(@blue; @blue; lighten(@blue, 7%)) !important;
+  @include gradient($blue, $blue, lighten($blue, 7%) !important);
   color: #fff;
 }
 
 .bg-aqua-gradient {
-  .gradient(@aqua; @aqua; lighten(@aqua, 7%)) !important;
+  @include gradient($aqua, $aqua, lighten($aqua, 7%) !important);
   color: #fff;
 }
 
 .bg-yellow-gradient {
-  .gradient(@yellow; @yellow; lighten(@yellow, 16%)) !important;
+  @include gradient($yellow, $yellow, lighten($yellow, 16%) !important);
   color: #fff;
 }
 
 .bg-purple-gradient {
-  .gradient(@purple; @purple; lighten(@purple, 16%)) !important;
+  @include gradient($purple, $purple, lighten($purple, 16%) !important);
   color: #fff;
 }
 
 .bg-green-gradient {
-  .gradient(@green; @green; lighten(@green, 7%)) !important;
+  @include gradient($green, $green, lighten($green, 7%) !important);
   color: #fff;
 }
 
 .bg-red-gradient {
-  .gradient(@red; @red; lighten(@red, 10%)) !important;
+  @include gradient($red, $red, lighten($red, 10%) !important);
   color: #fff;
 }
 
 .bg-black-gradient {
-  .gradient(@black; @black; lighten(@black, 10%)) !important;
+  @include gradient($black, $black, lighten($black, 10%) !important);
   color: #fff;
 }
 
 .bg-maroon-gradient {
-  .gradient(@maroon; @maroon; lighten(@maroon, 10%)) !important;
+  @include gradient($maroon, $maroon, lighten($maroon, 10%) !important);
   color: #fff;
 }
 
@@ -444,7 +444,7 @@
 
 .list-seperator {
   height: 1px;
-  background: @box-border-color;
+  background: $box-border-color;
   margin: 15px 0 9px 0;
 }
 
@@ -465,7 +465,7 @@
 
 //User block
 .user-block {
-  .clearfix();
+  @include clearfix();
   img {
     width: 40px;
     height: 40px;
@@ -487,7 +487,7 @@
   }
   &.user-block-sm {
     img {
-      &:extend(.img-sm);
+      @extend .img-sm;
     }
     .username,
     .description,
@@ -533,18 +533,18 @@
 
 // Image bordered
 .img-bordered {
-  border: 3px solid @gray-lte;
+  border: 3px solid $gray-lte;
   padding: 3px;
 }
 
 .img-bordered-sm {
-  border: 2px solid @gray-lte;
+  border: 2px solid $gray-lte;
   padding: 2px;
 }
 
 //General attachemnt block
 .attachment-block {
-  border: 1px solid @box-border-color;
+  border: 1px solid $box-border-color;
   padding: 5px;
   margin-bottom: 10px;
   background: #f7f7f7;
@@ -588,9 +588,9 @@
 }
 
 .full-opacity-hover {
-  .opacity(.65);
+  @include opacity(.65);
   &:hover {
-    .opacity(1);
+    @include opacity(1);
   }
 }
 

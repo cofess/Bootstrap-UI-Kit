@@ -38,7 +38,7 @@
 }
 
 .mailbox-attachments {
-  &:extend(.list-unstyled);
+  @extend .list-unstyled;
   li {
     float: left;
     width: 200px;
@@ -84,5 +84,5 @@
 }
 
 .mailbox-attachment-close {
-  &:extend(.close);
+  @extend .close;
 }

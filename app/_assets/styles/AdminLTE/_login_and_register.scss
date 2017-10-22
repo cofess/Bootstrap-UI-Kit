@@ -16,14 +16,14 @@
 
 .login-page,
 .register-page {
-  background: @gray-lte;
+  background: $gray-lte;
 }
 
 .login-box,
 .register-box {
   width: 360px;
   margin: 7% auto;
-  @media (max-width: @screen-sm) {
+  @media (max-width: $screen-sm) {
     width: 90%;
     margin-top: 20px;
   }
