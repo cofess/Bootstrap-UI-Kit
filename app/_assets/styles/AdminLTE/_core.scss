@@ -19,7 +19,7 @@ body {
 
 /* Layout */
 .wrapper {
-  .clearfix();
+  @include clearfix;
   height: 100%;
   position: relative;
   overflow-x: hidden;
@@ -34,7 +34,7 @@ body {
 }
 
 .layout-boxed {
-  background: url('@{boxed-layout-bg-image-path}') repeat fixed;
+  background: url($boxed-layout-bg-image-path) repeat fixed;
 }
 
 /*
@@ -43,35 +43,34 @@ body {
 .content-wrapper,
 .main-footer {
   // Using disposable variable to join statements with a comma
-  @transition-rule: @transition-speed @transition-fn,
-  margin @transition-speed @transition-fn;
-  .transition-transform(@transition-rule);
-  margin-left: @sidebar-width;
+  $transition-rule: $transition-speed $transition-fn,margin $transition-speed $transition-fn;
+  @include transition-transform($transition-rule);
+  margin-left: $sidebar-width;
   z-index: 820;
   // Top nav layout
   .layout-top-nav & {
     margin-left: 0;
   }
-  @media (max-width: @screen-xs-max) {
+  @media (max-width: $screen-xs-max) {
     margin-left: 0;
   }
   // When opening the sidebar on large screens
   .sidebar-collapse & {
-    @media (min-width: @screen-sm) {
+    @media (min-width: $screen-sm) {
       margin-left: 0;
     }
   }
   // When opening the sidebar on small screens
   .sidebar-open & {
-    @media (max-width: @screen-xs-max) {
-      .translate(@sidebar-width, 0);
+    @media (max-width: $screen-xs-max) {
+      @include translate($sidebar-width, 0);
     }
   }
 }
 
 .content-wrapper  {
   min-height: 100%;
-  background-color: @content-bg;
+  background-color: $content-bg;
   z-index: 800;
 }
 
@@ -79,7 +78,7 @@ body {
   background: #fff;
   padding: 15px;
   color: #444;
-  border-top: 1px solid @gray-lte;
+  border-top: 1px solid $gray-lte;
 }
 
 /* Fixed layout */
@@ -97,7 +96,7 @@ body {
   .content-wrapper,
   .right-side {
     padding-top: 50px;
-    @media (max-width: @screen-header-collapse) {
+    @media (max-width: $screen-header-collapse) {
       padding-top: 100px;
     }
   }
@@ -121,7 +120,7 @@ body {
   .main-header .logo,
   .menu-open .fa-angle-left {
     /* Fix for IE */
-    .transition(none);
+    @include transition(none);
   }
 }
 
@@ -129,7 +128,7 @@ body {
 .content {
   min-height: 250px;
   padding: 15px;
-  .container-fixed(@grid-gutter-width);
+  @include container-fixed($grid-gutter-width);
 }
 
 /* H1 - H6 font */
@@ -150,7 +149,7 @@ h6,
 
 /* General Links */
 a {
-  color: @link-color;
+  color: $link-color;
 }
 
 a:hover,
@@ -158,7 +157,7 @@ a:active,
 a:focus {
   outline: none;
   text-decoration: none;
-  color: @link-hover-color;
+  color: $link-hover-color;
 }
 
 /* Page Header */

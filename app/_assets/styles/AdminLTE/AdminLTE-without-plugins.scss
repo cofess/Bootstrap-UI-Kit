@@ -8,8 +8,10 @@
 //Bootstrap Variables & Mixins
 //The core bootstrap code have not been modified. These files
 //are included only for reference.
-@import (reference) "../bootstrap-less/mixins";
-@import (reference) "../bootstrap-less/variables";
+@import "../skeleton/framework/variables";
+
+@import "../skeleton/bootstrap/mixins";
+@import "../skeleton/bootstrap/variables";
 //MISC
 //----
 @import "core";
