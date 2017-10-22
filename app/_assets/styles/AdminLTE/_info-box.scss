@@ -8,7 +8,7 @@
   background: #fff;
   width: 100%;
   box-shadow: $box-boxshadow;
-  @include border-radius(2px);
+  border-radius: 2px;
   margin-bottom: 15px;
   small {
     font-size: 14px;
@@ -19,7 +19,7 @@
     height: 2px;
     &,
     & .progress-bar {
-      @include border-radius(0);
+      border-radius: 0;
     }
     .progress-bar {
       background: #fff;

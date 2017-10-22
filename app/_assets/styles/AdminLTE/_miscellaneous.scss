@@ -346,7 +346,7 @@
 
 // Remove border radius
 .flat {
-  @include border-radius(0!important);
+  border-radius: 0!important;
 }
 
 .text-bold {

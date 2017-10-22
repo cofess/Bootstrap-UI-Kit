@@ -5,7 +5,7 @@
 
 // Base styles (regardless of theme)
 .callout {
-  @include border-radius(3px);
+  border-radius: 3px;
   margin: 0 0 20px 0;
   padding: 15px 30px 15px 15px;
   border-left: 5px solid #eee;

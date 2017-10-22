@@ -10,7 +10,7 @@
     padding: 10px;
     text-align: center;
     img {
-      @include border-radius(50%);
+      border-radius: 50%;
       max-width: 100%;
       height: auto;
     }

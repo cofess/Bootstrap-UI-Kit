@@ -4,7 +4,7 @@
  */
 .box {
   position: relative;
-  @include border-radius($box-border-radius);
+  border-radius: $box-border-radius;
   background: #ffffff;
   border-top: 3px solid $box-default-border-top-color;
   margin-bottom: 20px;
@@ -148,7 +148,7 @@
   .overlay {
     z-index: 50;
     background: rgba(255, 255, 255, 0.7);
-    @include border-radius($box-border-radius);
+    border-radius: $box-border-radius;
     > .fa {
       position: absolute;
       top: 50%;
@@ -334,7 +334,7 @@
   overflow: auto;
   // Todo list element
   > li {
-    @include border-radius(2px);
+    border-radius: 2px;
     padding: 10px;
     background: #f4f4f4;
     margin-bottom: 2px;
@@ -428,7 +428,7 @@
       width: 40px;
       height: 40px;
       border: 2px solid transparent;
-      @include border-radius(50%);
+      border-radius: 50%;
     }
 
     > .online {
@@ -450,7 +450,7 @@
 
     // The attachment
     > .attachment {
-      @include border-radius($attachment-border-radius);
+      border-radius: $attachment-border-radius;
       background: #f4f4f4;
       margin-left: 65px;
       margin-right: 15px;
