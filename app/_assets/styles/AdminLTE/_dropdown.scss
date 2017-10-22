@@ -16,7 +16,7 @@
     margin-right: 10px;
   }
   > li > a:hover {
-    background-color: lighten(@gray-lte, 5%);
+    background-color: lighten($gray-lte, 5%);
     color: #333;
   }
   > .divider {
@@ -41,7 +41,7 @@
   }
   //Define header class
   > .dropdown-menu > li.header {
-    .border-radius(4px; 4px; 0; 0);
+    @include border-radius(4px, 4px, 0, 0);
     background-color: #ffffff;
     padding: 7px 10px;
     border-bottom: 1px solid #f4f4f4;
@@ -51,13 +51,13 @@
 
   //Define footer class
   > .dropdown-menu > li.footer > a {
-    .border-radius(0; 0; 4px; 4px);
+    @include border-radius(0, 0, 4px, 4px);
     font-size: 12px;
     background-color: #fff;
     padding: 7px 10px;
     border-bottom: 1px solid #eeeeee;
     color: #444 !important;
-    @media (max-width: @screen-sm-max) {
+    @media (max-width: $screen-sm-max) {
       background: #fff !important;
       color: #444 !important;
     }
@@ -147,7 +147,7 @@
         color: #888888;
       }
 
-      .clearfix();
+      @include clearfix;
 
     }
 
@@ -178,14 +178,14 @@
 //User menu
 .navbar-nav > .user-menu {
   > .dropdown-menu {
-    .border-top-radius(0);
+    @include border-top-radius(0);
     padding: 1px 0 0 0;
     border-top-width: 0;
     width: 280px;
 
     &,
     > .user-body {
-      .border-bottom-radius(4px);
+      @include border-bottom-radius(4px);
     }
     // Header menu
     > li.user-header {
@@ -220,10 +220,10 @@
       padding: 15px;
       border-bottom: 1px solid #f4f4f4;
       border-top: 1px solid #dddddd;
-      .clearfix();
+      @include clearfix;
       a {
         color: #444 !important;
-        @media (max-width: @screen-sm-max) {
+        @media (max-width: $screen-sm-max) {
           background: #fff !important;
           color: #444 !important;
         }
@@ -234,11 +234,11 @@
     > .user-footer {
       background-color: #f9f9f9;
       padding: 10px;
-      .clearfix();
+      @include clearfix;
       .btn-default {
         color: #666666;
         &:hover {
-          @media (max-width: @screen-sm-max) {
+          @media (max-width: $screen-sm-max) {
             background-color: #f9f9f9;
           }
         }
@@ -252,7 +252,7 @@
     border-radius: 50%;
     margin-right: 10px;
     margin-top: -2px;
-    @media (max-width: @screen-xs-max) {
+    @media (max-width: $screen-xs-max) {
       float: none;
       margin-right: 0;
       margin-top: -8px;
@@ -265,7 +265,7 @@
  the class .animated-dropdown-menu to the .dropdown-menu ul (or ol)*/
 .open:not(.dropup) > .animated-dropdown-menu {
   backface-visibility: visible !important;
-  .animation(flipInX .7s both);
+  @include animation(flipInX .7s both);
 
 }
 
@@ -333,7 +333,7 @@
   }
 }
 
-@media (max-width: @screen-sm-max) {
+@media (max-width: $screen-sm-max) {
   .navbar-custom-menu > .navbar-nav {
     float: right;
     > li {

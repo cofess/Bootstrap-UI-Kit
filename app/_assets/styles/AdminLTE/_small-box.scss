@@ -4,11 +4,11 @@
  */
 
 .small-box {
-  .border-radius(2px);
+  @include border-radius(2px);
   position: relative;
   display: block;
   margin-bottom: 20px;
-  box-shadow: @box-boxshadow;
+  box-shadow: $box-boxshadow;
   // content wrapper
   > .inner {
     padding: 10px;
@@ -55,7 +55,7 @@
 
   // the icon
   .icon {
-    .transition(all @transition-speed linear);
+    @include transition(all $transition-speed linear);
     position: absolute;
     top: -10px;
     right: 10px;
@@ -75,7 +75,7 @@
   }
 }
 
-@media (max-width: @screen-xs-max) {
+@media (max-width: $screen-xs-max) {
   // No need for icons on very small devices
   .small-box {
     text-align: center;
