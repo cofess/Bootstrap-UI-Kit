@@ -123,7 +123,7 @@
     //Section Headning
     &.header {
       color: lighten($sidebar-dark-bg, 20%);
-      background: darken($sidebar-dark-bg, 4%);
+      // background: darken($sidebar-dark-bg, 4%);
     }
     //links
     > a {
@@ -223,7 +223,7 @@
     //Section Headning
     &.header {
       color: lighten($sidebar-light-color, 25%);
-      background: $sidebar-light-bg;
+      // background: $sidebar-light-bg;
     }
     //links
     > a {
