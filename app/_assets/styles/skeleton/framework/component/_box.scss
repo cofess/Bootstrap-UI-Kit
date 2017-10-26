@@ -1,0 +1,241 @@
+.box {
+  background-color: #fff;
+  // padding: 20px;
+  border: 1px solid $border-color;
+  >.box-title {
+    padding: $panel-heading-padding;
+    font-size: $widget-title-font-size;
+  }
+}
+
+.box-header {
+  padding: $panel-heading-padding;
+  background-color: $panel-default-heading-bg;
+  border-bottom: 1px solid $panel-default-border;
+  @include clearfix;
+  .box-title {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 15px;
+    min-width: 50px;
+    font-size: 16px;
+    color: inherit;
+  }
+}
+
+.box-actions {
+  float: right;
+  @media (max-width: $screen-xs-max) {
+    float: left
+  }
+  a {
+    color: $link-normal-color;
+    &:focus,
+    &:hover,
+    &:active {
+      background: none;
+      border: 0;
+      color: $link-hover-color
+    }
+  }
+  ul {
+    @include clearfix;
+    margin-top: -4px;
+    li {
+      float: left;
+      list-style: none;
+      a {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 0;
+        line-height: 30px;
+        border: 0
+      }
+      &:first-child {
+        a {
+          margin-left: 0
+        }
+      }
+    }
+  }
+  .nav-tabs {
+    border: 0;
+    li {
+      &.active {
+        a {
+          background: none;
+          border: 0
+        }
+      }
+      a {
+        &:focus,
+        &:hover,
+        &:active {
+          background: none;
+          border: 0
+        }
+      }
+    }
+  }
+}
+
+.box-body {
+  padding: $panel-body-padding;
+}
+
+.box-footer {
+  padding: $panel-footer-padding;
+  background-color: $panel-footer-bg;
+  border-top: 1px solid $panel-inner-border;
+}
+
+.box-lined {
+  .box-title {
+    font-size: 18px;
+    &:after {
+      display: block;
+      content: '';
+      width: 50px;
+      height: 1px;
+      margin-top: 10px;
+      background-color: $normal-color;
+      -webkit-transition: width .3s ease;
+      transition: width .3s ease;
+    }
+  }
+  &:hover {
+    .box-title {
+      &:after {
+        width: 30px
+      }
+    }
+  }
+  &.box-main {
+    .box-title {
+      &:after {
+        background-color: $main-color;
+      }
+    }
+  }
+  &.box-sub {
+    .box-title {
+      &:after {
+        background-color: $sub-color;
+      }
+    }
+  }
+  &.box-mix {
+    .box-title {
+      &:after {
+        background-color: $mix-color;
+      }
+    }
+  }
+  &.box-dif {
+    .box-title {
+      &:after {
+        background-color: $dif-color;
+      }
+    }
+  }
+}
+
+// .box-primary {
+//   >.box-title {
+//     &:after {
+//       background-color: $panel-primary-heading-bg;
+//     }
+//   }
+// }
+// .box-info {
+//   >.box-title {
+//     &:after {
+//       background-color: $panel-info-heading-bg;
+//     }
+//   }
+// }
+// .box-success {
+//   >.box-title {
+//     &:after {
+//       background-color: $panel-success-heading-bg;
+//     }
+//   }
+// }
+// .box-danger {
+//   >.box-title {
+//     &:after {
+//       background-color: $panel-danger-heading-bg;
+//     }
+//   }
+// }
+// .box-warning {
+//   >.box-title {
+//     &:after {
+//       background-color: $panel-warning-heading-bg;
+//     }
+//   }
+// }
+.box-bordered {
+  border-top: 3px solid $normal-color;
+  &.box-main {
+    border-top: 3px solid $main-color;
+  }
+  &.box-sub {
+    border-top: 3px solid $sub-color;
+  }
+  &.box-mix {
+    border-top: 3px solid $mix-color;
+  }
+  &.box-dif {
+    border-top: 3px solid $dif-color;
+  }
+}
+
+.box-cover {
+  .box-header {
+    background-color: $normal-color;
+    color: #fff
+  }
+  &.box-main {
+    .box-header {
+      background-color: $main-color;
+    }
+  }
+  &.box-sub {
+    .box-header {
+      background-color: $sub-color;
+    }
+  }
+  &.box-mix {
+    .box-header {
+      background-color: $mix-color;
+    }
+  }
+  &.box-dif {
+    .box-header {
+      background-color: $dif-color;
+    }
+  }
+}
+
+.box-alpha {
+  background-color: transparent;
+  border: 0;
+  .box-header,
+  .box-title,
+  .box-body,
+  .box-footer {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0
+  }
+}
+
+.box-unborder {
+  border: 0;
+  .box-header,
+  .box-footer {
+    border: 0;
+  }
+}
