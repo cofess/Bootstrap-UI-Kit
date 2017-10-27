@@ -42,6 +42,7 @@
   ul {
     @include clearfix;
     margin-top: -4px;
+    padding-left: 0;
     li {
       float: left;
       list-style: none;
