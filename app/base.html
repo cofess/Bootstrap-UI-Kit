@@ -5,6 +5,7 @@
 <!--[if (gt IE 9)|!(IE)]><!-->
 <html class="noIE" lang="en">
 <!--<![endif]-->
+
 <head>
   {% include "_includes/meta.html" %}
   <title>AdminLTE 2 | Starter</title>
@@ -30,49 +31,254 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
+
 <body class="hold-transition skin-black-light sidebar-mini">
-<div class="wrapper">
-
-  <!-- Main Header -->
-  {% include "_includes/header.html" %}
-  <!-- Left side column. contains the logo and sidebar -->
-  {% include "_includes/sidebar.html" %}
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Page Header
-        <small>Optional description</small>
+  <div class="wrapper">
+    <!-- Main Header -->
+    {% include "_includes/header.html" %}
+    <!-- Left side column. contains the logo and sidebar -->
+    {% include "_includes/sidebar.html" %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+        Base
+        <small>Preview page</small>
       </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-        <li class="active">Here</li>
-      </ol>
-    </section>
-
-    <!-- Main content -->
-    <section class="content container-fluid">
-
-      <!--------------------------
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li><a href="#">Overview</a></li>
+          <li class="active">Base</li>
+        </ol>
+      </section>
+      <!-- Main content -->
+      <section class="content container-fluid">
+        <!--------------------------
         | Your Page Content Here |
         -------------------------->
-
-    </section>
-    <!-- /.content -->
+        <section class="box my-3">
+          <div class="box-header">
+            <h3 class="box-title">栅格参数</h3>
+          </div>
+          <div class="box-body">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>
+                    超小屏幕
+                    <small>手机 (&lt;768px)</small>
+                  </th>
+                  <th>
+                    小屏幕
+                    <small>平板 (≥768px)</small>
+                  </th>
+                  <th>
+                    中等屏幕
+                    <small>桌面显示器 (≥992px)</small>
+                  </th>
+                  <th>
+                    大屏幕
+                    <small>大桌面显示器 (≥1200px)</small>
+                  </th>
+                  <th>
+                    超大屏幕
+                    <small>大屏显示器 (≥1440px)</small>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="text-nowrap" scope="row">栅格系统行为</th>
+                  <td>总是水平排列</td>
+                  <td colspan="4">开始是堆叠在一起的，当大于这些阈值时将变为水平排列C</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row"><code>.container</code> 最大宽度</th>
+                  <td>None （自动）</td>
+                  <td>750px</td>
+                  <td>970px</td>
+                  <td>1170px</td>
+                  <td>1366px</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">类前缀</th>
+                  <td><code>.col-xs-</code></td>
+                  <td><code>.col-sm-</code></td>
+                  <td><code>.col-md-</code></td>
+                  <td><code>.col-lg-</code></td>
+                  <td><code>.col-xl-</code></td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">列（column）数</th>
+                  <td colspan="5">12</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">最大列（column）宽</th>
+                  <td class="text-muted">自动</td>
+                  <td>~62px</td>
+                  <td>~81px</td>
+                  <td>~97px</td>
+                  <td>~110px</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">槽（gutter）宽</th>
+                  <td colspan="5">30px （每列左右均有 15px）</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">可嵌套</th>
+                  <td colspan="5">是</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">偏移（Offsets）</th>
+                  <td colspan="5">是</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">列排序</th>
+                  <td colspan="5">是</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="box my-3">
+          <div class="box-header">
+            <h3 class="box-title">Border radius</h3>
+          </div>
+          <div class="box-body">
+            <div class="flex flex-gap-1">
+              <div class="bg-smoke radius-0 h-3 w-3 flex flex-center">radius-0</div>
+              <div class="bg-light radius-1 h-3 w-3 flex flex-center">radius-1</div>
+              <div class="bg-light radius-2 h-3 w-3 flex flex-center">radius-2</div>
+              <div class="bg-light radius-3 h-3 w-3 flex flex-center">radius-3</div>
+              <div class="bg-black text-smoke radius-max px-5 nowrap h-3 flex flex-center">radius-max</div>
+              <div class="bg-black text-smoke radius-100 h-3 w-3 flex flex-center">radius-100</div>
+            </div>
+          </div>
+        </section>
+        <section class="box my-3">
+          <div class="box-header">
+            <h3 class="box-title">Color</h3>
+          </div>
+          <div class="box-body">
+            <div class="grid grid-cols-7 grid-gap-1">
+              <div class="bg-white p-1">bg-white</div>
+              <div class="bg-smoke p-1">bg-smoke</div>
+              <div class="bg-light p-1">bg-light</div>
+              <div class="bg-silver p-1">bg-silver</div>
+              <div class="bg-dark p-1">bg-dark</div>
+              <div class="bg-gray p-1">bg-gray</div>
+              <div class="bg-black p-1">bg-black</div>
+              <div class="text-white p-1">white</div>
+              <div class="text-smoke p-1">smoke</div>
+              <div class="text-light p-1">light</div>
+              <div class="text-silver p-1">silver</div>
+              <div class="text-dark p-1">dark</div>
+              <div class="text-gray p-1">gray</div>
+              <div class="text-black p-1">black</div>
+            </div>
+          </div>
+        </section>
+        <section class="box my-3">
+          <div class="box-header">
+            <h3 class="box-title">row gutter</h3>
+          </div>
+          <div class="box-body">
+            <div class="well">
+              <p>no-gutter</p>
+              <p>gutter-xs</p>
+              <p>gutter-sm</p>
+              <p>gutter-lg</p>
+              <p>gutter-xl</p>
+            </div>
+          </div>
+        </section>
+        <section class="box my-3">
+          <div class="box-header">
+            <h3 class="box-title">responsive float</h3>
+          </div>
+          <div class="box-body">
+            <div class="row">
+              <div class="col-md-6">
+                <h4>float left</h4>
+                <div class="well">
+                  <p>pull-left</p>
+                  <p>pull-xs-left</p>
+                  <p>pull-sm-left</p>
+                  <p>pull-md-left</p>
+                  <p>pull-lg-left</p>
+                  <p>pull-xl-left</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h4>float right</h4>
+                <div class="well">
+                  <p>pull-right</p>
+                  <p>pull-xs-right</p>
+                  <p>pull-sm-right</p>
+                  <p>pull-md-right</p>
+                  <p>pull-lg-right</p>
+                  <p>pull-xl-right</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="box my-3">
+          <div class="box-header">
+            <h3 class="box-title">responsive text align</h3>
+          </div>
+          <div class="box-body">
+            <div class="row">
+              <div class="col-md-4">
+                <h4>text align left</h4>
+                <div class="well">
+                  <p>text-left</p>
+                  <p>text-xs-left</p>
+                  <p>text-sm-left</p>
+                  <p>text-md-left</p>
+                  <p>text-lg-left</p>
+                  <p>text-xl-left</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4>text-align right</h4>
+                <div class="well">
+                  <p>text-right</p>
+                  <p>text-xs-right</p>
+                  <p>text-sm-right</p>
+                  <p>text-md-right</p>
+                  <p>text-lg-right</p>
+                  <p>text-xl-right</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4>text-align center</h4>
+                <div class="well">
+                  <p>text-center</p>
+                  <p>text-xs-center</p>
+                  <p>text-sm-center</p>
+                  <p>text-md-center</p>
+                  <p>text-lg-center</p>
+                  <p>text-xl-center</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- Main Footer -->
+    {% include "_includes/footer.html" %}
+    <!-- Control Sidebar -->
+    {% include "_includes/sidebar-control.html" %}
   </div>
-  <!-- /.content-wrapper -->
-
-  <!-- Main Footer -->
-  {% include "_includes/footer.html" %}
-  <!-- Control Sidebar -->
-  {% include "_includes/sidebar-control.html" %}
-  
-</div>
-<!-- ./wrapper -->
-
-<!-- REQUIRED JS SCRIPTS -->
-{% include "_includes/scripts.html" %} 
+  <!-- ./wrapper -->
+  <!-- REQUIRED JS SCRIPTS -->
+  {% include "_includes/scripts.html" %}
 </body>
+
 </html>
