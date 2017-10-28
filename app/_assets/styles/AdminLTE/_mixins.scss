@@ -113,11 +113,11 @@
     background-color: $sidebar-dark-bg;
   }
   //User Panel (resides in the sidebar)
-  .user-panel {
-    > .info, > .info > a {
-      color: #fff;
-    }
-  }
+  // .user-panel {
+  //   > .info, > .info > a {
+  //     color: #fff;
+  //   }
+  // }
   //Sidebar Menu. First level links
   .sidebar-menu > li {
     //Section Headning
@@ -211,11 +211,11 @@
     border-right: 1px solid $gray-lte;
   }
   //User Panel (resides in the sidebar)
-  .user-panel {
-    > .info, > .info > a {
-      color: $sidebar-light-color;
-    }
-  }
+  // .user-panel {
+  //   > .info, > .info > a {
+  //     color: $sidebar-light-color;
+  //   }
+  // }
   //Sidebar Menu. First level links
   .sidebar-menu > li {
     @include transition(border-left-color .3s ease);

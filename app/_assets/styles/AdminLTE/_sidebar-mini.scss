@@ -52,7 +52,6 @@
 
       //Make the sidebar links, menus, labels, badges
       //and angle icons disappear
-      .main-sidebar .user-panel > .info,
       .sidebar-form,
       .sidebar-menu > li > a > span,
       .sidebar-menu > li > .treeview-menu,
@@ -138,7 +137,6 @@
 
 //A fix for text overflow while transitioning from sidebar mini to full sidebar
 .sidebar-menu,
-.main-sidebar .user-panel,
 .sidebar-menu > li.header {
   white-space: nowrap;
   overflow: hidden;

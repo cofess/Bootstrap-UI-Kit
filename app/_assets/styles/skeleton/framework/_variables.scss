@@ -19,7 +19,7 @@ $line-height-base:        	 1.428571429 !default; // 20/14
 $border-color:        		 #eee !default;
 $--regular: 			  	 400 !default;
 $--bold:                  	 600 !default;
-
+$text-color:            	 #08081a !default; // 正文颜色
 /*----------------------------------------------------
  * Gray and brand colors
  * lighten($color,10%) 颜色减淡
@@ -31,6 +31,7 @@ $--bold:                  	 600 !default;
  * adjust-color($color,$hue:40) 调色函数
  * ajust-due($color,90deg) 色调调节
  *---------------------------------------------------*/
+$normal-color: 				 $text-color !default; // 正文颜色
 // basic color
 $main-color: 			  	 #ff5500 !default; // 主色
 $sub-color: 			  	 #ff9600 !default; // 辅助色,互补色
