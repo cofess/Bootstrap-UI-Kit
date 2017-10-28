@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="en"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="en"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="en">
+<!--<![endif]-->
+
+<head>
+  {% include "_includes/meta.html" %}
+  <title>AdminLTE 2 | Starter</title>
+  {% include "_includes/head.html" %}
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+
+<body class="hold-transition skin-black-light sidebar-mini">
+  <div class="wrapper">
+    <!-- Main Header -->
+    {% include "_includes/header.html" %}
+    <!-- Left side column. contains the logo and sidebar -->
+    {% include "_includes/sidebar.html" %}
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+        Typography
+        <small>Preview page</small>
+      </h1>
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li><a href="#">Overview</a></li>
+          <li class="active">Typography</li>
+        </ol>
+      </section>
+      <!-- Main content -->
+      <section class="content container-fluid">
+        <!--------------------------
+        | Your Page Content Here |
+        -------------------------->
+      <section class="box my-3">
+        <div class="box-header">
+          <h3 class="box-title">标题</h3>
+        </div>
+        <div class="box-body">
+          <p>HTML 中的所有标题标签，<code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code> 均可使用。另外，还提供了 <code>.h1</code> 到 <code>.h6</code> 类，为的是给内联（inline）属性的文本赋予标题的样式。</p>
+          <h1>h1. Bootstrap heading</h1>
+          <h2>h2. Bootstrap heading</h2>
+          <h3>h3. Bootstrap heading</h3>
+          <h4>h4. Bootstrap heading</h4>
+          <h5>h5. Bootstrap heading</h5>
+          <h6>h6. Bootstrap heading</h6>
+          <p>在标题内还可以包含 <code>&lt;small&gt;</code> 标签或赋予 <code>.small</code> 类的元素，可以用来标记副标题。</p>
+          <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+          <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+          <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+          <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+          <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+          <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+        </div>
+      </section>
+      <section class="box my-3">
+        <div class="box-header">
+          <h3 class="box-title">文本样式</h3>
+        </div>
+        <div class="box-body">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>一行文字截断</h4>
+              <p class="text-nowrap-1">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <hr>
+              <h4>二行文字截断</h4>
+              <p class="text-nowrap-2">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <hr>
+              <h4>三行文字截断</h4>
+              <p class="text-nowrap-3">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <hr>
+              <h4>四行文字截断</h4>
+              <p class="text-nowrap-4">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <hr>
+              <h4>五行文字截断</h4>
+              <p class="text-nowrap-5">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            </div>
+            <div class="col-md-6">
+              <h4>不换行+省略号</h4>
+              <p class="text-nowrap">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <hr>
+              <h4>不换行</h4>
+              <p class="text-unbreak">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <hr>
+              <h4>改变大小写</h4>
+              <p class="text-lowercase">Lowercased text.</p>
+              <p class="text-uppercase">Uppercased text.</p>
+              <p class="text-capitalize">Capitalized text.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="box my-3">
+        <div class="box-header">
+          <h3 class="box-title">列表</h3>
+        </div>
+        <div class="box-body">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>无序列表</h4>
+              <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                    <li>Vestibulum laoreet porttitor sem</li>
+                    <li>Ac tristique libero volutpat at</li>
+                  </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>有序列表</h4>
+              <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ol>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                    <li>Vestibulum laoreet porttitor sem</li>
+                    <li>Ac tristique libero volutpat at</li>
+                  </ol>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+              </ol>
+            </div>
+            <div class="col-md-4">
+              <h4>无样式列表</h4>
+              <ul class="list-unstyled">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                    <li>Vestibulum laoreet porttitor sem</li>
+                    <li>Ac tristique libero volutpat at</li>
+                  </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <h4>内联列表</h4>
+          <ul class="list-inline">
+            <li>Lorem ipsum</li>
+            <li>Phasellus iaculis</li>
+            <li>Nulla volutpat</li>
+          </ul>
+          <hr>
+          <div class="row">
+            <div class="col-md-4">
+              <h4>list-square</h4>
+              <ul class="list-square">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                    <li>Vestibulum laoreet porttitor sem</li>
+                    <li>Ac tristique libero volutpat at</li>
+                  </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>有序列表</h4>
+              <ol class="list-square-num">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ol>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                    <li>Vestibulum laoreet porttitor sem</li>
+                    <li>Ac tristique libero volutpat at</li>
+                  </ol>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+              </ol>
+            </div>
+            <div class="col-md-4">
+              <h4>无样式列表</h4>
+              <ul class="list-circle-num">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ol>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                    <li>Vestibulum laoreet porttitor sem</li>
+                    <li>Ac tristique libero volutpat at</li>
+                  </ol>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- Main Footer -->
+    {% include "_includes/footer.html" %}
+    <!-- Control Sidebar -->
+    {% include "_includes/sidebar-control.html" %}
+  </div>
+  <!-- ./wrapper -->
+  <!-- REQUIRED JS SCRIPTS -->
+  {% include "_includes/scripts.html" %}
+</body>
+
+</html>
