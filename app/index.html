@@ -1,58 +1,30 @@
-<!DOCTYPE html>
-<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="en"><![endif]-->
-<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="en"> <![endif]-->
-<!--[if IE 9]><html class="ie ie9 lte9" lang="en"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html class="noIE" lang="en">
-<!--<![endif]-->
-<head>
-  {% include "_includes/meta.html" %}
-  <title>AdminLTE 2 | Dashboard</title>
-  {% include "_includes/head.html" %}
-</head>
-<body class="hold-transition skin-black-light sidebar-mini">
-<div class="wrapper">
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
 
-  <!-- Main Header -->
-  {% include "_includes/header.html" %}
-  <!-- Left side column. contains the logo and sidebar -->
-  {% include "_includes/sidebar.html" %}
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Dashboard
-        <small>Control panel</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
-      </ol>
-    </section>
+<!-- 页面标题 -->
+{% block title %}{{ title }} | Dashboard{% endblock %}
 
-    <!-- Main content -->
-    <section class="content container-fluid">
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="content-header">
+  <h1>
+    Dashboard
+    <small>Control panel</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li class="active">Dashboard</li>
+  </ol>
+</section>
+{% endblock %}
 
-      <!--------------------------
-        | Your Page Content Here |
-        -------------------------->
+<!-- 主体内容 -->
+{% block content %}
 
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
-  <!-- Main Footer -->
-  {% include "_includes/footer.html" %}
-  <!-- Control Sidebar -->
-  {% include "_includes/sidebar-control.html" %}
-  
-</div>
-<!-- ./wrapper -->
-
-<!-- REQUIRED JS SCRIPTS -->
-{% include "_includes/scripts.html" %} 
-</body>
-</html>
+{% endblock %}
