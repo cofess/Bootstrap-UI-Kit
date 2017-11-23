@@ -1,16 +1,16 @@
 /*reset*/
 
-.media img {
-  max-width: inherit
-}
+// .media img {
+//   max-width: inherit
+// }
 
-.media-middle {
-  .media-body,
-  .media-left,
-  .media-right {
-    vertical-align: middle;
-  }
-}
+// .media-middle {
+//   .media-body,
+//   .media-left,
+//   .media-right {
+//     vertical-align: middle;
+//   }
+// }
 
 @media (max-width: $screen-xs-max) {
   .table-responsive {
