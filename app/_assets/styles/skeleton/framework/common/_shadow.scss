@@ -1,5 +1,7 @@
 /**
  * paper
+ * outside: 0 0 12px rgba(0, 0, 0, .1); | 0 15px 30px -10px rgba(0, 0, 0, .1); | 0 15px 30px rgba(0,0,0,0.1);
+ * inner: inset 0 0 38px rgba(0, 0, 0, .1);
  */
 
 div[class*="shadow"] {
@@ -16,9 +18,9 @@ div[class*="shadow"] {
 
 .shadow,
 .hover-shadow:hover {
-  -moz-box-shadow: 0 0 12px rgba(0, 0, 0, .1);
-  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, .1);
-  box-shadow: 0 0 12px rgba(0, 0, 0, .1);
+  -moz-box-shadow: 0 15px 30px -10px rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 15px 30px -10px rgba(0, 0, 0, .1);
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, .1);
 }
 
 .shadow-0,
