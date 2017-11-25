@@ -1,0 +1,53 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+
+<!-- 页面标题 -->
+{% block title %}{{ title }} | Colors{% endblock %}
+
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="content-header">
+  <h1>
+    Colors
+    <small>Preview page</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li><a href="#">Overview</a></li>
+    <li class="active">Colors</li>
+  </ol>
+</section>
+{% endblock %}
+
+<!-- 主体内容 -->
+{% block content %}
+<section class="box my-3">
+  <div class="box-header">
+    <h3 class="box-title">Color</h3>
+  </div>
+  <div class="box-body">
+    <div class="grid grid-cols-7 grid-gap-1">
+      <div class="bg-white p-1">bg-white</div>
+      <div class="bg-smoke p-1">bg-smoke</div>
+      <div class="bg-light p-1">bg-light</div>
+      <div class="bg-silver p-1">bg-silver</div>
+      <div class="bg-dark p-1">bg-dark</div>
+      <div class="bg-gray p-1">bg-gray</div>
+      <div class="bg-black p-1">bg-black</div>
+      <div class="text-white p-1">white</div>
+      <div class="text-smoke p-1">smoke</div>
+      <div class="text-light p-1">light</div>
+      <div class="text-silver p-1">silver</div>
+      <div class="text-dark p-1">dark</div>
+      <div class="text-gray p-1">gray</div>
+      <div class="text-black p-1">black</div>
+    </div>
+  </div>
+</section>
+{% endblock %}
