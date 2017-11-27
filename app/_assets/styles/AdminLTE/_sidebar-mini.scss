@@ -102,7 +102,7 @@
     //position the header & treeview menus
     > a > span {
       top: 0;
-      margin-left: -3px;
+      // margin-left: -3px;
       padding: 12px 5px 12px 20px;
       background-color: inherit;
     }
@@ -119,7 +119,7 @@
       }
     }
     > .treeview-menu {
-      top: 44px;
+      top: 43px;
       margin-left: 0;
     }
   }
@@ -158,6 +158,6 @@
     position: absolute;
     right: 10px;
     top: 50%;
-    margin-top: -7px;
+    margin-top: -8px;
   }
 }

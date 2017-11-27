@@ -126,9 +126,9 @@
       // background: darken($sidebar-dark-bg, 4%);
     }
     //links
-    > a {
-      border-left: 3px solid transparent;
-    }
+    // > a {
+    //   border-left: 3px solid transparent;
+    // }
     //Hover and active states
     &:hover > a,
     &.active > a,
@@ -136,9 +136,9 @@
       color: $sidebar-dark-hover-color;
       background: $sidebar-dark-hover-bg;
     }
-    &.active > a {
-      border-left-color: $link-hover-border-color;
-    }
+    // &.active > a {
+    //   border-left-color: $link-hover-border-color;
+    // }
     //First Level Submenu
     > .treeview-menu {
       margin: 0 1px;
