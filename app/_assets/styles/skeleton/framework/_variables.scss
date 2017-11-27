@@ -181,7 +181,7 @@ $z-index-max: 			  	 9999 !default;
  *---------------------------------------------------*/
 // Extra small screen / phone
 //** Deprecated `$screen-xs` as of v3.0.1
-$screen-xs:                  480px !default;
+$screen-xs:                  576px !default;
 //** Deprecated `$screen-xs-min` as of v3.2.0
 $screen-xs-min:              $screen-xs !default;
 //** Deprecated `$screen-phone` as of v3.0.1
@@ -216,10 +216,10 @@ $screen-xl-min:              $screen-xl !default;
 $screen-xl-desktop:          $screen-xl-min !default;
 
 // So media queries don't overlap when required, provide a maximum
-$screen-xs-max:              ($screen-sm-min - 1) !default;
-$screen-sm-max:              ($screen-md-min - 1) !default;
-$screen-md-max:              ($screen-lg-min - 1) !default;
-$screen-lg-max:              ($screen-xl-min - 1) !default;
+$screen-xs-max:              ($screen-sm-min - 0.01) !default;
+$screen-sm-max:              ($screen-md-min - 0.01) !default;
+$screen-md-max:              ($screen-lg-min - 0.01) !default;
+$screen-lg-max:              ($screen-xl-min - 0.01) !default;
 
 //== Grid system
 //
@@ -233,6 +233,11 @@ $grid-gutter-width:         30px !default;
 //== Container sizes
 //
 //## Define the maximum width of `.container` for different screen sizes.
+
+// xSmall screen / phone
+$container-phone:             (510px + $grid-gutter-width) !default;
+//** For `$screen-sm-min` and up.
+$container-xs:                 $container-phone !default;
 
 // Small screen / tablet
 $container-tablet:             (720px + $grid-gutter-width) !default;

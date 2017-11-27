@@ -6,6 +6,9 @@
 // Set the container width, and override it for fixed navbars in media queries.
 .container {
   @include container-fixed;
+  @media (min-width: $screen-xs-min) {
+    width: $container-xs
+  }
   @media (min-width: $screen-sm-min) {
     width: $container-sm;
   }
@@ -14,6 +17,9 @@
   }
   @media (min-width: $screen-lg-min) {
     width: $container-lg;
+  }
+  @media (min-width: $screen-xl-min) {
+    width: $container-xl
   }
 }
 
@@ -66,13 +72,6 @@
   @include make-grid(lg);
 }
 
-// Bootstrap extra grid
-@media (min-width: $screen-xl-min) {
-  .container {
-    width: $container-xl
-  }
-}
-
 .col-xl-1,
 .col-xl-2,
 .col-xl-3,
@@ -98,8 +97,28 @@
   @include make-grid(xl);
 }
 
-@media (max-width: $screen-xs - 1) {
-  [class*="col-"] {
-    width: 100%
-  }
+.col-all-1,
+.col-all-2,
+.col-all-3,
+.col-all-4,
+.col-all-5,
+.col-all-6,
+.col-all-7,
+.col-all-8,
+.col-all-9,
+.col-all-10,
+.col-all-11,
+.col-all-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: ceil(($grid-gutter-width / 2));
+  padding-left: floor(($grid-gutter-width / 2));
 }
+
+@include make-grid(all);
+
+// @media (max-width: $screen-xs - 1) {
+//   [class*="col-"] {
+//     width: 100%
+//   }
+// }

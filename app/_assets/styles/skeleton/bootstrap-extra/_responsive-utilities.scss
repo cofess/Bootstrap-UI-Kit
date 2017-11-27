@@ -28,12 +28,16 @@
 // Visibility utilities
 // Note: Deprecated .visible-xs, .visible-sm, .visible-md, .visible-lg, and .visible-xl as of v3.2.0
 
+@include responsive-invisibility('.visible-all');
 @include responsive-invisibility('.visible-xs');
 @include responsive-invisibility('.visible-sm');
 @include responsive-invisibility('.visible-md');
 @include responsive-invisibility('.visible-lg');
 @include responsive-invisibility('.visible-xl');
 
+.visible-all-block,
+.visible-all-inline,
+.visible-all-inline-block,
 .visible-xs-block,
 .visible-xs-inline,
 .visible-xs-inline-block,
@@ -52,21 +56,33 @@
   display: none !important;
 }
 
-@media (max-width: $screen-xs-max) {
+@include responsive-visibility('.visible-all');
+
+.visible-all-block {
+  display: block !important;
+}
+.visible-all-inline {
+  display: inline !important;
+}
+.visible-all-inline-block {
+  display: inline-block !important;
+}
+
+@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
   @include responsive-visibility('.visible-xs');
 }
 .visible-xs-block {
-  @media (max-width: $screen-xs-max) {
+  @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
     display: block !important;
   }
 }
 .visible-xs-inline {
-  @media (max-width: $screen-xs-max) {
+  @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
     display: inline !important;
   }
 }
 .visible-xs-inline-block {
-  @media (max-width: $screen-xs-max) {
+  @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
     display: inline-block !important;
   }
 }
