@@ -14,8 +14,11 @@ html {
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: transparent;
+  -ms-overflow-style: scrollbar;
   overflow-y: scroll;
 }
 
@@ -24,7 +27,7 @@ html {
 //   font-size: $font-size-base;
 //   line-height: $line-height-base;
 // }
- 
+
 ul,
 ol {
   -webkit-padding-start: 20px;
@@ -46,6 +49,10 @@ a {
   &.active {
     color: $link-hover-color;
   }
+}
+
+a[href^="http"]:empty::before {
+  content: attr(href);
 }
 
 // a:not([href]):not([tabindex]),
