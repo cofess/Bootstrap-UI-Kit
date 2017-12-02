@@ -226,10 +226,10 @@
       // background: $sidebar-light-bg;
     }
     //links
-    > a {
-      border-left: 3px solid transparent;
-      font-weight: 600;
-    }
+    // > a {
+    //   border-left: 3px solid transparent;
+    //   font-weight: 600;
+    // }
     //Hover and active states
     &:hover > a,
     &.active > a {
@@ -239,12 +239,12 @@
     &:hover > a {
 
     }
-    &.active {
-      border-left-color: $icon-active-color;
-      > a {
-        font-weight: 600;
-      }
-    }
+    // &.active {
+    //   border-left-color: $icon-active-color;
+    //   > a {
+    //     font-weight: 600;
+    //   }
+    // }
     //First Level Submenu
     > .treeview-menu {
       background: $sidebar-light-submenu-bg;
@@ -267,9 +267,9 @@
       > a:hover {
         color: $sidebar-light-submenu-hover-color;
       }
-      &.active > a {
-        font-weight: 600;
-      }
+      // &.active > a {
+      //   font-weight: 600;
+      // }
     }
   }
   //The sidebar search form
