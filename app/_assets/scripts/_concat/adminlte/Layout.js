@@ -68,6 +68,15 @@
       this.bindedResize = true
     }
 
+    if (this.options.slimscroll && typeof $.fn.slimScroll !== 'undefined') {
+      $(".navbar .menu").slimScroll({
+        height: '200px',
+        alwaysVisible: false,
+        // color : 'rgba(0,0,0,0.2)',
+        size  : '3px'
+      }).css("width", "100%");
+    }
+
     $(Selector.sidebarMenu).on('expanded.tree', function () {
       this.fix()
       this.fixSidebar()
