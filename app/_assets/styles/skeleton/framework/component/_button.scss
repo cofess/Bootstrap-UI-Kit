@@ -1,3 +1,13 @@
+.btn-shadow {
+  &:focus,
+  &:hover,
+  &.active {
+    -moz-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+  }
+}
+
 .btn-main {
   @include button-variant($btn-main-color, $btn-main-bg, $btn-main-border);
 }
