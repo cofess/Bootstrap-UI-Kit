@@ -41,10 +41,16 @@ ol {
 a {
   color: $link-color;
   text-decoration: none;
+  &:visited{
+    outline: 0;
+  }
   &:focus,
   &:hover {
     color: $link-hover-color;
     text-decoration: none!important;
+  }
+  &:active{
+    outline: 0;
   }
   &.active {
     color: $link-hover-color;
