@@ -235,7 +235,7 @@ $grid-gutter-width:         30px !default;
 //## Define the maximum width of `.container` for different screen sizes.
 
 // xSmall screen / phone
-$container-phone:             (510px + $grid-gutter-width) !default;
+$container-phone:             (480px + $grid-gutter-width) !default;
 //** For `$screen-sm-min` and up.
 $container-xs:                 $container-phone !default;
 
@@ -255,7 +255,7 @@ $container-large-desktop:      (1140px + $grid-gutter-width) !default;
 $container-lg:                 $container-large-desktop !default;
 
 // xLarge screen
-$container-xlarge-desktop:     (1250px + $grid-gutter-width) !default;
+$container-xlarge-desktop:     (1320px + $grid-gutter-width) !default;
 //** For `$screen-xl-min` and up.
 $container-xl:                 $container-xlarge-desktop !default;
 
