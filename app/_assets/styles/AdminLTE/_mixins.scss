@@ -303,10 +303,10 @@
     }
   }
   @media (min-width: $screen-sm-min) {
-    &.sidebar-mini.sidebar-collapse {
-      .sidebar-menu > li > .treeview-menu {
-        border-left: 1px solid $gray-lte;
-      }
-    }
+    // &.sidebar-mini.sidebar-collapse {
+    //   .sidebar-menu > li > .treeview-menu {
+    //     border-left: 1px solid $gray-lte;
+    //   }
+    // }
   }
 }
