@@ -1,14 +1,8 @@
-.btn-outline-danger .badge {
-  background-color: #e74c3c;
-  border-color: transparent;
-  color: #fff
-}
-
 .badge {
   border: 1px solid transparent;
   font-size: 11px;
   padding: 2px 5px;
-  position: relative
+  position: relative;
 }
 
 .badge-above {
@@ -36,48 +30,48 @@
 }
 
 .badge-primary {
-  background-color: #2c3e50
+  background-color: $brand-primary
 }
 
 .badge-primary[href]:focus,
 .badge-primary[href]:hover {
-  background-color: #1a252f
+  background-color: darken($brand-primary, 5%)
 }
 
 .badge-success {
-  background-color: #35cf76
+  background-color: $brand-success
 }
 
 .badge-success[href]:focus,
 .badge-success[href]:hover {
-  background-color: #28a95e
+  background-color: darken($brand-success, 5%)
 }
 
 .badge-info {
-  background-color: #3498db
+  background-color: $brand-info
 }
 
 .badge-info[href]:focus,
 .badge-info[href]:hover {
-  background-color: #217dbb
+  background-color: darken($brand-info, 5%)
 }
 
 .badge-warning {
-  background-color: #e67e22
+  background-color: $brand-warning
 }
 
 .badge-warning[href]:focus,
 .badge-warning[href]:hover {
-  background-color: #bf6516
+  background-color: darken($brand-warning, 5%)
 }
 
 .badge-danger {
-  background-color: #e74c3c
+  background-color: $brand-danger
 }
 
 .badge-danger[href]:focus,
 .badge-danger[href]:hover {
-  background-color: #d62c1a
+  background-color: darken($brand-danger, 5%)
 }
 
 .badge-outline-default {
@@ -94,60 +88,60 @@
 
 .badge-outline-primary {
   background-color: transparent;
-  border-color: #2c3e50;
-  color: #2c3e50
+  border-color: $brand-primary;
+  color: $brand-primary
 }
 
 .badge-outline-primary[href]:focus,
 .badge-outline-primary[href]:hover {
-  background-color: #2c3e50;
+  background-color: $brand-primary;
   color: #fff
 }
 
 .badge-outline-success {
   background-color: transparent;
-  border-color: #35cf76;
-  color: #35cf76
+  border-color: $brand-success;
+  color: $brand-success
 }
 
 .badge-outline-success[href]:focus,
 .badge-outline-success[href]:hover {
-  background-color: #35cf76;
+  background-color: $brand-success;
   color: #fff
 }
 
 .badge-outline-info {
   background-color: transparent;
-  border-color: #3498db;
-  color: #3498db
+  border-color: $brand-info;
+  color: $brand-info
 }
 
 .badge-outline-info[href]:focus,
 .badge-outline-info[href]:hover {
-  background-color: #3498db;
+  background-color: $brand-info;
   color: #fff
 }
 
 .badge-outline-warning {
   background-color: transparent;
-  border-color: #e67e22;
-  color: #e67e22
+  border-color: $brand-warning;
+  color: $brand-warning
 }
 
 .badge-outline-warning[href]:focus,
 .badge-outline-warning[href]:hover {
-  background-color: #e67e22;
+  background-color: $brand-warning;
   color: #fff
 }
 
 .badge-outline-danger {
   background-color: transparent;
-  border-color: #e74c3c;
-  color: #e74c3c
+  border-color: $brand-danger;
+  color: $brand-danger
 }
 
 .badge-outline-danger[href]:focus,
 .badge-outline-danger[href]:hover {
-  background-color: #e74c3c;
+  background-color: $brand-danger;
   color: #fff
 }
