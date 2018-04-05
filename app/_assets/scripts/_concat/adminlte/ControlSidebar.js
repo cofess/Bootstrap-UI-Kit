@@ -27,7 +27,7 @@
 
   var ClassName = {
     open : 'control-sidebar-open',
-    fixed: 'fixed'
+    fixed: 'layout-fixed'
   }
 
   var Event = {

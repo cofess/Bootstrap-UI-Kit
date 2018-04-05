@@ -77,7 +77,7 @@ $(function () {
   function changeLayout(cls) {
     $('body').toggleClass(cls)
     $layout.fixSidebar()
-    if ($('body').hasClass('fixed') && cls == 'fixed') {
+    if ($('body').hasClass('layout-fixed') && cls == 'layout-fixed') {
       $pushMenu.expandOnHover()
       $layout.activate()
     }
@@ -150,8 +150,8 @@ $(function () {
     })
 
     //  Reset options
-    if ($('body').hasClass('fixed')) {
-      $('[data-layout="fixed"]').attr('checked', 'checked')
+    if ($('body').hasClass('layout-fixed')) {
+      $('[data-layout="layout-fixed"]').attr('checked', 'checked')
     }
     if ($('body').hasClass('layout-boxed')) {
       $('[data-layout="layout-boxed"]').attr('checked', 'checked')
@@ -190,7 +190,7 @@ $(function () {
     // Fixed layout
     + '<div class="form-group">'
     + '<label class="control-sidebar-subheading">'
-    + '<input type="checkbox"data-layout="fixed"class="pull-right"/> '
+    + '<input type="checkbox"data-layout="layout-fixed"class="pull-right"/> '
     + 'Fixed layout'
     + '</label>'
     + '<p>Activate the fixed layout. You can\'t use fixed and boxed layouts together</p>'

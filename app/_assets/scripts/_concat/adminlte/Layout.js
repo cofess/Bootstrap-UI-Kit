@@ -25,13 +25,13 @@
     mainHeader    : '.main-header',
     sidebar       : '.sidebar',
     controlSidebar: '.control-sidebar',
-    fixed         : '.fixed',
+    fixed         : '.layout-fixed',
     sidebarMenu   : '.sidebar-menu',
     logo          : '.main-header .logo'
   }
 
   var ClassName = {
-    fixed         : 'fixed',
+    fixed         : 'layout-fixed',
     holdTransition: 'hold-transition'
   }
 

@@ -26,7 +26,7 @@
     button        : '[data-toggle="push-menu"]',
     mini          : '.sidebar-mini',
     expanded      : '.sidebar-expanded-on-hover',
-    layoutFixed   : '.fixed'
+    layoutFixed   : '.layout-fixed'
   }
 
   var ClassName = {
@@ -35,7 +35,7 @@
     mini         : 'sidebar-mini',
     expanded     : 'sidebar-expanded-on-hover',
     expandFeature: 'sidebar-mini-expand-feature',
-    layoutFixed  : 'fixed'
+    layoutFixed  : 'layout-fixed'
   }
 
   var Event = {
