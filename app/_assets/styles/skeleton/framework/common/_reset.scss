@@ -15,11 +15,13 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-// body {
-//   font-family: $font-family-base;
-//   font-size: $font-size-base;
-//   line-height: $line-height-base;
-// }
+body {
+  // font-family: $font-family-base;
+  // font-size: $font-size-base;
+  // line-height: $line-height-base;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
 ul,
 ol {
