@@ -13,6 +13,7 @@ $(function () {
   $('[data-toggle="match-height"]').matchHeight() 
   $('[data-toggle="control-sidebar"]').controlSidebar()
   $('[data-toggle="push-menu"]').pushMenu()
+  $('body').layout()
 
   var $pushMenu       = $('[data-toggle="push-menu"]').data('lte.pushmenu')
   var $controlSidebar = $('[data-toggle="control-sidebar"]').data('lte.controlsidebar')
