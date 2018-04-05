@@ -6,3 +6,12 @@
   $opacity-ie: ($opacity * 100);
   filter: alpha(opacity=$opacity-ie);
 }
+
+/// Background Color Opacity
+/// @param {Color} $color [100%] - Color
+/// @param {Double} $opacity [0.85] - Opacity
+
+@mixin background-opacity($color: #000, $opacity: 0.85) {
+  background: $color;
+  background: rgba($color, $opacity);
+}
