@@ -1,0 +1,15 @@
+// Text overflow
+// Requires inline-block or block for proper styling
+@mixin text-line-clamp($font-size, $line-height, $lines-to-show) {
+  display: block;
+  display: -webkit-box;
+  font-size: $font-size;
+  line-height: $line-height;
+  height: $font-size*$line-height*$lines-to-show;
+  // word-break: break-all !important;
+  // word-wrap: break-word !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines-to-show;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

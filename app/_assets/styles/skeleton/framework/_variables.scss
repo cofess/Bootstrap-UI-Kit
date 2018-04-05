@@ -260,16 +260,6 @@ $container-xlarge-desktop:     (1320px + $grid-gutter-width) !default;
 $container-xl:                 $container-xlarge-desktop !default;
 
 /*----------------------------------------------------
- * text nowrap
- *---------------------------------------------------*/
-$text-nowrap-height-base: 	 24px !default;
-$text-nowrap-height-1: 		 $text-nowrap-height-base * 1 !default;
-$text-nowrap-height-2: 		 $text-nowrap-height-base * 2 !default;
-$text-nowrap-height-3: 		 $text-nowrap-height-base * 3 !default;
-$text-nowrap-height-4: 		 $text-nowrap-height-base * 4 !default;
-$text-nowrap-height-5: 		 $text-nowrap-height-base * 5 !default;
-
-/*----------------------------------------------------
  * text line-height
  *---------------------------------------------------*/
 $text-height-base: 			 $line-height-base !default;

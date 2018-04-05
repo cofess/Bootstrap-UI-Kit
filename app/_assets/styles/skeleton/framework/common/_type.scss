@@ -105,73 +105,27 @@
 /*text wrap*/
 
 .text-nowrap {
-  /*display: block;*/
-  max-width: 100%;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  white-space: nowrap !important;
-  word-wrap: normal !important;
+  @include text-overflow()
 }
 
 .text-nowrap-1 {
-  display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  -webkit-box-flex: 1;
-  line-height: $text-nowrap-height-base;
-  height: $text-nowrap-height-1;
-  // word-break: break-all !important;
-  word-wrap: break-word !important;
+  @include text-line-clamp($font-size-base, $line-height-base, 1)
 }
 
 .text-nowrap-2 {
-  display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-height: $text-nowrap-height-base;
-  height: $text-nowrap-height-2;
-  // word-break: break-all !important;
-  word-wrap: break-word !important;
+  @include text-line-clamp($font-size-base, $line-height-base, 2)
 }
 
 .text-nowrap-3 {
-  display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  line-height: $text-nowrap-height-base;
-  height: $text-nowrap-height-3;
-  // word-break: break-all !important;
-  word-wrap: break-word !important;
+  @include text-line-clamp($font-size-base, $line-height-base, 3)
 }
 
 .text-nowrap-4 {
-  display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  line-height: $text-nowrap-height-base;
-  height: $text-nowrap-height-4;
-  // word-break: break-all !important;
-  word-wrap: break-word !important;
+  @include text-line-clamp($font-size-base, $line-height-base, 4)
 }
 
 .text-nowrap-5 {
-  display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
-  line-height: $text-nowrap-height-base;
-  height: $text-nowrap-height-5;
-  // word-break: break-all !important;
-  word-wrap: break-word !important;
+  @include text-line-clamp($font-size-base, $line-height-base, 5)
 }
 
 
