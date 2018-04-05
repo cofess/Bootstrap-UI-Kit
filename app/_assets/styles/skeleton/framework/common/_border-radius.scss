@@ -52,18 +52,18 @@
   border-radius: 100%!important
 }
 
-.radius-rounded {
+.rounded {
   -moz-border-radius: $border-radius-rounded!important;
   -webkit-border-radius: $border-radius-rounded!important;
   border-radius: $border-radius-rounded!important;
-  overflow: hidden
+  // overflow: hidden
 }
 
-.radius-circle {
+.circle {
   -moz-border-radius: 50%!important;
   -webkit-border-radius: 50%!important;
   border-radius: 50%!important;
-  overflow: hidden
+  // overflow: hidden
 }
 
 .radius-max {

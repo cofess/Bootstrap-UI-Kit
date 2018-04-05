@@ -636,14 +636,14 @@ a.arrow-right.arrow-danger:hover:after {
 
 .arrow-outline-default {
   background-color: #fff;
-  border-color: #6185a8;
+  border-color: #6185a8!important;
   color: #6185a8
 }
 
 a.arrow-outline-default:focus,
 a.arrow-outline-default:hover {
   background-color: #6185a8;
-  border-color: #6185a8;
+  border-color: #6185a8!important;
   color: #fff
 }
 
@@ -701,14 +701,14 @@ a.arrow-right.arrow-outline-default:hover:after {
 
 .arrow-outline-primary {
   background-color: #fff;
-  border-color: #2c3e50;
+  border-color: #2c3e50!important;
   color: #2c3e50
 }
 
 a.arrow-outline-primary:focus,
 a.arrow-outline-primary:hover {
   background-color: #2c3e50;
-  border-color: #2c3e50;
+  border-color: #2c3e50!important;
   color: #fff
 }
 
@@ -766,14 +766,14 @@ a.arrow-right.arrow-outline-primary:hover:after {
 
 .arrow-outline-success {
   background-color: #fff;
-  border-color: #35cf76;
+  border-color: #35cf76!important;
   color: #35cf76
 }
 
 a.arrow-outline-success:focus,
 a.arrow-outline-success:hover {
   background-color: #35cf76;
-  border-color: #35cf76;
+  border-color: #35cf76!important;
   color: #fff
 }
 
@@ -831,14 +831,14 @@ a.arrow-right.arrow-outline-success:hover:after {
 
 .arrow-outline-info {
   background-color: #fff;
-  border-color: #3498db;
+  border-color: #3498db!important;
   color: #3498db
 }
 
 a.arrow-outline-info:focus,
 a.arrow-outline-info:hover {
   background-color: #3498db;
-  border-color: #3498db;
+  border-color: #3498db!important;
   color: #fff
 }
 
@@ -896,14 +896,14 @@ a.arrow-right.arrow-outline-info:hover:after {
 
 .arrow-outline-warning {
   background-color: #fff;
-  border-color: #e67e22;
+  border-color: #e67e22!important;
   color: #e67e22
 }
 
 a.arrow-outline-warning:focus,
 a.arrow-outline-warning:hover {
   background-color: #e67e22;
-  border-color: #e67e22;
+  border-color: #e67e22!important;
   color: #fff
 }
 
@@ -961,14 +961,14 @@ a.arrow-right.arrow-outline-warning:hover:after {
 
 .arrow-outline-danger {
   background-color: #fff;
-  border-color: #e74c3c;
+  border-color: #e74c3c!important;
   color: #e74c3c
 }
 
 a.arrow-outline-danger:focus,
 a.arrow-outline-danger:hover {
   background-color: #e74c3c;
-  border-color: #e74c3c;
+  border-color: #e74c3c!important;
   color: #fff
 }
 
