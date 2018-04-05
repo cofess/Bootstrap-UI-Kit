@@ -1,6 +1,6 @@
 // Mixins
 // --------------------------------------------------
-
+@import 'mixins/functions';
 // Utilities
 @import "mixins/hide-text";
 @import "mixins/opacity";
@@ -22,6 +22,11 @@
 @import "mixins/list-group";
 @import "mixins/forms";
 @import "mixins/table-row";
+
+// Custom Components
+@import "mixins/arrow";
+@import "mixins/balloon";
+@import "mixins/triangle";
 
 // Skins
 @import "mixins/border-radius";
