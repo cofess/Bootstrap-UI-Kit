@@ -1,0 +1,272 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+
+<!-- 页面标题 -->
+{% block title %}{{ title }} | Blank Page{% endblock %}
+
+<!-- 自定义样式 -->
+{% block style %}
+{% endblock %}
+
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="content-header">
+  <h1>
+    Blank page
+    <small>it all starts here</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li><a href="#">Examples</a></li>
+    <li class="active">Blank page</li>
+  </ol>
+</section>
+{% endblock %}
+
+<!-- 主体内容 -->
+{% block content %}
+<div class="row gutter-xs">
+  <div class="col-xs-12">
+    <p><small>The label component that is part of Bootstrap is expanded with several variants and some additional classes.</small></p>
+  </div>
+</div>
+<div class="row gutter-xs">
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Default label</h5>
+      <p>
+        <small>Simply use class <code>label-default</code></small>
+      </p>
+      <span class="label label-default">Business</span>
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Primary label</h5>
+      <p>
+        <small>Simply use class <code>label-primary</code></small>
+      </p>
+      <span class="label label-primary">Communication</span>
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Success label</h5>
+      <p>
+        <small>Simply use class <code>label-success</code></small>
+      </p>
+      <span class="label label-success">Education</span>
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Info label</h5>
+      <p>
+        <small>Simply use class <code>label-info</code></small>
+      </p>
+      <span class="label label-info">Entertainment</span>
+    </div>
+  </div>
+</div>
+<div class="row gutter-xs">
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Warning label</h5>
+      <p>
+        <small>Simply use class <code>label-warning</code></small>
+      </p>
+      <span class="label label-warning">Finance</span>
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Danger label</h5>
+      <p>
+        <small>Simply use class <code>label-danger</code></small>
+      </p>
+      <span class="label label-danger">Health &amp; Fitness</span>
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Danger outline label</h5>
+      <p>
+        <small>Simply use class <code>label-outline-danger</code></small>
+      </p>
+      <span class="label label-outline-danger">Health &amp; Fitness</span>
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Warning outline label</h5>
+      <p>
+        <small>Simply use class <code>label-outline-warning</code></small>
+      </p>
+      <span class="label label-outline-warning">Finance</span>
+    </div>
+  </div>
+</div>
+<div class="row gutter-xs">
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Info outline label</h5>
+      <p>
+        <small>Simply use class <code>label-outline-info</code></small>
+      </p>
+      <span class="label label-outline-info">Entertainment</span>
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Success outline label</h5>
+      <p>
+        <small>Simply use class <code>label-outline-success</code></small>
+      </p>
+      <span class="label label-outline-success">Education</span>
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Primary outline label</h5>
+      <p>
+        <small>Simply use class <code>label-outline-primary</code></small>
+      </p>
+      <span class="label label-outline-primary">Communication</span>
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Default outline label</h5>
+      <p>
+        <small>Simply use class <code>label-outline-default</code></small>
+      </p>
+      <span class="label label-outline-default">Business</span>
+    </div>
+  </div>
+</div>
+<div class="row gutter-xs">
+  <div class="col-xs-12 col-md-6">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Pill label as a link</h5>
+      <p>
+        <small>Labels with hover state, but only for links</small>
+      </p>
+      <a class="label label-default label-pill" href="#">Business mails</a>
+      <a class="label label-outline-default label-pill" href="#">Business mails</a>
+      <a class="label label-danger label-pill" href="#">Answer pending</a>
+      <a class="label label-outline-danger label-pill" href="#">Answer pending</a>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-6">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <div class="fh">
+        <div class="fh-m p-y-md">
+          <small>Font size, paddings, colors, can be changed through variables.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-center m-b">
+  <h3 class="m-b-0">Labels with others</h3>
+  <small>The following examples are some cases but not the only ones on how this component can be composed with others.</small>
+</div>
+<div class="row gutter-xs">
+  <div class="col-xs-12 col-md-4">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Label with arrows as a link</h5>
+      <p>
+        <small>Labels with hover state and arrows of all sizes.</small>
+      </p>
+      <a class="label arrow-up arrow-success arrow-sm" href="#">small</a>
+      <a class="label arrow-up arrow-success" href="#">default</a>
+      <a class="label arrow-up arrow-success arrow-lg" href="#">large</a>
+      <a class="label arrow-down arrow-outline-success arrow-lg" href="#">large</a>
+      <a class="label arrow-down arrow-outline-success" href="#">default</a>
+      <a class="label arrow-down arrow-outline-success arrow-sm" href="#">small</a>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Label as a tag</h5>
+      <p>
+        <small>A label can appear as a tag</small>
+      </p>
+      <span class="label arrow-right arrow-success m-x">Tags</span>
+      <a class="label label-default" href="#">Bootstrap</a>
+      <a class="label label-default" href="#">Angular JS</a>
+      <a class="label label-default" href="#">Laravel</a>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Removable labels</h5>
+      <p>
+        <small>Label with icon and remove button</small>
+      </p>
+      <div class="label label-success">
+        <span class="fa fa-globe fa-fw"></span> Public
+        <button class="label-remove-btn" type="button">
+          <span class="fa fa-remove"></span>
+        </button>
+      </div>
+      <div class="label label-default">
+        <span class="fa fa-users fa-fw"></span> Family
+        <button class="label-remove-btn" type="button">
+          <span class="fa fa-remove"></span>
+        </button>
+      </div>
+      <div class="label label-default">
+        <span class="fa fa-users fa-fw"></span> Friends
+        <button class="label-remove-btn" type="button">
+          <span class="fa fa-remove"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row gutter-xs">
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Label with arrow</h5>
+      <p>
+        <small>Simply use class <code>arrow-left</code></small>
+      </p>
+      <span class="label arrow-left arrow-danger">196k likes</span>
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Label with arrow</h5>
+      <p>
+        <small>Simply use class <code>arrow-left</code></small>
+      </p>
+      <span class="label arrow-left arrow-warning">Are you sure you want to delete?</span>
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Label with arrow</h5>
+      <p>
+        <small>Simply use class <code>arrow-right</code></small>
+      </p>
+      <span class="label arrow-right arrow-success">Teddy Wilson has been deleted.</span>
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <div class="panel panel-body text-center" data-toggle="match-height">
+      <h5>Label with arrow</h5>
+      <p>
+        <small>Simply use class <code>arrow-right</code></small>
+      </p>
+      <span class="label arrow-right arrow-info">1,691 views</span>
+    </div>
+  </div>
+</div>
+{% endblock %}
