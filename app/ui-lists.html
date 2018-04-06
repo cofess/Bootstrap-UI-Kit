@@ -1,0 +1,695 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+
+<!-- 页面标题 -->
+{% block title %}{{ title }} | Blank Page{% endblock %}
+
+<!-- 自定义样式 -->
+{% block style %}
+{% endblock %}
+
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="content-header">
+  <h1>
+    Blank page
+    <small>it all starts here</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li><a href="#">Examples</a></li>
+    <li class="active">Blank page</li>
+  </ol>
+</section>
+{% endblock %}
+
+<!-- 主体内容 -->
+{% block content %}
+<div class="row">
+  <div class="col-md-4">
+    <div class="box box-solid">
+      <div class="box-header with-border">
+        <i class="fa fa-text-width"></i>
+        <h3 class="box-title">Unordered List</h3>
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body">
+        <ul>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Consectetur adipiscing elit</li>
+          <li>Integer molestie lorem at massa</li>
+          <li>Facilisis in pretium nisl aliquet</li>
+          <li>Nulla volutpat aliquam velit
+            <ul>
+              <li>Phasellus iaculis neque</li>
+              <li>Purus sodales ultricies</li>
+              <li>Vestibulum laoreet porttitor sem</li>
+              <li>Ac tristique libero volutpat at</li>
+            </ul>
+          </li>
+          <li>Faucibus porta lacus fringilla vel</li>
+          <li>Aenean sit amet erat nunc</li>
+          <li>Eget porttitor lorem</li>
+        </ul>
+      </div>
+      <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+  </div>
+  <!-- ./col -->
+  <div class="col-md-4">
+    <div class="box box-solid">
+      <div class="box-header with-border">
+        <i class="fa fa-text-width"></i>
+        <h3 class="box-title">Ordered Lists</h3>
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body">
+        <ol>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Consectetur adipiscing elit</li>
+          <li>Integer molestie lorem at massa</li>
+          <li>Facilisis in pretium nisl aliquet</li>
+          <li>Nulla volutpat aliquam velit
+            <ol>
+              <li>Phasellus iaculis neque</li>
+              <li>Purus sodales ultricies</li>
+              <li>Vestibulum laoreet porttitor sem</li>
+              <li>Ac tristique libero volutpat at</li>
+            </ol>
+          </li>
+          <li>Faucibus porta lacus fringilla vel</li>
+          <li>Aenean sit amet erat nunc</li>
+          <li>Eget porttitor lorem</li>
+        </ol>
+      </div>
+      <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+  </div>
+  <!-- ./col -->
+  <div class="col-md-4">
+    <div class="box box-solid">
+      <div class="box-header with-border">
+        <i class="fa fa-text-width"></i>
+        <h3 class="box-title">Unstyled List</h3>
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body">
+        <ul class="list-unstyled">
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Consectetur adipiscing elit</li>
+          <li>Integer molestie lorem at massa</li>
+          <li>Facilisis in pretium nisl aliquet</li>
+          <li>Nulla volutpat aliquam velit
+            <ul>
+              <li>Phasellus iaculis neque</li>
+              <li>Purus sodales ultricies</li>
+              <li>Vestibulum laoreet porttitor sem</li>
+              <li>Ac tristique libero volutpat at</li>
+            </ul>
+          </li>
+          <li>Faucibus porta lacus fringilla vel</li>
+          <li>Aenean sit amet erat nunc</li>
+          <li>Eget porttitor lorem</li>
+        </ul>
+      </div>
+      <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+  </div>
+  <!-- ./col -->
+</div>
+<!-- /.row -->
+<div class="box box-solid">
+  <div class="box-header with-border">
+    <i class="fa fa-text-width"></i>
+    <h3 class="box-title">内联列表</h3>
+  </div>
+  <!-- /.box-header -->
+  <div class="box-body">
+    <ul class="list-inline">
+      <li>Lorem ipsum</li>
+      <li>Phasellus iaculis</li>
+      <li>Nulla volutpat</li>
+    </ul>
+    <p>通过设置 <code>display: inline-block;</code> 并添加少量的内补（padding），将所有元素放置于同一行。</p>
+    <div class="highlight">
+      <pre>
+        <code class="language-html" data-lang="html">
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-inline"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        </code>
+      </pre>
+    </div>
+  </div>
+  <!-- /.box-body -->
+</div>
+<div class="box box-solid">
+  <div class="box-header with-border">
+    <h3 class="box-title">列表样式</h3>
+  </div>
+  <div class="box-body">
+    <div class="row custom-row-space mtop20">
+      <div class="col-sm-12 col-lg-4">
+        <ol class="list-circle-num list-empty">
+          <li>Lorem ipsum dolor sit amet, consectetur</li>
+          <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+          <li>Curabitur a augue a justo pharetra </li>
+        </ol>
+      </div>
+      <div class="col-sm-12 col-lg-4">
+        <ol class="list-circle-num list-full">
+          <li>Lorem ipsum dolor sit amet, consectetur</li>
+          <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+          <li>Curabitur a augue a justo pharetra </li>
+        </ol>
+      </div>
+      <div class="col-sm-12 col-lg-4"> </div>
+    </div>
+    <div class="row custom-row-space mtop20">
+      <div class="col-sm-12 col-lg-4">
+        <ol class="list-square-num list-empty">
+          <li>Lorem ipsum dolor sit amet, consectetur</li>
+          <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+          <li>Curabitur a augue a justo pharetra </li>
+        </ol>
+      </div>
+      <div class="col-sm-12 col-lg-4">
+        <ol class="list-square-num list-full">
+          <li>Lorem ipsum dolor sit amet, consectetur</li>
+          <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+          <li>Curabitur a augue a justo pharetra </li>
+        </ol>
+      </div>
+      <div class="col-sm-12 col-lg-4"> </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="list-group">
+      <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge badge-empty">201</span> <i class="fa fa-envelope icon-muted fa-fw"></i> Inbox </a>
+      <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-info">5021</span> <i class="fa fa-eye icon-muted fa-fw"></i> Profile visits </a>
+      <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-success">14</span> <i class="fa fa-phone icon-muted fa-fw"></i> Call </a>
+      <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-dark">20</span> <i class="fa fa-comments-o icon-muted fa-fw"></i> Messages </a>
+      <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-warning">14</span> <i class="fa fa-bookmark icon-muted fa-fw"></i> Bookmarks </a>
+      <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-info">30</span> <i class="fa fa-bell icon-muted fa-fw"></i> Notifications </a>
+      <a href="#" class="list-group-item"> <i class="fa fa-chevron-right icon-muted pull-right"></i> <span class="badge bg-danger">10</span> <i class="fa fa-clock-o icon-muted fa-fw"></i> Watch </a>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="panel panel-default">
+      <header class="panel-heading">
+        <div class="input-group text-sm">
+          <input type="text" class="input-sm form-control" placeholder="Search">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+            <ul class="dropdown-menu pull-right">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <ul class="list-group alt">
+        <li class="list-group-item">
+          <div class="media">
+            <div class="media-left">
+              <img class="circle" width="40" height="40" src="assets/images/user1-128x128.jpg" alt="Harry Jones">
+            </div>
+            <div class="media-middle media-body">
+              <h5 class="media-heading">Harry Jones</h5>
+              <small>Managing Partner at MDD</small>
+            </div>
+            <div class="media-middle media-right">
+              <div class="text-success"> <i class="fa fa-circle"></i> </div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="media">
+            <div class="media-left">
+              <img class="circle" width="40" height="40" src="assets/images/user1-128x128.jpg" alt="Harry Jones">
+            </div>
+            <div class="media-middle media-body">
+              <h5 class="media-heading">Harry Jones</h5>
+              <small>Managing Partner at MDD</small>
+            </div>
+            <div class="media-middle media-right">
+              <div class="text-muted"> <i class="fa fa-circle"></i> </div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="media">
+            <div class="media-left">
+              <img class="circle" width="40" height="40" src="assets/images/user1-128x128.jpg" alt="Harry Jones">
+            </div>
+            <div class="media-middle media-body">
+              <h5 class="media-heading">Harry Jones</h5>
+              <small>Managing Partner at MDD</small>
+            </div>
+            <div class="media-middle media-right">
+              <div class="text-warning"> <i class="fa fa-circle"></i> </div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="media">
+            <div class="media-left">
+              <img class="circle" width="40" height="40" src="assets/images/user1-128x128.jpg" alt="Harry Jones">
+            </div>
+            <div class="media-middle media-body">
+              <h5 class="media-heading">Harry Jones</h5>
+              <small>Managing Partner at MDD</small>
+            </div>
+            <div class="media-middle media-right">
+              <div class="text-danger"> <i class="fa fa-circle"></i> </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-primary">facilisis in</a>
+      <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+      <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+      <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+      <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <p><small>The following examples show how different components can be composed to produce lists.</small></p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6 col-md-4" data-toggle="match-height">
+    <h5 class="text-center">List group</h5>
+    <p class="text-center text-muted">
+      <small>Simply use class <code>list-group</code></small>
+    </p>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <span class="pull-right">68%</span>
+        <span class="fa fa-chrome fa-fw"></span> Chrome
+      </li>
+      <li class="list-group-item">
+        <span class="pull-right">19.1%</span>
+        <span class="fa fa-firefox fa-fw"></span> Firefox
+      </li>
+      <li class="list-group-item">
+        <span class="pull-right">6.3%</span>
+        <span class="fa fa-internet-explorer fa-fw"></span> Internet Explorer
+      </li>
+      <li class="list-group-item">
+        <span class="pull-right">3.7%</span>
+        <span class="fa fa-safari fa-fw"></span> Safari
+      </li>
+      <li class="list-group-item">
+        <span class="pull-right">1.5%</span>
+        <span class="fa fa-opera fa-fw"></span> Opera
+      </li>
+    </ul>
+  </div>
+  <div class="col-sm-6 col-md-4" data-toggle="match-height">
+    <h5 class="text-center">List group divided</h5>
+    <p class="text-center text-muted">
+      <small>Simply use class <code>list-group-divided</code></small>
+    </p>
+    <ul class="list-group list-group-divided">
+      <li class="list-group-item">
+        <span class="pull-right">68%</span>
+        <span class="fa fa-chrome fa-fw"></span> Chrome
+      </li>
+      <li class="list-group-item">
+        <span class="pull-right">19.1%</span>
+        <span class="fa fa-firefox fa-fw"></span> Firefox
+      </li>
+      <li class="list-group-item">
+        <span class="pull-right">6.3%</span>
+        <span class="fa fa-internet-explorer fa-fw"></span> Internet Explorer
+      </li>
+      <li class="list-group-item">
+        <span class="pull-right">3.7%</span>
+        <span class="fa fa-safari fa-fw"></span> Safari
+      </li>
+      <li class="list-group-item">
+        <span class="pull-right">1.5%</span>
+        <span class="fa fa-opera fa-fw"></span> Opera
+      </li>
+    </ul>
+  </div>
+  <div class="col-sm-6 col-md-4" data-toggle="match-height">
+    <h5 class="text-center">Linked items</h5>
+    <p class="text-center text-muted">
+      <small>Linkify list group items by using anchor tags</small>
+    </p>
+    <div class="list-group">
+      <a class="list-group-item active" href="#">
+        <span class="pull-right">68%</span>
+        <span class="fa fa-chrome fa-fw"></span> Chrome
+      </a>
+      <a class="list-group-item" href="#">
+        <span class="pull-right">19.1%</span>
+        <span class="fa fa-firefox fa-fw"></span> Firefox
+      </a>
+      <a class="list-group-item" href="#">
+        <span class="pull-right">6.3%</span>
+        <span class="fa fa-internet-explorer fa-fw"></span> Internet Explorer
+      </a>
+      <a class="list-group-item" href="#">
+        <span class="pull-right">3.7%</span>
+        <span class="fa fa-safari fa-fw"></span> Safari
+      </a>
+      <a class="list-group-item disabled" href="#">
+        <span class="pull-right">1.5%</span>
+        <span class="fa fa-opera fa-fw"></span> Opera
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4" data-toggle="match-height">
+    <h5 class="text-center">Custom content</h5>
+    <p class="text-center text-muted">
+      <small>Linkify list group items by using anchor tags</small>
+    </p>
+    <div class="list-group">
+      <a class="list-group-item" href="#">
+        <div class="pull-left m-r">
+          <img class="circle" width="40" height="40" src="assets/images/user1-128x128.jpg" alt="Harry Jones">
+        </div>
+        <div class="clear">
+          <small class="pull-right">16 min</small>
+          <h5 class="list-group-item-heading">Harry Jones</h5>
+          <small class="truncate">Hi Teddy, Just wanted to let you know we got the project! We should be starting the planning next week. Harry</small>
+        </div>
+      </a>
+      <a class="list-group-item" href="#">
+        <div class="pull-left m-r">
+          <img class="circle" width="40" height="40" src="assets/images/user1-128x128.jpg" alt="Daniel Taylor">
+        </div>
+        <div class="clear">
+          <small class="pull-right">2 hr</small>
+          <h5 class="list-group-item-heading">Daniel Taylor</h5>
+          <small class="truncate">Teddy Boyyyy, label text isn't vertically aligned with value text in grid forms when using .form-control... DT</small>
+        </div>
+      </a>
+      <a class="list-group-item active" href="#">
+        <div class="pull-left m-r">
+          <img class="circle" width="40" height="40" src="assets/images/user1-128x128.jpg" alt="Charlotte Harrison">
+        </div>
+        <div class="clear">
+          <small class="pull-right">Jan 29</small>
+          <h5 class="list-group-item-heading">Charlotte Harrison</h5>
+          <small class="truncate">Dear Teddy, Can we discuss the benefits of this approach during our Monday meeting? Best regards Charlotte Harrison</small>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4" data-toggle="match-height">
+    <h5 class="text-center">List group with media</h5>
+    <p class="text-center text-muted">
+      <small>Linkify list group items by using anchor tags</small>
+    </p>
+    <div class="list-group">
+      <a class="list-group-item" href="#">
+        <div class="media">
+          <div class="media-left">
+            <img class="circle" width="40" height="40" src="assets/images/user1-128x128.jpg" alt="Harry Jones">
+          </div>
+          <div class="media-middle media-body">
+            <h5 class="media-heading">Harry Jones</h5>
+            <small>Managing Partner at MDD</small>
+          </div>
+          <div class="media-middle media-right">
+            <div class="text-success"> <i class="fa fa-circle"></i> </div>
+          </div>
+        </div>
+      </a>
+      <a class="list-group-item" href="#">
+        <div class="media">
+          <div class="media-left">
+            <img class="circle" width="40" height="40" src="assets/images/user1-128x128.jpg" alt="Daniel Taylor">
+          </div>
+          <div class="media-middle media-body">
+            <h5 class="media-heading">Daniel Taylor</h5>
+            <small>Freelance Web Developer</small>
+          </div>
+          <div class="media-middle media-right">
+            <div class="text-warning"> <i class="fa fa-circle"></i> </div>
+          </div>
+        </div>
+      </a>
+      <a class="list-group-item" href="#">
+        <div class="media">
+          <div class="media-left">
+            <img class="circle" width="40" height="40" src="assets/images/user1-128x128.jpg" alt="Charlotte Harrison">
+          </div>
+          <div class="media-middle media-body">
+            <h5 class="media-heading">Charlotte Harrison</h5>
+            <small>Co-Founder &amp; CEO at Pi</small>
+          </div>
+          <div class="media-middle media-right">
+            <div class="text-danger"> <i class="fa fa-circle"></i> </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4" data-toggle="match-height">
+    <h5 class="text-center">Contextual colors</h5>
+    <p class="text-center text-muted">
+      <small>Use contextual classes to style list items</small>
+    </p>
+    <div class="list-group">
+      <a class="list-group-item" href="#">
+        <div class="media">
+          <div class="media-left">
+            <img class="circle" width="40" height="40" src="assets/images/user1-128x128.jpg" alt="Harry Jones">
+          </div>
+          <div class="media-middle media-body">
+            <h5 class="media-heading">Harry Jones</h5>
+            <small class="media-text">Managing Partner at MDD</small>
+          </div>
+          <div class="media-middle media-right">
+            <span class="fa fa-unlock fa-fw"></span>
+          </div>
+        </div>
+      </a>
+      <a class="list-group-item" href="#">
+        <div class="media">
+          <div class="media-left">
+            <img class="circle" width="40" height="40" src="assets/images/user1-128x128.jpg" alt="Daniel Taylor">
+          </div>
+          <div class="media-middle media-body">
+            <h5 class="media-heading">Daniel Taylor</h5>
+            <small class="media-text">Freelance Web Developer</small>
+          </div>
+          <div class="media-middle media-right">
+            <span class="fa fa-unlock fa-fw"></span>
+          </div>
+        </div>
+      </a>
+      <a class="list-group-item list-group-item-danger" href="#">
+        <div class="media">
+          <div class="media-left">
+            <img class="circle" width="40" height="40" src="assets/images/user1-128x128.jpg" alt="Charlotte Harrison">
+          </div>
+          <div class="media-middle media-body">
+            <h5 class="media-heading">Charlotte Harrison</h5>
+            <small class="media-text">Co-Founder &amp; CEO at Pi</small>
+          </div>
+          <div class="media-middle media-right">
+            <span class="fa fa-lock fa-fw"></span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="text-center m-b">
+  <h3 class="m-b-0">Material style</h3>
+  <small>The following examples show how different components can be composed to produce material lists.</small>
+</div>
+<div class="row">
+  <div class="col-sm-4 eq p-a-lg">
+    <div class="media-list">
+      <div class="media">
+        <div class="media-left">
+          <span class="icon icon-folder bg-gray circle sq-48"></span>
+        </div>
+        <div class="media-middle media-body">
+          <h5 class="media-heading">Photos</h5>
+          <small>Jan 09, 2017</small>
+        </div>
+        <div class="media-middle media-right">
+          <span class="icon icon-info-circle icon-lg"></span>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <span class="icon icon-folder bg-gray circle sq-48"></span>
+        </div>
+        <div class="media-middle media-body">
+          <h5 class="media-heading">Recipes</h5>
+          <small>Jan 17, 2017</small>
+        </div>
+        <div class="media-middle media-right">
+          <span class="icon icon-info-circle icon-lg"></span>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <span class="icon icon-folder bg-gray circle sq-48"></span>
+        </div>
+        <div class="media-middle media-body">
+          <h5 class="media-heading">Work</h5>
+          <small>Jan 28, 2017</small>
+        </div>
+        <div class="media-middle media-right">
+          <span class="icon icon-info-circle icon-lg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 eq p-a-lg">
+    <div class="media-list">
+      <div class="media">
+        <div class="media-left">
+          <span class="icon icon-graduation-cap bg-success circle sq-48"></span>
+        </div>
+        <div class="media-middle media-body">
+          <h5 class="media-heading">Education</h5>
+          <small>2,517 Apps
+                      <span class="rating">
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                      </span>
+                    </small>
+        </div>
+        <div class="media-middle media-right">
+          <label class="custom-control custom-control-primary custom-checkbox">
+            <input class="custom-control-input" type="checkbox" checked="checked">
+            <span class="custom-control-indicator"></span>
+          </label>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <span class="icon icon-briefcase bg-warning circle sq-48"></span>
+        </div>
+        <div class="media-middle media-body">
+          <h5 class="media-heading">Business</h5>
+          <small>1,867 Apps
+                      <span class="rating">
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star-half-o"></span>
+                      </span>
+                    </small>
+        </div>
+        <div class="media-middle media-right">
+          <label class="custom-control custom-control-primary custom-checkbox">
+            <input class="custom-control-input" type="checkbox" checked="checked">
+            <span class="custom-control-indicator"></span>
+          </label>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <span class="icon icon-heartbeat bg-danger circle sq-48"></span>
+        </div>
+        <div class="media-middle media-body">
+          <h5 class="media-heading">Health &amp; Fitness</h5>
+          <small>2,125 Apps
+                      <span class="rating">
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-star-half-o"></span>
+                      </span>
+                    </small>
+        </div>
+        <div class="media-middle media-right">
+          <label class="custom-control custom-control-primary custom-checkbox">
+            <input class="custom-control-input" type="checkbox" checked="checked">
+            <span class="custom-control-indicator"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 eq p-a-lg">
+    <div class="media-list media-list-divided">
+      <div class="media">
+        <div class="media-left">
+          <img class="circle" width="48" height="48" src="img/0299419341.jpg" alt="Harry Jones">
+        </div>
+        <div class="media-middle media-body">
+          <h5 class="media-heading">Harry Jones</h5>
+          <small>Managing Partner at MDD</small>
+        </div>
+        <div class="media-middle media-right">
+          <label class="switch switch-primary">
+            <input class="switch-input" type="checkbox" checked="checked">
+            <span class="switch-track"></span>
+            <span class="switch-thumb"></span>
+          </label>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <img class="circle" width="48" height="48" src="img/0310728269.jpg" alt="Daniel Taylor">
+        </div>
+        <div class="media-middle media-body">
+          <h5 class="media-heading">Daniel Taylor</h5>
+          <small>Freelance Web Developer</small>
+        </div>
+        <div class="media-middle media-right">
+          <label class="switch switch-primary">
+            <input class="switch-input" type="checkbox" checked="checked">
+            <span class="switch-track"></span>
+            <span class="switch-thumb"></span>
+          </label>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <img class="circle" width="48" height="48" src="img/0460697039.jpg" alt="Charlotte Harrison">
+        </div>
+        <div class="media-middle media-body">
+          <h5 class="media-heading">Charlotte Harrison</h5>
+          <small>Co-Founder &amp; CEO at Pi</small>
+        </div>
+        <div class="media-middle media-right">
+          <label class="switch switch-primary">
+            <input class="switch-input" type="checkbox">
+            <span class="switch-track"></span>
+            <span class="switch-thumb"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

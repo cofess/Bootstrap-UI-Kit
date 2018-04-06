@@ -22,8 +22,8 @@ body {
   @include clearfix();
   height: 100%;
   position: relative;
-  // overflow-x: hidden;
-  // overflow-y: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   .layout-boxed & {
     max-width: 1250px;
     margin: 0 auto;
