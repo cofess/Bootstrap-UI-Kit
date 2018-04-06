@@ -49,10 +49,6 @@
     @extend .outline-white;
     // @extend .outline-white[href];
   }
-  &.btn-info {
-    @extend .outline-info;
-    // @extend .outline-info[href];
-  }
   &.btn-primary {
     @extend .outline-primary;
     // @extend .outline-primary[href];
@@ -60,6 +56,10 @@
   &.btn-success {
     @extend .outline-success;
     // @extend .outline-success[href];
+  }
+  &.btn-info {
+    @extend .outline-info;
+    // @extend .outline-info[href];
   }
   &.btn-warning {
     @extend .outline-warning;

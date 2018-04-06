@@ -1,9 +1,11 @@
 /*----------------------------------------------------
  * text color
  *---------------------------------------------------*/
-.text-normal{
+
+.text-normal {
   color: $link-normal-color!important
 }
+
 // basic text color
 .text-main {
   color: $main-color!important
@@ -123,6 +125,41 @@
 
 .bg-danger {
   background-color: $brand-danger!important
+}
+
+.bg-primary[href] {
+  &:focus,
+  &:hover {
+    background-color: darken($brand-primary, 5%)!important
+  }
+}
+
+.bg-success[href] {
+  &:focus,
+  &:hover {
+    background-color: darken($brand-success, 5%)!important
+  }
+}
+
+.bg-info[href] {
+  &:focus,
+  &:hover {
+    background-color: darken($brand-info, 5%)!important
+  }
+}
+
+.bg-warning[href] {
+  &:focus,
+  &:hover {
+    background-color: darken($brand-warning, 5%)!important
+  }
+}
+
+.bg-danger[href] {
+  &:focus,
+  &:hover {
+    background-color: darken($brand-danger, 5%)!important
+  }
 }
 
 // basic monochrome background color
