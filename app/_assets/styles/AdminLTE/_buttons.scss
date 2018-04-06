@@ -105,17 +105,17 @@
   }
 }
 
-.btn-outline {
-  border: 1px solid #fff;
-  background: transparent;
-  color: #fff;
-  &:hover,
-  &:focus,
-  &:active {
-    color: rgba(255, 255, 255, .7);
-    border-color: rgba(255, 255, 255, .7);
-  }
-}
+// .btn-outline {
+//   border: 1px solid #fff;
+//   background: transparent;
+//   color: #fff;
+//   &:hover,
+//   &:focus,
+//   &:active {
+//     color: rgba(255, 255, 255, .7);
+//     border-color: rgba(255, 255, 255, .7);
+//   }
+// }
 
 .btn-link {
   @include box-shadow(none);

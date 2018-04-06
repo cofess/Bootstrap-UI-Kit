@@ -35,8 +35,14 @@
 */
 
 .btn-outline {
-  @extend .outline-default;
-  // @extend .outline-default[href];
+  border: 1px solid #fff;
+  background: transparent;
+  // color: #fff;
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+  }
   &.btn-default {
     @extend .outline-default;
     // @extend .outline-default[href];

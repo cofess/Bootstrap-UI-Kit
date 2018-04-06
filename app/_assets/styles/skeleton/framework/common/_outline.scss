@@ -1,7 +1,13 @@
 .outline-default {
   background-color: transparent;
-  border-color: #563d7c!important;
-  color: #563d7c;
+  border-color: #ddd!important;
+  color: #444;
+  &:hover,
+  &:focus,
+  &:active {
+    color: #333;
+    border-color: rgba(255, 255, 255, .7);
+  }
 }
 
 .outline-dark {
@@ -49,8 +55,8 @@
 .outline-default[href] {
   &:focus,
   &:hover {
-    background-color: #e6e6e6;
-    border-color: #ccc;
+    background-color: #e0e0e0;
+    border-color: #adadad;
     color: #333;
   }
 }
