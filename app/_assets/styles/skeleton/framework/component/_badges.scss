@@ -30,7 +30,7 @@
 }
 
 .badge-primary {
-  background-color: $brand-primary
+  @extend .bg-primary;
 }
 
 .badge-primary[href]:focus,
@@ -39,7 +39,7 @@
 }
 
 .badge-success {
-  background-color: $brand-success
+  @extend .bg-success;
 }
 
 .badge-success[href]:focus,
@@ -48,7 +48,7 @@
 }
 
 .badge-info {
-  background-color: $brand-info
+  @extend .bg-info;
 }
 
 .badge-info[href]:focus,
@@ -57,7 +57,7 @@
 }
 
 .badge-warning {
-  background-color: $brand-warning
+  @extend .bg-warning;
 }
 
 .badge-warning[href]:focus,
@@ -66,7 +66,7 @@
 }
 
 .badge-danger {
-  background-color: $brand-danger
+  @extend .bg-danger;
 }
 
 .badge-danger[href]:focus,

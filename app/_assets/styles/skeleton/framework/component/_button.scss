@@ -27,3 +27,104 @@
 .btn-dark {
   @include button-variant($btn-dark-color, $btn-dark-bg, $btn-dark-border);
 }
+
+
+/*
+* Button:Outline Button
+*
+*/
+
+.btn-outline {
+  @extend .outline-default;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #563d7c;
+    border-color: #563d7c;
+    color: #fff;
+  }
+  &.btn-default {
+    @extend .outline-default;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #e6e6e6;
+      border-color: #ccc;
+      color: #333;
+    }
+  }
+  &.btn-info {
+    @extend .outline-info;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #5bc0de;
+      border-color: #5bc0de;
+      color: #fff;
+    }
+  }
+  &.btn-primary {
+    @extend .outline-primary;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #428bca;
+      border-color: #428bca;
+      color: #fff;
+    }
+  }
+  &.btn-success {
+    @extend .outline-success;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #5cb85c;
+      border-color: #5cb85c;
+      color: #fff;
+    }
+  }
+  &.btn-warning {
+    @extend .outline-warning;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #f0ad4e;
+      border-color: #f0ad4e;
+      color: #fff;
+    }
+  }
+  &.btn-danger {
+    @extend .outline-danger;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #d9534f;
+      border-color: #d9534f;
+      color: #fff;
+    }
+  }
+  &.btn-dark {
+    background-color: transparent;
+    border-color: #5a6a7a;
+    color: #5a6a7a!important;
+    .btn-dark.btn-outline:hover,
+    .btn-dark.btn-outline:focus,
+    .btn-dark.btn-outline:active {
+      background-color: #5a6a7a;
+      border-color: #5a6a7a;
+      color: #fff!important
+    }
+  }
+  &.btn-white {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff!important;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #fff;
+      border-color: #fff;
+      color: #333!important;
+    }
+  }
+}
