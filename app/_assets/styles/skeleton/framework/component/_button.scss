@@ -45,34 +45,34 @@
   }
   &.btn-default {
     @extend .outline-default;
-    // @extend .outline-default[href];
+    @extend .outline-default[href];
   }
   &.btn-dark {
     @extend .outline-dark;
-    // @extend .outline-dark[href];
+    @extend .outline-dark[href];
   }
   &.btn-white {
     @extend .outline-white;
-    // @extend .outline-white[href];
+    @extend .outline-white[href];
   }
   &.btn-primary {
     @extend .outline-primary;
-    // @extend .outline-primary[href];
+    @extend .outline-primary[href];
   }
   &.btn-success {
     @extend .outline-success;
-    // @extend .outline-success[href];
+    @extend .outline-success[href];
   }
   &.btn-info {
     @extend .outline-info;
-    // @extend .outline-info[href];
+    @extend .outline-info[href];
   }
   &.btn-warning {
     @extend .outline-warning;
-    // @extend .outline-warning[href];
+    @extend .outline-warning[href];
   }
   &.btn-danger {
     @extend .outline-danger;
-    // @extend .outline-danger[href];
+    @extend .outline-danger[href];
   }
 }

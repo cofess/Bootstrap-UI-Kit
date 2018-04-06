@@ -1,13 +1,14 @@
 .outline-default {
   background-color: transparent;
-  border-color: #ddd!important;
-  color: #444;
-  &:hover,
-  &:focus,
-  &:active {
-    color: #333;
-    border-color: rgba(255, 255, 255, .7);
-  }
+  border-color: $btn-default-border!important;
+  color: $btn-default-color;
+  // &:hover,
+  // &:focus,
+  // &:active {
+  //   background-color: darken($btn-default-bg, 5%);
+  //   border-color: darken($btn-default-color, 10%);
+  //   color: $btn-default-color;
+  // }
 }
 
 .outline-dark {
@@ -55,9 +56,9 @@
 .outline-default[href] {
   &:focus,
   &:hover {
-    background-color: #e0e0e0;
-    border-color: #adadad;
-    color: #333;
+    background-color: darken($btn-default-bg, 5%);
+    border-color: darken($btn-default-color, 10%);
+    color: $btn-default-color;
   }
 }
 
