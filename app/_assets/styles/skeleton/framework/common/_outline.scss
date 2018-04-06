@@ -4,6 +4,18 @@
   color: #563d7c;
 }
 
+.outline-dark {
+  background-color: transparent;
+  border-color: #5a6a7a;
+  color: #5a6a7a;
+}
+
+.outline-white {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
 .outline-info {
   background-color: transparent;
   border-color: $brand-info;
@@ -32,4 +44,76 @@
   background-color: transparent;
   border-color: $brand-danger;
   color: $brand-danger;
+}
+
+.outline-default[href] {
+  &:focus,
+  &:hover {
+    background-color: #e6e6e6;
+    border-color: #ccc;
+    color: #333;
+  }
+}
+
+.outline-dark[href] {
+  &:focus,
+  &:hover {
+    background-color: #5a6a7a;
+    border-color: #5a6a7a;
+    color: #fff
+  }
+}
+
+.outline-white[href] {
+  &:focus,
+  &:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #333
+  }
+}
+
+.outline-info[href] {
+  &:focus,
+  &:hover {
+    background-color: $brand-info;
+    border-color: $brand-info;
+    color: #fff;
+  }
+}
+
+.outline-primary[href] {
+  &:focus,
+  &:hover {
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+    color: #fff;
+  }
+}
+
+.outline-success[href] {
+  &:focus,
+  &:hover {
+    background-color: $brand-success;
+    border-color: $brand-success;
+    color: #fff;
+  }
+}
+
+.outline-warning[href] {
+  &:focus,
+  &:hover {
+    background-color: $brand-warning;
+    border-color: $brand-warning;
+    color: #fff;
+  }
+}
+
+.outline-danger[href] {
+  &:focus,
+  &:hover {
+    background-color: $brand-danger;
+    border-color: $brand-danger;
+    color: #fff;
+  }
 }
