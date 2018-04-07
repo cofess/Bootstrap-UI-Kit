@@ -1,6 +1,6 @@
 .outline-default {
   background-color: transparent;
-  border-color: $btn-default-border!important;
+  border-color: $btn-default-border;
   color: $btn-default-color;
   // &:hover,
   // &:focus,
@@ -13,43 +13,43 @@
 
 .outline-dark {
   background-color: transparent;
-  border-color: #5a6a7a!important;
+  border-color: #5a6a7a;
   color: #5a6a7a;
 }
 
 .outline-white {
   background-color: transparent;
-  border-color: #fff!important;
+  border-color: #fff;
   color: #fff;
 }
 
 .outline-primary {
   background-color: transparent;
-  border-color: $brand-primary!important;
+  border-color: $brand-primary;
   color: $brand-primary;
 }
 
 .outline-success {
   background-color: transparent;
-  border-color: $brand-success!important;
+  border-color: $brand-success;
   color: $brand-success;
 }
 
 .outline-info {
   background-color: transparent;
-  border-color: $brand-info!important;
+  border-color: $brand-info;
   color: $brand-info;
 }
 
 .outline-warning {
   background-color: transparent;
-  border-color: $brand-warning!important;
+  border-color: $brand-warning;
   color: $brand-warning;
 }
 
 .outline-danger {
   background-color: transparent;
-  border-color: $brand-danger!important;
+  border-color: $brand-danger;
   color: $brand-danger;
 }
 
@@ -57,7 +57,7 @@
   &:focus,
   &:hover {
     background-color: darken($btn-default-bg, 5%);
-    border-color: darken($btn-default-color, 10%);
+    border-color: darken($btn-default-border, 10%);
     color: $btn-default-color;
   }
 }
