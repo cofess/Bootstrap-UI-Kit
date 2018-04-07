@@ -1,3 +1,8 @@
+/*
+ * Component: Label
+ * ----------------
+ */
+
 .label {
   border: 1px solid transparent;
   // display: inline-block;
@@ -5,6 +10,31 @@
   // font-weight: 600;
   // padding: .3em .6em;
   position: relative
+}
+
+.label-default {
+  background-color: $gray-lte;
+  color: #444;
+}
+
+.label-primary {
+  @extend .bg-primary;
+}
+
+.label-success {
+  @extend .bg-success;
+}
+
+.label-info {
+  @extend .bg-info;
+}
+
+.label-danger {
+  @extend .bg-danger;
+}
+
+.label-warning {
+  @extend .bg-warning;
 }
 
 .label-pill {
@@ -38,7 +68,6 @@
 //   background-color: #7d7d8e;
 //   color: #fff
 // }
-
 .label-outline-primary {
   @extend .outline-primary;
 }
@@ -48,7 +77,6 @@
 //   background-color: #f1595d;
 //   color: #fff
 // }
-
 .label-outline-success {
   @extend .outline-success;
 }
@@ -58,7 +86,6 @@
 //   background-color: #13b6bc;
 //   color: #fff
 // }
-
 .label-outline-info {
   @extend .outline-info;
 }
@@ -68,7 +95,6 @@
 //   background-color: #5ca0e6;
 //   color: #fff
 // }
-
 .label-outline-warning {
   @extend .outline-warning;
 }
@@ -78,7 +104,6 @@
 //   background-color: #fdb32b;
 //   color: #fff
 // }
-
 .label-outline-danger {
   @extend .outline-danger;
 }
