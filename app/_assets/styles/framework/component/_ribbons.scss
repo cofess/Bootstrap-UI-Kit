@@ -1,0 +1,260 @@
+/*tile-progress*/
+
+.tile-progress {
+  background-color: #303641;
+  color: #fff;
+}
+
+.tile-progress {
+  background: #00a65b;
+  color: #fff;
+  margin-bottom: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.tile-progress .tile-header {
+  padding: 15px 20px;
+  padding-bottom: 40px;
+}
+
+.tile-progress .tile-progressbar {
+  height: 2px;
+  background: rgba(0, 0, 0, 0.18);
+  margin: 0;
+}
+
+.tile-progress .tile-progressbar span {
+  background: #fff;
+}
+
+.tile-progress .tile-progressbar span {
+  display: block;
+  background: #fff;
+  width: 0;
+  height: 100%;
+  -webkit-transition: all 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  -moz-transition: all 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  -o-transition: all 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  transition: all 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+.tile-progress .tile-footer {
+  padding: 20px;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 0 0 3px 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0 0 3px 3px;
+  -moz-background-clip: padding;
+  border-radius: 0 0 3px 3px;
+  background-clip: padding-box;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+}
+
+.tile-progress.tile-red {
+  background-color: #f56954;
+  color: #fff;
+}
+
+.tile-progress {
+  background-color: #303641;
+  color: #fff;
+}
+
+.tile-progress.tile-blue {
+  background-color: #0073b7;
+  color: #fff;
+}
+
+.tile-progress.tile-aqua {
+  background-color: #00c0ef;
+  color: #fff;
+}
+
+.tile-progress.tile-green {
+  background-color: #00a65a;
+  color: #fff;
+}
+
+.tile-progress.tile-cyan {
+  background-color: #00b29e;
+  color: #fff;
+}
+
+.tile-progress.tile-purple {
+  background-color: #ba79cb;
+  color: #fff;
+}
+
+.tile-progress.tile-pink {
+  background-color: #ec3b83;
+  color: #fff;
+}
+
+
+/*offer-success*/
+
+.shape {
+  border-style: solid;
+  /*border-width: 0 70px 40px 0;*/
+  height: 0px;
+  width: 0px;
+  -ms-transform: rotate(360deg);
+  /* IE 9 */
+  -o-transform: rotate(360deg);
+  /* Opera 10.5 */
+  -webkit-transform: rotate(360deg);
+  /* Safari and Chrome */
+  transform: rotate(360deg);
+}
+
+.shape-tr {
+  border-width: 0 70px 40px 0;
+  float: right;
+}
+
+.shape-text {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  right: -40px;
+  top: 2px;
+  white-space: nowrap;
+  -ms-transform: rotate(30deg);
+  /* IE 9 */
+  -o-transform: rotate(360deg);
+  /* Opera 10.5 */
+  -webkit-transform: rotate(30deg);
+  /* Safari and Chrome */
+  transform: rotate(30deg);
+}
+
+.offer {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.offer-danger {
+  border-color: #d9534f;
+}
+
+.offer-danger .shape {
+  border-color: transparent #d9534f transparent transparent;
+  border-color: rgba(255, 255, 255, 0) #d9534f rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+}
+
+.offer-success {
+  border-color: #5cb85c;
+}
+
+.offer-success .shape {
+  border-color: transparent #5cb85c transparent transparent;
+  border-color: rgba(255, 255, 255, 0) #5cb85c rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+}
+
+.offer-default {
+  border-color: #999999;
+}
+
+.offer-default .shape {
+  border-color: transparent #999999 transparent transparent;
+  border-color: rgba(255, 255, 255, 0) #999999 rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+}
+
+.offer-primary {
+  border-color: #428bca;
+}
+
+.offer-primary .shape {
+  border-color: transparent #428bca transparent transparent;
+  border-color: rgba(255, 255, 255, 0) #428bca rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+}
+
+.offer-info {
+  border-color: #5bc0de;
+}
+
+.offer-info .shape {
+  border-color: transparent #5bc0de transparent transparent;
+  border-color: rgba(255, 255, 255, 0) #5bc0de rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+}
+
+.offer-warning {
+  border-color: #f0ad4e;
+}
+
+.offer-warning .shape {
+  border-color: transparent #f0ad4e transparent transparent;
+  border-color: rgba(255, 255, 255, 0) #f0ad4e rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+}
+
+.offer-content {
+  padding: 0 20px 10px;
+}
+
+
+/* nook */
+
+.nook {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3px 7px;
+  font-size: 12px;
+  background: #999;
+  border-radius: 0 0 6px 0;
+  color: #fff;
+}
+
+.nook[data-position*=top-right] {
+  left: auto;
+  right: 0;
+  border-radius: 0 0 0 6px;
+}
+
+.nook[data-position*=bottom-left] {
+  top: auto;
+  bottom: 0;
+  border-radius: 0 6px 0 0;
+}
+
+.nook[data-position*=bottom-right] {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  border-radius: 6px 0 0 0;
+}
+
+.nook-primary {
+  @extend .bg-primary;
+}
+
+.nook-success {
+  @extend .bg-success;
+}
+
+.nook-info {
+  @extend .bg-info;
+}
+
+.nook-warning {
+  @extend .bg-warning;
+}
+
+.nook-danger {
+  @extend .bg-danger;
+}

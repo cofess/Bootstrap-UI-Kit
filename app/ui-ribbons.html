@@ -1,0 +1,127 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+
+<!-- 页面标题 -->
+{% block title %}{{ title }} | Blank Page{% endblock %}
+
+<!-- 自定义样式 -->
+{% block style %}
+{% endblock %}
+
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="content-header">
+  <h1>
+    Blank page
+    <small>it all starts here</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li><a href="#">Examples</a></li>
+    <li class="active">Blank page</li>
+  </ol>
+</section>
+{% endblock %}
+
+<!-- 主体内容 -->
+{% block content %}
+<!-- main -->
+<div class="block">
+  <h2 class="page-header">Little offers with colors and radius</h2>
+  <div class="row">
+    <div class="col-xs-3">
+      <div class="offer offer-default">
+        <div class="shape shape-tr">
+          <div class="shape-text"> top </div>
+        </div>
+        <div class="offer-content">
+          <h3 class="lead"> A default offer </h3>
+          <p> And a little description.
+            <br> and so one </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <div class="offer offer-success">
+        <div class="shape shape-tr">
+          <div class="shape-text"> top </div>
+        </div>
+        <div class="offer-content">
+          <h3 class="lead"> A success offer </h3>
+          <p> And a little description.
+            <br> and so one </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <div class="offer offer-primary">
+        <div class="shape shape-tr">
+          <div class="shape-text"> top </div>
+        </div>
+        <div class="offer-content">
+          <h3 class="lead"> A primary-radius </h3>
+          <p> And a little description.
+            <br> and so one </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <div class="offer offer-info">
+        <div class="shape shape-tr">
+          <div class="shape-text"> top </div>
+        </div>
+        <div class="offer-content">
+          <h3 class="lead"> An info offer </h3>
+          <p> And a little description.
+            <br> and so one </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">
+      <div class="offer offer-warning">
+        <div class="shape shape-tr">
+          <div class="shape-text"> top </div>
+        </div>
+        <div class="offer-content">
+          <h3 class="lead"> A warning offer </h3>
+          <p> And a little description.
+            <br> and so one </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <div class="offer offer-danger">
+        <div class="shape shape-tr">
+          <div class="shape-text"> top </div>
+        </div>
+        <div class="offer-content">
+          <h3 class="lead"> A danger-radius </h3>
+          <p> And a little description.
+            <br> and so one </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="block">
+  <h2 class="page-header">Bootstrap Badge</h2>
+  <div class="panel panel-body relative text-center" data-toggle="match-height" style="height: 137px;">
+    <div class="nook">nook top left</div>
+    <div class="nook nook-primary" data-position="top-right">nook top right</div>
+    <div class="nook nook-warning" data-position="bottom-left">nook bottom left</div>
+    <div class="nook nook-danger" data-position="bottom-right">nook bottom right</div>
+    <h5>Nook badge</h5>
+    <p>
+      <small class="text-muted">Simply use class <code>nook</code></small>
+    </p>
+  </div>
+</div>
+{% endblock %}
