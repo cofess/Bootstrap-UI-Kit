@@ -1,0 +1,184 @@
+/*----------------------------------------------------
+ * border
+ *---------------------------------------------------*/
+
+.b {
+  border: 1px solid $border-base-color
+}
+
+.bt {
+  border-top: solid 1px $border-base-color
+}
+
+.br {
+  border-right: solid 1px $border-base-color
+}
+
+.bb {
+  border-bottom: solid 1px $border-base-color
+}
+
+.bl {
+  border-left: solid 1px $border-base-color
+}
+
+.bx {
+  border-left: solid 1px $border-base-color;
+  border-right: solid 1px $border-base-color
+}
+
+.by {
+  border-top: solid 1px $border-base-color;
+  border-bottom: solid 1px $border-base-color
+}
+
+
+/*----------------------------------------------------
+ * border width
+ *---------------------------------------------------*/
+
+.b-0 {
+  border: none
+}
+
+.bl-0 {
+  border-left: none
+}
+
+.br-0 {
+  border-right: none
+}
+
+.bt-0 {
+  border-top: none
+}
+
+.bb-0 {
+  border-bottom: none
+}
+
+.b-1 {
+  border-width: $border-1
+}
+
+.b-2 {
+  border-width: $border-2
+}
+
+.b-3 {
+  border-width: $border-3
+}
+
+.b-4 {
+  border-width: $border-4
+}
+
+.b-5 {
+  border-width: $border-5
+}
+
+.b-max {
+  border-width: $border-max
+}
+
+
+/*----------------------------------------------------
+ * border style
+ *---------------------------------------------------*/
+
+.b-dashed {
+  border-style: dashed
+}
+
+.b-dotted {
+  border-style: dotted
+}
+
+.b-double {
+  border-style: double
+}
+
+.b-inset {
+  border-style: inset
+}
+
+.b-outset {
+  border-style: outset
+}
+
+
+/*----------------------------------------------------
+ * border color
+ *---------------------------------------------------*/
+
+// basic border color
+.b-main {
+  border-color: $main-color
+}
+
+.b-sub {
+  border-color: $sub-color
+}
+
+.b-mix {
+  border-color: $mix-color
+}
+
+.b-dif {
+  border-color: $dif-color
+}
+
+// brand border color
+.b-primary {
+  border-color: $brand-primary
+}
+
+.b-success {
+  border-color: $brand-success
+}
+
+.b-info {
+  border-color: $brand-info
+}
+
+.b-warning {
+  border-color: $brand-warning
+}
+
+.b-danger {
+  border-color: $brand-danger
+}
+
+// basic monochrome border color
+.b-white {
+  border-color: $--white
+}
+
+.b-smoke {
+  border-color: $--whitesmoke
+}
+
+.b-light {
+  border-color: $--lightgray
+}
+
+.b-silver {
+  border-color: $--silver
+}
+
+.b-gray,
+.b-grey {
+  border-color: $--gray
+}
+
+.b-dark {
+  border-color: $--darkgray
+}
+
+.b-black {
+  border-color: $--black
+}
+
+.b-alpha {
+  border-color: transparent
+}

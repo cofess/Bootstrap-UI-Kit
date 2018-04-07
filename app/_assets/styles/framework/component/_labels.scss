@@ -1,0 +1,103 @@
+.label {
+  border: 1px solid transparent;
+  display: inline-block;
+  // font-size: 85%;
+  // font-weight: 600;
+  // padding: .3em .6em;
+  position: relative
+}
+
+.label-pill {
+  border-radius: 10em;
+  padding-left: 1.25em;
+  padding-right: 1.25em
+}
+
+.label-remove-btn {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  margin-left: 5px;
+  opacity: .5;
+  padding: 0
+}
+
+.label-remove-btn:focus,
+.label-remove-btn:hover {
+  opacity: 1
+}
+
+.label-outline-default {
+  background-color: transparent;
+  border-color: #7d7d8e;
+  color: #7d7d8e
+}
+
+.label-outline-default[href]:focus,
+.label-outline-default[href]:hover {
+  background-color: #7d7d8e;
+  color: #fff
+}
+
+.label-outline-primary {
+  background-color: transparent;
+  border-color: #f1595d;
+  color: #f1595d
+}
+
+.label-outline-primary[href]:focus,
+.label-outline-primary[href]:hover {
+  background-color: #f1595d;
+  color: #fff
+}
+
+.label-outline-success {
+  background-color: transparent;
+  border-color: #13b6bc;
+  color: #13b6bc
+}
+
+.label-outline-success[href]:focus,
+.label-outline-success[href]:hover {
+  background-color: #13b6bc;
+  color: #fff
+}
+
+.label-outline-info {
+  background-color: transparent;
+  border-color: #5ca0e6;
+  color: #5ca0e6
+}
+
+.label-outline-info[href]:focus,
+.label-outline-info[href]:hover {
+  background-color: #5ca0e6;
+  color: #fff
+}
+
+.label-outline-warning {
+  background-color: transparent;
+  border-color: #fdb32b;
+  color: #fdb32b
+}
+
+.label-outline-warning[href]:focus,
+.label-outline-warning[href]:hover {
+  background-color: #fdb32b;
+  color: #fff
+}
+
+.label-outline-danger {
+  background-color: transparent;
+  border-color: #fd442b;
+  color: #fd442b
+}
+
+.label-outline-danger[href]:focus,
+.label-outline-danger[href]:hover {
+  background-color: #fd442b;
+  color: #fff
+}

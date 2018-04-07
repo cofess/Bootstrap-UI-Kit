@@ -1,0 +1,126 @@
+.outline-default {
+  background-color: transparent;
+  border-color: $btn-default-border!important;
+  color: $btn-default-color;
+  // &:hover,
+  // &:focus,
+  // &:active {
+  //   background-color: darken($btn-default-bg, 5%);
+  //   border-color: darken($btn-default-color, 10%);
+  //   color: $btn-default-color;
+  // }
+}
+
+.outline-dark {
+  background-color: transparent;
+  border-color: #5a6a7a!important;
+  color: #5a6a7a;
+}
+
+.outline-white {
+  background-color: transparent;
+  border-color: #fff!important;
+  color: #fff;
+}
+
+.outline-primary {
+  background-color: transparent;
+  border-color: $brand-primary!important;
+  color: $brand-primary;
+}
+
+.outline-success {
+  background-color: transparent;
+  border-color: $brand-success!important;
+  color: $brand-success;
+}
+
+.outline-info {
+  background-color: transparent;
+  border-color: $brand-info!important;
+  color: $brand-info;
+}
+
+.outline-warning {
+  background-color: transparent;
+  border-color: $brand-warning!important;
+  color: $brand-warning;
+}
+
+.outline-danger {
+  background-color: transparent;
+  border-color: $brand-danger!important;
+  color: $brand-danger;
+}
+
+.outline-default[href] {
+  &:focus,
+  &:hover {
+    background-color: darken($btn-default-bg, 5%);
+    border-color: darken($btn-default-color, 10%);
+    color: $btn-default-color;
+  }
+}
+
+.outline-dark[href] {
+  &:focus,
+  &:hover {
+    background-color: #5a6a7a;
+    border-color: #5a6a7a;
+    color: #fff
+  }
+}
+
+.outline-white[href] {
+  &:focus,
+  &:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #333
+  }
+}
+
+.outline-primary[href] {
+  &:focus,
+  &:hover {
+    background-color: darken($brand-primary, 5%);
+    border-color: $brand-primary;
+    color: #fff;
+  }
+}
+
+.outline-success[href] {
+  &:focus,
+  &:hover {
+    background-color: darken($brand-success, 5%);
+    border-color: $brand-success;
+    color: #fff;
+  }
+}
+
+.outline-info[href] {
+  &:focus,
+  &:hover {
+    background-color: darken($brand-info, 5%);
+    border-color: $brand-info;
+    color: #fff;
+  }
+}
+
+.outline-warning[href] {
+  &:focus,
+  &:hover {
+    background-color: darken($brand-warning, 5%);
+    border-color: $brand-warning;
+    color: #fff;
+  }
+}
+
+.outline-danger[href] {
+  &:focus,
+  &:hover {
+    background-color: darken($brand-danger, 5%);
+    border-color: $brand-danger;
+    color: #fff;
+  }
+}

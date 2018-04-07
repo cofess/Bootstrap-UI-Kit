@@ -1,0 +1,174 @@
+.btn {
+  position: relative;
+}
+
+.btn-shadow {
+  &:focus,
+  &:hover,
+  &.active {
+    -moz-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+  }
+}
+
+.btn-main {
+  @include button-variant($btn-main-color, $btn-main-bg, $btn-main-border);
+}
+
+.btn-sub {
+  @include button-variant($btn-sub-color, $btn-sub-bg, $btn-sub-border);
+}
+
+.btn-mix {
+  @include button-variant($btn-mix-color, $btn-mix-bg, $btn-mix-border);
+}
+
+.btn-dif {
+  @include button-variant($btn-dif-color, $btn-dif-bg, $btn-dif-border);
+}
+
+.btn-dark {
+  @include button-variant($btn-dark-color, $btn-dark-bg, $btn-dark-border);
+}
+
+
+/*
+* Button:Outline Button
+*
+*/
+
+.btn-outline {
+  border: 1px solid #fff;
+  background: transparent;
+  // color: #fff;
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+  }
+  &.btn-default {
+    @extend .outline-default;
+    @extend .outline-default[href];
+  }
+  &.btn-dark {
+    @extend .outline-dark;
+    @extend .outline-dark[href];
+  }
+  &.btn-white {
+    @extend .outline-white;
+    @extend .outline-white[href];
+  }
+  &.btn-primary {
+    @extend .outline-primary;
+    @extend .outline-primary[href];
+  }
+  &.btn-success {
+    @extend .outline-success;
+    @extend .outline-success[href];
+  }
+  &.btn-info {
+    @extend .outline-info;
+    @extend .outline-info[href];
+  }
+  &.btn-warning {
+    @extend .outline-warning;
+    @extend .outline-warning[href];
+  }
+  &.btn-danger {
+    @extend .outline-danger;
+    @extend .outline-danger[href];
+  }
+}
+
+.btn-pill {
+  border-radius: 10em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+
+.btn-thick {
+  border-width: 2px;
+  font-weight: 600
+}
+
+.btn-group .btn-group+.btn-thick,
+.btn-group .btn-thick+.btn-group,
+.btn-group .btn-thick+.btn-thick {
+  margin-left: -2px
+}
+
+.btn-group-vertical>.btn-group+.btn-thick,
+.btn-group-vertical>.btn-thick+.btn-group,
+.btn-group-vertical>.btn-thick+.btn-thick {
+  margin-top: -2px;
+  margin-left: 0
+}
+
+.btn-labeled {
+  padding-bottom: 0;
+  padding-top: 0
+}
+
+.btn-label {
+  background-color: rgba(0, 0, 0, .15);
+  display: inline-block;
+  position: relative;
+  border-radius: 3px 0 0 3px;
+  left: -12px;
+  padding: 6px
+}
+
+.btn-label-right {
+  border-radius: 0 3px 3px 0;
+  left: auto;
+  right: -12px
+}
+
+.btn-group>.btn:last-child:not(:first-child) .btn-label,
+.btn-group>.dropdown-toggle:not(:first-child) .btn-label {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0
+}
+
+.btn-group-lg>.btn .btn-label,
+.btn-lg .btn-label {
+  border-radius: 5px 0 0 5px;
+  left: -16px;
+  padding: 10px
+}
+
+.btn-group-lg>.btn .btn-label-right,
+.btn-lg .btn-label-right {
+  border-radius: 0 5px 5px 0;
+  left: auto;
+  right: -16px
+}
+
+.btn-group-sm>.btn .btn-label,
+.btn-sm .btn-label {
+  border-radius: 2px 0 0 2px;
+  left: -10px;
+  padding: 5px
+}
+
+.btn-group-sm>.btn .btn-label-right,
+.btn-sm .btn-label-right {
+  border-radius: 0 2px 2px 0;
+  left: auto;
+  right: -10px
+}
+
+.btn-group-xs>.btn .btn-label,
+.btn-xs .btn-label {
+  border-radius: 2px 0 0 2px;
+  left: -5px;
+  padding: 1px
+}
+
+.btn-group-xs>.btn .btn-label-right,
+.btn-xs .btn-label-right {
+  border-radius: 0 2px 2px 0;
+  left: auto;
+  right: -5px
+}

@@ -1,0 +1,1035 @@
+.arrow-down:after,
+.arrow-down:before,
+.arrow-left:after,
+.arrow-left:before,
+.arrow-right:after,
+.arrow-right:before,
+.arrow-up:after,
+.arrow-up:before {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  content: " ";
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  -webkit-transition: inherit;
+  -o-transition: inherit;
+  transition: inherit;
+  width: 0;
+  z-index: 15
+}
+
+.arrow-down:after,
+.arrow-down:before,
+.arrow-up:after,
+.arrow-up:before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%)
+}
+
+.arrow-left:after,
+.arrow-left:before,
+.arrow-right:after,
+.arrow-right:before {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+
+.arrow-left.top:after,
+.arrow-left.top:before,
+.arrow-right.top:after,
+.arrow-right.top:before {
+  top: 10px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none
+}
+
+.arrow-down.right:after,
+.arrow-down.right:before,
+.arrow-up.right:after,
+.arrow-up.right:before {
+  left: auto;
+  right: 10px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none
+}
+
+.arrow-left.bottom:after,
+.arrow-left.bottom:before,
+.arrow-right.bottom:after,
+.arrow-right.bottom:before {
+  bottom: 10px;
+  top: auto;
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none
+}
+
+.arrow-down.left:after,
+.arrow-down.left:before,
+.arrow-up.left:after,
+.arrow-up.left:before {
+  left: 10px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none
+}
+
+.arrow-up:after,
+.arrow-up:before {
+  bottom: 100%
+}
+
+.arrow-up:after {
+  margin-bottom: -1px
+}
+
+.arrow-down:after,
+.arrow-down:before {
+  top: 100%
+}
+
+.arrow-down:after {
+  margin-top: -1px
+}
+
+.arrow-left:after,
+.arrow-left:before {
+  right: 100%
+}
+
+.arrow-left:after {
+  margin-right: -1px
+}
+
+.arrow-right:after,
+.arrow-right:before {
+  left: 100%
+}
+
+.arrow-right:after {
+  margin-left: -1px
+}
+
+.arrow-default {
+  background-color: #6185a8;
+  border-color: #6185a8;
+  color: #fff
+}
+
+a.arrow-default:focus,
+a.arrow-default:hover {
+  background-color: #4c6b8a;
+  border-color: #486683;
+  color: #fff
+}
+
+.arrow-up.arrow-default:before {
+  border-bottom-color: #6185a8
+}
+
+.arrow-up.arrow-default:after {
+  border-bottom-color: #6185a8
+}
+
+a.arrow-up.arrow-default:focus:before,
+a.arrow-up.arrow-default:hover:before {
+  border-bottom-color: #486683
+}
+
+a.arrow-up.arrow-default:focus:after,
+a.arrow-up.arrow-default:hover:after {
+  border-bottom-color: #4c6b8a
+}
+
+.arrow-down.arrow-default:before {
+  border-top-color: #6185a8
+}
+
+.arrow-down.arrow-default:after {
+  border-top-color: #6185a8
+}
+
+a.arrow-down.arrow-default:focus:before,
+a.arrow-down.arrow-default:hover:before {
+  border-top-color: #486683
+}
+
+a.arrow-down.arrow-default:focus:after,
+a.arrow-down.arrow-default:hover:after {
+  border-top-color: #4c6b8a
+}
+
+.arrow-left.arrow-default:before {
+  border-right-color: #6185a8
+}
+
+.arrow-left.arrow-default:after {
+  border-right-color: #6185a8
+}
+
+a.arrow-left.arrow-default:focus:before,
+a.arrow-left.arrow-default:hover:before {
+  border-right-color: #486683
+}
+
+a.arrow-left.arrow-default:focus:after,
+a.arrow-left.arrow-default:hover:after {
+  border-right-color: #4c6b8a
+}
+
+.arrow-right.arrow-default:before {
+  border-left-color: #6185a8
+}
+
+.arrow-right.arrow-default:after {
+  border-left-color: #6185a8
+}
+
+a.arrow-right.arrow-default:focus:before,
+a.arrow-right.arrow-default:hover:before {
+  border-left-color: #486683
+}
+
+a.arrow-right.arrow-default:focus:after,
+a.arrow-right.arrow-default:hover:after {
+  border-left-color: #4c6b8a
+}
+
+.arrow-primary {
+  background-color: #2c3e50;
+  border-color: #2c3e50;
+  color: #fff
+}
+
+a.arrow-primary:focus,
+a.arrow-primary:hover {
+  background-color: #1a252f;
+  border-color: #161f29;
+  color: #fff
+}
+
+.arrow-up.arrow-primary:before {
+  border-bottom-color: #2c3e50
+}
+
+.arrow-up.arrow-primary:after {
+  border-bottom-color: #2c3e50
+}
+
+a.arrow-up.arrow-primary:focus:before,
+a.arrow-up.arrow-primary:hover:before {
+  border-bottom-color: #161f29
+}
+
+a.arrow-up.arrow-primary:focus:after,
+a.arrow-up.arrow-primary:hover:after {
+  border-bottom-color: #1a252f
+}
+
+.arrow-down.arrow-primary:before {
+  border-top-color: #2c3e50
+}
+
+.arrow-down.arrow-primary:after {
+  border-top-color: #2c3e50
+}
+
+a.arrow-down.arrow-primary:focus:before,
+a.arrow-down.arrow-primary:hover:before {
+  border-top-color: #161f29
+}
+
+a.arrow-down.arrow-primary:focus:after,
+a.arrow-down.arrow-primary:hover:after {
+  border-top-color: #1a252f
+}
+
+.arrow-left.arrow-primary:before {
+  border-right-color: #2c3e50
+}
+
+.arrow-left.arrow-primary:after {
+  border-right-color: #2c3e50
+}
+
+a.arrow-left.arrow-primary:focus:before,
+a.arrow-left.arrow-primary:hover:before {
+  border-right-color: #161f29
+}
+
+a.arrow-left.arrow-primary:focus:after,
+a.arrow-left.arrow-primary:hover:after {
+  border-right-color: #1a252f
+}
+
+.arrow-right.arrow-primary:before {
+  border-left-color: #2c3e50
+}
+
+.arrow-right.arrow-primary:after {
+  border-left-color: #2c3e50
+}
+
+a.arrow-right.arrow-primary:focus:before,
+a.arrow-right.arrow-primary:hover:before {
+  border-left-color: #161f29
+}
+
+a.arrow-right.arrow-primary:focus:after,
+a.arrow-right.arrow-primary:hover:after {
+  border-left-color: #1a252f
+}
+
+.arrow-success {
+  background-color: #35cf76;
+  border-color: #35cf76;
+  color: #fff
+}
+
+a.arrow-success:focus,
+a.arrow-success:hover {
+  background-color: #28a95e;
+  border-color: #26a15a;
+  color: #fff
+}
+
+.arrow-up.arrow-success:before {
+  border-bottom-color: #35cf76
+}
+
+.arrow-up.arrow-success:after {
+  border-bottom-color: #35cf76
+}
+
+a.arrow-up.arrow-success:focus:before,
+a.arrow-up.arrow-success:hover:before {
+  border-bottom-color: #26a15a
+}
+
+a.arrow-up.arrow-success:focus:after,
+a.arrow-up.arrow-success:hover:after {
+  border-bottom-color: #28a95e
+}
+
+.arrow-down.arrow-success:before {
+  border-top-color: #35cf76
+}
+
+.arrow-down.arrow-success:after {
+  border-top-color: #35cf76
+}
+
+a.arrow-down.arrow-success:focus:before,
+a.arrow-down.arrow-success:hover:before {
+  border-top-color: #26a15a
+}
+
+a.arrow-down.arrow-success:focus:after,
+a.arrow-down.arrow-success:hover:after {
+  border-top-color: #28a95e
+}
+
+.arrow-left.arrow-success:before {
+  border-right-color: #35cf76
+}
+
+.arrow-left.arrow-success:after {
+  border-right-color: #35cf76
+}
+
+a.arrow-left.arrow-success:focus:before,
+a.arrow-left.arrow-success:hover:before {
+  border-right-color: #26a15a
+}
+
+a.arrow-left.arrow-success:focus:after,
+a.arrow-left.arrow-success:hover:after {
+  border-right-color: #28a95e
+}
+
+.arrow-right.arrow-success:before {
+  border-left-color: #35cf76
+}
+
+.arrow-right.arrow-success:after {
+  border-left-color: #35cf76
+}
+
+a.arrow-right.arrow-success:focus:before,
+a.arrow-right.arrow-success:hover:before {
+  border-left-color: #26a15a
+}
+
+a.arrow-right.arrow-success:focus:after,
+a.arrow-right.arrow-success:hover:after {
+  border-left-color: #28a95e
+}
+
+.arrow-info {
+  background-color: #3498db;
+  border-color: #3498db;
+  color: #fff
+}
+
+a.arrow-info:focus,
+a.arrow-info:hover {
+  background-color: #217dbb;
+  border-color: #2077b2;
+  color: #fff
+}
+
+.arrow-up.arrow-info:before {
+  border-bottom-color: #3498db
+}
+
+.arrow-up.arrow-info:after {
+  border-bottom-color: #3498db
+}
+
+a.arrow-up.arrow-info:focus:before,
+a.arrow-up.arrow-info:hover:before {
+  border-bottom-color: #2077b2
+}
+
+a.arrow-up.arrow-info:focus:after,
+a.arrow-up.arrow-info:hover:after {
+  border-bottom-color: #217dbb
+}
+
+.arrow-down.arrow-info:before {
+  border-top-color: #3498db
+}
+
+.arrow-down.arrow-info:after {
+  border-top-color: #3498db
+}
+
+a.arrow-down.arrow-info:focus:before,
+a.arrow-down.arrow-info:hover:before {
+  border-top-color: #2077b2
+}
+
+a.arrow-down.arrow-info:focus:after,
+a.arrow-down.arrow-info:hover:after {
+  border-top-color: #217dbb
+}
+
+.arrow-left.arrow-info:before {
+  border-right-color: #3498db
+}
+
+.arrow-left.arrow-info:after {
+  border-right-color: #3498db
+}
+
+a.arrow-left.arrow-info:focus:before,
+a.arrow-left.arrow-info:hover:before {
+  border-right-color: #2077b2
+}
+
+a.arrow-left.arrow-info:focus:after,
+a.arrow-left.arrow-info:hover:after {
+  border-right-color: #217dbb
+}
+
+.arrow-right.arrow-info:before {
+  border-left-color: #3498db
+}
+
+.arrow-right.arrow-info:after {
+  border-left-color: #3498db
+}
+
+a.arrow-right.arrow-info:focus:before,
+a.arrow-right.arrow-info:hover:before {
+  border-left-color: #2077b2
+}
+
+a.arrow-right.arrow-info:focus:after,
+a.arrow-right.arrow-info:hover:after {
+  border-left-color: #217dbb
+}
+
+.arrow-warning {
+  background-color: #e67e22;
+  border-color: #e67e22;
+  color: #fff
+}
+
+a.arrow-warning:focus,
+a.arrow-warning:hover {
+  background-color: #bf6516;
+  border-color: #b66015;
+  color: #fff
+}
+
+.arrow-up.arrow-warning:before {
+  border-bottom-color: #e67e22
+}
+
+.arrow-up.arrow-warning:after {
+  border-bottom-color: #e67e22
+}
+
+a.arrow-up.arrow-warning:focus:before,
+a.arrow-up.arrow-warning:hover:before {
+  border-bottom-color: #b66015
+}
+
+a.arrow-up.arrow-warning:focus:after,
+a.arrow-up.arrow-warning:hover:after {
+  border-bottom-color: #bf6516
+}
+
+.arrow-down.arrow-warning:before {
+  border-top-color: #e67e22
+}
+
+.arrow-down.arrow-warning:after {
+  border-top-color: #e67e22
+}
+
+a.arrow-down.arrow-warning:focus:before,
+a.arrow-down.arrow-warning:hover:before {
+  border-top-color: #b66015
+}
+
+a.arrow-down.arrow-warning:focus:after,
+a.arrow-down.arrow-warning:hover:after {
+  border-top-color: #bf6516
+}
+
+.arrow-left.arrow-warning:before {
+  border-right-color: #e67e22
+}
+
+.arrow-left.arrow-warning:after {
+  border-right-color: #e67e22
+}
+
+a.arrow-left.arrow-warning:focus:before,
+a.arrow-left.arrow-warning:hover:before {
+  border-right-color: #b66015
+}
+
+a.arrow-left.arrow-warning:focus:after,
+a.arrow-left.arrow-warning:hover:after {
+  border-right-color: #bf6516
+}
+
+.arrow-right.arrow-warning:before {
+  border-left-color: #e67e22
+}
+
+.arrow-right.arrow-warning:after {
+  border-left-color: #e67e22
+}
+
+a.arrow-right.arrow-warning:focus:before,
+a.arrow-right.arrow-warning:hover:before {
+  border-left-color: #b66015
+}
+
+a.arrow-right.arrow-warning:focus:after,
+a.arrow-right.arrow-warning:hover:after {
+  border-left-color: #bf6516
+}
+
+.arrow-danger {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  color: #fff
+}
+
+a.arrow-danger:focus,
+a.arrow-danger:hover {
+  background-color: #d62c1a;
+  border-color: #cd2a19;
+  color: #fff
+}
+
+.arrow-up.arrow-danger:before {
+  border-bottom-color: #e74c3c
+}
+
+.arrow-up.arrow-danger:after {
+  border-bottom-color: #e74c3c
+}
+
+a.arrow-up.arrow-danger:focus:before,
+a.arrow-up.arrow-danger:hover:before {
+  border-bottom-color: #cd2a19
+}
+
+a.arrow-up.arrow-danger:focus:after,
+a.arrow-up.arrow-danger:hover:after {
+  border-bottom-color: #d62c1a
+}
+
+.arrow-down.arrow-danger:before {
+  border-top-color: #e74c3c
+}
+
+.arrow-down.arrow-danger:after {
+  border-top-color: #e74c3c
+}
+
+a.arrow-down.arrow-danger:focus:before,
+a.arrow-down.arrow-danger:hover:before {
+  border-top-color: #cd2a19
+}
+
+a.arrow-down.arrow-danger:focus:after,
+a.arrow-down.arrow-danger:hover:after {
+  border-top-color: #d62c1a
+}
+
+.arrow-left.arrow-danger:before {
+  border-right-color: #e74c3c
+}
+
+.arrow-left.arrow-danger:after {
+  border-right-color: #e74c3c
+}
+
+a.arrow-left.arrow-danger:focus:before,
+a.arrow-left.arrow-danger:hover:before {
+  border-right-color: #cd2a19
+}
+
+a.arrow-left.arrow-danger:focus:after,
+a.arrow-left.arrow-danger:hover:after {
+  border-right-color: #d62c1a
+}
+
+.arrow-right.arrow-danger:before {
+  border-left-color: #e74c3c
+}
+
+.arrow-right.arrow-danger:after {
+  border-left-color: #e74c3c
+}
+
+a.arrow-right.arrow-danger:focus:before,
+a.arrow-right.arrow-danger:hover:before {
+  border-left-color: #cd2a19
+}
+
+a.arrow-right.arrow-danger:focus:after,
+a.arrow-right.arrow-danger:hover:after {
+  border-left-color: #d62c1a
+}
+
+.arrow-outline-default {
+  background-color: #fff;
+  border-color: #6185a8!important;
+  color: #6185a8
+}
+
+a.arrow-outline-default:focus,
+a.arrow-outline-default:hover {
+  background-color: #6185a8;
+  border-color: #6185a8!important;
+  color: #fff
+}
+
+.arrow-up.arrow-outline-default:before {
+  border-bottom-color: #6185a8
+}
+
+.arrow-up.arrow-outline-default:after {
+  border-bottom-color: #fff
+}
+
+a.arrow-up.arrow-outline-default:focus:after,
+a.arrow-up.arrow-outline-default:hover:after {
+  border-bottom-color: #6185a8
+}
+
+.arrow-down.arrow-outline-default:before {
+  border-top-color: #6185a8
+}
+
+.arrow-down.arrow-outline-default:after {
+  border-top-color: #fff
+}
+
+a.arrow-down.arrow-outline-default:focus:after,
+a.arrow-down.arrow-outline-default:hover:after {
+  border-top-color: #6185a8
+}
+
+.arrow-left.arrow-outline-default:before {
+  border-right-color: #6185a8
+}
+
+.arrow-left.arrow-outline-default:after {
+  border-right-color: #fff
+}
+
+a.arrow-left.arrow-outline-default:focus:after,
+a.arrow-left.arrow-outline-default:hover:after {
+  border-right-color: #6185a8
+}
+
+.arrow-right.arrow-outline-default:before {
+  border-left-color: #6185a8
+}
+
+.arrow-right.arrow-outline-default:after {
+  border-left-color: #fff
+}
+
+a.arrow-right.arrow-outline-default:focus:after,
+a.arrow-right.arrow-outline-default:hover:after {
+  border-left-color: #6185a8
+}
+
+.arrow-outline-primary {
+  background-color: #fff;
+  border-color: #2c3e50!important;
+  color: #2c3e50
+}
+
+a.arrow-outline-primary:focus,
+a.arrow-outline-primary:hover {
+  background-color: #2c3e50;
+  border-color: #2c3e50!important;
+  color: #fff
+}
+
+.arrow-up.arrow-outline-primary:before {
+  border-bottom-color: #2c3e50
+}
+
+.arrow-up.arrow-outline-primary:after {
+  border-bottom-color: #fff
+}
+
+a.arrow-up.arrow-outline-primary:focus:after,
+a.arrow-up.arrow-outline-primary:hover:after {
+  border-bottom-color: #2c3e50
+}
+
+.arrow-down.arrow-outline-primary:before {
+  border-top-color: #2c3e50
+}
+
+.arrow-down.arrow-outline-primary:after {
+  border-top-color: #fff
+}
+
+a.arrow-down.arrow-outline-primary:focus:after,
+a.arrow-down.arrow-outline-primary:hover:after {
+  border-top-color: #2c3e50
+}
+
+.arrow-left.arrow-outline-primary:before {
+  border-right-color: #2c3e50
+}
+
+.arrow-left.arrow-outline-primary:after {
+  border-right-color: #fff
+}
+
+a.arrow-left.arrow-outline-primary:focus:after,
+a.arrow-left.arrow-outline-primary:hover:after {
+  border-right-color: #2c3e50
+}
+
+.arrow-right.arrow-outline-primary:before {
+  border-left-color: #2c3e50
+}
+
+.arrow-right.arrow-outline-primary:after {
+  border-left-color: #fff
+}
+
+a.arrow-right.arrow-outline-primary:focus:after,
+a.arrow-right.arrow-outline-primary:hover:after {
+  border-left-color: #2c3e50
+}
+
+.arrow-outline-success {
+  background-color: #fff;
+  border-color: #35cf76!important;
+  color: #35cf76
+}
+
+a.arrow-outline-success:focus,
+a.arrow-outline-success:hover {
+  background-color: #35cf76;
+  border-color: #35cf76!important;
+  color: #fff
+}
+
+.arrow-up.arrow-outline-success:before {
+  border-bottom-color: #35cf76
+}
+
+.arrow-up.arrow-outline-success:after {
+  border-bottom-color: #fff
+}
+
+a.arrow-up.arrow-outline-success:focus:after,
+a.arrow-up.arrow-outline-success:hover:after {
+  border-bottom-color: #35cf76
+}
+
+.arrow-down.arrow-outline-success:before {
+  border-top-color: #35cf76
+}
+
+.arrow-down.arrow-outline-success:after {
+  border-top-color: #fff
+}
+
+a.arrow-down.arrow-outline-success:focus:after,
+a.arrow-down.arrow-outline-success:hover:after {
+  border-top-color: #35cf76
+}
+
+.arrow-left.arrow-outline-success:before {
+  border-right-color: #35cf76
+}
+
+.arrow-left.arrow-outline-success:after {
+  border-right-color: #fff
+}
+
+a.arrow-left.arrow-outline-success:focus:after,
+a.arrow-left.arrow-outline-success:hover:after {
+  border-right-color: #35cf76
+}
+
+.arrow-right.arrow-outline-success:before {
+  border-left-color: #35cf76
+}
+
+.arrow-right.arrow-outline-success:after {
+  border-left-color: #fff
+}
+
+a.arrow-right.arrow-outline-success:focus:after,
+a.arrow-right.arrow-outline-success:hover:after {
+  border-left-color: #35cf76
+}
+
+.arrow-outline-info {
+  background-color: #fff;
+  border-color: #3498db!important;
+  color: #3498db
+}
+
+a.arrow-outline-info:focus,
+a.arrow-outline-info:hover {
+  background-color: #3498db;
+  border-color: #3498db!important;
+  color: #fff
+}
+
+.arrow-up.arrow-outline-info:before {
+  border-bottom-color: #3498db
+}
+
+.arrow-up.arrow-outline-info:after {
+  border-bottom-color: #fff
+}
+
+a.arrow-up.arrow-outline-info:focus:after,
+a.arrow-up.arrow-outline-info:hover:after {
+  border-bottom-color: #3498db
+}
+
+.arrow-down.arrow-outline-info:before {
+  border-top-color: #3498db
+}
+
+.arrow-down.arrow-outline-info:after {
+  border-top-color: #fff
+}
+
+a.arrow-down.arrow-outline-info:focus:after,
+a.arrow-down.arrow-outline-info:hover:after {
+  border-top-color: #3498db
+}
+
+.arrow-left.arrow-outline-info:before {
+  border-right-color: #3498db
+}
+
+.arrow-left.arrow-outline-info:after {
+  border-right-color: #fff
+}
+
+a.arrow-left.arrow-outline-info:focus:after,
+a.arrow-left.arrow-outline-info:hover:after {
+  border-right-color: #3498db
+}
+
+.arrow-right.arrow-outline-info:before {
+  border-left-color: #3498db
+}
+
+.arrow-right.arrow-outline-info:after {
+  border-left-color: #fff
+}
+
+a.arrow-right.arrow-outline-info:focus:after,
+a.arrow-right.arrow-outline-info:hover:after {
+  border-left-color: #3498db
+}
+
+.arrow-outline-warning {
+  background-color: #fff;
+  border-color: #e67e22!important;
+  color: #e67e22
+}
+
+a.arrow-outline-warning:focus,
+a.arrow-outline-warning:hover {
+  background-color: #e67e22;
+  border-color: #e67e22!important;
+  color: #fff
+}
+
+.arrow-up.arrow-outline-warning:before {
+  border-bottom-color: #e67e22
+}
+
+.arrow-up.arrow-outline-warning:after {
+  border-bottom-color: #fff
+}
+
+a.arrow-up.arrow-outline-warning:focus:after,
+a.arrow-up.arrow-outline-warning:hover:after {
+  border-bottom-color: #e67e22
+}
+
+.arrow-down.arrow-outline-warning:before {
+  border-top-color: #e67e22
+}
+
+.arrow-down.arrow-outline-warning:after {
+  border-top-color: #fff
+}
+
+a.arrow-down.arrow-outline-warning:focus:after,
+a.arrow-down.arrow-outline-warning:hover:after {
+  border-top-color: #e67e22
+}
+
+.arrow-left.arrow-outline-warning:before {
+  border-right-color: #e67e22
+}
+
+.arrow-left.arrow-outline-warning:after {
+  border-right-color: #fff
+}
+
+a.arrow-left.arrow-outline-warning:focus:after,
+a.arrow-left.arrow-outline-warning:hover:after {
+  border-right-color: #e67e22
+}
+
+.arrow-right.arrow-outline-warning:before {
+  border-left-color: #e67e22
+}
+
+.arrow-right.arrow-outline-warning:after {
+  border-left-color: #fff
+}
+
+a.arrow-right.arrow-outline-warning:focus:after,
+a.arrow-right.arrow-outline-warning:hover:after {
+  border-left-color: #e67e22
+}
+
+.arrow-outline-danger {
+  background-color: #fff;
+  border-color: #e74c3c!important;
+  color: #e74c3c
+}
+
+a.arrow-outline-danger:focus,
+a.arrow-outline-danger:hover {
+  background-color: #e74c3c;
+  border-color: #e74c3c!important;
+  color: #fff
+}
+
+.arrow-up.arrow-outline-danger:before {
+  border-bottom-color: #e74c3c
+}
+
+.arrow-up.arrow-outline-danger:after {
+  border-bottom-color: #fff
+}
+
+a.arrow-up.arrow-outline-danger:focus:after,
+a.arrow-up.arrow-outline-danger:hover:after {
+  border-bottom-color: #e74c3c
+}
+
+.arrow-down.arrow-outline-danger:before {
+  border-top-color: #e74c3c
+}
+
+.arrow-down.arrow-outline-danger:after {
+  border-top-color: #fff
+}
+
+a.arrow-down.arrow-outline-danger:focus:after,
+a.arrow-down.arrow-outline-danger:hover:after {
+  border-top-color: #e74c3c
+}
+
+.arrow-left.arrow-outline-danger:before {
+  border-right-color: #e74c3c
+}
+
+.arrow-left.arrow-outline-danger:after {
+  border-right-color: #fff
+}
+
+a.arrow-left.arrow-outline-danger:focus:after,
+a.arrow-left.arrow-outline-danger:hover:after {
+  border-right-color: #e74c3c
+}
+
+.arrow-right.arrow-outline-danger:before {
+  border-left-color: #e74c3c
+}
+
+.arrow-right.arrow-outline-danger:after {
+  border-left-color: #fff
+}
+
+a.arrow-right.arrow-outline-danger:focus:after,
+a.arrow-right.arrow-outline-danger:hover:after {
+  border-left-color: #e74c3c
+}
+
+.arrow-lg:after,
+.arrow-lg:before {
+  border-width: 8px
+}
+
+.arrow-sm:after,
+.arrow-sm:before {
+  border-width: 4px
+}

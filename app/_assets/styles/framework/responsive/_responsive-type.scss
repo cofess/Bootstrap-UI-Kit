@@ -1,0 +1,78 @@
+/*----------------------------------------------------
+ * text align
+ *---------------------------------------------------*/
+
+@media (max-width: $screen-xs-max) {
+  .text-xs-left {
+    text-align: left!important
+  }
+  .text-xs-center {
+    text-align: center!important
+  }
+  .text-xs-right {
+    text-align: right!important
+  }
+  .text-xs-justify {
+    text-align: justify!important
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .text-sm-left {
+    text-align: left!important
+  }
+  .text-sm-center {
+    text-align: center!important
+  }
+  .text-sm-right {
+    text-align: right!important
+  }
+  .text-sm-justify {
+    text-align: justify!important
+  }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .text-md-left {
+    text-align: left!important
+  }
+  .text-md-center {
+    text-align: center!important
+  }
+  .text-md-right {
+    text-align: right!important
+  }
+  .text-md-justify {
+    text-align: justify!important
+  }
+}
+
+@media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+  .text-lg-left {
+    text-align: left!important
+  }
+  .text-lg-center {
+    text-align: center!important
+  }
+  .text-lg-right {
+    text-align: right!important
+  }
+  .text-lg-justify {
+    text-align: justify!important
+  }
+}
+
+@media (min-width: $screen-xl-min) {
+  .text-xl-left {
+    text-align: left!important
+  }
+  .text-xl-center {
+    text-align: center!important
+  }
+  .text-xl-right {
+    text-align: right!important
+  }
+  .text-xl-justify {
+    text-align: justify!important
+  }
+}
