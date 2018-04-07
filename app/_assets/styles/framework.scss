@@ -50,4 +50,8 @@
 @import "framework/component/icon-style";
 @import "framework/component/labels";
 @import "framework/component/radio";
-@import "framework/common/outline";
+
+/*----------------------------------------------------
+ * extend 相同样式，共同部分样式
+ *---------------------------------------------------*/
+@import "framework/extend/outline";

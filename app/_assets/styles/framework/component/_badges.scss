@@ -21,12 +21,13 @@
 }
 
 .badge-default {
-  background-color: #6185a8
+  background-color: $brand-default;
+  color: #777!important
 }
 
 .badge-default[href]:focus,
 .badge-default[href]:hover {
-  background-color: #4c6b8a
+  background-color: darken($brand-default, 5%);
 }
 
 .badge-primary {
