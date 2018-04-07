@@ -9,18 +9,33 @@
   background: #999;
   border-radius: 0 0 6px 0;
   color: #fff;
+  &.nook-rounded {
+    width: 45px;
+    height: 45px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 0% 0% 50% 0%;
+  }
 }
 
 .nook[data-position*=top-right] {
   left: auto;
   right: 0;
   border-radius: 0 0 0 6px;
+  &.nook-rounded {
+    border-radius: 0% 0% 0% 50%;
+  }
 }
 
 .nook[data-position*=bottom-left] {
   top: auto;
   bottom: 0;
   border-radius: 0 6px 0 0;
+  &.nook-rounded {
+    line-height: 45px;
+    border-radius: 0% 50% 0% 0%;
+  }
 }
 
 .nook[data-position*=bottom-right] {
@@ -29,6 +44,10 @@
   bottom: 0;
   left: auto;
   border-radius: 6px 0 0 0;
+  &.nook-rounded {
+    line-height: 45px;
+    border-radius: 50% 0% 0% 0%;
+  }
 }
 
 .nook-primary {
