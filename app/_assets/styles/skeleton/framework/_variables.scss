@@ -48,6 +48,7 @@ $--darkgray: 			  	 darkgray !default;
 $--black: 				  	 black !default;
 
 // brand colors
+$brand-default:           	 #f4f4f4 !default;
 $brand-primary:           	 #2196f3 !default;
 $brand-success:           	 #5cb85c !default;
 $brand-info:              	 #5bc0de !default;
@@ -64,7 +65,7 @@ $link-hover-color:        	 darken($link-color, 10%) !default;
 //== Buttons
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
-$btn-default-color:           #333;
+$btn-default-color:           #666;
 $btn-default-bg:              #f4f4f4;
 $btn-default-border:          darken($btn-default-bg, 5%);
 

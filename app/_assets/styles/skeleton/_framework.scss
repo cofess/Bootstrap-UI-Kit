@@ -1,3 +1,4 @@
+@import "bootstrap/variables";
 @import "framework/variables";
 @import "framework/mixins"; // bootstrap mixins
 
@@ -25,7 +26,6 @@
 @import "framework/common/width";
 @import "framework/common/thumb";
 @import "framework/common/shadow";
-@import "framework/common/outline";
 @import "framework/common/other";
 
 /*----------------------------------------------------
@@ -50,3 +50,8 @@
 @import "framework/component/icon-style";
 @import "framework/component/labels";
 @import "framework/component/radio";
+
+/*----------------------------------------------------
+ * extend 相同样式，共同部分样式
+ *---------------------------------------------------*/
+@import "framework/extend/outline";

@@ -22,7 +22,7 @@
 
 .badge-default {
   background-color: $brand-default;
-  color: #777!important
+  color: #666
 }
 
 .badge-default[href]:focus,
@@ -56,16 +56,14 @@
 }
 
 .badge-outline-default {
-  background-color: transparent;
-  border-color: #6185a8;
-  color: #6185a8
+  @extend .outline-default;
 }
 
-.badge-outline-default[href]:focus,
-.badge-outline-default[href]:hover {
-  background-color: #6185a8;
-  color: #fff
-}
+// .badge-outline-default[href]:focus,
+// .badge-outline-default[href]:hover {
+//   background-color: #6185a8;
+//   color: #fff
+// }
 
 .badge-outline-primary {
   @extend .outline-primary;
