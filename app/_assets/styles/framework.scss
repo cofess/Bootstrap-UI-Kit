@@ -37,21 +37,26 @@
 @import "framework/responsive/responsive-type";
 
 /*----------------------------------------------------
+ * core
+ *---------------------------------------------------*/
+@import "framework/core/button";
+@import "framework/core/arrow";
+@import "framework/core/badges";
+@import "framework/core/box";
+@import "framework/core/callout";
+@import "framework/core/divider";
+@import "framework/core/dropdown";
+@import "framework/core/icon-style";
+@import "framework/core/labels";
+@import "framework/core/radio";
+
+/*----------------------------------------------------
  * component
  *---------------------------------------------------*/
-@import "framework/component/button";
-@import "framework/component/arrow";
-@import "framework/component/badges";
-@import "framework/component/box";
-@import "framework/component/callout";
-@import "framework/component/divider";
-@import "framework/component/dropdown";
 @import "framework/component/flag";
 @import "framework/component/hoverEffect";
-@import "framework/component/icon-style";
-@import "framework/component/labels";
-@import "framework/component/radio";
 @import "framework/component/ribbons";
+
 /*----------------------------------------------------
  * extend 相同样式，共同部分样式
  *---------------------------------------------------*/
