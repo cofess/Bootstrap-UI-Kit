@@ -3,227 +3,118 @@
  * ----------------
  */
 
-.ribbon {
+.band {
   position: relative;
   display: inline-block;
-  height: 36px;
-  line-height: 36px;
+  height: 30px;
+  line-height: 30px;
   background: #ae8f75;
   color: #fff;
   font-size: 14px;
   font-style: italic;
   text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
-  padding: 0 10px 0 25px;
+  padding: 0 10px 0 15px;
   z-index: 3;
   left: -50px;
-}
-
-.ribbon:after {
-  content: '';
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 18px 0 18px 15px;
-  border-color: transparent transparent transparent #ae8f75;
-  top: 0;
-  right: -15px;
-}
-
-.ribbon:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -27px;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 0 26px 27px 0;
-  border-color: transparent #917055 transparent transparent;
-  z-index: 2;
-}
-
-.ribbon .ribbon-stitches-top {
-  position: absolute;
-  bottom: -27px;
-  left: -25px;
-  height: 35px;
-  width: 51px;
-  background: #ae8f75;
-  z-index: 1;
-}
-
-.ribbon .ribbon-stitches-top:before {
-  content: '';
-  position: absolute;
-  left: -14px;
-  top: 0;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 0 14px 16px 0;
-  border-color: transparent #ae8f75 transparent transparent;
-}
-
-.ribbon .ribbon-stitches-top:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: -11px;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 0 0 18px 11px;
-  border-color: transparent transparent #ae8f75 transparent;
-}
-
-
-/*info ribbon*/
-
-.ribbon.ribbon-info,
-.ribbon.ribbon-info .ribbon-stitches-top {
-  background: #0cc3d9;
-}
-
-.ribbon.ribbon-info:after {
-  border-color: transparent transparent transparent #0cc3d9;
-}
-
-.ribbon.ribbon-info:before {
-  border-color: transparent #0f98a9 transparent transparent;
-}
-
-.ribbon.ribbon-info .ribbon-stitches-top:before {
-  border-color: transparent #0cc3d9 transparent transparent;
-}
-
-.ribbon.ribbon-info .ribbon-stitches-top:after {
-  border-color: transparent transparent #0cc3d9 transparent;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 10px 15px 0;
+    border-color: transparent #917055 transparent transparent;
+    z-index: 2;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 15px 0 15px 10px;
+    border-color: transparent transparent transparent #ae8f75;
+    top: 0;
+    right: -10px;
+  }
 }
 
 
 /*primary ribbon*/
 
-.ribbon.ribbon-primary,
-.ribbon.ribbon-primary .ribbon-stitches-top {
-  background: #428bca;
-}
-
-.ribbon.ribbon-primary:after {
-  border-color: transparent transparent transparent #428bca;
-}
-
-.ribbon.ribbon-primary:before {
-  border-color: transparent #2F74AF transparent transparent;
-}
-
-.ribbon.ribbon-primary .ribbon-stitches-top:before {
-  border-color: transparent #428bca transparent transparent;
-}
-
-.ribbon.ribbon-primary .ribbon-stitches-top:after {
-  border-color: transparent transparent #428bca transparent;
+.band-primary {
+  background: $brand-primary;
+  &:before {
+    border-color: transparent darken($brand-primary, 10%) transparent transparent;
+  }
+  &:after {
+    border-color: transparent transparent transparent $brand-primary;
+  }
 }
 
 
 /* success ribbon*/
 
-.ribbon.ribbon-success,
-.ribbon.ribbon-success .ribbon-stitches-top {
-  background: #c1ca00;
+.band-success {
+  background: $brand-success;
+  &:before {
+    border-color: transparent darken($brand-success, 10%) transparent transparent;
+  }
+  &:after {
+    border-color: transparent transparent transparent $brand-success;
+  }
 }
 
-.ribbon.ribbon-success:after {
-  border-color: transparent transparent transparent #c1ca00;
-}
 
-.ribbon.ribbon-success:before {
-  border-color: transparent #a6ae00 transparent transparent;
-}
+/*info ribbon*/
 
-.ribbon.ribbon-success .ribbon-stitches-top:before {
-  border-color: transparent #c1ca00 transparent transparent;
-}
-
-.ribbon.ribbon-success .ribbon-stitches-top:after {
-  border-color: transparent transparent #c1ca00 transparent;
+.band-info {
+  background: $brand-info;
+  &:before {
+    border-color: transparent darken($brand-info, 10%) transparent transparent;
+  }
+  &:after {
+    border-color: transparent transparent transparent $brand-info;
+  }
 }
 
 
 /*warning ribbon*/
 
-.ribbon.ribbon-warning,
-.ribbon.ribbon-warning .ribbon-stitches-top {
-  background: #ffb529;
-}
-
-.ribbon.ribbon-warning:after {
-  border-color: transparent transparent transparent #ffb529;
-}
-
-.ribbon.ribbon-warning:before {
-  border-color: transparent #d29520 transparent transparent;
-}
-
-.ribbon.ribbon-warning .ribbon-stitches-top:before {
-  border-color: transparent #ffb529 transparent transparent;
-}
-
-.ribbon.ribbon-warning .ribbon-stitches-top:after {
-  border-color: transparent transparent #ffb529 transparent;
+.band-warning {
+  background: $brand-warning;
+  &:before {
+    border-color: transparent darken($brand-warning, 10%) transparent transparent;
+  }
+  &:after {
+    border-color: transparent transparent transparent $brand-warning;
+  }
 }
 
 
 /*danger ribbon*/
 
-.ribbon.ribbon-danger,
-.ribbon.ribbon-danger .ribbon-stitches-top {
-  background: #ee5190;
-}
-
-.ribbon.ribbon-danger:after {
-  border-color: transparent transparent transparent #ee5190;
-}
-
-.ribbon.ribbon-danger:before {
-  border-color: transparent #d03473 transparent transparent;
-}
-
-.ribbon.ribbon-danger .ribbon-stitches-top:before {
-  border-color: transparent #ee5190 transparent transparent;
-}
-
-.ribbon.ribbon-danger .ribbon-stitches-top:after {
-  border-color: transparent transparent #ee5190 transparent;
+.band-danger {
+  background: $brand-danger;
+  &:before {
+    border-color: transparent darken($brand-danger, 10%) transparent transparent;
+  }
+  &:after {
+    border-color: transparent transparent transparent $brand-danger;
+  }
 }
 
 
 /*dark ribbon*/
 
-.ribbon.ribbon-dark,
-.ribbon.ribbon-dark .ribbon-stitches-top {
+.band-dark {
   background: #3c3c3c;
-}
-
-.ribbon.ribbon-dark:after {
-  border-color: transparent transparent transparent #3c3c3c;
-}
-
-.ribbon.ribbon-dark:before {
-  border-color: transparent #222 transparent transparent;
-}
-
-.ribbon.ribbon-dark .ribbon-stitches-top:before {
-  border-color: transparent #3c3c3c transparent transparent;
-}
-
-.ribbon.ribbon-dark .ribbon-stitches-top:after {
-  border-color: transparent transparent #3c3c3c transparent;
-}
-
-@media (max-width:479px),
-(min-width:768px) and (max-width:991px) {
-  .ribbon {
-    left: -36px;
+  &:before {
+    border-color: transparent #222 transparent transparent;
+  }
+  &:after {
+    border-color: transparent transparent transparent #3c3c3c;
   }
 }
