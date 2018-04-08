@@ -4,18 +4,19 @@
  */
 
 .band {
-  position: relative;
+  position: absolute;
+  left: -10px;
   display: inline-block;
+  padding: 0 10px 0 15px;
   height: 30px;
   line-height: 30px;
   background: #ae8f75;
+  border-radius: 0 3px 3px 0;
   color: #fff;
   font-size: 14px;
   font-style: italic;
   text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
-  padding: 0 10px 0 15px;
   z-index: 3;
-  left: -50px;
   &:before {
     content: '';
     position: absolute;
@@ -28,17 +29,17 @@
     border-color: transparent #917055 transparent transparent;
     z-index: 2;
   }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 15px 0 15px 10px;
-    border-color: transparent transparent transparent #ae8f75;
-    top: 0;
-    right: -10px;
-  }
+  // &:after {
+  //   content: '';
+  //   position: absolute;
+  //   width: 0px;
+  //   height: 0px;
+  //   border-style: solid;
+  //   border-width: 15px 0 15px 10px;
+  //   border-color: transparent transparent transparent #ae8f75;
+  //   top: 0;
+  //   right: -10px;
+  // }
 }
 
 
@@ -49,9 +50,9 @@
   &:before {
     border-color: transparent darken($brand-primary, 10%) transparent transparent;
   }
-  &:after {
-    border-color: transparent transparent transparent $brand-primary;
-  }
+  // &:after {
+  //   border-color: transparent transparent transparent $brand-primary;
+  // }
 }
 
 
@@ -62,9 +63,9 @@
   &:before {
     border-color: transparent darken($brand-success, 10%) transparent transparent;
   }
-  &:after {
-    border-color: transparent transparent transparent $brand-success;
-  }
+  // &:after {
+  //   border-color: transparent transparent transparent $brand-success;
+  // }
 }
 
 
@@ -75,9 +76,9 @@
   &:before {
     border-color: transparent darken($brand-info, 10%) transparent transparent;
   }
-  &:after {
-    border-color: transparent transparent transparent $brand-info;
-  }
+  // &:after {
+  //   border-color: transparent transparent transparent $brand-info;
+  // }
 }
 
 
@@ -88,9 +89,9 @@
   &:before {
     border-color: transparent darken($brand-warning, 10%) transparent transparent;
   }
-  &:after {
-    border-color: transparent transparent transparent $brand-warning;
-  }
+  // &:after {
+  //   border-color: transparent transparent transparent $brand-warning;
+  // }
 }
 
 
@@ -101,9 +102,9 @@
   &:before {
     border-color: transparent darken($brand-danger, 10%) transparent transparent;
   }
-  &:after {
-    border-color: transparent transparent transparent $brand-danger;
-  }
+  // &:after {
+  //   border-color: transparent transparent transparent $brand-danger;
+  // }
 }
 
 
@@ -114,7 +115,53 @@
   &:before {
     border-color: transparent #222 transparent transparent;
   }
-  &:after {
-    border-color: transparent transparent transparent #3c3c3c;
+  // &:after {
+  //   border-color: transparent transparent transparent #3c3c3c;
+  // }
+}
+
+.band[data-position*=right] {
+  left: auto;
+  right: -10px;
+  padding: 0 15px 0 10px;
+  border-radius: 3px 0 0 3px;
+  &:before {
+    position: absolute;
+    left: auto;
+    right: 0;
+    bottom: -15px;
+    border-width: 0 0 15px 10px;
+    border-color: transparent transparent transparent #917055;
+    z-index: 2;
+  }
+  &.band-primary {
+    &:before {
+      border-color: transparent transparent transparent darken($brand-primary, 10%);
+    }
+  }
+  &.band-success {
+    &:before {
+      border-color: transparent transparent transparent darken($brand-success, 10%);
+    }
+  }
+  &.band-info {
+    &:before {
+      border-color: transparent transparent transparent darken($brand-info, 10%);
+    }
+  }
+  &.band-warning {
+    &:before {
+      border-color: transparent transparent transparent darken($brand-warning, 10%);
+    }
+  }
+  &.band-danger {
+    &:before {
+      border-color: transparent transparent transparent darken($brand-danger, 10%);
+    }
+  }
+  &.band-dark {
+    &:before {
+      border-color: transparent transparent transparent #222;
+    }
   }
 }
