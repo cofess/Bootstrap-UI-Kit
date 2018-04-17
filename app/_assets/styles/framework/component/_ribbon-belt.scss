@@ -1,6 +1,6 @@
-/* nook */
+/* belt */
 
-.nook {
+.belt {
   position: absolute;
   top: 0;
   left: 0;
@@ -9,7 +9,7 @@
   background: #999;
   border-radius: 0 0 6px 0;
   color: #fff;
-  &.nook-rounded {
+  &.belt-rounded {
     width: 45px;
     height: 45px;
     line-height: 35px;
@@ -19,53 +19,53 @@
   }
 }
 
-.nook[data-position*=top-right] {
+.belt[data-position*=top-right] {
   left: auto;
   right: 0;
   border-radius: 0 0 0 6px;
-  &.nook-rounded {
+  &.belt-rounded {
     border-radius: 0% 0% 0% 50%;
   }
 }
 
-.nook[data-position*=bottom-left] {
+.belt[data-position*=bottom-left] {
   top: auto;
   bottom: 0;
   border-radius: 0 6px 0 0;
-  &.nook-rounded {
+  &.belt-rounded {
     line-height: 45px;
     border-radius: 0% 50% 0% 0%;
   }
 }
 
-.nook[data-position*=bottom-right] {
+.belt[data-position*=bottom-right] {
   top: auto;
   right: 0;
   bottom: 0;
   left: auto;
   border-radius: 6px 0 0 0;
-  &.nook-rounded {
+  &.belt-rounded {
     line-height: 45px;
     border-radius: 50% 0% 0% 0%;
   }
 }
 
-.nook-primary {
+.belt-primary {
   @extend .bg-primary;
 }
 
-.nook-success {
+.belt-success {
   @extend .bg-success;
 }
 
-.nook-info {
+.belt-info {
   @extend .bg-info;
 }
 
-.nook-warning {
+.belt-warning {
   @extend .bg-warning;
 }
 
-.nook-danger {
+.belt-danger {
   @extend .bg-danger;
 }
