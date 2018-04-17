@@ -20,10 +20,6 @@
   @include button-variant($btn-mix-color, $btn-mix-bg, $btn-mix-border);
 }
 
-.btn-dif {
-  @include button-variant($btn-dif-color, $btn-dif-bg, $btn-dif-border);
-}
-
 .btn-dark {
   @include button-variant($btn-dark-color, $btn-dark-bg, $btn-dark-border);
 }

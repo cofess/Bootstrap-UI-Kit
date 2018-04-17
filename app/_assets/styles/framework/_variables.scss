@@ -47,7 +47,7 @@ $brand-default:           	   #f4f4f4;
 $brand-primary:           	   #1c90fb; // 主色
 $brand-secondary: 			   #39CCCC; // 辅助色
 $brand-mix: 			  	   #605ca8; // 融合色
-$brand-dif: 			  	   #D81B60; // 对比色
+// $brand-dif: 			  	   #D81B60; // 对比色
 $brand-success:           	   #3FB618;
 $brand-info:              	   #00c0ef;
 $brand-warning:           	   #f39c12;
@@ -74,10 +74,6 @@ $btn-secondary-border:         darken($btn-secondary-bg, 0%);
 $btn-mix-color:                #fff;
 $btn-mix-bg:                   $brand-mix;
 $btn-mix-border:               darken($btn-mix-bg, 0%);
-
-$btn-dif-color:                #fff;
-$btn-dif-bg:                   $brand-dif;
-$btn-dif-border:               darken($btn-dif-bg, 0%);
 
 $btn-dark-color:               #fff;
 $btn-dark-bg:                  #5a6a7a;

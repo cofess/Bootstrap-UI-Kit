@@ -125,13 +125,6 @@
       }
     }
   }
-  &.box-dif {
-    .box-title {
-      &:after {
-        background-color: $brand-dif;
-      }
-    }
-  }
   &.box-primary {
     >.box-title {
       &:after {
@@ -177,9 +170,6 @@
   &.box-mix {
     border-top: 3px solid $brand-mix;
   }
-  &.box-dif {
-    border-top: 3px solid $brand-dif;
-  }
 }
 
 .box-cover {
@@ -195,11 +185,6 @@
   &.box-mix {
     .box-header {
       background-color: $brand-mix;
-    }
-  }
-  &.box-dif {
-    .box-header {
-      background-color: $brand-dif;
     }
   }
 }
