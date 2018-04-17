@@ -73,7 +73,7 @@ no-button伪类表示轨道结束的位置没有按钮。
 }
 
 ::-webkit-scrollbar-thumb:vertical:active {
-  background-color: $main-color;
+  background-color: $brand-primary;
 }
 
 ::-webkit-scrollbar-track {

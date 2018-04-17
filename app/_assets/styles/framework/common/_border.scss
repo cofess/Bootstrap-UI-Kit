@@ -32,7 +32,6 @@
   border-bottom: solid 1px $border-base-color
 }
 
-
 /*----------------------------------------------------
  * border width
  *---------------------------------------------------*/
@@ -81,7 +80,6 @@
   border-width: $border-max
 }
 
-
 /*----------------------------------------------------
  * border style
  *---------------------------------------------------*/
@@ -106,26 +104,21 @@
   border-style: outset
 }
 
-
 /*----------------------------------------------------
  * border color
  *---------------------------------------------------*/
 
 // basic border color
-.b-main {
-  border-color: $main-color
-}
-
-.b-sub {
-  border-color: $sub-color
+.b-secondary {
+  border-color: $brand-secondary
 }
 
 .b-mix {
-  border-color: $mix-color
+  border-color: $brand-mix
 }
 
 .b-dif {
-  border-color: $dif-color
+  border-color: $brand-dif
 }
 
 // brand border color

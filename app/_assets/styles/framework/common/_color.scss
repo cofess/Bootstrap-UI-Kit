@@ -7,20 +7,16 @@
 }
 
 // basic text color
-.text-main {
-  color: $main-color!important
-}
-
-.text-sub {
-  color: $sub-color!important
+.text-secondary {
+  color: $brand-secondary!important
 }
 
 .text-mix {
-  color: $mix-color!important
+  color: $brand-mix!important
 }
 
 .text-dif {
-  color: $dif-color!important
+  color: $brand-dif!important
 }
 
 // brand text color
@@ -90,20 +86,16 @@
  *---------------------------------------------------*/
 
 // basic background color
-.bg-main {
-  background-color: $main-color!important
-}
-
-.bg-sub {
-  background-color: $sub-color!important
+.bg-secondary {
+  background-color: $brand-secondary!important
 }
 
 .bg-mix {
-  background-color: $mix-color!important
+  background-color: $brand-mix!important
 }
 
 .bg-dif {
-  background-color: $dif-color!important
+  background-color: $brand-dif!important
 }
 
 // brand background color

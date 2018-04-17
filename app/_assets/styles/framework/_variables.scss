@@ -32,11 +32,6 @@ $text-color:            	 #08081a !default; // 正文颜色
  * ajust-due($color,90deg) 色调调节
  *---------------------------------------------------*/
 $normal-color: 				 $text-color !default; // 正文颜色
-// basic color
-$main-color: 			  	 #ff5500 !default; // 主色
-$sub-color: 			  	 #ff9600 !default; // 辅助色,互补色
-$mix-color: 			  	 #e6e6e6 !default; // 融合色,浅色（浅白、高级灰）
-$dif-color: 			  	 #0080ff !default; // 对比色
 
 // Basic monochrome color
 $--white: 			  	   	 white !default;
@@ -48,12 +43,15 @@ $--darkgray: 			  	 darkgray !default;
 $--black: 				  	 black !default;
 
 // brand colors
-$brand-default:           	 #f4f4f4 !default;
-$brand-primary:           	 #2196f3 !default;
-$brand-success:           	 #5cb85c !default;
-$brand-info:              	 #5bc0de !default;
-$brand-warning:           	 #f0ad4e !default;
-$brand-danger:            	 #d9534f !default;
+$brand-default:           	 #f4f4f4;
+$brand-primary:           	 #1c90fb; // 主色
+$brand-secondary: 			 #ff9600 !default; // 辅助色
+$brand-mix: 			  	 #e6e6e6 !default; // 融合色
+$brand-dif: 			  	 #0080ff !default; // 对比色
+$brand-success:           	 #3FB618;
+$brand-info:              	 #00c0ef;
+$brand-warning:           	 #f39c12;
+$brand-danger:            	 #dd4b39;
 
 /*----------------------------------------------------
  * Global textual link color.
