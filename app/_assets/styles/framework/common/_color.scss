@@ -86,6 +86,10 @@
  *---------------------------------------------------*/
 
 // basic background color
+.bg-default {
+  background-color: $brand-default!important
+}
+
 .bg-secondary {
   background-color: $brand-secondary!important
 }
