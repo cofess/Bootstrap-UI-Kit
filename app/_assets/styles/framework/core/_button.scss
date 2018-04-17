@@ -12,8 +12,8 @@
   }
 }
 
-.btn-sub {
-  @include button-variant($btn-sub-color, $btn-sub-bg, $btn-sub-border);
+.btn-secondary {
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
 }
 
 .btn-mix {
