@@ -12,10 +12,6 @@
   }
 }
 
-.btn-main {
-  @include button-variant($btn-main-color, $btn-main-bg, $btn-main-border);
-}
-
 .btn-sub {
   @include button-variant($btn-sub-color, $btn-sub-bg, $btn-sub-border);
 }

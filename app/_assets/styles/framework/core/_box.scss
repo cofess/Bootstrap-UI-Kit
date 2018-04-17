@@ -1,6 +1,5 @@
 .box {
-  background-color: #fff;
-  // padding: 20px;
+  background-color: #fff; // padding: 20px;
   border: 1px solid $border-color;
   >.box-title {
     padding: $panel-heading-padding;
@@ -112,84 +111,74 @@
       }
     }
   }
-  &.box-main {
+  &.box-secondary {
     .box-title {
       &:after {
-        background-color: $main-color;
-      }
-    }
-  }
-  &.box-sub {
-    .box-title {
-      &:after {
-        background-color: $sub-color;
+        background-color: $brand-secondary;
       }
     }
   }
   &.box-mix {
     .box-title {
       &:after {
-        background-color: $mix-color;
+        background-color: $brand-mix;
       }
     }
   }
   &.box-dif {
     .box-title {
       &:after {
-        background-color: $dif-color;
+        background-color: $brand-dif;
+      }
+    }
+  }
+  &.box-primary {
+    >.box-title {
+      &:after {
+        background-color: $panel-primary-heading-bg;
+      }
+    }
+  }
+  &.box-success {
+    >.box-title {
+      &:after {
+        background-color: $panel-success-heading-bg;
+      }
+    }
+  }
+  &.box-info {
+    >.box-title {
+      &:after {
+        background-color: $panel-info-heading-bg;
+      }
+    }
+  }
+  &.box-warning {
+    >.box-title {
+      &:after {
+        background-color: $panel-warning-heading-bg;
+      }
+    }
+  }
+  &.box-danger {
+    >.box-title {
+      &:after {
+        background-color: $panel-danger-heading-bg;
       }
     }
   }
 }
 
-// .box-primary {
-//   >.box-title {
-//     &:after {
-//       background-color: $panel-primary-heading-bg;
-//     }
-//   }
-// }
-// .box-info {
-//   >.box-title {
-//     &:after {
-//       background-color: $panel-info-heading-bg;
-//     }
-//   }
-// }
-// .box-success {
-//   >.box-title {
-//     &:after {
-//       background-color: $panel-success-heading-bg;
-//     }
-//   }
-// }
-// .box-danger {
-//   >.box-title {
-//     &:after {
-//       background-color: $panel-danger-heading-bg;
-//     }
-//   }
-// }
-// .box-warning {
-//   >.box-title {
-//     &:after {
-//       background-color: $panel-warning-heading-bg;
-//     }
-//   }
-// }
 .box-bordered {
   border-top: 3px solid $normal-color;
-  &.box-main {
-    border-top: 3px solid $main-color;
-  }
-  &.box-sub {
-    border-top: 3px solid $sub-color;
+  &.box-secondary {
+    border-top: 3px solid $brand-secondary;
   }
   &.box-mix {
-    border-top: 3px solid $mix-color;
+    border-top: 3px solid $brand-mix;
   }
   &.box-dif {
-    border-top: 3px solid $dif-color;
+    border-top: 3px solid $brand-dif;
   }
 }
 
@@ -198,24 +187,19 @@
     background-color: $normal-color;
     color: #fff
   }
-  &.box-main {
+  &.box-secondary {
     .box-header {
-      background-color: $main-color;
-    }
-  }
-  &.box-sub {
-    .box-header {
-      background-color: $sub-color;
+      background-color: $brand-secondary;
     }
   }
   &.box-mix {
     .box-header {
-      background-color: $mix-color;
+      background-color: $brand-mix;
     }
   }
   &.box-dif {
     .box-header {
-      background-color: $dif-color;
+      background-color: $brand-dif;
     }
   }
 }
