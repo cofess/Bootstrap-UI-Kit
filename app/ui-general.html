@@ -10,41 +10,6 @@
 <!-- 页面标题 -->
 {% block title %}{{ title }} | General UI{% endblock %}
 
-<!-- 自定义样式 -->
-{% block style %}
-<style>
-.color-palette {
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-}
-
-.color-palette-set {
-  margin-bottom: 15px;
-}
-
-.color-palette span {
-  display: none;
-  font-size: 12px;
-}
-
-.color-palette:hover span {
-  display: block;
-}
-
-.color-palette-box h4 {
-  position: absolute;
-  top: 100%;
-  left: 25px;
-  margin-top: -40px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 12px;
-  display: block;
-  z-index: 7;
-}
-</style>
-{% endblock %}
-
 <!-- 面包屑导航 -->
 {% block breadcrumb %}
 <section class="content-header">
@@ -66,13 +31,11 @@
 <h2 class="page-header">Alerts and Callouts</h2>
 <div class="row">
   <div class="col-md-6">
-    <div class="box box-default">
-      <div class="box-header with-border">
-        <i class="fa fa-warning"></i>
-        <h3 class="box-title">Alerts</h3>
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Alerts</h3>
       </div>
-      <!-- /.box-header -->
-      <div class="box-body">
+      <div class="card-body">
         <div class="alert alert-danger alert-dismissible">
           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
           <h4><i class="icon fa fa-ban"></i> Alert!</h4> Danger alert preview. This alert is dismissable. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
@@ -90,19 +53,15 @@
           <h4><i class="icon fa fa-check"></i> Alert!</h4> Success alert preview. This alert is dismissable.
         </div>
       </div>
-      <!-- /.box-body -->
     </div>
-    <!-- /.box -->
   </div>
   <!-- /.col -->
   <div class="col-md-6">
-    <div class="box box-default">
-      <div class="box-header with-border">
-        <i class="fa fa-bullhorn"></i>
-        <h3 class="box-title">Callouts</h3>
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Callouts</h3>
       </div>
-      <!-- /.box-header -->
-      <div class="box-body">
+      <div class="card-body">
         <div class="callout callout-danger">
           <h4>I am a danger callout!</h4>
           <p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
@@ -120,9 +79,7 @@
           <p>This is a green callout.</p>
         </div>
       </div>
-      <!-- /.box-body -->
     </div>
-    <!-- /.box -->
   </div>
   <!-- /.col -->
 </div>
@@ -222,12 +179,11 @@
 <h2 class="page-header">Progress Bars</h2>
 <div class="row">
   <div class="col-md-6">
-    <div class="box box-solid">
-      <div class="box-header with-border">
-        <h3 class="box-title">Progress Bars Different Sizes</h3>
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Progress Bars Different Sizes</h3>
       </div>
-      <!-- /.box-header -->
-      <div class="box-body">
+      <div class="card-body">
         <p><code>.progress</code></p>
         <div class="progress">
           <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
@@ -253,18 +209,15 @@
           </div>
         </div>
       </div>
-      <!-- /.box-body -->
     </div>
-    <!-- /.box -->
   </div>
   <!-- /.col (left) -->
   <div class="col-md-6">
-    <div class="box box-solid">
-      <div class="box-header with-border">
-        <h3 class="box-title">Progress bars</h3>
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Progress bars</h3>
       </div>
-      <!-- /.box-header -->
-      <div class="box-body">
+      <div class="card-body">
         <div class="progress">
           <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
             <span class="sr-only">40% Complete (success)</span>
@@ -286,21 +239,18 @@
           </div>
         </div>
       </div>
-      <!-- /.box-body -->
     </div>
-    <!-- /.box -->
   </div>
   <!-- /.col (right) -->
 </div>
 <!-- /.row -->
 <div class="row">
   <div class="col-md-6">
-    <div class="box box-solid">
-      <div class="box-header with-border">
-        <h3 class="box-title">Vertical Progress Bars Different Sizes</h3>
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Vertical Progress Bars Different Sizes</h3>
       </div>
-      <!-- /.box-header -->
-      <div class="box-body text-center">
+      <div class="card-body text-center">
         <p>By adding the class <code>.vertical</code> and <code>.progress-sm</code>, <code>.progress-xs</code> or
           <code>.progress-xxs</code> we achieve:</p>
         <div class="progress vertical active">
@@ -324,18 +274,15 @@
           </div>
         </div>
       </div>
-      <!-- /.box-body -->
     </div>
-    <!-- /.box -->
   </div>
   <!-- /.col (left) -->
   <div class="col-md-6">
-    <div class="box box-solid">
-      <div class="box-header with-border">
-        <h3 class="box-title">Vertical Progress bars</h3>
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Vertical Progress bars</h3>
       </div>
-      <!-- /.box-header -->
-      <div class="box-body text-center">
+      <div class="card-body text-center">
         <p>By adding the class <code>.vertical</code> we achieve:</p>
         <div class="progress vertical">
           <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="height: 40%">
@@ -358,9 +305,7 @@
           </div>
         </div>
       </div>
-      <!-- /.box-body -->
     </div>
-    <!-- /.box -->
   </div>
   <!-- /.col (right) -->
 </div>
@@ -370,12 +315,11 @@
 <h2 class="page-header">Bootstrap Accordion & Carousel</h2>
 <div class="row">
   <div class="col-md-6">
-    <div class="box box-solid">
-      <div class="box-header with-border">
-        <h3 class="box-title">Collapsible Accordion</h3>
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Collapsible Accordion</h3>
       </div>
-      <!-- /.box-header -->
-      <div class="box-body">
+      <div class="card-body">
         <div class="box-group" id="accordion">
           <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
           <div class="panel box box-primary">
@@ -422,18 +366,16 @@
           </div>
         </div>
       </div>
-      <!-- /.box-body -->
     </div>
-    <!-- /.box -->
   </div>
   <!-- /.col -->
   <div class="col-md-6">
-    <div class="box box-solid">
-      <div class="box-header with-border">
-        <h3 class="box-title">Carousel</h3>
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Carousel</h3>
       </div>
       <!-- /.box-header -->
-      <div class="box-body">
+      <div class="card-body">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -468,9 +410,7 @@
           </a>
         </div>
       </div>
-      <!-- /.box-body -->
     </div>
-    <!-- /.box -->
   </div>
   <!-- /.col -->
 </div>
