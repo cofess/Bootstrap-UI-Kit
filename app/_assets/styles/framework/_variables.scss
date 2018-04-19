@@ -133,13 +133,13 @@ $--padding-max:			  	   ($padding-base * 20) !default;
 /*----------------------------------------------------
  * margin
  *---------------------------------------------------*/
-$margin-1:				  	   ($margin-base * 1) !default;
-$margin-2:				  	   ($margin-base * 2) !default;
-$margin-3:				  	   ($margin-base * 3) !default;
-$margin-4:				  	   ($margin-base * 4) !default;
-$margin-5:				  	   ($margin-base * 6) !default;
-$margin-6:				  	   ($margin-base * 12) !default;
-$margin-max:			  	   ($margin-base * 20) !default;
+$--margin-1:				   ($margin-base * 1) !default;
+$--margin-2:				   ($margin-base * 2) !default;
+$--margin-3:				   ($margin-base * 3) !default;
+$--margin-4:				   ($margin-base * 4) !default;
+$--margin-5:				   ($margin-base * 6) !default;
+$--margin-6:				   ($margin-base * 12) !default;
+$--margin-max:			  	   ($margin-base * 20) !default;
 
 /*----------------------------------------------------
  * border
