@@ -29,23 +29,23 @@
 }
 
 .radius-1 {
-  border-radius: $border-radius-1!important
+  border-radius: $--border-radius-1!important
 }
 
 .radius-2 {
-  border-radius: $border-radius-2!important
+  border-radius: $--border-radius-2!important
 }
 
 .radius-3 {
-  border-radius: $border-radius-3!important
+  border-radius: $--border-radius-3!important
 }
 
 .radius-4 {
-  border-radius: $border-radius-4!important
+  border-radius: $--border-radius-4!important
 }
 
 .radius-5 {
-  border-radius: $border-radius-5!important
+  border-radius: $--border-radius-5!important
 }
 
 .radius-100 {
@@ -53,9 +53,9 @@
 }
 
 .rounded {
-  -moz-border-radius: $border-radius-rounded!important;
-  -webkit-border-radius: $border-radius-rounded!important;
-  border-radius: $border-radius-rounded!important;
+  -moz-border-radius: $--border-radius-rounded!important;
+  -webkit-border-radius: $--border-radius-rounded!important;
+  border-radius: $--border-radius-rounded!important;
   // overflow: hidden
 }
 
@@ -67,5 +67,5 @@
 }
 
 .radius-max {
-  border-radius: $border-radius-max!important
+  border-radius: $--border-radius-max!important
 }
