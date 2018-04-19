@@ -91,13 +91,13 @@ $--box-6: 				  	   ($size-base * 16) !default;  // 128px
  * thumb
  *---------------------------------------------------*/
 $--thumb-base: 				   8px !default;
-$--thumb: 					   $--thumb-base * 3 !default;
-$--thumb-1: 				   $--thumb-base * 4 !default;
-$--thumb-2: 				   $--thumb-base * 6 !default;
-$--thumb-3: 				   $--thumb-base * 8 !default;
-$--thumb-4: 				   $--thumb-base * 12 !default;
-$--thumb-5: 				   $--thumb-base * 16 !default;
-$--thumb-max: 				   $--thumb-base * 32 !default;
+$--thumb: 					   ($--thumb-base * 3) !default; // 24px
+$--thumb-1: 				   ($--thumb-base * 4) !default; // 32px
+$--thumb-2: 				   ($--thumb-base * 6) !default; // 48px
+$--thumb-3: 				   ($--thumb-base * 8) !default; // 64px
+$--thumb-4: 				   ($--thumb-base * 12) !default; // 96px
+$--thumb-5: 				   ($--thumb-base * 16) !default; // 128px
+$--thumb-max: 				   ($--thumb-base * 32) !default; // 256px
 
 /*----------------------------------------------------
  * height
@@ -122,13 +122,13 @@ $--width-6: 			  	   ($size-base * 42) !default; // 336px
 /*----------------------------------------------------
  * padding
  *---------------------------------------------------*/
-$padding-1:				  	   ($padding-base * 1) !default;
-$padding-2:				  	   ($padding-base * 2) !default;
-$padding-3:				  	   ($padding-base * 3) !default;
-$padding-4:				  	   ($padding-base * 4) !default;
-$padding-5:				  	   ($padding-base * 6) !default;
-$padding-6:				  	   ($padding-base * 12) !default;
-$padding-max:			  	   ($padding-base * 20) !default;
+$--padding-1:				   ($padding-base * 1) !default;
+$--padding-2:				   ($padding-base * 2) !default;
+$--padding-3:				   ($padding-base * 3) !default;
+$--padding-4:				   ($padding-base * 4) !default;
+$--padding-5:				   ($padding-base * 6) !default;
+$--padding-6:				   ($padding-base * 12) !default;
+$--padding-max:			  	   ($padding-base * 20) !default;
 
 /*----------------------------------------------------
  * margin
