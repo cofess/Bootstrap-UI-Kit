@@ -2,7 +2,7 @@
  * border
  *---------------------------------------------------*/
 
-.b {
+.border {
   border: 1px solid $border-color-base
 }
 
@@ -36,23 +36,23 @@
  * border width
  *---------------------------------------------------*/
 
-.b-0 {
+.no-border {
   border: none
 }
 
-.bl-0 {
+.no-bl {
   border-left: none
 }
 
-.br-0 {
+.no-br {
   border-right: none
 }
 
-.bt-0 {
+.no-bt {
   border-top: none
 }
 
-.bb-0 {
+.no-bb {
   border-bottom: none
 }
 
