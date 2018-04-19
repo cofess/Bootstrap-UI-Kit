@@ -3,33 +3,33 @@
  *---------------------------------------------------*/
 
 .b {
-  border: 1px solid $border-base-color
+  border: 1px solid $border-color-base
 }
 
 .bt {
-  border-top: solid 1px $border-base-color
+  border-top: solid 1px $border-color-base
 }
 
 .br {
-  border-right: solid 1px $border-base-color
+  border-right: solid 1px $border-color-base
 }
 
 .bb {
-  border-bottom: solid 1px $border-base-color
+  border-bottom: solid 1px $border-color-base
 }
 
 .bl {
-  border-left: solid 1px $border-base-color
+  border-left: solid 1px $border-color-base
 }
 
 .bx {
-  border-left: solid 1px $border-base-color;
-  border-right: solid 1px $border-base-color
+  border-left: solid 1px $border-color-base;
+  border-right: solid 1px $border-color-base
 }
 
 .by {
-  border-top: solid 1px $border-base-color;
-  border-bottom: solid 1px $border-base-color
+  border-top: solid 1px $border-color-base;
+  border-bottom: solid 1px $border-color-base
 }
 
 /*----------------------------------------------------
