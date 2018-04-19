@@ -1,0 +1,95 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+
+<!-- 页面标题 -->
+{% block title %}{{ title }} | Thumbnails{% endblock %}
+
+<!-- 自定义样式 -->
+{% block style %}
+{% endblock %}
+
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="content-header">
+  <h1>
+    Blank page
+    <small>it all starts here</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li><a href="#">Examples</a></li>
+    <li class="active">Blank page</li>
+  </ol>
+</section>
+{% endblock %}
+
+<!-- 主体内容 -->
+{% block content %}
+<!-- box -->
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">图片样式:圆角</h3>
+  </div>
+  <div class="card-body bg">
+    <img src="assets/images/user-160x160.png" class="mb-1" title="none">
+    <img src="assets/images/user-160x160.png" class="radius-1 mb-1" title="radius-1">
+    <img src="assets/images/user-160x160.png" class="radius-2 mb-1" title="radius-2">
+    <img src="assets/images/user-160x160.png" class="radius-3 mb-1" title="radius-3">
+    <img src="assets/images/user-160x160.png" class="radius-4 mb-1" title="radius-4">
+    <img src="assets/images/user-160x160.png" class="radius-5 mb-1" title="radius-5">
+    <img src="assets/images/user-160x160.png" class="rounded mb-1" title="rounded">
+    <img src="assets/images/user-160x160.png" class="circle mb-1" title="circle">
+    <img src="assets/images/user-160x160.png" class="img-rounded mb-1" title="img-rounded">
+    <img src="assets/images/user-160x160.png" class="img-circle mb-1" title="img-circle">
+  </div>
+</div>
+<!-- /box -->
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">图片样式：外边框</h3>
+  </div>
+  <div class="card-body bg">
+    <img src="assets/images/user-160x160.png" class="img-thumbnail mb-1">
+    <img src="assets/images/user-160x160.png" class="border p-1 mb-1x">
+    <img src="assets/images/user-160x160.png" class="border p-1 img-rounded mb-1">
+    <img src="assets/images/user-160x160.png" class="border p-1 img-circle mb-1">
+    <img src="assets/images/user-160x160.png" class="border p-2 img-circle mb-1">
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">图片样式：外边框颜色</h3>
+  </div>
+  <div class="card-body bg">
+    <img src="assets/images/user-160x160.png" class="border p-1 b-primary mb-1">
+    <img src="assets/images/user-160x160.png" class="border p-1 b-success mb-1">
+    <img src="assets/images/user-160x160.png" class="border p-1 b-info mb-1">
+    <img src="assets/images/user-160x160.png" class="border p-1 b-warning mb-1">
+    <img src="assets/images/user-160x160.png" class="border p-1 b-danger mb-1">
+    <img src="assets/images/user-160x160.png" class="border p-1 b-black mb-1">
+    <img src="assets/images/user-160x160.png" class="border p-1 b-black b-dashed mb-1">
+    <img src="assets/images/user-160x160.png" class="border p-1 b-black b-dotted mb-1">
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">图片样式:图片尺寸</h3>
+  </div>
+  <div class="card-body bg">
+    <img src="assets/images/user-160x160.png" class="thumb-0x" title="thumb-0x">
+    <img src="assets/images/user-160x160.png" class="thumb-1x" title="thumb-1x">
+    <img src="assets/images/user-160x160.png" class="thumb-2x" title="thumb-2x">
+    <img src="assets/images/user-160x160.png" class="thumb-3x" title="thumb-3x">
+    <img src="assets/images/user-160x160.png" class="thumb-4x" title="thumb-4x">
+    <img src="assets/images/user-160x160.png" class="thumb-5x" title="thumb-5x">
+    <img src="assets/images/user-160x160.png" class="thumb-6x" title="thumb-6x">
+    <img src="assets/images/user-160x160.png" class="thumb" title="thumb-default-size">
+  </div>
+</div>
+{% endblock %}

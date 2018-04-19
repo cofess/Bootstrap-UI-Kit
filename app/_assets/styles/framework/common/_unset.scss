@@ -8,6 +8,13 @@
   border: none;
 }
 
+// Remove border radius
+.no-radius {
+  -moz-border-radius: unset;
+  -webkit-border-radius: unset;
+  border-radius: unset;
+}
+
 // Remove padding
 .no-padding {
   padding: 0 !important;
