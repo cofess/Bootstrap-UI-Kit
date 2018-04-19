@@ -23,17 +23,6 @@
   overflow-y: auto;
 }
 
-
-/*transform*/
-
-.no-transform {
-  -ms-transform: none!important;
-  -webkit-transform: none!important;
-  -o-transform: none!important;
-  -moz-transform: none!important;
-  transform: none!important;
-}
-
 .form-required{
   &:after{
     content:'*';

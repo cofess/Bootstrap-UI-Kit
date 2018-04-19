@@ -10,12 +10,6 @@ div[class*="shadow"] {
   transition: all .2s linear
 }
 
-.no-shadow {
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
 .shadow,
 .hover-shadow:hover {
   -moz-box-shadow: 0 15px 30px -10px rgba(0, 0, 0, .1);
