@@ -5,6 +5,9 @@
   .pull-xs-right {
     float: right!important
   }
+  .pull-xs-none {
+    float: none!important
+  }
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
@@ -13,6 +16,9 @@
   }
   .pull-sm-right {
     float: right!important
+  }
+  .pull-sm-none {
+    float: none!important
   }
 }
 
@@ -23,6 +29,9 @@
   .pull-md-right {
     float: right!important
   }
+  .pull-md-none {
+    float: none!important
+  }
 }
 
 @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
@@ -32,6 +41,9 @@
   .pull-lg-right {
     float: right!important
   }
+  .pull-lg-none {
+    float: none!important
+  }
 }
 
 @media (min-width: $screen-xl-min) {
@@ -40,5 +52,8 @@
   }
   .pull-xl-right {
     float: right!important
+  }
+  .pull-xl-none {
+    float: none!important
   }
 }
