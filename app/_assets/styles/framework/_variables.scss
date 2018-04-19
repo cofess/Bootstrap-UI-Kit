@@ -174,15 +174,14 @@ $--line-height-5: 			   ($line-height-base * 4.8) !default;
 /*----------------------------------------------------
  * text font size
  *---------------------------------------------------*/
-$font-size-basic: 			   8px !default;
-$font-size-normal: 			   14px !default;
-$font-size-1: 				   ($font-size-basic * 2) !default;
-$font-size-2: 				   ($font-size-basic * 2 + 2) !default;
-$font-size-3: 				   ($font-size-basic * 3) !default;
-$font-size-4: 				   ($font-size-basic * 4) !default;
-$font-size-5: 				   ($font-size-basic * 6) !default;
-$font-size-min: 			   12px !default;
-$font-size-max: 			   ($font-size-basic * 12) !default;
+$--font-size-1: 			   ($font-size-base + (2 * 1)) !default; // 16px
+$--font-size-2: 			   ($font-size-base + (2 * 2)) !default; // 18px
+$--font-size-3: 			   ($font-size-base + (2 * 3)) !default; // 20px
+$--font-size-4: 			   ($font-size-base + (2 * 6)) !default; // 26px
+$--font-size-5: 			   ($font-size-base + (2 * 9)) !default; // 32px
+$--font-size-small: 		   12px !default;
+$--font-size-big: 			   ($font-size-base + (2 * 15)) !default; // 44px
+$--font-size-large: 		   ($font-size-base + (2 * 24)) !default; // 62px
 
 /*----------------------------------------------------
  * z-index
