@@ -12,6 +12,145 @@
 
 <!-- 自定义样式 -->
 {% block style %}
+<style>
+  .thumbnail-container {
+    display: block;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    z-index: 0;
+    background: #f7f7f7;
+    background-position: 50%;
+    background-size: cover
+  }
+
+  .thumbnail-container.no_thumbnail:after {
+    font-family: "FontAwesome", serif;
+    content: "\f03e";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #BFBFBF;
+    font-size: 18px;
+    margin-top: -7px;
+    margin-left: -10px;
+    line-height: 1
+  }
+
+  .thumbnail-container>img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    color: #a0a0a0;
+    z-index: -1
+  }
+
+  .thumbnail-background>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+  }
+
+  .size-500 {
+    padding-bottom: 50%
+  }
+
+  .size-715 {
+    padding-bottom: 71.5%
+  }
+
+  .size-1000 {
+    padding-bottom: 100%
+  }
+
+  .size-1400 {
+    padding-bottom: 140%
+  }
+
+  .size-1500 {
+    padding-bottom: 150%
+  }
+
+  .thumbnail-container:not(.no_thumbnail).animate-lazy:before,
+  .owl-carousel .owl-item .thumbnail-container:not(.no_thumbnail):before {
+    content: "";
+    opacity: 1;
+    background-color: #f7f7f7;
+    background-image: -webkit-gradient(linear, left top, right top, from(#f7f7f7), color-stop(20%, #eee), color-stop(40%, #f5f5f5), to(#f7f7f7));
+    background-image: linear-gradient(90deg, #f7f7f7 0%, #eee 20%, #f5f5f5 40%, #f7f7f7 100%);
+    background-repeat: no-repeat;
+    -webkit-animation: jeg-lazyload 1s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+    animation: jeg-lazyload 1s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2
+  }
+
+  .lazyload,
+  .afterloading {
+    opacity: 0
+  }
+
+  @-webkit-keyframes jeg-lazyload {
+    from {
+      background-position: -400px 0
+    }
+
+    to {
+      background-position: 800px 0
+    }
+  }
+
+  @keyframes jeg-lazyload {
+    from {
+      background-position: -400px 0
+    }
+
+    to {
+      background-position: 800px 0
+    }
+  }
+
+  .thumbnail-container:not(.no_thumbnail).animate-lazy .lazyload[src*=jeg-empty],
+  .thumbnail-container:not(.no_thumbnail).animate-lazy .lazyloading:not([style*=background-image]),
+  .thumbnail-container:not(.no_thumbnail) .owl-lazy[src*=jeg-empty] {
+    content: "";
+    opacity: 1;
+    background: #f7f7f7 url('https://jnews.io/music/wp-content/themes/jnews/assets/dist/image/preloader.gif');
+    background-position: 50%;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2
+  }
+
+  .lazyloaded,
+  .thumbnail-background>div.lazyloaded {
+    opacity: 1;
+    transition: opacity .4s ease
+  }
+</style>
 {% endblock %}
 
 <!-- 面包屑导航 -->
@@ -31,6 +170,11 @@
 
 <!-- 主体内容 -->
 {% block content %}
-<!-- row -->
-<!-- /.row -->
+<div class="row">
+  <div class="col-md-6">
+    <div class="thumbnail-container animate-lazy size-500">
+      <img width="360" height="180" class="attachment-jnews-360x180 size-jnews-360x180 wp-post-image lazyautosizes lazyloaded " data-src="https://jnews.io/music/wp-content/uploads/sites/33/2017/10/jnews-demo-7-360x180.jpg">
+    </div>
+  </div>
+</div>
 {% endblock %}
