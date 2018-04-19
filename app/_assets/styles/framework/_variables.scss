@@ -2,6 +2,25 @@
 // Variables
 // --------------------------------------------------
 
+$font-family-default:          -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif !default;
+$font-family-nice: 			   "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif !default;
+$font-family-arial: 		   "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+$font-family-sans-serif: 	   'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif!default;
+$font-family-serif: 		   Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace: 	   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+
+//== base
+//
+$font-family-base:			   $font-family-default;
+$font-size-base:          	   14px !default;
+$line-height-base:        	   1.428571429 !default; // 20/14
+$border-color-base:            #e6e6e6 !default;
+$size-base:			  	       8px !default; // 八点网格
+$padding-base:			  	   5px !default;
+$margin-base:			  	   5px !default;
+$padding-base-vertical:        6px !default;
+$padding-base-horizontal:      12px !default;
+$border-radius-base:           3px !default;
 
 //== Colors
 //
@@ -14,67 +33,172 @@
 //  * mix($color,$color2) 颜色混合
 //  * adjust-color($color,$hue:40) 调色函数
 //  * ajust-due($color,90deg) 色调调节
-$normal-color: 				 #08081a !default; // 正文颜色
 
-$gray-base:                  #000 !default;
+$normal-color: 				   #08081a !default; // 正文颜色
+
+// Basic monochrome color
+$--white: 			  	   	   white !default;
+$--whitesmoke: 			  	   whitesmoke !default;
+$--lightgray: 			   	   lightgray !default;
+$--silver: 			  	  	   silver !default;
+$--gray: 				  	   gray !default;
+$--darkgray: 			  	   darkgray !default;
+$--black: 				  	   black !default;
+
+// bootstrap gray color
+$gray-base:                    #000 !default;
 $gray-darker:                  lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:                    lighten($gray-base, 20%) !default;   // #333
 $gray:                         lighten($gray-base, 33.5%) !default; // #555
 $gray-light:                   lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:                 lighten($gray-base, 93.5%) !default; // #eee
  
-// Basic monochrome color
-$--white: 			  	   	 white !default;
-$--whitesmoke: 			  	 whitesmoke !default;
-$--lightgray: 			   	 lightgray !default;
-$--silver: 			  	  	 silver !default;
-$--gray: 				  	 gray !default;
-$--darkgray: 			  	 darkgray !default;
-$--black: 				  	 black !default;
- 
 // brand colors
-$brand-default:           	 #f4f4f4;
-$brand-primary:           	 #1c90fb; // 主色
-$brand-secondary: 			 #39CCCC; // 辅助色
-$brand-mix: 			  	 #605ca8; // 融合色
+$brand-default:           	   #f4f4f4;
+$brand-primary:           	   #1c90fb; // 主色
+$brand-secondary: 			   #39CCCC; // 辅助色
+$brand-mix: 			  	   #605ca8; // 融合色
 // $brand-dif: 			  	   #D81B60; // 对比色
-$brand-success:           	 #3FB618;
-$brand-info:              	 #00c0ef;
-$brand-warning:           	 #f39c12;
-$brand-danger:            	 #dd4b39;
+$brand-success:           	   #3FB618;
+$brand-info:              	   #00c0ef;
+$brand-warning:           	   #f39c12;
+$brand-danger:            	   #dd4b39;
 
 //== Typography
 //
-//## Font, line-height, and color for body text, headings, and more.
-$font-family-default: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif !default;
-$font-family-nice: "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif !default;
-$font-family-arial: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
-$font-family-sans-serif: 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif!default;
-$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
-//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
-
-/*----------------------------------------------------
- * base
- *---------------------------------------------------*/
-$font-family-base:			   $font-family-default !default;
-$font-size-base:          	   14px !default;
-$line-height-base:        	   1.428571429 !default; // 20/14
-$border-color-base:        	 #e6e6e6 !default;
 $--regular: 			  	   400 !default;
 $--bold:                  	   600 !default;
 $text-color:            	   $normal-color; // 正文颜色
 
-/*----------------------------------------------------
- * Global textual link color.
- *---------------------------------------------------*/
+//== link
+//
+// Global textual link color.
 $link-color:              	   $brand-primary !default;
-$link-normal-color:       	 #555 !default;
+$link-normal-color:       	   #555 !default;
 $link-hover-color:        	   darken($link-color, 10%) !default;
 
-$border-radius-base:           4px !default;
-$border-radius-large:          6px !default;
-$border-radius-small:          3px !default;
+/*----------------------------------------------------
+ * box
+ *---------------------------------------------------*/
+$--box-1:                 	   ($size-base * 1) !default;  // 8px
+$--box-2:                 	   ($size-base * 2) !default;  // 16px
+$--box-3:                 	   ($size-base * 3) !default;  // 24px
+$--box-4:                 	   ($size-base * 4) !default;  // 32px
+$--box-5:   			  	   ($size-base * 8) !default;  // 64px
+$--box-6: 				  	   ($size-base * 16) !default;  // 128px
+
+/*----------------------------------------------------
+ * thumb
+ *---------------------------------------------------*/
+$--thumb-base: 				   8px !default;
+$--thumb: 					   $--thumb-base * 3 !default;
+$--thumb-1: 				   $--thumb-base * 4 !default;
+$--thumb-2: 				   $--thumb-base * 6 !default;
+$--thumb-3: 				   $--thumb-base * 8 !default;
+$--thumb-4: 				   $--thumb-base * 12 !default;
+$--thumb-5: 				   $--thumb-base * 16 !default;
+$--thumb-max: 				   $--thumb-base * 32 !default;
+
+/*----------------------------------------------------
+ * height
+ *---------------------------------------------------*/
+$--height-1: 			  	   ($size-base * 4) !default; // 32px
+$--height-2: 			  	   ($size-base * 6) !default; // 48px
+$--height-3: 			  	   ($size-base * 10) !default; // 80px
+$--height-4: 			  	   ($size-base * 16) !default; // 128px
+$--height-5: 			  	   ($size-base * 26) !default; // 208px
+$--height-6: 			  	   ($size-base * 42) !default; // 336px
+
+/*----------------------------------------------------
+ * width
+ *---------------------------------------------------*/
+$--width-1: 			  	   ($size-base * 4) !default; // 32px
+$--width-2: 			  	   ($size-base * 6) !default; // 48px
+$--width-3: 			  	   ($size-base * 10) !default; // 80px
+$--width-4: 			  	   ($size-base * 16) !default; // 128px
+$--width-5:	 			  	   ($size-base * 26) !default; // 208px
+$--width-6: 			  	   ($size-base * 42) !default; // 336px
+
+/*----------------------------------------------------
+ * padding
+ *---------------------------------------------------*/
+$padding-1:				  	   ($padding-base * 1) !default;
+$padding-2:				  	   ($padding-base * 2) !default;
+$padding-3:				  	   ($padding-base * 3) !default;
+$padding-4:				  	   ($padding-base * 4) !default;
+$padding-5:				  	   ($padding-base * 6) !default;
+$padding-6:				  	   ($padding-base * 12) !default;
+$padding-max:			  	   ($padding-base * 20) !default;
+
+/*----------------------------------------------------
+ * margin
+ *---------------------------------------------------*/
+$margin-1:				  	   ($margin-base * 1) !default;
+$margin-2:				  	   ($margin-base * 2) !default;
+$margin-3:				  	   ($margin-base * 3) !default;
+$margin-4:				  	   ($margin-base * 4) !default;
+$margin-5:				  	   ($margin-base * 6) !default;
+$margin-6:				  	   ($margin-base * 12) !default;
+$margin-max:			  	   ($margin-base * 20) !default;
+
+/*----------------------------------------------------
+ * border
+ *---------------------------------------------------*/
+$border-1: 				  	   2px !default;
+$border-2: 				  	   3px !default;
+$border-3: 				  	   5px !default;
+$border-4: 				  	   10px !default;
+$border-5: 				  	   15px !default;
+$border-max: 			  	   60px !default;
+
+/*----------------------------------------------------
+ * border-radius
+ *---------------------------------------------------*/
+$border-radius-1: 		  	   ($border-radius-base * 1) !default; // 3px
+$border-radius-2: 		  	   ($border-radius-base * 2) !default; // 6px
+$border-radius-3: 		  	   ($border-radius-base * 3) !default; // 9px
+$border-radius-4: 		  	   ($border-radius-base * 5) !default; // 15px
+$border-radius-5: 		  	   ($border-radius-base * 8) !default; // 24px
+$border-radius-rounded:   	   4px !default;
+$border-radius-max: 	  	   9999px !default;
+
+/*----------------------------------------------------
+ * text line-height
+ *---------------------------------------------------*/
+$--line-height-1: 			   ($line-height-base * 1) !default;
+$--line-height-2: 			   ($line-height-base * 1.2) !default;
+$--line-height-3: 			   ($line-height-base * 2.4) !default;
+$--line-height-4: 			   ($line-height-base * 3.6) !default;
+$--line-height-5: 			   ($line-height-base * 4.8) !default;
+
+/*----------------------------------------------------
+ * text font size
+ *---------------------------------------------------*/
+$font-size-basic: 			   8px !default;
+$font-size-normal: 			   14px !default;
+$font-size-1: 				   ($font-size-basic * 2) !default;
+$font-size-2: 				   ($font-size-basic * 2 + 2) !default;
+$font-size-3: 				   ($font-size-basic * 3) !default;
+$font-size-4: 				   ($font-size-basic * 4) !default;
+$font-size-5: 				   ($font-size-basic * 6) !default;
+$font-size-min: 			   12px !default;
+$font-size-max: 			   ($font-size-basic * 12) !default;
+
+/*----------------------------------------------------
+ * z-index
+ *---------------------------------------------------*/
+$z-index-1:        		  	   9 !default;
+$z-index-2: 			  	   19 !default;
+$z-index-3: 			  	   29 !default;
+$z-index-4: 			  	   39 !default;
+$z-index-5: 			  	   49 !default;
+$z-index-6: 			  	   59 !default;
+$z-index-7: 			  	   69 !default;
+$z-index-8: 			  	   79 !default;
+$z-index-9: 			  	   89 !default;
+$z-index-10: 			  	   99 !default;
+$z-index-max: 			  	   9999 !default;
+
 
 //== Tables
 //
@@ -88,9 +212,9 @@ $table-condensed-cell-padding:  5px !default;
 //** Default background color used for all tables.
 $table-bg:                      transparent !default;
 //** Background color used for `.table-striped`.
-$table-bg-accent:             #f9f9f9 !default;
+$table-bg-accent:               #f9f9f9 !default;
 //** Background color used for `.table-hover`.
-$table-bg-hover:              #f5f5f5 !default;
+$table-bg-hover:                #f5f5f5 !default;
 $table-bg-active:               $table-bg-hover !default;
 
 //** Border color for table and cell borders.
@@ -99,64 +223,64 @@ $table-border-color:            $border-color-base;
 //== Buttons
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
-$btn-default-color:          #666;
+$btn-default-color:            #666;
 $btn-default-bg:               $brand-default;
 $btn-default-border:           darken($btn-default-bg, 0%);
 
-$btn-secondary-color:        #fff;
+$btn-secondary-color:          #fff;
 $btn-secondary-bg:             $brand-secondary;
 $btn-secondary-border:         darken($btn-secondary-bg, 0%);
 
-$btn-mix-color:              #fff;
+$btn-mix-color:                #fff;
 $btn-mix-bg:                   $brand-mix;
 $btn-mix-border:               darken($btn-mix-bg, 0%);
 
-$btn-dark-color:             #fff;
-$btn-dark-bg:                #5a6a7a;
+$btn-dark-color:               #fff;
+$btn-dark-bg:                  #5a6a7a;
 $btn-dark-border:              darken($btn-dark-bg, 0%);
 
-$btn-black-color:            #fff;
-$btn-black-bg:               #5a6a7a;
+$btn-black-color:              #fff;
+$btn-black-bg:                 #5a6a7a;
 $btn-black-border:             darken($btn-black-bg, 0%);
 
-$btn-primary-color:          #fff;
+$btn-primary-color:            #fff;
 $btn-primary-bg:               $brand-primary;
 $btn-primary-border:           darken($btn-primary-bg, 0%);
 
-$btn-success-color:          #fff;
+$btn-success-color:            #fff;
 $btn-success-bg:               $brand-success;
 $btn-success-border:           darken($btn-success-bg, 0%);
 
-$btn-info-color:             #fff;
+$btn-info-color:               #fff;
 $btn-info-bg:                  $brand-info;
 $btn-info-border:              darken($btn-info-bg, 0%);
 
-$btn-warning-color:          #fff;
+$btn-warning-color:            #fff;
 $btn-warning-bg:               $brand-warning;
 $btn-warning-border:           darken($btn-warning-bg, 0%);
 
-$btn-danger-color:           #fff;
+$btn-danger-color:             #fff;
 $btn-danger-bg:                $brand-danger;
 $btn-danger-border:            darken($btn-danger-bg, 0%);
 
 //== Form states and alerts
 //
 //## Define colors for form feedback states and, by default, alerts.
-$state-success-text:         #3c763d !default;
-$state-success-bg:           #dff0d8 !default;
+$state-success-text:           #3c763d !default;
+$state-success-bg:             #dff0d8 !default;
 $state-success-border:         darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
-$state-info-text:            #31708f !default;
-$state-info-bg:                  #d9edf7 !default;
-$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+$state-info-text:              #31708f !default;
+$state-info-bg:                #d9edf7 !default;
+$state-info-border:            darken(adjust-hue($state-info-bg, -10), 7%) !default;
 
-$state-warning-text:             #8a6d3b !default;
-$state-warning-bg:               #fcf8e3 !default;
-$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+$state-warning-text:           #8a6d3b !default;
+$state-warning-bg:             #fcf8e3 !default;
+$state-warning-border:         darken(adjust-hue($state-warning-bg, -10), 5%) !default;
 
-$state-danger-text:              #a94442 !default;
-$state-danger-bg:                #f2dede !default;
-$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+$state-danger-text:            #a94442 !default;
+$state-danger-bg:              #f2dede !default;
+$state-danger-border:          darken(adjust-hue($state-danger-bg, -10), 5%) !default;
 
 //== Panels
 //
@@ -199,98 +323,8 @@ $panel-danger-heading-bg:      $state-danger-bg !default;
 //
 //##
 
-$well-bg:                    #f4f4f4;
+$well-bg:                      #f4f4f4;
 $well-border:                  $border-color-base;
-
-/*----------------------------------------------------
- * box
- *---------------------------------------------------*/
-$--box-1:                 	   8px !default;
-$--box-2:                 	   16px !default;
-$--box-3:                 	   24px !default;
-$--box-4:                 	   32px !default;
-$--box-5:   			  	   64px !default;
-$--box-6: 				  	   128px !default;
-
-/*----------------------------------------------------
- * height
- *---------------------------------------------------*/
-$--height-1: 			  	   32px !default; // 16px * 2
-$--height-2: 			  	   48px !default; // 16px * 3
-$--height-3: 			  	   80px !default; // 16px * 5
-$--height-4: 			  	   128px !default; // 16px * 8
-$--height-5: 			  	   208px !default; // 16px * 13
-$--height-6: 			  	   336px !default; // 16px * 21
-
-/*----------------------------------------------------
- * width
- *---------------------------------------------------*/
-$--width-1: 			  	   32px !default;
-$--width-2: 			  	   48px !default;
-$--width-3: 			  	   80px !default;
-$--width-4: 			  	   128px !default;
-$--width-5:	 			  	   208px !default;
-$--width-6: 			  	   336px !default;
-
-/*----------------------------------------------------
- * padding
- *---------------------------------------------------*/
-$padding-base:			  	   5px !default;
-$padding-1:				  	   $padding-base*1 !default;
-$padding-2:				  	   $padding-base*2 !default;
-$padding-3:				  	   $padding-base*3 !default;
-$padding-4:				  	   $padding-base*4 !default;
-$padding-5:				  	   $padding-base*6 !default;
-$padding-6:				  	   $padding-base*12 !default;
-$padding-max:			  	   $padding-base*20 !default;
-
-/*----------------------------------------------------
- * margin
- *---------------------------------------------------*/
-$margin-base:			  	   5px !default;
-$margin-1:				  	   $margin-base*1 !default;
-$margin-2:				  	   $margin-base*2 !default;
-$margin-3:				  	   $margin-base*3 !default;
-$margin-4:				  	   $margin-base*4 !default;
-$margin-5:				  	   $margin-base*6 !default;
-$margin-6:				  	   $margin-base*12 !default;
-$margin-max:			  	   $margin-base*20 !default;
-
-/*----------------------------------------------------
- * border
- *---------------------------------------------------*/
-$border-1: 				  	   2px !default;
-$border-2: 				  	   3px !default;
-$border-3: 				  	   5px !default;
-$border-4: 				  	   10px !default;
-$border-5: 				  	   15px !default;
-$border-max: 			  	   60px !default;
-
-/*----------------------------------------------------
- * border-radius
- *---------------------------------------------------*/
-$border-radius-1: 		  	   3px !default;
-$border-radius-2: 		  	   6px !default;
-$border-radius-3: 		  	   9px !default;
-$border-radius-4: 		  	   15px !default;
-$border-radius-5: 		  	   24px !default;
-$border-radius-rounded:   	   4px !default;
-$border-radius-max: 	  	   9999px !default;
-
-/*----------------------------------------------------
- * z-index
- *---------------------------------------------------*/
-$z-index-1:        		  	   9 !default;
-$z-index-2: 			  	   19 !default;
-$z-index-3: 			  	   29 !default;
-$z-index-4: 			  	   39 !default;
-$z-index-5: 			  	   49 !default;
-$z-index-6: 			  	   59 !default;
-$z-index-7: 			  	   69 !default;
-$z-index-8: 			  	   79 !default;
-$z-index-9: 			  	   89 !default;
-$z-index-10: 			  	   99 !default;
-$z-index-max: 			  	   9999 !default;
 
 /*----------------------------------------------------
  * Media queries breakpoints
@@ -375,38 +409,3 @@ $container-lg:                 $container-large-desktop !default;
 $container-xlarge-desktop:     (1320px + $grid-gutter-width) !default;
 //** For `$screen-xl-min` and up.
 $container-xl:                 $container-xlarge-desktop !default;
-
-/*----------------------------------------------------
- * text line-height
- *---------------------------------------------------*/
-$text-height-base: 			   $line-height-base !default;
-$text-height-1: 			   $text-height-base * 1 !default;
-$text-height-2: 			   $text-height-base * 1.2 !default;
-$text-height-3: 			   $text-height-base * 2.4 !default;
-$text-height-4: 			   $text-height-base * 3.6 !default;
-$text-height-5: 			   $text-height-base * 4.8 !default;
-
-/*----------------------------------------------------
- * text font size
- *---------------------------------------------------*/
-$font-size-basic: 			   8px !default;
-$font-size-normal: 			   14px !default;
-$font-size-1: 				   $font-size-basic * 2 !default;
-$font-size-2: 				   $font-size-basic * 2 + 2 !default;
-$font-size-3: 				   $font-size-basic * 3 !default;
-$font-size-4: 				   $font-size-basic * 4 !default;
-$font-size-5: 				   $font-size-basic * 6 !default;
-$font-size-min: 			   12px !default;
-$font-size-max: 			   $font-size-basic * 12 !default;
-
-/*----------------------------------------------------
- * thumb
- *---------------------------------------------------*/
-$--thumb-base: 				   8px !default;
-$--thumb: 					   $--thumb-base * 3 !default;
-$--thumb-1: 				   $--thumb-base * 4 !default;
-$--thumb-2: 				   $--thumb-base * 6 !default;
-$--thumb-3: 				   $--thumb-base * 8 !default;
-$--thumb-4: 				   $--thumb-base * 12 !default;
-$--thumb-5: 				   $--thumb-base * 16 !default;
-$--thumb-max: 				   $--thumb-base * 32 !default;
