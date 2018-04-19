@@ -1,215 +1,69 @@
 .size-8 {
-  display: inline-block;
+  @include square($size-base);
   font-size: 4px;
-  height: 8px;
-  line-height: 8px;
-  text-align: center;
-  width: 8px;
-}
-
-.size-12 {
-  display: inline-block;
-  font-size: 6px;
-  height: 12px;
-  line-height: 12px;
-  text-align: center;
-  width: 12px;
 }
 
 .size-16 {
-  display: inline-block;
+  @include square($size-base * 2);
   font-size: 8px;
-  height: 16px;
-  line-height: 16px;
-  text-align: center;
-  width: 16px;
-}
-
-.size-20 {
-  display: inline-block;
-  font-size: 10px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-  width: 20px;
 }
 
 .size-24 {
-  display: inline-block;
+  @include square($size-base * 3);
   font-size: 12px;
-  height: 24px;
-  line-height: 24px;
-  text-align: center;
-  width: 24px;
-}
-
-.size-28 {
-  display: inline-block;
-  font-size: 14px;
-  height: 28px;
-  line-height: 28px;
-  text-align: center;
-  width: 28px;
 }
 
 .size-32 {
-  display: inline-block;
+  @include square($size-base * 4);
   font-size: 16px;
-  height: 32px;
-  line-height: 32px;
-  text-align: center;
-  width: 32px;
-}
-
-.size-36 {
-  display: inline-block;
-  font-size: 18px;
-  height: 36px;
-  line-height: 36px;
-  text-align: center;
-  width: 36px;
 }
 
 .size-40 {
-  display: inline-block;
+  @include square($size-base * 5);
   font-size: 20px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  width: 40px;
-}
-
-.size-44 {
-  display: inline-block;
-  font-size: 22px;
-  height: 44px;
-  line-height: 44px;
-  text-align: center;
-  width: 44px;
 }
 
 .size-48 {
-  display: inline-block;
+  @include square($size-base * 6);
   font-size: 24px;
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
-  width: 48px;
-}
-
-.size-52 {
-  display: inline-block;
-  font-size: 26px;
-  height: 52px;
-  line-height: 52px;
-  text-align: center;
-  width: 52px;
 }
 
 .size-56 {
-  display: inline-block;
+  @include square($size-base * 56);
   font-size: 28px;
-  height: 56px;
-  line-height: 56px;
-  text-align: center;
-  width: 56px;
-}
-
-.size-60 {
-  display: inline-block;
-  font-size: 30px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  width: 60px;
 }
 
 .size-64 {
-  display: inline-block;
+  @include square($size-base * 8);
   font-size: 32px;
-  height: 64px;
-  line-height: 64px;
-  text-align: center;
-  width: 64px;
-}
-
-.size-68 {
-  display: inline-block;
-  font-size: 34px;
-  height: 68px;
-  line-height: 68px;
-  text-align: center;
-  width: 68px;
 }
 
 .size-72 {
-  display: inline-block;
+  @include square($size-base * 9);
   font-size: 36px;
-  height: 72px;
-  line-height: 72px;
-  text-align: center;
-  width: 72px;
-}
-
-.size-76 {
-  display: inline-block;
-  font-size: 38px;
-  height: 76px;
-  line-height: 76px;
-  text-align: center;
-  width: 76px;
 }
 
 .size-80 {
-  display: inline-block;
+  @include square($size-base * 10);
   font-size: 40px;
-  height: 80px;
-  line-height: 80px;
-  text-align: center;
-  width: 80px;
-}
-
-.size-84 {
-  display: inline-block;
-  font-size: 42px;
-  height: 84px;
-  line-height: 84px;
-  text-align: center;
-  width: 84px;
 }
 
 .size-88 {
-  display: inline-block;
+  @include square($size-base * 11);
   font-size: 44px;
-  height: 88px;
-  line-height: 88px;
-  text-align: center;
-  width: 88px;
-}
-
-.size-92 {
-  display: inline-block;
-  font-size: 46px;
-  height: 92px;
-  line-height: 92px;
-  text-align: center;
-  width: 92px;
 }
 
 .size-96 {
-  display: inline-block;
+  @include square($size-base * 12);
   font-size: 48px;
-  height: 96px;
-  line-height: 96px;
-  text-align: center;
-  width: 96px;
 }
 
-.size-100 {
-  display: inline-block;
+.size-104 {
+  @include square($size-base * 13);
   font-size: 50px;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  width: 100px;
+}
+
+.size-112 {
+  @include square($size-base * 14);
+  font-size: 64px;
 }

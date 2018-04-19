@@ -25,6 +25,11 @@
   margin: 0 !important;
 }
 
+// Remove float
+.pull-none {
+  float: none !important;
+}
+
 // Remove box border
 .no-shadow {
   -moz-box-shadow: none;
