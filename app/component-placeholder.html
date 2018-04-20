@@ -23,12 +23,13 @@
     var bLazy = new Blazy({
       selector: ".img-background,.bs-lazy,.bs-lazy-iframe-wrapper iframe,img[data-src],iframe[data-src]",
       success: function (element) {
-        setTimeout(function () {
+        element.className = element.className + " b-load-ready",setTimeout(function () {
           // We want to remove the loader gif now.
           // First we find the parent container
           // then we remove the "loading" class which holds the loader image
           var parent = element.parentNode;
           parent.className = parent.className.replace(/\bloading\b/, '');
+          element.className = element.className.replace("b-load-ready", "");
         }, 200);
       }
     });
@@ -56,14 +57,14 @@
 <div class="row">
   <div class="col-md-4">
     <div class="img-holder pb-50">
-      <img width="360" height="180" data-src="https://jnews.io/music/wp-content/uploads/sites/33/2017/10/jnews-demo-7-360x180.jpg-8">
+      <img class="img-responsive" width="360" height="180" data-src="assets/images/demo/img-holder-360x180.jpg">
     </div>
   </div>
   <div class="col-md-4">
     <div class="img-holder no_thumbnail pb-50"></div>
   </div>
   <div class="col-md-4">
-    <div class="img-background" data-src="https://www.nullstash.com/wp-content/uploads/2017/04/9RlQG5a.jpg-8"></div>
+    <div class="img-background" data-src="assets/images/demo/img-holder-360x180.jpg"></div>
   </div>
 </div>
 {% endblock %}
