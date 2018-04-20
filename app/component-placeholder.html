@@ -21,7 +21,7 @@
   // 图片延迟加载
   $(function () {
     var bLazy = new Blazy({
-      selector: ".img-holder,.bs-lazy,.bs-lazy-iframe-wrapper iframe,img[data-src],iframe[data-src]",
+      selector: ".img-background,.bs-lazy,.bs-lazy-iframe-wrapper iframe,img[data-src],iframe[data-src]",
       success: function (element) {
         setTimeout(function () {
           // We want to remove the loader gif now.
@@ -55,61 +55,15 @@
 {% block content %}
 <div class="row">
   <div class="col-md-4">
-    <div class="thumbnail-container animate-lazy pb-50">
-      <img width="360" height="180" data-src="https://jnews.io/music/wp-content/uploads/sites/33/2017/10/jnews-demo-7-360x180.jpg">
+    <div class="img-holder pb-50">
+      <img width="360" height="180" data-src="https://jnews.io/music/wp-content/uploads/sites/33/2017/10/jnews-demo-7-360x180.jpg-8">
     </div>
   </div>
   <div class="col-md-4">
-    <div class="thumbnail-container no_thumbnail pb-50"></div>
+    <div class="img-holder no_thumbnail pb-50"></div>
   </div>
   <div class="col-md-4">
-    <div class="featured clearfix">
-      <a class="img-holder" href="https://www.nullstash.com/emos-v1-0-multi-store-responsive-magento-theme/" title="Emos" data-src="https://www.nullstash.com/wp-content/uploads/2017/04/9RlQG5a.jpg"></a>
-    </div>
+    <div class="img-background" data-src="https://www.nullstash.com/wp-content/uploads/2017/04/9RlQG5a.jpg-8"></div>
   </div>
-</div>
-<div class="row">
-  <!-- <div class="col-md-6">
-    <article class="jeg_post jeg_pl_md_1 post-32 post type-post status-publish format-standard has-post-thumbnail hentry category-artist category-rock category-videos tag-best-of-2017 tag-indie-label tag-podcast tag-rnb-hip-hop">
-      <div class="jeg_thumb">
-        <a href="https://jnews.io/music/2017/10/30/eminem-reveals-revival-album-featuring-with-ed-sheeran/">
-          <div class="thumbnail-container animate-lazy pb-50">
-            <img width="360" height="180" src="https://jnews.io/music/wp-content/themes/jnews/assets/img/jeg-empty.png" class="attachment-jnews-360x180 size-jnews-360x180 lazyload wp-post-image"
-              alt="Eminem Reveals ‘Revival’ Album Featuring with Ed Sheeran" data-src="https://jnews.io/music/wp-content/uploads/sites/33/2017/10/jnews-demo-7-360x180.jpg"
-              data-sizes="auto" data-srcset="https://jnews.io/music/wp-content/uploads/sites/33/2017/10/jnews-demo-7-360x180.jpg 360w, https://jnews.io/music/wp-content/uploads/sites/33/2017/10/jnews-demo-7-750x375.jpg 750w, https://jnews.io/music/wp-content/uploads/sites/33/2017/10/jnews-demo-7-1140x570.jpg 1140w"
-              data-expand="700" />
-          </div>
-        </a>
-        <div class="jeg_post_category">
-          <span>
-            <a href="https://jnews.io/music/category/rock/" class="category-rock">Rock</a>
-          </span>
-        </div>
-      </div>
-      <div class="jeg_postblock_content">
-        <h3 class="jeg_post_title">
-          <a href="https://jnews.io/music/2017/10/30/eminem-reveals-revival-album-featuring-with-ed-sheeran/">Eminem Reveals ‘Revival’ Album Featuring with Ed Sheeran</a>
-        </h3>
-        <div class="jeg_post_meta">
-          <div class="jeg_meta_author">
-            <span class="by">by</span>
-            <a href="https://jnews.io/music/author/admin/">John Doe</a>
-          </div>
-          <div class="jeg_meta_date">
-            <a href="https://jnews.io/music/2017/10/30/eminem-reveals-revival-album-featuring-with-ed-sheeran/">
-              <i class="fa fa-clock-o"></i> October 30, 2017</a>
-          </div>
-          <div class="jeg_meta_comment">
-            <a href="https://jnews.io/music/2017/10/30/eminem-reveals-revival-album-featuring-with-ed-sheeran/#respond">
-              <i class="fa fa-comment-o"></i> 0</a>
-          </div>
-        </div>
-        <div class="jeg_post_excerpt">
-          <p>Strech lining hemline above knee burgundy glossy silk complete hid zip little catches rayon. Tunic weaved strech
-            calfskin spaghetti straps...</p>
-        </div>
-      </div>
-    </article>
-  </div> -->
 </div>
 {% endblock %}
