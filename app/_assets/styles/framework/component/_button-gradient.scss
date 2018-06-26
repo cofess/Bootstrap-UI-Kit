@@ -1,0 +1,19 @@
+.btn-gradient-primary {
+  @include btn-gradient($brand-primary, darken($brand-primary, 15%));
+}
+
+.btn-gradient-success {
+  @include btn-gradient($brand-success, darken($brand-success, 15%));
+}
+
+.btn-gradient-info {
+  @include btn-gradient($brand-info, darken($brand-info, 15%));
+}
+
+.btn-gradient-warning {
+  @include btn-gradient($brand-warning, darken($brand-warning, 15%));
+}
+
+.btn-gradient-danger {
+  @include btn-gradient($brand-danger, darken($brand-danger, 15%));
+}
