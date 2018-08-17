@@ -36,14 +36,14 @@ ol {
 a {
   color: $link-color;
   text-decoration: none;
-  &:visited{
-    outline: 0;
-  }
+  outline: 0;
   &:focus,
   &:hover {
     color: $link-hover-color;
     text-decoration: none!important;
+    outline: 0;
   }
+  &:visited,
   &:active{
     outline: 0;
   }
