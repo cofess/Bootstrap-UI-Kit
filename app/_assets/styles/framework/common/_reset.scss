@@ -16,9 +16,10 @@ html {
 }
 
 body {
-  // font-family: $font-family-base;
+  font-family: $font-family-base;
   // font-size: $font-size-base;
   // line-height: $line-height-base;
+  font-variant: tabular-nums;
   overflow-x: hidden;
   overflow-y: auto;
 }
