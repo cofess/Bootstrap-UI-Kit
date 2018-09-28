@@ -8,15 +8,15 @@ $font-family-best:             "Chinese Quote", -apple-system, BlinkMacSystemFon
 
 $font-family-nice: 			   "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif !default;
 $font-family-arial: 		   "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
-$font-family-sans-serif: 	   'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif!default;
+$font-family-sans-serif: 	   'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif !default;
 $font-family-serif: 		   Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace: 	   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
 // 中文字体
-$cn-font-family-song:          Arial, Helvetica, tahoma, verdana, SimSun, 宋体, NSimSun, 新宋体, STSong, 华文宋体, STXihei, 华文细黑, sans-serif;
-$cn-font-family-yahei:         Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", SimSun, 宋体, STXihei, "华文细黑", sans-serif;
-$cn-font-family-fangsong:      Georgia, "Times New Roman", "FangSong", "仿宋", STFangSong, "华文仿宋", serif;
-$cn-font-family-kaiti:         Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+$cn-font-family-song:          Arial, Helvetica, tahoma, verdana, SimSun, 宋体, NSimSun, 新宋体, STSong, 华文宋体, STXihei, 华文细黑, sans-serif !default;
+$cn-font-family-yahei:         Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", SimSun, 宋体, STXihei, "华文细黑", Heiti, "黑体", sans-serif !default;
+$cn-font-family-fangsong:      Georgia, "Times New Roman", "FangSong", "仿宋", STFangSong, "华文仿宋", serif !default;
+$cn-font-family-kaiti:         Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif !default;
 
 //== base
 //
