@@ -41,9 +41,11 @@ no-button伪类表示轨道结束的位置没有按钮。
 //适用于所有滚动条，表示包含滚动条的区域，焦点不在该窗口的时候。
 *---------------------------------------------------*/
 
+$scrollbar-width: 8px;
+$scrollbar-height: 6px;
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: $scrollbar-width;
+  height: $scrollbar-height;
   background-color: #f5f5f5;
 }
 
@@ -57,13 +59,13 @@ no-button伪类表示轨道结束的位置没有按钮。
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-  height: 5px;
+  height: $scrollbar-height - 1px;
   // border-radius: 6px;
   background-color: #999;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-  width: 5px;
+  width: $scrollbar-width - 1px;
   // border-radius: 6px;
   background-color: #ccc;
 }
@@ -86,8 +88,8 @@ no-button伪类表示轨道结束的位置没有按钮。
 }
 
 .scrollbar-style::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: $scrollbar-width;
+  height: $scrollbar-height;
   background-color: #f5f5f5;
 }
 

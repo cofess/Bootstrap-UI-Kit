@@ -16,9 +16,10 @@ html {
 }
 
 body {
-  // font-family: $font-family-base;
+  font-family: $font-family-base;
   // font-size: $font-size-base;
   // line-height: $line-height-base;
+  font-variant: tabular-nums;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -35,20 +36,18 @@ ol {
 
 a {
   color: $link-color;
-  text-decoration: none;
-  &:visited{
-    outline: 0;
-  }
   &:focus,
-  &:hover {
-    color: $link-hover-color;
-    text-decoration: none!important;
-  }
-  &:active{
-    outline: 0;
-  }
+  &:hover,
   &.active {
     color: $link-hover-color;
+  }
+  &,
+  &:focus,
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none!important;
+    outline: 0;
   }
 }
 
@@ -62,7 +61,6 @@ a[href^="http"]:empty::before {
 //   color: inherit;
 //   text-decoration: none
 // }
-
 a:not([href]):not([tabindex]):focus {
   outline: 0
 }
