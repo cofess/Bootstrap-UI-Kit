@@ -1,0 +1,167 @@
+/*
+ * Component: ribbon
+ * ----------------
+ */
+
+.band {
+  position: absolute;
+  left: -6px;
+  display: inline-block;
+  padding: 0 10px 0 15px;
+  height: 24px;
+  line-height: 24px;
+  background: #ae8f75;
+  border-radius: 0 3px 3px 0;
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
+  z-index: 3;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 6px 10px 0;
+    border-color: transparent #917055 transparent transparent;
+    z-index: 2;
+  }
+  // &:after {
+  //   content: '';
+  //   position: absolute;
+  //   width: 0px;
+  //   height: 0px;
+  //   border-style: solid;
+  //   border-width: 15px 0 15px 10px;
+  //   border-color: transparent transparent transparent #ae8f75;
+  //   top: 0;
+  //   right: -10px;
+  // }
+}
+
+
+/*primary ribbon*/
+
+.band-primary {
+  background: $brand-primary;
+  &:before {
+    border-color: transparent darken($brand-primary, 10%) transparent transparent;
+  }
+  // &:after {
+  //   border-color: transparent transparent transparent $brand-primary;
+  // }
+}
+
+
+/* success ribbon*/
+
+.band-success {
+  background: $brand-success;
+  &:before {
+    border-color: transparent darken($brand-success, 10%) transparent transparent;
+  }
+  // &:after {
+  //   border-color: transparent transparent transparent $brand-success;
+  // }
+}
+
+
+/*info ribbon*/
+
+.band-info {
+  background: $brand-info;
+  &:before {
+    border-color: transparent darken($brand-info, 10%) transparent transparent;
+  }
+  // &:after {
+  //   border-color: transparent transparent transparent $brand-info;
+  // }
+}
+
+
+/*warning ribbon*/
+
+.band-warning {
+  background: $brand-warning;
+  &:before {
+    border-color: transparent darken($brand-warning, 10%) transparent transparent;
+  }
+  // &:after {
+  //   border-color: transparent transparent transparent $brand-warning;
+  // }
+}
+
+
+/*danger ribbon*/
+
+.band-danger {
+  background: $brand-danger;
+  &:before {
+    border-color: transparent darken($brand-danger, 10%) transparent transparent;
+  }
+  // &:after {
+  //   border-color: transparent transparent transparent $brand-danger;
+  // }
+}
+
+
+/*dark ribbon*/
+
+.band-dark {
+  background: #3c3c3c;
+  &:before {
+    border-color: transparent #222 transparent transparent;
+  }
+  // &:after {
+  //   border-color: transparent transparent transparent #3c3c3c;
+  // }
+}
+
+.band[data-position*=right] {
+  left: auto;
+  right: -6px;
+  padding: 0 15px 0 10px;
+  border-radius: 3px 0 0 3px;
+  &:before {
+    position: absolute;
+    left: auto;
+    right: 0;
+    bottom: -10px;
+    border-width: 0 0 10px 6px;
+    border-color: transparent transparent transparent #917055;
+    z-index: 2;
+  }
+  &.band-primary {
+    &:before {
+      border-color: transparent transparent transparent darken($brand-primary, 10%);
+    }
+  }
+  &.band-success {
+    &:before {
+      border-color: transparent transparent transparent darken($brand-success, 10%);
+    }
+  }
+  &.band-info {
+    &:before {
+      border-color: transparent transparent transparent darken($brand-info, 10%);
+    }
+  }
+  &.band-warning {
+    &:before {
+      border-color: transparent transparent transparent darken($brand-warning, 10%);
+    }
+  }
+  &.band-danger {
+    &:before {
+      border-color: transparent transparent transparent darken($brand-danger, 10%);
+    }
+  }
+  &.band-dark {
+    &:before {
+      border-color: transparent transparent transparent #222;
+    }
+  }
+}

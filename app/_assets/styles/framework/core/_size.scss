@@ -1,0 +1,69 @@
+.size-8 {
+  @include square($size-base);
+  font-size: 4px;
+}
+
+.size-16 {
+  @include square($size-base * 2);
+  font-size: 8px;
+}
+
+.size-24 {
+  @include square($size-base * 3);
+  font-size: 12px;
+}
+
+.size-32 {
+  @include square($size-base * 4);
+  font-size: 16px;
+}
+
+.size-40 {
+  @include square($size-base * 5);
+  font-size: 20px;
+}
+
+.size-48 {
+  @include square($size-base * 6);
+  font-size: 24px;
+}
+
+.size-56 {
+  @include square($size-base * 56);
+  font-size: 28px;
+}
+
+.size-64 {
+  @include square($size-base * 8);
+  font-size: 32px;
+}
+
+.size-72 {
+  @include square($size-base * 9);
+  font-size: 36px;
+}
+
+.size-80 {
+  @include square($size-base * 10);
+  font-size: 40px;
+}
+
+.size-88 {
+  @include square($size-base * 11);
+  font-size: 44px;
+}
+
+.size-96 {
+  @include square($size-base * 12);
+  font-size: 48px;
+}
+
+.size-104 {
+  @include square($size-base * 13);
+  font-size: 50px;
+}
+
+.size-112 {
+  @include square($size-base * 14);
+  font-size: 64px;
+}

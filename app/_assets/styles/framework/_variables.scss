@@ -1,0 +1,426 @@
+//
+// Variables
+// --------------------------------------------------
+
+// best font
+$font-family-default:          -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif !default;
+$font-family-best:             "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+$font-family-nice: 			   "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif !default;
+$font-family-arial: 		   "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+$font-family-sans-serif: 	   'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif !default;
+$font-family-serif: 		   Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace: 	   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+
+// 中文字体
+$cn-font-family-song:          Arial, Helvetica, tahoma, verdana, SimSun, 宋体, NSimSun, 新宋体, STSong, 华文宋体, STXihei, 华文细黑, sans-serif !default;
+$cn-font-family-yahei:         Tahoma, Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", SimSun, 宋体, STXihei, "华文细黑", Heiti, "黑体", sans-serif !default;
+$cn-font-family-fangsong:      Georgia, "Times New Roman", "FangSong", "仿宋", STFangSong, "华文仿宋", serif !default;
+$cn-font-family-kaiti:         Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif !default;
+
+//== base
+//
+// some box-shadow styles
+// outside: 0 0 12px rgba(0, 0, 0, .1); | 0 15px 30px -10px rgba(0, 0, 0, .1); | 0 15px 30px rgba(0,0,0,0.1);
+// inner: inset 0 0 38px rgba(0, 0, 0, .1);
+// box-shadow: 0 4px 5px 0 rgba(0,0,0,.09);
+// box-shadow: 0 1px 3px rgba(0,0,0,.1);
+// box-shadow: 0px 2px 10px 0px #b9b9b9; // 适用于白色背景
+// box-shadow: 0 2px 2px 0 rgba(45,54,65,.1), 0 1px 5px 0 rgba(45,54,65,.09), 0 3px 1px -2px rgba(45,54,65,.15); // card shadow
+$font-family-base:			   $font-family-best;
+$font-size-base:          	   14px !default;
+$line-height-base:        	   1.428571429 !default; // 20/14
+$border-color-base:            #e6e6e6 !default;
+$size-base:			  	       8px !default; // 八点网格
+$padding-base:			  	   5px !default;
+$margin-base:			  	   5px !default;
+$padding-base-vertical:        6px !default;
+$padding-base-horizontal:      12px !default;
+$border-radius-base:           3px !default;
+$box-shadow-base:              0 1px 3px rgba(0,0,0,.1) !default;
+
+//== Colors
+//
+//  * Gray and brand colors
+//  * lighten($color,10%) 颜色减淡
+//  * darken($color,30%) 颜色加深
+//  * complement(lighten($color,20%)) 颜色互补
+//  * invert(lighten($color,30%)) 反色
+//  * grayscale($color) 灰度
+//  * mix($color,$color2) 颜色混合
+//  * adjust-color($color,$hue:40) 调色函数
+//  * ajust-due($color,90deg) 色调调节
+
+$normal-color: 				   #08081a !default; // 正文颜色
+
+// Basic monochrome color
+$--white: 			  	   	   white !default;
+$--whitesmoke: 			  	   whitesmoke !default;
+$--lightgray: 			   	   lightgray !default;
+$--silver: 			  	  	   silver !default;
+$--gray: 				  	   gray !default;
+$--darkgray: 			  	   darkgray !default;
+$--black: 				  	   black !default;
+
+// bootstrap gray color
+$gray-base:                    #000 !default;
+$gray-darker:                  lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:                    lighten($gray-base, 20%) !default;   // #333
+$gray:                         lighten($gray-base, 33.5%) !default; // #555
+$gray-light:                   lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:                 lighten($gray-base, 93.5%) !default; // #eee
+ 
+// brand colors
+$brand-default:           	   #f4f4f4;
+$brand-primary:           	   #1c90fb; // 主色
+$brand-secondary: 			   #39CCCC; // 辅助色
+$brand-mix: 			  	   #605ca8; // 融合色
+// $brand-dif: 			  	   #D81B60; // 对比色
+$brand-success:           	   #3FB618;
+$brand-info:              	   #00c0ef;
+$brand-warning:           	   #f39c12;
+$brand-danger:            	   #dd4b39;
+
+//== Typography
+//
+$--regular: 			  	   400 !default;
+$--bold:                  	   600 !default;
+$text-color:            	   $normal-color; // 正文颜色
+
+//== link
+//
+// Global textual link color.
+$link-color:              	   $brand-primary !default;
+$link-normal-color:       	   #555 !default;
+$link-hover-color:        	   darken($link-color, 10%) !default;
+
+/*----------------------------------------------------
+ * box
+ *---------------------------------------------------*/
+$--box-1:                 	   ($size-base * 1) !default;  // 8px
+$--box-2:                 	   ($size-base * 2) !default;  // 16px
+$--box-3:                 	   ($size-base * 3) !default;  // 24px
+$--box-4:                 	   ($size-base * 4) !default;  // 32px
+$--box-5:   			  	   ($size-base * 8) !default;  // 64px
+$--box-6: 				  	   ($size-base * 16) !default;  // 128px
+
+/*----------------------------------------------------
+ * thumb
+ *---------------------------------------------------*/
+$--thumb: 					   ($size-base * 3) !default; // 24px
+$--thumb-1: 				   ($size-base * 4) !default; // 32px
+$--thumb-2: 				   ($size-base * 6) !default; // 48px
+$--thumb-3: 				   ($size-base * 8) !default; // 64px
+$--thumb-4: 				   ($size-base * 12) !default; // 96px
+$--thumb-5: 				   ($size-base * 16) !default; // 128px
+$--thumb-max: 				   ($size-base * 32) !default; // 256px
+
+/*----------------------------------------------------
+ * height
+ *---------------------------------------------------*/
+$--height-1: 			  	   ($size-base * 4) !default; // 32px
+$--height-2: 			  	   ($size-base * 6) !default; // 48px
+$--height-3: 			  	   ($size-base * 10) !default; // 80px
+$--height-4: 			  	   ($size-base * 16) !default; // 128px
+$--height-5: 			  	   ($size-base * 26) !default; // 208px
+$--height-6: 			  	   ($size-base * 42) !default; // 336px
+
+/*----------------------------------------------------
+ * width
+ *---------------------------------------------------*/
+$--width-1: 			  	   ($size-base * 4) !default; // 32px
+$--width-2: 			  	   ($size-base * 6) !default; // 48px
+$--width-3: 			  	   ($size-base * 10) !default; // 80px
+$--width-4: 			  	   ($size-base * 16) !default; // 128px
+$--width-5:	 			  	   ($size-base * 26) !default; // 208px
+$--width-6: 			  	   ($size-base * 42) !default; // 336px
+
+/*----------------------------------------------------
+ * padding
+ *---------------------------------------------------*/
+$--padding-1:				   ($padding-base * 1) !default;
+$--padding-2:				   ($padding-base * 2) !default;
+$--padding-3:				   ($padding-base * 3) !default;
+$--padding-4:				   ($padding-base * 4) !default;
+$--padding-5:				   ($padding-base * 6) !default;
+$--padding-6:				   ($padding-base * 12) !default;
+$--padding-max:			  	   ($padding-base * 20) !default;
+
+/*----------------------------------------------------
+ * margin
+ *---------------------------------------------------*/
+$--margin-1:				   ($margin-base * 1) !default;
+$--margin-2:				   ($margin-base * 2) !default;
+$--margin-3:				   ($margin-base * 3) !default;
+$--margin-4:				   ($margin-base * 4) !default;
+$--margin-5:				   ($margin-base * 6) !default;
+$--margin-6:				   ($margin-base * 12) !default;
+$--margin-max:			  	   ($margin-base * 20) !default;
+
+/*----------------------------------------------------
+ * border
+ *---------------------------------------------------*/
+$--border-1: 				   2px !default;
+$--border-2: 				   3px !default;
+$--border-3: 				   5px !default;
+$--border-4: 				   10px !default;
+$--border-5: 				   15px !default;
+$--border-max: 			  	   60px !default;
+
+/*----------------------------------------------------
+ * border-radius
+ *---------------------------------------------------*/
+$--border-radius-1: 		   ($border-radius-base * 1) !default; // 3px
+$--border-radius-2: 		   ($border-radius-base * 2) !default; // 6px
+$--border-radius-3: 		   ($border-radius-base * 3) !default; // 9px
+$--border-radius-4: 		   ($border-radius-base * 5) !default; // 15px
+$--border-radius-5: 		   ($border-radius-base * 8) !default; // 24px
+$--border-radius-rounded:      2em !default;
+$--border-radius-max: 	  	   9999px !default;
+
+/*----------------------------------------------------
+ * text line-height
+ *---------------------------------------------------*/
+$--line-height-1: 			   ($line-height-base * 1) !default;
+$--line-height-2: 			   ($line-height-base * 1.2) !default;
+$--line-height-3: 			   ($line-height-base * 2.4) !default;
+$--line-height-4: 			   ($line-height-base * 3.6) !default;
+$--line-height-5: 			   ($line-height-base * 4.8) !default;
+
+/*----------------------------------------------------
+ * text font size
+ *---------------------------------------------------*/
+$--font-size-1: 			   ($font-size-base + (2 * 1)) !default; // 16px
+$--font-size-2: 			   ($font-size-base + (2 * 2)) !default; // 18px
+$--font-size-3: 			   ($font-size-base + (2 * 3)) !default; // 20px
+$--font-size-4: 			   ($font-size-base + (2 * 6)) !default; // 26px
+$--font-size-5: 			   ($font-size-base + (2 * 9)) !default; // 32px
+$--font-size-small: 		   12px !default;
+$--font-size-big: 			   ($font-size-base + (2 * 15)) !default; // 44px
+$--font-size-large: 		   ($font-size-base + (2 * 24)) !default; // 62px
+
+/*----------------------------------------------------
+ * z-index
+ *---------------------------------------------------*/
+$--z-index-1:        		   9 !default;
+$--z-index-2: 			  	   19 !default;
+$--z-index-3: 			  	   29 !default;
+$--z-index-4: 			  	   39 !default;
+$--z-index-5: 			  	   49 !default;
+$--z-index-6: 			  	   59 !default;
+$--z-index-7: 			  	   69 !default;
+$--z-index-8: 			  	   79 !default;
+$--z-index-9: 			  	   89 !default;
+$--z-index-10: 			  	   99 !default;
+$--z-index-max: 			   9999 !default;
+
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+//** Padding for `<th>`s and `<td>`s.
+$table-cell-padding:            8px !default;
+//** Padding for cells in `.table-condensed`.
+$table-condensed-cell-padding:  5px !default;
+
+//** Default background color used for all tables.
+$table-bg:                      transparent !default;
+//** Background color used for `.table-striped`.
+$table-bg-accent:               #f9f9f9 !default;
+//** Background color used for `.table-hover`.
+$table-bg-hover:                #f5f5f5 !default;
+$table-bg-active:               $table-bg-hover !default;
+
+//** Border color for table and cell borders.
+$table-border-color:            $border-color-base;
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+$btn-default-color:            #666;
+$btn-default-bg:               $brand-default;
+$btn-default-border:           darken($btn-default-bg, 0%);
+
+$btn-secondary-color:          #fff;
+$btn-secondary-bg:             $brand-secondary;
+$btn-secondary-border:         darken($btn-secondary-bg, 0%);
+
+$btn-mix-color:                #fff;
+$btn-mix-bg:                   $brand-mix;
+$btn-mix-border:               darken($btn-mix-bg, 0%);
+
+$btn-dark-color:               #fff;
+$btn-dark-bg:                  #5a6a7a;
+$btn-dark-border:              darken($btn-dark-bg, 0%);
+
+$btn-black-color:              #fff;
+$btn-black-bg:                 #5a6a7a;
+$btn-black-border:             darken($btn-black-bg, 0%);
+
+$btn-primary-color:            #fff;
+$btn-primary-bg:               $brand-primary;
+$btn-primary-border:           darken($btn-primary-bg, 0%);
+
+$btn-success-color:            #fff;
+$btn-success-bg:               $brand-success;
+$btn-success-border:           darken($btn-success-bg, 0%);
+
+$btn-info-color:               #fff;
+$btn-info-bg:                  $brand-info;
+$btn-info-border:              darken($btn-info-bg, 0%);
+
+$btn-warning-color:            #fff;
+$btn-warning-bg:               $brand-warning;
+$btn-warning-border:           darken($btn-warning-bg, 0%);
+
+$btn-danger-color:             #fff;
+$btn-danger-bg:                $brand-danger;
+$btn-danger-border:            darken($btn-danger-bg, 0%);
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+$state-success-text:           #3c763d !default;
+$state-success-bg:             #dff0d8 !default;
+$state-success-border:         darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:              #31708f !default;
+$state-info-bg:                #d9edf7 !default;
+$state-info-border:            darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:           #8a6d3b !default;
+$state-warning-bg:             #fcf8e3 !default;
+$state-warning-border:         darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:            #a94442 !default;
+$state-danger-bg:              #f2dede !default;
+$state-danger-border:          darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+//== Panels
+//
+//##
+$panel-bg:                     #fff !default;
+$panel-body-padding:           15px !default;
+$panel-heading-padding:        10px 15px !default;
+$panel-footer-padding:         $panel-heading-padding !default;
+$panel-border-radius:          $border-radius-base !default;
+
+//** Border color for elements within panels
+$panel-inner-border:           $border-color-base;
+$panel-footer-bg:              #f5f5f5 !default;
+
+$panel-default-text:           $gray-dark !default;
+$panel-default-border:         $border-color-base;
+$panel-default-heading-bg:     #f5f5f5 !default;
+
+$panel-primary-text:           #fff !default;
+$panel-primary-border:         $brand-primary !default;
+$panel-primary-heading-bg:     $brand-primary !default;
+
+$panel-success-text:           $state-success-text !default;
+$panel-success-border:         $state-success-border !default;
+$panel-success-heading-bg:     $state-success-bg !default;
+
+$panel-info-text:              $state-info-text !default;
+$panel-info-border:            $state-info-border !default;
+$panel-info-heading-bg:        $state-info-bg !default;
+
+$panel-warning-text:           $state-warning-text !default;
+$panel-warning-border:         $state-warning-border !default;
+$panel-warning-heading-bg:     $state-warning-bg !default;
+
+$panel-danger-text:            $state-danger-text !default;
+$panel-danger-border:          $state-danger-border !default;
+$panel-danger-heading-bg:      $state-danger-bg !default;
+
+//== Wells
+//
+//##
+
+$well-bg:                      #f4f4f4;
+$well-border:                  $border-color-base;
+
+/*----------------------------------------------------
+ * Media queries breakpoints
+ * ## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+ *---------------------------------------------------*/
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                    576px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:                $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:                 $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                    768px !default;
+$screen-sm-min:                $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:                $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                    992px !default;
+$screen-md-min:                $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:               $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                    1200px !default;
+$screen-lg-min:                $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:            $screen-lg-min !default;
+
+// Extra Large screen / wide desktop
+//** Deprecated `$screen-xl` as of v3.0.1
+$screen-xl:                    1440px !default;
+$screen-xl-min:                $screen-xl !default;
+//** Deprecated `$screen-xl-desktop` as of v3.0.1
+$screen-xl-desktop:            $screen-xl-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:                ($screen-sm-min - 0.01) !default;
+$screen-sm-max:                ($screen-md-min - 0.01) !default;
+$screen-md-max:                ($screen-lg-min - 0.01) !default;
+$screen-lg-max:                ($screen-xl-min - 0.01) !default;
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+$grid-columns:                 12 !default;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:            30px !default;
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// xSmall screen / phone
+$container-phone:              (480px + $grid-gutter-width) !default;
+//** For `$screen-sm-min` and up.
+$container-xs:                 $container-phone !default;
+
+// Small screen / tablet
+$container-tablet:             (720px + $grid-gutter-width) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            (940px + $grid-gutter-width) !default;
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      (1140px + $grid-gutter-width) !default;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
+
+// xLarge screen
+$container-xlarge-desktop:     (1330px + $grid-gutter-width) !default;
+//** For `$screen-xl-min` and up.
+$container-xl:                 $container-xlarge-desktop !default;

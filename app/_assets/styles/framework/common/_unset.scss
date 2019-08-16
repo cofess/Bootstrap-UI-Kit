@@ -1,0 +1,47 @@
+// Remove background
+.no-background {
+  background: none !important;
+}
+
+// Remove border
+.no-border {
+  border: none;
+}
+
+// Remove border radius
+.no-radius {
+  -moz-border-radius: unset;
+  -webkit-border-radius: unset;
+  border-radius: unset;
+}
+
+// Remove padding
+.no-padding {
+  padding: 0 !important;
+}
+
+// Remove margins
+.no-margin {
+  margin: 0 !important;
+}
+
+// Remove float
+.pull-none {
+  float: none !important;
+}
+
+// Remove box border
+.no-shadow {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+// Remove transform
+.no-transform {
+  -ms-transform: none !important;
+  -webkit-transform: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  transform: none !important;
+}

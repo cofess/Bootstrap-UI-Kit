@@ -1,0 +1,72 @@
+.divider {
+  display: block;
+  margin: 20px 0;
+  overflow: hidden;
+  text-align: center
+}
+
+.divider-content {
+  display: inline-block;
+  padding: 0 15px;
+  position: relative
+}
+
+.divider-content:after,
+.divider-content:before {
+  background-color: #cad6e2;
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: -1px;
+  position: absolute;
+  top: 50%;
+  width: 600px
+}
+
+.divider-content:before {
+  right: 100%
+}
+
+.divider-content:after {
+  left: 100%
+}
+
+@media (min-width:768px) {
+  .divider-vertical {
+    height: 100%;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 2
+  }
+  .divider-vertical .divider-content {
+    padding: 5px 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%)
+  }
+  .divider-vertical .divider-content:after,
+  .divider-vertical .divider-content:before {
+    height: 600px;
+    left: 50%;
+    margin-left: -1px;
+    margin-top: 0;
+    right: auto;
+    width: 1px
+  }
+  .divider-vertical .divider-content:before {
+    bottom: 100%;
+    top: auto
+  }
+  .divider-vertical .divider-content:after {
+    bottom: auto;
+    top: 100%
+  }
+}

@@ -1,0 +1,71 @@
+/* belt */
+
+.belt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3px 7px;
+  font-size: 12px;
+  background: #999;
+  border-radius: 0 0 6px 0;
+  color: #fff;
+  &.belt-rounded {
+    width: 45px;
+    height: 45px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 0% 0% 50% 0%;
+  }
+}
+
+.belt[data-position*=top-right] {
+  left: auto;
+  right: 0;
+  border-radius: 0 0 0 6px;
+  &.belt-rounded {
+    border-radius: 0% 0% 0% 50%;
+  }
+}
+
+.belt[data-position*=bottom-left] {
+  top: auto;
+  bottom: 0;
+  border-radius: 0 6px 0 0;
+  &.belt-rounded {
+    line-height: 45px;
+    border-radius: 0% 50% 0% 0%;
+  }
+}
+
+.belt[data-position*=bottom-right] {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  border-radius: 6px 0 0 0;
+  &.belt-rounded {
+    line-height: 45px;
+    border-radius: 50% 0% 0% 0%;
+  }
+}
+
+.belt-primary {
+  @extend .bg-primary;
+}
+
+.belt-success {
+  @extend .bg-success;
+}
+
+.belt-info {
+  @extend .bg-info;
+}
+
+.belt-warning {
+  @extend .bg-warning;
+}
+
+.belt-danger {
+  @extend .bg-danger;
+}

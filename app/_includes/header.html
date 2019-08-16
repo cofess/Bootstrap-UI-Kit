@@ -1,100 +1,259 @@
-{% assign user = site.data.users[40] %}
-<div class="header py-4">
-	<div class="container">
-		<div class="d-flex">
-			<a class="header-brand" href="{{ site.base }}/index.html">
-				<img src="{{ site.base }}/demo/brand/tabler.svg" class="header-brand-img" alt="tabler logo">
-			</a>
-
-			<div class="d-flex order-lg-2 ml-auto">
-				<div class="nav-item d-none d-md-flex">
-					<a href="{{ site.github_url }}" class="btn btn-sm btn-outline-primary" target="_blank">Source code</a>
-				</div>
-				<div class="dropdown d-none d-md-flex">
-					<a class="nav-link icon" data-toggle="dropdown">
-						<i class="fe fe-bell"></i>
-						<span class="nav-unread"></span>
-					</a>
-					<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-						<a href="#" class="dropdown-item d-flex">
-							<span class="avatar mr-3 align-self-center" style="background-image: url({{ site.data.users[1].photo }})"></span>
-							<div>
-								<strong>{{ site.data.users[1].name }}</strong> pushed new commit: Fix page load performance issue.
-								<div class="small text-muted">10 minutes ago</div>
-							</div>
-						</a>
-						<a href="#" class="dropdown-item d-flex">
-							<span class="avatar mr-3 align-self-center" style="background-image: url({{ site.data.users[2].photo }})"></span>
-							<div>
-								<strong>{{ site.data.users[2].name }}</strong> started new task: Tabler UI design.
-								<div class="small text-muted">1 hour ago</div>
-							</div>
-						</a>
-						<a href="#" class="dropdown-item d-flex">
-							<span class="avatar mr-3 align-self-center" style="background-image: url({{ site.data.users[3].photo }})"></span>
-							<div>
-								<strong>{{ site.data.users[3].name }}</strong> deployed new version of NodeJS REST Api V3
-								<div class="small text-muted">2 hours ago</div>
-							</div>
-						</a>
-						<div class="dropdown-divider"></div>
-						<a href="#" class="dropdown-item text-center">Mark all as read</a>
-					</div>
-				</div>
-				<div class="dropdown">
-					<a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
-						<span class="avatar" style="background-image: url({{ site.base }}/{{ user.photo }})"></span>
-						<span class="ml-2 d-none d-lg-block">
-							<span class="text-default">{{ user.name }} {{ user.surname }}</span>
-							<small class="text-muted d-block mt-1">Administrator</small>
-						</span>
-					</a>
-					<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-						<a class="dropdown-item" href="#">
-							<i class="dropdown-icon fe fe-user"></i> Profile
-						</a>
-						<a class="dropdown-item" href="#">
-							<i class="dropdown-icon fe fe-settings"></i> Settings
-						</a>
-						<a class="dropdown-item" href="#">
-							<span class="float-right"><span class="badge badge-primary">6</span></span>
-							<i class="dropdown-icon fe fe-mail"></i> Inbox
-						</a>
-						<a class="dropdown-item" href="#">
-							<i class="dropdown-icon fe fe-send"></i> Message
-						</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">
-							<i class="dropdown-icon fe fe-help-circle"></i> Need help?
-						</a>
-						<a class="dropdown-item" href="#">
-							<i class="dropdown-icon fe fe-log-out"></i> Sign out
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
-				<span class="header-toggler-icon"></span>
-			</a>
-		</div>
-	</div>
-</div>
-
-<div class="header collapse d-lg-flex p-0" id="headerMenuCollapse">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-3 ml-auto">
-				<form class="input-icon my-3 my-lg-0">
-					<input type="search" class="form-control header-search" placeholder="Search&hellip;" tabindex="1">
-					<div class="input-icon-addon">
-						<i class="fe fe-search"></i>
-					</div>
-				</form>
-			</div>
-			<div class="col-lg order-lg-first">
-				{% include menu.html %}
-			</div>
-		</div>
-	</div>
-</div>
+<header class="main-header">
+  <!-- Logo -->
+  <a href="index.html" class="logo">
+    <!-- mini logo for sidebar mini 50x50 pixels -->
+    <span class="logo-mini"><b>A</b>LT</span>
+    <!-- logo for regular state and mobile devices -->
+    <span class="logo-lg"><b>Admin</b>LTE</span>
+  </a>
+  <!-- Header Navbar: style can be found in header.less -->
+  <nav class="navbar navbar-static-top">
+    <!-- Sidebar toggle button-->
+    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+      <span class="sr-only">Toggle navigation</span>
+    </a>
+    <div class="navbar-custom-menu">
+      <ul class="nav navbar-nav">
+        <!-- Messages: style can be found in dropdown.less-->
+        <li class="dropdown messages-menu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-envelope-o"></i>
+            <span class="label label-success">4</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="header">You have 4 messages</li>
+            <li>
+              <!-- inner menu: contains the actual data -->
+              <ul class="menu">
+                <li>
+                  <!-- start message -->
+                  <a href="#">
+                    <div class="pull-left">
+                      <img src="assets/images/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    </div>
+                    <h4>Support Team<small><i class="fa fa-clock-o"></i> 5 mins</small></h4>
+                    <p>Why not buy a new awesome theme?</p>
+                  </a>
+                </li>
+                <!-- end message -->
+                <li>
+                  <a href="#">
+                    <div class="pull-left">
+                      <img src="assets/images/user3-128x128.jpg" class="img-circle" alt="User Image">
+                    </div>
+                    <h4>AdminLTE Design Team<small><i class="fa fa-clock-o"></i> 2 hours</small></h4>
+                    <p>Why not buy a new awesome theme?</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="pull-left">
+                      <img src="assets/images/user4-128x128.jpg" class="img-circle" alt="User Image">
+                    </div>
+                    <h4>Developers<small><i class="fa fa-clock-o"></i> Today</small></h4>
+                    <p>Why not buy a new awesome theme?</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="pull-left">
+                      <img src="assets/images/user3-128x128.jpg" class="img-circle" alt="User Image">
+                    </div>
+                    <h4>Sales Department<small><i class="fa fa-clock-o"></i> Yesterday</small></h4>
+                    <p>Why not buy a new awesome theme?</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="pull-left">
+                      <img src="assets/images/user4-128x128.jpg" class="img-circle" alt="User Image">
+                    </div>
+                    <h4>Reviewers<small><i class="fa fa-clock-o"></i> 2 days</small></h4>
+                    <p>Why not buy a new awesome theme?</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer"><a href="#">See All Messages</a></li>
+          </ul>
+        </li>
+        <!-- Notifications: style can be found in dropdown.less -->
+        <li class="dropdown notifications-menu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-bell-o"></i>
+            <span class="label label-warning">10</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="header">You have 10 notifications</li>
+            <li>
+              <!-- inner menu: contains the actual data -->
+              <ul class="menu">
+                <li>
+                  <a href="#">
+                    <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-users text-red"></i> 5 new members joined
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-user text-red"></i> You changed your username
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer"><a href="#">View all</a></li>
+          </ul>
+        </li>
+        <!-- Tasks: style can be found in dropdown.less -->
+        <li class="dropdown tasks-menu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-flag-o"></i>
+            <span class="label label-danger">9</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="header">You have 9 tasks</li>
+            <li>
+              <!-- inner menu: contains the actual data -->
+              <ul class="menu">
+                <li>
+                  <!-- Task item -->
+                  <a href="#">
+                    <h3>
+                        Design some buttons
+                        <small class="pull-right">20%</small>
+                      </h3>
+                    <div class="progress xs">
+                      <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <span class="sr-only">20% Complete</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- end task item -->
+                <li>
+                  <!-- Task item -->
+                  <a href="#">
+                    <h3>
+                        Create a nice theme
+                        <small class="pull-right">40%</small>
+                      </h3>
+                    <div class="progress xs">
+                      <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <span class="sr-only">40% Complete</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- end task item -->
+                <li>
+                  <!-- Task item -->
+                  <a href="#">
+                    <h3>
+                        Some task I need to do
+                        <small class="pull-right">60%</small>
+                      </h3>
+                    <div class="progress xs">
+                      <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <span class="sr-only">60% Complete</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- end task item -->
+                <li>
+                  <!-- Task item -->
+                  <a href="#">
+                    <h3>
+                        Make beautiful transitions
+                        <small class="pull-right">80%</small>
+                      </h3>
+                    <div class="progress xs">
+                      <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <span class="sr-only">80% Complete</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- end task item -->
+              </ul>
+            </li>
+            <li class="footer">
+              <a href="#">View all tasks</a>
+            </li>
+          </ul>
+        </li>
+        <!-- User Account: style can be found in dropdown.less -->
+        <li class="dropdown user user-menu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="assets/images/user2-160x160.jpg" class="user-image" alt="User Image">
+            <span class="hidden-xs">Alexander</span>
+          </a>
+          <ul class="dropdown-menu">
+            <!-- User image -->
+            <li class="user-header">
+              <img src="assets/images/user2-160x160.jpg" class="img-circle" alt="User Image">
+              <p>
+                Alexander Pierce - Web Developer
+                <small>Member since Nov. 2012</small>
+              </p>
+            </li>
+            <!-- Menu Body -->
+            <li class="user-body">
+              <div class="row">
+                <div class="col-xs-4 text-center">
+                  <a href="#">Followers</a>
+                </div>
+                <div class="col-xs-4 text-center">
+                  <a href="#">Sales</a>
+                </div>
+                <div class="col-xs-4 text-center">
+                  <a href="#">Friends</a>
+                </div>
+              </div>
+              <!-- /.row -->
+            </li>
+            <!-- Menu Footer-->
+            <li class="user-footer">
+              <div class="pull-left">
+                <a href="#" class="btn btn-default btn-flat">Profile</a>
+              </div>
+              <div class="pull-right">
+                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!-- lang switch -->
+        <li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="assets/images/blank.gif" class="flag flag-us" alt="United States"> <span> US</span> <i class="fa fa-angle-down"></i> </a>
+          <ul class="dropdown-menu">
+            <li class="active">
+              <a href="javascript:void(0);"><img src="assets/images/blank.gif" class="flag flag-us" alt="United States"> English (US)</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);"><img src="assets/images/blank.gif" class="flag flag-cn" alt="China"> 中文</a>
+            </li>             
+          </ul>
+        </li>
+        <!-- Control Sidebar Toggle Button -->
+        <li>
+          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
