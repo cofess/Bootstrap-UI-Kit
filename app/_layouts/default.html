@@ -1,23 +1,26 @@
-<!DOCTYPE html>
-<html>
+---
+layout: base
+---
 
-  {% include head.html %}
+{% comment %}
+{% include aside.html %}
+{% endcomment %}
 
-  <body>
+<div class="flex-fill">
+	{% include header.html %}
 
-    {% include header.html %}
+	<div class="my-3 my-md-5">
+		{% if page.page-title %}
+		<div class="container">
+			<div class="page-header">
+				<h1 class="page-title">{{ page.page-title }}</h1>
+			</div>
+		</div>
+		{% endif %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        <img src="/assets/images/gulp.png">
-        {{ content }}
-      </div>
-    </div>
+		{{ content }}
+	</div>
+</div>
 
-    {% include footer.html %}
-
-  <script src="{{ '/assets/js/application.js' | prepend: site.baseurl }}"></script>
-
-  </body>
-
-</html>
+{% include footer-sub.html %}
+{% include footer.html %}
