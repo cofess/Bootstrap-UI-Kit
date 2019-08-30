@@ -1,6 +1,6 @@
-var gulp = require('gulp');
+const gulp = require('gulp');
 
 /**
  * Start rsync task
  */
-gulp.task('deploy', ['rsync']);
+// gulp.task('deploy', gulp.series('rsync'));

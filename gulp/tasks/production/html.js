@@ -13,7 +13,7 @@ if (!config) return
 var exclude = path.normalize('!**/{' + config.excludeFolders.join(',') + '}/**')
 
 var paths = {
-  src: [path.join(config.src, '/**/*.{' + config.extensions + '}'), exclude],
+  src: [config.src + '/**/*.{' + config.extensions + '}', exclude],
   dest: config.production.dest
 }
 
@@ -35,5 +35,5 @@ var htmlProductionTask = function() {
     .on('end', browserSync.reload)
 }
 
-gulp.task('html:production', htmlProductionTask)
+gulp.task('html:pro', htmlProductionTask)
 module.exports = htmlProductionTask

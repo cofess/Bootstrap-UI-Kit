@@ -1,14 +1,17 @@
-var gulp          = require('gulp')
-var htmlmin       = require('gulp-htmlmin')
-var config        = require('../../config').optimize.html
+const gulp = require('gulp')
+const htmlmin = require('gulp-htmlmin')
+const config = require('../../config').optimize.html
 
 if (!config) return
 
 /**
  * Minimize HTML
  */
-gulp.task('optimize:html', function() {
+const optimizehtmlTask = () => {
   return gulp.src(config.src)
     .pipe(htmlmin(config.options))
     .pipe(gulp.dest(config.dest));
-});
+}
+
+gulp.task('optimize:html', optimizehtmlTask)
+module.exports = optimizehtmlTask

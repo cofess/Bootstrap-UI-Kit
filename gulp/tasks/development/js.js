@@ -1,10 +1,10 @@
-var path           = require('path')
-var gulp           = require('gulp')
-var sourcemap      = require('gulp-sourcemaps')
-var browsersync    = require('browser-sync')
-var rename         = require('gulp-rename')
-var gulpif         = require('gulp-if')
-var config         = require('../../config').js
+const path = require('path')
+const gulp = require('gulp')
+const sourcemap = require('gulp-sourcemaps')
+const browsersync = require('browser-sync')
+const rename = require('gulp-rename')
+const gulpif = require('gulp-if')
+const config = require('../../config').js
 
 
 if (!config) return
@@ -12,10 +12,13 @@ if (!config) return
 /**
  * Copy and minimize JS files
  */
-gulp.task('js', function() {
+const jsTask = () => {
   browsersync.notify('Compiling JavaScript');
   return gulp.src(config.src)
-    .pipe(gulpif(config.sourcemap && '!*min.js',sourcemap.init()))
-    .pipe(gulpif(config.sourcemap && '!*min.js',sourcemap.write('./')))
+    .pipe(gulpif(config.sourcemap && '!*min.js', sourcemap.init()))
+    .pipe(gulpif(config.sourcemap && '!*min.js', sourcemap.write('./')))
     .pipe(gulp.dest(config.dest));
-});
+}
+
+gulp.task('js', jsTask)
+module.exports = jsTask

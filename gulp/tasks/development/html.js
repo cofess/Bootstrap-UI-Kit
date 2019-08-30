@@ -1,21 +1,14 @@
-"use strict";
-
-var fs             = require('fs')
-var path           = require('path')
-var browserSync    = require('browser-sync')
-var gulp           = require('gulp')
-var data           = require('gulp-data')
-var render         = require('gulp-nunjucks-render')
-var config         = require('../../config').html
+const fs = require('fs')
+const path = require('path')
+const browserSync = require('browser-sync')
+const gulp = require('gulp')
+const data = require('gulp-data')
+const render = require('gulp-nunjucks-render')
+const config = require('../../config').html
 
 if (!config) return
 
 var exclude = path.normalize('!**/{' + config.excludeFolders.join(',') + '}/**')
-
-var paths = {
-  src: [path.join(config.src, '/**/*.{' + config.extensions + '}'), exclude],
-  dest: config.dest
-}
 
 var getData = function(file) {
   var dataPath = path.resolve(config.src, config.dataFile)
@@ -23,7 +16,7 @@ var getData = function(file) {
 }
 
 var htmlTask = function() {
-  return gulp.src(paths.src)
+  return gulp.src([config.src + '/**/*.{' + config.extensions + '}', exclude])
     .pipe(data(getData))
     .pipe(render({
       path: config.src,
@@ -32,7 +25,7 @@ var htmlTask = function() {
         watch: false
       }
     }))
-    .pipe(gulp.dest(paths.dest))
+    .pipe(gulp.dest(config.dest))
     .on('end', browserSync.reload)
 }
 

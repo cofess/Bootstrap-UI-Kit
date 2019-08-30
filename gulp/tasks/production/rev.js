@@ -1,7 +1,7 @@
-var gulp         = require('gulp')
-var rev          = require('gulp-rev')
-var revNapkin    = require('gulp-rev-napkin')
-var config       = require('../../config').rev
+const gulp = require('gulp')
+const rev = require('gulp-rev')
+const revNapkin = require('gulp-rev-napkin')
+const config = require('../../config').rev
 
 if (!config) return
 
@@ -9,7 +9,7 @@ if (!config) return
  * rev all asset files and
  * write a manifest file
  */
-gulp.task('rev', function() {
+const revTask = () => {
   return gulp.src(config.src.assets, { base: config.src.base })
     .pipe(gulp.dest(config.dest.assets))
     .pipe(rev())
@@ -17,4 +17,7 @@ gulp.task('rev', function() {
     .pipe(revNapkin())
     .pipe(rev.manifest({ path: config.dest.manifest.name }))
     .pipe(gulp.dest(config.dest.manifest.path));
-});
+}
+
+gulp.task('rev', revTask)
+module.exports = revTask
