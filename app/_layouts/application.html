@@ -17,41 +17,14 @@
   {% endblock %}
 </head>
 
-<body class="hold-transition skin-black-light sidebar-mini">
-  <div class="wrapper">
+<body class="hold-transition">
+  <div class="page">
     <!-- Main Header -->
     {% include "_includes/header.html" %}
-    <!-- Left side column. contains the logo and sidebar -->
-    {% include "_includes/sidebar.html" %}
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-      <!-- Content Header (Page header) -->
-      {% block breadcrumb %}
-      <section class="content-header">
-        <h1>
-        Page Header
-        <small>Optional description</small>
-      </h1>
-        <ol class="breadcrumb">
-          <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-          <li class="active">Here</li>
-        </ol>
-      </section>
-      {% endblock %}
-      <!-- Main content -->
-      <section class="content container-fluid">
-        <!--------------------------
-        | Your Page Content Here |
-        -------------------------->
-        {% block content %}{% endblock %}
-      </section>
-      <!-- /.content -->
-    </div>
     <!-- /.content-wrapper -->
     <!-- Main Footer -->
     {% include "_includes/footer.html" %}
-    <!-- Control Sidebar -->
-    {% include "_includes/sidebar-control.html" %}
   </div>
   <!-- ./wrapper -->
   {% block javascript %}
