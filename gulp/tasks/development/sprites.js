@@ -1,10 +1,10 @@
-const path           = require('path')
-const extend         = require('extend')
-const gulp           = require('gulp')
-const spritesmith    = require('gulp.spritesmith')
-const merge          = require('merge-stream')
-const folders        = require('gulp-folders')
-const config         = require('../../config').sprites
+var path           = require('path')
+var extend         = require('extend')
+var gulp           = require('gulp')
+var spritesmith    = require('gulp.spritesmith')
+var merge          = require('merge-stream')
+var folders        = require('gulp-folders')
+var config         = require('../../config').sprites
 
 if (!config) return
 

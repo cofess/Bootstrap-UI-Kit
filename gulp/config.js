@@ -1,22 +1,22 @@
-var src               = './app'; // 源代码目录
-var build             = './build'; // 构建目录
-var static            = src + '/_static';
-var srcAssets         = src + '/_assets';
-var concatFolder      = srcAssets + '/scripts/_concat';
-var development       = build + '/development';
-var production        = build + '/production';
-var developmentAssets = build + '/assets';
-var productionAssets  = build + '/production/assets';
-var sourcemaps        = {
-      css: true,
-      js: false
-    }
-var stylesheet        = {
-      // type: 'less',
-      // extensions: ["less" ,"css"],
-      type: 'sass',
-      extensions: ["sass", "scss", "css"],
-    }
+var src = 'app'; // 源代码目录
+var build = 'build'; // 构建目录
+var static = src + '/_static';
+var srcAssets = src + '/_assets';
+var concatFolder = srcAssets + '/scripts/_concat';
+var development = 'build/development';
+var production = 'build/production';
+var developmentAssets = 'build/assets';
+var productionAssets = 'build/production/assets';
+var sourcemaps = {
+  css: true,
+  js: false
+}
+var stylesheet = {
+  // type: 'less',
+  // extensions: ["less" ,"css"],
+  type: 'sass',
+  extensions: ["sass", "scss", "css"],
+}
 
 // gulp 任务配置
 module.exports = {
@@ -55,11 +55,11 @@ module.exports = {
   },
   // 清空构建目录
   delete: {
-    src: [developmentAssets,productionAssets]
+    src: [developmentAssets, productionAssets]
   },
   // 文件占用空间
   sizereport: {
-    src:  [
+    src: [
       developmentAssets + '/css/*.css',
       developmentAssets + '/js/*.js',
     ],
@@ -103,25 +103,25 @@ module.exports = {
   // 字体
   fonts: {
     development: {
-      src:  srcAssets + '/fonts/*',
+      src: srcAssets + '/fonts/*',
       dest: developmentAssets + '/fonts'
     },
     production: {
-      src:  srcAssets + '/fonts/*',
+      src: developmentAssets + '/fonts/*',
       dest: productionAssets + '/fonts'
     }
   },
   // styles样式表
   styles: {
     type: stylesheet.type,
-    src:  [
+    src: [
       srcAssets + '/styles/**/*.{' + stylesheet.extensions + '}',
-      '!' + srcAssets + '/styles/_*.{' + stylesheet.extensions + '}',
+      '!' + srcAssets + '/styles/**/_*.{' + stylesheet.extensions + '}',
     ],
     dest: developmentAssets + '/css',
     sourcemap: sourcemaps.css, //是否生成sourcemap
     less: {
-      extensions: ["less" ,"css"],
+      extensions: ["less", "css"],
       compile: {
         compress: true
       }
@@ -157,7 +157,7 @@ module.exports = {
         // format: 'keep-breaks' // formats output the default way but adds line breaks for improved readability
       },
       autoprefixer: {
-        overrideBrowserslist: [
+        browsers: [
           'last 2 versions',
           'safari 5',
           'ie 8',
@@ -189,9 +189,9 @@ module.exports = {
           }]
         }
       },
-      reporters: [
-        {formatter: 'string', console: true}
-      ]
+      reporter: {
+        clearMessages: true
+      }
     }
   },
   // scripts脚本
@@ -226,7 +226,7 @@ module.exports = {
     ]
   },
   images: {
-    src:  srcAssets + '/images/**/*',
+    src: srcAssets + '/images/**/*',
     dest: developmentAssets + '/images'
   },
   webp: {
@@ -255,10 +255,10 @@ module.exports = {
     options: {
       // cssName: '_sprites.scss',
       cssFormat: 'css',
-      padding: 20,//图片间距
+      padding: 20, //图片间距
       algorithm: 'binary-tree', //图标排列方式，top-down、left-right、diagonal、alt-diagonal、binary-tree
       cssOpts: {
-        cssSelector: function (item) {
+        cssSelector: function(item) {
           // If this is a hover sprite, name it as a hover one (e.g. 'home-hover' -> 'home:hover')
           if (item.name.indexOf('-hover') !== -1) {
             return '.' + item.name.replace('-hover', ':hover');
@@ -276,19 +276,19 @@ module.exports = {
     src: src,
     dest: build,
     development: {
-      src:    src,
-      dest:   development
+      src: src,
+      dest: development
     },
     production: {
-      src:    src,
-      dest:   production
+      src: src,
+      dest: production
     },
     dataFile: "_data/global.json",
     compile: {
       collapseWhitespace: true
     },
     extensions: ["html", "json"],
-    excludeFolders: ["_layouts", "_includes", "_macros", "_bower_components", "_data","_static"]
+    excludeFolders: ["_layouts", "_includes", "_macros", "_bower_components", "_data", "_static"]
   },
   // 打包
   gzip: {
@@ -300,7 +300,7 @@ module.exports = {
       '!' + production + '/**/README.md',
     ],
     dest: production,
-    filename : 'production',
+    filename: 'production',
     options: {
       extension: 'zip'
     }
@@ -308,19 +308,19 @@ module.exports = {
   // 压缩优化
   optimize: {
     css: {
-      src:  developmentAssets + '/css/*.css',
+      src: developmentAssets + '/css/*.css',
       dest: productionAssets + '/css/',
       options: {
         keepSpecialComments: 0
       }
     },
     js: {
-      src:  developmentAssets + '/js/*.js',
+      src: developmentAssets + '/js/*.js',
       dest: productionAssets + '/js/',
       options: {}
     },
     images: {
-      src:  developmentAssets + '/images/**/*.{jpg,jpeg,png,gif}',
+      src: developmentAssets + '/images/**/*.{jpg,jpeg,png,gif}',
       dest: productionAssets + '/images/',
       options: {
         optimizationLevel: 3,
@@ -356,7 +356,7 @@ module.exports = {
   },
   collect: {
     src: [
-      productionAssets + '/rev.manifest.json',
+      productionAssets + '/manifest.json',
       production + '/**/*.{html,xml,txt,json,css,js}',
       '!' + production + '/feed.xml'
     ],
@@ -384,11 +384,11 @@ module.exports = {
       src + '/**/*.{html,markdown,md,yml,json,txt,xml}',
       src + '/*'
     ],
-    static:  static + '/**/*',
-    fonts:   srcAssets + '/fonts/**/*',
-    styles:  srcAssets + '/styles/**/*.{css,scss,less}',
+    static: static + '/**/*',
+    fonts: srcAssets + '/fonts/**/*',
+    styles: srcAssets + '/styles/**/*.{css,scss,less}',
     scripts: srcAssets + '/scripts/**/*.js',
-    images:  srcAssets + '/images/**/*',
+    images: srcAssets + '/images/**/*',
     sprites: srcAssets + '/images/**/*.png',
     // svg:     'vectors/*.svg'
   },

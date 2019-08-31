@@ -1,9 +1,8 @@
-const path = require('path')
-const gulp = require('gulp')
-const uglify = require('gulp-uglify')
-const size = require('gulp-size')
-const rename = require('gulp-rename')
-const config = require('../../config').js
+var gulp           = require('gulp')
+var uglify         = require('gulp-uglify')
+var size           = require('gulp-size')
+var rename         = require('gulp-rename')
+var config         = require('../../config').js
 
 
 if (!config) return
@@ -11,13 +10,10 @@ if (!config) return
 /**
  * Copy and minimize JS files
  */
-const jsminTask = () => {
+gulp.task('jsmin', function() {
   return gulp.src([config.dest + '/*.js', '!' + config.dest + '/*.min.js'])
     .pipe(uglify(config.options.uglify))
-    .pipe(rename({ suffix: '.min' }))
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest(config.dest))
     .pipe(size());
-}
-
-gulp.task('jsmin', jsminTask)
-module.exports = jsminTask
+});

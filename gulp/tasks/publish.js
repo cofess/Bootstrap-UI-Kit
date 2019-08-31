@@ -1,6 +1,6 @@
-const gulp = require('gulp');
+var gulp = require('gulp');
 
 /**
- * Run task browsersync:pro
+ * Run task browsersync:production
  */
-// gulp.task('publish', gulp.series('browsersync:pro'));
+gulp.task('publish', ['browsersync:production']);
