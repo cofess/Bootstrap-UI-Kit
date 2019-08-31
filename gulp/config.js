@@ -103,7 +103,7 @@ module.exports = {
   // 字体
   fonts: {
     development: {
-      src: srcAssets + '/fonts/*',
+      src: srcAssets + '/fonts/**/*',
       dest: developmentAssets + '/fonts'
     },
     production: {
