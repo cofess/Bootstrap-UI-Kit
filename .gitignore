@@ -1,3 +1,2 @@
 node_modules/
-app/_assets/styles/bootstrap.less
-app/_assets/styles/bootstrap-less/
+build/
