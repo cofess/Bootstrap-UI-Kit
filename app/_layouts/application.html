@@ -10,29 +10,48 @@
 <head>
   {% include "_includes/meta.html" %}
   <title>{% block title %}{{ title }}{% endblock %}</title>
-  {% block head %}
-  {% include "_includes/head.html" %}
-  {% endblock %}
-  {% block style %}
-  {% endblock %}
+  {% block head %} {% include "_includes/head.html" %} {% endblock %} 
+  {% block style %} {% endblock %}
 </head>
 
 <body class="hold-transition">
-  <div class="page">
-    <!-- Main Header -->
-    {% include "_includes/header.html" %}
-    <!-- Content Wrapper. Contains page content -->
-    <!-- /.content-wrapper -->
-    <!-- Main Footer -->
-    {% include "_includes/footer.html" %}
-  </div>
+  <!-- Main Header -->
+  {% include "_includes/header.html" %}
+  <!-- Content Wrapper. Contains page content -->
+  <main class="main">
+    <!-- Content Header (Page header) -->
+    {% block breadcrumb %}
+    <section class="content-header">
+      <div class="container">
+        <h1>
+        Page Header
+        <small>Optional description</small>
+      </h1>
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+          <li class="active">Here</li>
+        </ol>
+      </div>
+    </section>
+    {% endblock %}
+    <!-- Main content -->
+    <section class="content container-fluid">
+      <!--------------------------
+        | Your Page Content Here |
+        -------------------------->
+      {% block content %}{% endblock %}
+    </section>
+    <!-- /.content -->
+  </main>
+  <!-- /.content-wrapper -->
+  <!-- Main Footer -->
+  {% include "_includes/footer.html" %}
   <!-- ./wrapper -->
   {% block javascript %}
   <!-- REQUIRED JS SCRIPTS -->
-  {% include "_includes/scripts.html" %}
-  {% endblock %}
-  {% block script %}
-  {% endblock %}
+  {% include "_includes/scripts.html" %} 
+  {% endblock %} 
+  {% block script %} {% endblock %}
 </body>
 
 </html>
