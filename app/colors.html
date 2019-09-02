@@ -1,15 +1,8 @@
-{#
-  Nunjucks Templating!
-  Homepage: https://mozilla.github.io/nunjucks/
-  Docs: https://mozilla.github.io/nunjucks/api.html
-#}
-
+{# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #}
 <!-- 模版 -->
 {% extends '_layouts/application.html' %}
-
 <!-- 页面标题 -->
 {% block title %}{{ title }} | Colors{% endblock %}
-
 <!-- 自定义样式 -->
 {% block style %}
 <style>
@@ -42,187 +35,421 @@
   display: block;
   z-index: 7;
 }
+
+.color-swatch {
+  position: relative;
+  margin: 0 0 3rem
+}
+
+.color-swatch--bg {
+  border-top-left-radius: .75rem;
+  border-top-right-radius: .75rem;
+  height: 84px;
+  width: 100%;
+  margin: 0 auto
+}
+
+.color-swatch--title {
+  background: #fff;
+  border: 1px solid #e6e7f1;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: .75rem;
+  padding: .66667rem 1rem;
+  text-align: center;
+  color: #a6a6b9
+}
 </style>
 {% endblock %}
-
 <!-- 面包屑导航 -->
 {% block breadcrumb %}
 <section class="page-header">
   <div class="container">
     <h1 class="page-title">Colors</h1>
+    <p>Convey meaning through color with a handful of color utility classes.</p>
   </div>
 </section>
 {% endblock %}
-
 <!-- 主体内容 -->
 {% block content %}
 <div class="container">
-  <div class="card">
-    <div class="card-header">
-      <h3 class="card-title">Color</h3>
+  <h4 class="heading-2 pb-4">Contextual colors</h4>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-primary"></div>
+        <h6 class="color-swatch--title">Primary</h6>
+      </div>
     </div>
-    <div class="card-body">
-      <div class="grid grid-cols-7 grid-gap-1">
-        <div class="bg-white p-1">bg-white</div>
-        <div class="bg-default p-1">bg-default</div>
-        <div class="bg-primary bg-inverse p-1">bg-primary</div>
-        <div class="bg-secondary bg-inverse p-1">bg-secondary</div>
-        <div class="bg-mix bg-inverse p-1">bg-mix</div>
-        <div class="bg-success bg-inverse p-1">bg-success</div>
-        <div class="bg-info bg-inverse p-1">bg-info</div>
-        <div class="bg-warning bg-inverse p-1">bg-warning</div>
-        <div class="bg-danger bg-inverse p-1">bg-danger</div>
-        <div class="bg-dark bg-inverse p-1">bg-dark</div>
-        <div class="bg-black bg-inverse p-1">bg-black</div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-secondary"></div>
+        <h6 class="color-swatch--title">Secondary</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-success"></div>
+        <h6 class="color-swatch--title">Success</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-warning"></div>
+        <h6 class="color-swatch--title">Warning</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-danger"></div>
+        <h6 class="color-swatch--title">Danger</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-info"></div>
+        <h6 class="color-swatch--title">Info</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-dark"></div>
+        <h6 class="color-swatch--title">Dark</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-light"></div>
+        <h6 class="color-swatch--title">Light</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-white"></div>
+        <h6 class="color-swatch--title">White</h6>
       </div>
     </div>
   </div>
-  <div class="card">
-    <div class="card-header">
-      <h3 class="card-title">Color</h3>
+  <h4 class="heading-2 pb-4">Other colors</h4>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-blue"></div>
+        <h6 class="color-swatch--title">Blue</h6>
+      </div>
     </div>
-    <div class="card-body">
-      <div class="grid grid-cols-7 grid-gap-1">
-        <div class="bg-white p-1">bg-white</div>
-        <div class="bg-smoke p-1">bg-smoke</div>
-        <div class="bg-light p-1">bg-light</div>
-        <div class="bg-silver p-1">bg-silver</div>
-        <div class="bg-dark p-1">bg-dark</div>
-        <div class="bg-gray p-1">bg-gray</div>
-        <div class="bg-black p-1">bg-black</div>
-        <div class="text-white p-1">white</div>
-        <div class="text-smoke p-1">smoke</div>
-        <div class="text-light p-1">light</div>
-        <div class="text-silver p-1">silver</div>
-        <div class="text-dark p-1">dark</div>
-        <div class="text-gray p-1">gray</div>
-        <div class="text-black p-1">black</div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-red"></div>
+        <h6 class="color-swatch--title">Red</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-teal"></div>
+        <h6 class="color-swatch--title">Teal</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-azure"></div>
+        <h6 class="color-swatch--title">Azure</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-orange"></div>
+        <h6 class="color-swatch--title">Orange</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-cyan"></div>
+        <h6 class="color-swatch--title">Cyan</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-indigo"></div>
+        <h6 class="color-swatch--title">Indigo</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-yellow"></div>
+        <h6 class="color-swatch--title">Yellow</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-gray"></div>
+        <h6 class="color-swatch--title">Gray</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-purple"></div>
+        <h6 class="color-swatch--title">Purple</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-lime"></div>
+        <h6 class="color-swatch--title">Lime</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-gray-dark"></div>
+        <h6 class="color-swatch--title">Dark gray</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-pink"></div>
+        <h6 class="color-swatch--title">Pink</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-green"></div>
+        <h6 class="color-swatch--title">Green</h6>
       </div>
     </div>
   </div>
-  <!-- COLOR PALETTE -->
-  <div class="card color-palette-box">
-    <div class="card-header">
-      <h3 class="card-title">Color Palette</h3>
-    </div>
-    <div class="card-body">
-      <div class="row">
-        <div class="col-sm-4 col-md-2">
-          <h4 class="text-center">Primary</h4>
-          <div class="color-palette-set">
-            <div class="bg-light-blue disabled color-palette"><span>Disabled</span></div>
-            <div class="bg-light-blue color-palette"><span>#3c8dbc</span></div>
-            <div class="bg-light-blue-active color-palette"><span>Active</span></div>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-sm-4 col-md-2">
-          <h4 class="text-center">Info</h4>
-          <div class="color-palette-set">
-            <div class="bg-aqua disabled color-palette"><span>Disabled</span></div>
-            <div class="bg-aqua color-palette"><span>#00c0ef</span></div>
-            <div class="bg-aqua-active color-palette"><span>Active</span></div>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-sm-4 col-md-2">
-          <h4 class="text-center">Success</h4>
-          <div class="color-palette-set">
-            <div class="bg-green disabled color-palette"><span>Disabled</span></div>
-            <div class="bg-green color-palette"><span>#00a65a</span></div>
-            <div class="bg-green-active color-palette"><span>Active</span></div>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-sm-4 col-md-2">
-          <h4 class="text-center">Warning</h4>
-          <div class="color-palette-set">
-            <div class="bg-yellow disabled color-palette"><span>Disabled</span></div>
-            <div class="bg-yellow color-palette"><span>#f39c12</span></div>
-            <div class="bg-yellow-active color-palette"><span>Active</span></div>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-sm-4 col-md-2">
-          <h4 class="text-center">Danger</h4>
-          <div class="color-palette-set">
-            <div class="bg-red disabled color-palette"><span>Disabled</span></div>
-            <div class="bg-red color-palette"><span>#f56954</span></div>
-            <div class="bg-red-active color-palette"><span>Active</span></div>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-sm-4 col-md-2">
-          <h4 class="text-center">Gray</h4>
-          <div class="color-palette-set">
-            <div class="bg-gray disabled color-palette"><span>Disabled</span></div>
-            <div class="bg-gray color-palette"><span>#d2d6de</span></div>
-            <div class="bg-gray-active color-palette"><span>Active</span></div>
-          </div>
-        </div>
-        <!-- /.col -->
+  <h4 class="heading-2 pb-4">Tinting backgrounds</h4>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="color-palette-set">
+        <div class="bg-blue-lightest color-palette"><span>Lightest blue</span></div>
+        <div class="bg-blue-lighter color-palette"><span>Lighter blue</span></div>
+        <div class="bg-blue-light color-palette"><span>Light blue</span></div>
+        <div class="bg-blue color-palette"><span>Default blue</span></div>
+        <div class="bg-blue-dark color-palette"><span>Dark blue</span></div>
+        <div class="bg-blue-darker color-palette"><span>Darker blue</span></div>
+        <div class="bg-blue-darkest color-palette"><span>Darkest blue</span></div>
       </div>
-      <!-- /.row -->
-      <div class="row">
-        <div class="col-sm-4 col-md-2">
-          <h4 class="text-center">Navy</h4>
-          <div class="color-palette-set">
-            <div class="bg-navy disabled color-palette"><span>Disabled</span></div>
-            <div class="bg-navy color-palette"><span>#001F3F</span></div>
-            <div class="bg-navy-active color-palette"><span>Active</span></div>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-sm-4 col-md-2">
-          <h4 class="text-center">Teal</h4>
-          <div class="color-palette-set">
-            <div class="bg-teal disabled color-palette"><span>Disabled</span></div>
-            <div class="bg-teal color-palette"><span>#39CCCC</span></div>
-            <div class="bg-teal-active color-palette"><span>Active</span></div>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-sm-4 col-md-2">
-          <h4 class="text-center">Purple</h4>
-          <div class="color-palette-set">
-            <div class="bg-purple disabled color-palette"><span>Disabled</span></div>
-            <div class="bg-purple color-palette"><span>#605ca8</span></div>
-            <div class="bg-purple-active color-palette"><span>Active</span></div>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-sm-4 col-md-2">
-          <h4 class="text-center">Orange</h4>
-          <div class="color-palette-set">
-            <div class="bg-orange disabled color-palette"><span>Disabled</span></div>
-            <div class="bg-orange color-palette"><span>#ff851b</span></div>
-            <div class="bg-orange-active color-palette"><span>Active</span></div>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-sm-4 col-md-2">
-          <h4 class="text-center">Maroon</h4>
-          <div class="color-palette-set">
-            <div class="bg-maroon disabled color-palette"><span>Disabled</span></div>
-            <div class="bg-maroon color-palette"><span>#D81B60</span></div>
-            <div class="bg-maroon-active color-palette"><span>Active</span></div>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-sm-4 col-md-2">
-          <h4 class="text-center">Black</h4>
-          <div class="color-palette-set">
-            <div class="bg-black disabled color-palette"><span>Disabled</span></div>
-            <div class="bg-black color-palette"><span>#111111</span></div>
-            <div class="bg-black-active color-palette"><span>Active</span></div>
-          </div>
-        </div>
-        <!-- /.col -->
-      </div>
-      <!-- /.row -->
     </div>
-    <!-- /.card-body -->
+    <div class="col-md-3">
+      <div class="color-palette-set">
+        <div class="bg-red-lightest color-palette"><span>Lightest red</span></div>
+        <div class="bg-red-lighter color-palette"><span>Lighter red</span></div>
+        <div class="bg-red-light color-palette"><span>Light red</span></div>
+        <div class="bg-red color-palette"><span>Default red</span></div>
+        <div class="bg-red-dark color-palette"><span>Dark red</span></div>
+        <div class="bg-red-darker color-palette"><span>Darker red</span></div>
+        <div class="bg-red-darkest color-palette"><span>Darkest red</span></div>
+      </div>
+    </div>
   </div>
-  <!-- /.card -->
+  <h4 class="heading-2 pb-4 mt-2">Neutral</h4>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-neutral-primary"></div>
+        <h6 class="color-swatch--title">Primary</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-neutral-first"></div>
+        <h6 class="color-swatch--title">First</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-neutral-second"></div>
+        <h6 class="color-swatch--title">Second</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-neutral-success"></div>
+        <h6 class="color-swatch--title">Success</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-neutral-warning"></div>
+        <h6 class="color-swatch--title">Warning</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-neutral-danger"></div>
+        <h6 class="color-swatch--title">Danger</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-neutral-info"></div>
+        <h6 class="color-swatch--title">Info</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-neutral-dark"></div>
+        <h6 class="color-swatch--title">Dark</h6>
+      </div>
+    </div>
+  </div>
+  <h4 class="heading-2 pb-4 mt-2">Gradients</h4>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-warm-flame"></div>
+        <h6 class="color-swatch--title">bg-warm-flame</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-night-fade"></div>
+        <h6 class="color-swatch--title">bg-night-fade</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-tempting-azure"></div>
+        <h6 class="color-swatch--title">bg-tempting-azure</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-sunny-morning"></div>
+        <h6 class="color-swatch--title">bg-sunny-morning</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-heavy-rain"></div>
+        <h6 class="color-swatch--title">bg-heavy-rain</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-amy-crisp"></div>
+        <h6 class="color-swatch--title">bg-amy-crisp</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-malibu-beach"></div>
+        <h6 class="color-swatch--title">bg-malibu-beach</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-mean-fruit"></div>
+        <h6 class="color-swatch--title">bg-mean-fruit</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-ripe-malin"></div>
+        <h6 class="color-swatch--title">bg-ripe-malin</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-deep-blue"></div>
+        <h6 class="color-swatch--title">bg-deep-blue</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-arielle-smile"></div>
+        <h6 class="color-swatch--title">bg-arielle-smile</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-plum-plate"></div>
+        <h6 class="color-swatch--title">bg-plum-plate</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-happy-fisher"></div>
+        <h6 class="color-swatch--title">bg-happy-fisher</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-happy-itmeo"></div>
+        <h6 class="color-swatch--title">bg-happy-itmeo</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-mixed-hopes"></div>
+        <h6 class="color-swatch--title">bg-mixed-hopes</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-strong-bliss"></div>
+        <h6 class="color-swatch--title">bg-strong-bliss</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-grow-early"></div>
+        <h6 class="color-swatch--title">bg-grow-early</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-premium-dark"></div>
+        <h6 class="color-swatch--title">bg-premium-dark</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-love-kiss"></div>
+        <h6 class="color-swatch--title">bg-love-kiss</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-happy-green"></div>
+        <h6 class="color-swatch--title">bg-happy-green</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-vicious-stance"></div>
+        <h6 class="color-swatch--title">bg-vicious-stance</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-night-sky"></div>
+        <h6 class="color-swatch--title">bg-night-sky</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-midnight-bloom"></div>
+        <h6 class="color-swatch--title">bg-midnight-bloom</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-slick-carbon"></div>
+        <h6 class="color-swatch--title">bg-slick-carbon</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-royal"></div>
+        <h6 class="color-swatch--title">bg-royal</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-asteroid"></div>
+        <h6 class="color-swatch--title">bg-asteroid</h6>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}
