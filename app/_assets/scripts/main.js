@@ -11,7 +11,7 @@ require.config({
     'easing': 'assets/js/lib/jquery.easing.1.3',
     'animate-enhanced': 'assets/js/lib/jquery.animate-enhanced.min',
     'hammer': 'assets/js/lib/hammer.min',
-    'bootstrap': ['//cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min', '//cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min'],
+    'bootstrap': ['assets/js/lib/bootstrap.bundle.min', 'https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js'],
     'smartmenus': 'assets/js/vendors/jquery.smartmenus',
     'sticky': 'assets/js/vendors/sticky-sidebar.min',
     'royalslider': 'assets/js/vendors/jquery.royalslider.min',
@@ -83,4 +83,3 @@ require(['jquery'], function($) {
 });
 
 // require(['application']);
-// require(['jquery', 'application']);
