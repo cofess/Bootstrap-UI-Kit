@@ -179,18 +179,30 @@ module.exports = {
     ],
     options: {
       stylelint: {
-        'rules': {
-          'string-quotes': [2, 'double'],
-          'color-hex-case': [2, 'lower'],
-          'value-no-vendor-prefix': 2,
-          'declaration-no-important': 0,
-          'rule-non-nested-empty-line-before': [2, 'always', {
-            ignore: ['after-comment']
-          }]
-        }
-      },
-      reporter: {
-        clearMessages: true
+        config: {
+          "rules": {
+            "block-no-empty": null,
+            "color-no-invalid-hex": true,
+            "comment-empty-line-before": ["always", {
+              "ignore": ["stylelint-commands", "after-comment"]
+            }],
+            "declaration-colon-space-after": "always",
+            "indentation": ["tab", {
+              "except": ["value"]
+            }],
+            "max-empty-lines": 2,
+            "rule-empty-line-before": ["always", {
+              "except": ["first-nested"],
+              "ignore": ["after-comment"]
+            }],
+            // "unit-whitelist": ["px", "em", "rem", "%", "s"]
+          }
+        },
+        reporters: [
+          { formatter: 'verbose', console: true }
+        ],
+        fix: true,
+        failAfterError: false
       }
     }
   },

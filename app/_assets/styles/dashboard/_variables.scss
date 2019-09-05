@@ -76,6 +76,15 @@ $danger: $red;
 $light: $gray-100;
 $dark: $gray-800;
 
+$primary-neutral:       lighten(#d6daee, 6%);
+$secondary-neutral:     lighten(#d0d2da, 6%);
+$success-neutral:       lighten(#ccf4dc, 6%);
+$info-neutral:          lighten(#ccf7fa, 6%);
+$warning-neutral:       lighten(#fff4d8, 5%);
+$danger-neutral:        lighten(#ffd6db, 6%);
+$light-neutral:         lighten(#fdfdff, 6%);
+$dark-neutral:          lighten(#e4e4ea, 6%);
+
 $colors: (
 	"blue": $blue,
 	"azure": $azure,
@@ -103,6 +112,16 @@ $theme-colors: (
 	"danger": $danger,
 	"light": $light,
 	"dark": $dark
+);
+
+$theme-colors-neutral: (
+    "primary":    $primary-neutral,
+    "secondary":  $secondary-neutral,
+    "success":    $success-neutral,
+    "info":       $info-neutral,
+    "warning":    $warning-neutral,
+    "danger":     $danger-neutral,
+    "dark":       $dark-neutral,
 );
 
 $social-colors: (

@@ -5,23 +5,23 @@
 @import 'functions';
 @import 'variables';
 
-@import 'core';
-// @import 'type';
-@import 'grid';
+@import 'utilities/core';
+// @import 'utilities/type';
+@import 'utilities/grid';
+@import 'utilities/colors';
+@import 'utilities/badge';
+@import 'utilities/button';
 
 @import 'layout';
 @import 'aside';
 @import 'header';
 @import 'footer';
-@import 'colors';
 @import 'text';
 @import 'utilities';
 
 @import 'nav';
-@import 'button';
 @import 'alert';
 @import 'close';
-@import 'badge';
 @import 'tables';
 @import 'breadcrumb';
 @import 'pagination';
@@ -50,7 +50,7 @@
 @import 'tag';
 @import 'syntax';
 @import 'infobox';
-@import 'carousel';
+@import 'components/carousel';
 // @import 'datatables';
 @import 'bottombar';
 
