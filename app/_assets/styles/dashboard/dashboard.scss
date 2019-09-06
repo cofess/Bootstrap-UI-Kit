@@ -11,13 +11,13 @@
 @import 'utilities/colors';
 @import 'utilities/badge';
 @import 'utilities/button';
+@import 'utilities/text';
+@import 'utilities/utilities';
 
 @import 'layout';
 @import 'aside';
 @import 'header';
 @import 'footer';
-@import 'text';
-@import 'utilities';
 
 @import 'nav';
 @import 'alert';
@@ -47,7 +47,7 @@
 @import 'stamp';
 @import 'chat';
 @import 'example';
-@import 'tag';
+@import 'utilities/tag';
 @import 'syntax';
 @import 'infobox';
 @import 'components/carousel';
@@ -60,7 +60,7 @@
 @import 'forms/custom-imagecheck';
 @import 'forms/custom-colorinput';
 
-@import 'timeline';
+@import 'components/timeline';
 
 @import 'browser';
 @import 'flag';
