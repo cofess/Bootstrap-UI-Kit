@@ -1,0 +1,16 @@
+/*----------------------------------------------------
+ * Fluidity response
+ *---------------------------------------------------*/
+
+img,
+canvas,
+iframe,
+video,
+svg {
+  max-width: 100%;
+  height: auto
+}
+
+iframe {
+  border: 0;
+}
