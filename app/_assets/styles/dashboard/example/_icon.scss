@@ -1,9 +1,11 @@
 .icons-list {
 	list-style: none;
-	margin: 0 -1px -1px 0;
+	// margin: 0 -1px -1px 0;
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
+	border-top: 1px solid $border-color;
+	border-left: 1px solid $border-color;
 
 	>li {
 		flex: 1 0 4rem;

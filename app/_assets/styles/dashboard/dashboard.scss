@@ -34,7 +34,6 @@
 @import 'avatar';
 @import 'product';
 @import 'progress';
-@import 'icon';
 @import 'image';
 @import 'link';
 @import 'media';
@@ -47,7 +46,6 @@
 @import 'chips';
 @import 'stamp';
 @import 'chat';
-@import 'example';
 @import 'utilities/tag';
 @import 'syntax';
 @import 'infobox';
@@ -68,5 +66,8 @@
 @import 'payments';
 @import 'jvectormap';
 @import 'selectize';
+
+@import 'example/example';
+@import 'example/icon';
 
 // @import 'fonts/feather';
