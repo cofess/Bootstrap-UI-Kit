@@ -1,8 +1,4 @@
-{# 
-  Nunjucks Templating! 
-  Homepage: https://mozilla.github.io/nunjucks/ 
-  Docs: https://mozilla.github.io/nunjucks/api.html 
-#}
+{# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #}
 <!-- 模版 -->
 {% extends '_layouts/application.html' %}
 <!-- 页面标题 -->
@@ -93,257 +89,25 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-6">
+    <div class="col-sm-6">
       <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Development Activity</h3>
-        </div>
-        <div id="chart-development-activity" style="height: 10rem"></div>
-        <div class="table-responsive">
-          <table class="table card-table table-striped table-vcenter">
-            <thead>
-              <tr>
-                <th colspan="2">User</th>
-                <th>Commit</th>
-                <th>Date</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="w-1"><span class="avatar" style="background-image: url(./../assets/images/avatars/male/9.jpg)"></span></td>
-                <td>Ronald Bradley</td>
-                <td>Initial commit</td>
-                <td class="text-nowrap">May 6, 2018</td>
-                <td class="w-1"><a href="#" class="icon"><i class="fe fe-trash"></i></a></td>
-              </tr>
-              <tr>
-                <td><span class="avatar">BM</span></td>
-                <td>Russell Gibson</td>
-                <td>Main structure</td>
-                <td class="text-nowrap">April 22, 2018</td>
-                <td><a href="#" class="icon"><i class="fe fe-trash"></i></a></td>
-              </tr>
-              <tr>
-                <td><span class="avatar" style="background-image: url(./../assets/images/avatars/female/1.jpg)"></span></td>
-                <td>Beverly Armstrong</td>
-                <td>Left sidebar adjustments</td>
-                <td class="text-nowrap">April 15, 2018</td>
-                <td><a href="#" class="icon"><i class="fe fe-trash"></i></a></td>
-              </tr>
-              <tr>
-                <td><span class="avatar" style="background-image: url(./../assets/images/avatars/male/4.jpg)"></span></td>
-                <td>Bobby Knight</td>
-                <td>Topbar dropdown style</td>
-                <td class="text-nowrap">April 8, 2018</td>
-                <td><a href="#" class="icon"><i class="fe fe-trash"></i></a></td>
-              </tr>
-              <tr>
-                <td><span class="avatar" style="background-image: url(./../assets/images/avatars/female/11.jpg)"></span></td>
-                <td>Sharon Wells</td>
-                <td>Fixes #625</td>
-                <td class="text-nowrap">April 9, 2018</td>
-                <td><a href="#" class="icon"><i class="fe fe-trash"></i></a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <script>
-      require(['c3', 'jquery'], function(c3, $) {
-        $(document).ready(function() {
-          var chart = c3.generate({
-            bindto: '#chart-development-activity', // id of chart wrapper
-            data: {
-              columns: [
-                // each columns data
-                ['data1', 0, 5, 1, 2, 7, 5, 6, 8, 24, 7, 12, 5, 6, 3, 2, 2, 6, 30, 10, 10, 15, 14, 47, 65, 55]
-              ],
-              type: 'area', // default type of chart
-              groups: [
-                ['data1', 'data2', 'data3']
-              ],
-              colors: {
-                'data1': tabler.colors["blue"]
-              },
-              names: {
-                // name of each serie
-                'data1': 'Purchases'
-              }
-            },
-            axis: {
-              y: {
-                padding: {
-                  bottom: 0,
-                },
-                show: false,
-                tick: {
-                  outer: false
-                }
-              },
-              x: {
-                padding: {
-                  left: 0,
-                  right: 0
-                },
-                show: false
-              }
-            },
-            legend: {
-              position: 'inset',
-              padding: 0,
-              inset: {
-                anchor: 'top-left',
-                x: 20,
-                y: 8,
-                step: 10
-              }
-            },
-            tooltip: {
-              format: {
-                title: function(x) {
-                  return '';
-                }
-              }
-            },
-            padding: {
-              bottom: 0,
-              left: -1,
-              right: -1
-            },
-            point: {
-              show: false
-            }
-          });
-        });
-      });
-      </script>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body text-center">
-              <div class="h5">New feedback</div>
-              <div class="display-4 font-weight-bold mb-4">62</div>
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-red" style="width: 28%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body text-center">
-              <div class="h5">Today profit</div>
-              <div class="display-4 font-weight-bold mb-4">$652</div>
-              <div class="progress progress-sm">
-                <div class="progress-bar bg-green" style="width: 84%"></div>
-              </div>
-            </div>
+        <div class="card-body text-center">
+          <div class="h5">New feedback</div>
+          <div class="display-4 font-weight-bold mb-4">62</div>
+          <div class="progress progress-sm">
+            <div class="progress-bar bg-red" style="width: 28%"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="alert alert-primary">Are you in trouble? <a href="./docs/index.html" class="alert-link">Read our documentation</a> with code samples.</div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">Chart title</h3>
-            </div>
-            <div class="card-body">
-              <div id="chart-donut" style="height: 12rem;"></div>
-            </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body text-center">
+          <div class="h5">Today profit</div>
+          <div class="display-4 font-weight-bold mb-4">$652</div>
+          <div class="progress progress-sm">
+            <div class="progress-bar bg-green" style="width: 84%"></div>
           </div>
-          <script>
-          require(['c3', 'jquery'], function(c3, $) {
-            $(document).ready(function() {
-              var chart = c3.generate({
-                bindto: '#chart-donut', // id of chart wrapper
-                data: {
-                  columns: [
-                    // each columns data
-                    ['data1', 63],
-                    ['data2', 37]
-                  ],
-                  type: 'donut', // default type of chart
-                  colors: {
-                    'data1': tabler.colors["green"],
-                    'data2': tabler.colors["green-light"]
-                  },
-                  names: {
-                    // name of each serie
-                    'data1': 'Maximum',
-                    'data2': 'Minimum'
-                  }
-                },
-                axis: {},
-                legend: {
-                  show: false, //hide legend
-                },
-                padding: {
-                  bottom: 0,
-                  top: 0
-                },
-              });
-            });
-          });
-          </script>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">Chart title</h3>
-            </div>
-            <div class="card-body">
-              <div id="chart-pie" style="height: 12rem;"></div>
-            </div>
-          </div>
-          <script>
-          require(['c3', 'jquery'], function(c3, $) {
-            $(document).ready(function() {
-              var chart = c3.generate({
-                bindto: '#chart-pie', // id of chart wrapper
-                data: {
-                  columns: [
-                    // each columns data
-                    ['data1', 63],
-                    ['data2', 44],
-                    ['data3', 12],
-                    ['data4', 14]
-                  ],
-                  type: 'pie', // default type of chart
-                  colors: {
-                    'data1': tabler.colors["blue-darker"],
-                    'data2': tabler.colors["blue"],
-                    'data3': tabler.colors["blue-light"],
-                    'data4': tabler.colors["blue-lighter"]
-                  },
-                  names: {
-                    // name of each serie
-                    'data1': 'A',
-                    'data2': 'B',
-                    'data3': 'C',
-                    'data4': 'D'
-                  }
-                },
-                axis: {},
-                legend: {
-                  show: false, //hide legend
-                },
-                padding: {
-                  bottom: 0,
-                  top: 0
-                },
-              });
-            });
-          });
-          </script>
-        </div>
-        <div class="col-sm-12">
-          <a href="https://gumroad.com/l/tabler-email?utm_source=demo" class="card" target="_blank">
-            <img src="/demo/card-demo.jpg" alt="" class="card-img">
-          </a>
         </div>
       </div>
     </div>
@@ -1120,66 +884,6 @@
               <div id="chart-bg-users-1" style="height: 100%"></div>
             </div>
           </div>
-          <script>
-          require(['c3', 'jquery'], function(c3, $) {
-            $(document).ready(function() {
-              var chart = c3.generate({
-                bindto: '#chart-bg-users-1',
-                padding: {
-                  bottom: -10,
-                  left: -1,
-                  right: -1
-                },
-                data: {
-                  names: {
-                    data1: 'Users online'
-                  },
-                  columns: [
-                    ['data1', 30, 40, 10, 40, 12, 22, 40]
-                  ],
-                  type: 'area'
-                },
-                legend: {
-                  show: false
-                },
-                transition: {
-                  duration: 0
-                },
-                point: {
-                  show: false
-                },
-                tooltip: {
-                  format: {
-                    title: function(x) {
-                      return '';
-                    }
-                  }
-                },
-                axis: {
-                  y: {
-                    padding: {
-                      bottom: 0,
-                    },
-                    show: false,
-                    tick: {
-                      outer: false
-                    }
-                  },
-                  x: {
-                    padding: {
-                      left: 0,
-                      right: 0
-                    },
-                    show: false
-                  }
-                },
-                color: {
-                  pattern: ['#467fcf']
-                }
-              });
-            });
-          });
-          </script>
         </div>
         <div class="col-sm-6 col-lg-3">
           <div class="card">
@@ -1192,66 +896,6 @@
               <div id="chart-bg-users-2" style="height: 100%"></div>
             </div>
           </div>
-          <script>
-          require(['c3', 'jquery'], function(c3, $) {
-            $(document).ready(function() {
-              var chart = c3.generate({
-                bindto: '#chart-bg-users-2',
-                padding: {
-                  bottom: -10,
-                  left: -1,
-                  right: -1
-                },
-                data: {
-                  names: {
-                    data1: 'Users online'
-                  },
-                  columns: [
-                    ['data1', 30, 40, 10, 40, 12, 22, 40]
-                  ],
-                  type: 'area'
-                },
-                legend: {
-                  show: false
-                },
-                transition: {
-                  duration: 0
-                },
-                point: {
-                  show: false
-                },
-                tooltip: {
-                  format: {
-                    title: function(x) {
-                      return '';
-                    }
-                  }
-                },
-                axis: {
-                  y: {
-                    padding: {
-                      bottom: 0,
-                    },
-                    show: false,
-                    tick: {
-                      outer: false
-                    }
-                  },
-                  x: {
-                    padding: {
-                      left: 0,
-                      right: 0
-                    },
-                    show: false
-                  }
-                },
-                color: {
-                  pattern: ['#e74c3c']
-                }
-              });
-            });
-          });
-          </script>
         </div>
         <div class="col-sm-6 col-lg-3">
           <div class="card">
@@ -1264,66 +908,6 @@
               <div id="chart-bg-users-3" style="height: 100%"></div>
             </div>
           </div>
-          <script>
-          require(['c3', 'jquery'], function(c3, $) {
-            $(document).ready(function() {
-              var chart = c3.generate({
-                bindto: '#chart-bg-users-3',
-                padding: {
-                  bottom: -10,
-                  left: -1,
-                  right: -1
-                },
-                data: {
-                  names: {
-                    data1: 'Users online'
-                  },
-                  columns: [
-                    ['data1', 30, 40, 10, 40, 12, 22, 40]
-                  ],
-                  type: 'area'
-                },
-                legend: {
-                  show: false
-                },
-                transition: {
-                  duration: 0
-                },
-                point: {
-                  show: false
-                },
-                tooltip: {
-                  format: {
-                    title: function(x) {
-                      return '';
-                    }
-                  }
-                },
-                axis: {
-                  y: {
-                    padding: {
-                      bottom: 0,
-                    },
-                    show: false,
-                    tick: {
-                      outer: false
-                    }
-                  },
-                  x: {
-                    padding: {
-                      left: 0,
-                      right: 0
-                    },
-                    show: false
-                  }
-                },
-                color: {
-                  pattern: ['#5eba00']
-                }
-              });
-            });
-          });
-          </script>
         </div>
         <div class="col-sm-6 col-lg-3">
           <div class="card">
@@ -1336,66 +920,6 @@
               <div id="chart-bg-users-4" style="height: 100%"></div>
             </div>
           </div>
-          <script>
-          require(['c3', 'jquery'], function(c3, $) {
-            $(document).ready(function() {
-              var chart = c3.generate({
-                bindto: '#chart-bg-users-4',
-                padding: {
-                  bottom: -10,
-                  left: -1,
-                  right: -1
-                },
-                data: {
-                  names: {
-                    data1: 'Users online'
-                  },
-                  columns: [
-                    ['data1', 30, 40, 10, 40, 12, 22, 40]
-                  ],
-                  type: 'area'
-                },
-                legend: {
-                  show: false
-                },
-                transition: {
-                  duration: 0
-                },
-                point: {
-                  show: false
-                },
-                tooltip: {
-                  format: {
-                    title: function(x) {
-                      return '';
-                    }
-                  }
-                },
-                axis: {
-                  y: {
-                    padding: {
-                      bottom: 0,
-                    },
-                    show: false,
-                    tick: {
-                      outer: false
-                    }
-                  },
-                  x: {
-                    padding: {
-                      left: 0,
-                      right: 0
-                    },
-                    show: false
-                  }
-                },
-                color: {
-                  pattern: ['#f1c40f']
-                }
-              });
-            });
-          });
-          </script>
         </div>
       </div>
     </div>

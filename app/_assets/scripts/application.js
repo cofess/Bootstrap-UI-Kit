@@ -1,10 +1,14 @@
-// var jQuery = require("jquery");
 //bootstrap
 require(['jquery', 'bootstrap'], function($) {
   console.log("Bootstrap Loaded :)");
   $(function() {
-    // bootstrap tooltip
+    /** Initialize tooltips */
     $('[data-toggle="tooltip"]').tooltip();
+
+    /** Initialize popovers */
+    $('[data-toggle="popover"]').popover({
+      html: true
+    });
   });
 });
 
@@ -22,17 +26,17 @@ require(["jquery", "smartmenus"], function($) {
 });
 
 // 页面滚动，导航菜单固定在视窗顶部
-require(['jquery', 'sticky'], function($) {
-  console.log("Sticky Loaded :)");
-  $(function() {
-    var stickyHeader = new StickySidebar('.header', {
-      topSpacing: 0,
-      bottomSpacing: 0,
-      containerSelector: 'body',
-      innerWrapperSelector: '.header-container'
-    });
-  });
-});
+// require(['jquery', 'sticky'], function($) {
+//   console.log("Sticky Loaded :)");
+//   $(function() {
+//     var stickyHeader = new StickySidebar('.header', {
+//       topSpacing: 0,
+//       bottomSpacing: 0,
+//       containerSelector: 'body',
+//       innerWrapperSelector: '.header-container'
+//     });
+//   });
+// });
 
 // 导航菜单鼠标移入移出
 require(['jquery'], function($) {
@@ -88,12 +92,6 @@ require(['jquery', 'royalslider'], function($) {
   });
 });
 
-// require(['jquery', 'superslides'], function($) {
-//   $(function() {
-//     $('#slides').superslides();
-//   });
-// });
-
 // fancybox
 require(['jquery', 'fancybox']);
 
@@ -106,56 +104,6 @@ require(['jquery', 'fancybox']);
 //       lazyLoad: true,
 //       stopOnHover: true
 //     });
-//   });
-// });
-
-// 背景图片切换
-require(['jquery', 'bose.slider'], function($) {
-  console.log("bose.slider Loaded :)");
-  $(function() {
-    $(".bose").bose({
-      images: ["assets/images/module/module-traction-rope.jpg", "assets/images/module/module-water-dispenser.jpg"],
-      onComplete: function() {
-        console.log("Trigger onComplete!");
-      },
-      onSlideStart: function(index) {
-        console.log(index + ' destroying');
-      },
-      onSlideEnd: function(index) {
-        console.log(index + ' showed');
-      },
-      onPause: function(index) {
-        console.log('Paused');
-      },
-      pagination: { show: true, container: '.bose-pagination', text: true },
-      // thumbs: { show: true, container: '.bose-thumbs', dimension: { width: 150, height: 70 }, text: true },
-      responsive: true,
-      autofit: false
-    });
-
-    $('.play').click(function() {
-      $(".bose").bose('play');
-    });
-
-    $('.pause').click(function() {
-      $(".bose").bose('pause');
-    });
-
-    $('.previous').click(function() {
-      $(".bose").bose('previous');
-    });
-
-    $('.next').click(function() {
-      $(".bose").bose('next');
-    });
-  });
-});
-
-// 图片比对
-// require(['BeerSlider'], function(BeerSlider) {
-//   console.log("BeerSlider Loaded :)");
-//   $(function() {
-//     new BeerSlider(document.getElementById('beer-slider'));
 //   });
 // });
 

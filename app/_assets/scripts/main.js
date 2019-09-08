@@ -18,10 +18,9 @@ require.config({
     'superslides': 'assets/js/vendors/jquery.superslides.min',
     'fancybox': 'assets/js/vendors/jquery.fancybox.min',
     'owl.carousel': 'assets/js/vendors/owl.carousel',
-    'bose.slider': 'assets/js/vendors/bose.slider.min',
-    'BeerSlider': 'assets/js/vendors/BeerSlider',
     'toTop': 'assets/js/vendors/jquery.toTop',
-    'application': 'assets/js/application',
+    'selectize': 'assets/js/vendors/selectize.min',
+    'core': 'assets/js/application',
   },
   map: {
     '*': {
@@ -55,11 +54,11 @@ require.config({
     'smartmenus': {
       dpes: ['jquery']
     },
-    'bose.slider': {
-      dpes: ['jquery']
-    },
     'toTop': {
       dpes: ['jquery']
+    },
+    'core': {
+      dpes: ['jquery', 'bootstrap']
     },
   },
   waitSeconds: 0,
@@ -79,7 +78,5 @@ require.onError = function(err) {
 
 require(['jquery'], function($) {
   console.log("jQuery Loaded :)");
-  require(['application']);
+  require(['core']);
 });
-
-// require(['application']);

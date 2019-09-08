@@ -11,7 +11,12 @@
   {% include "_includes/meta.html" %}
   <title>{% block title %}{{ title }}{% endblock %}</title>
   {% block head %} {% include "_includes/head.html" %} {% endblock %} 
+  <!-- Custom Style -->
   {% block style %} {% endblock %}
+  <!-- REQUIRED JS SCRIPTS -->
+  {% block javascript %}
+  {% include "_includes/scripts.html" %} 
+  {% endblock %} 
 </head>
 
 <body class="hold-transition" style="background-color: #f5f7fb;">
@@ -43,10 +48,7 @@
   <!-- Main Footer -->
   {% include "_includes/footer.html" %}
   <!-- ./wrapper -->
-  {% block javascript %}
-  <!-- REQUIRED JS SCRIPTS -->
-  {% include "_includes/scripts.html" %} 
-  {% endblock %} 
+  <!-- Custom JS SCRIPTS -->
   {% block script %} {% endblock %}
 </body>
 
