@@ -2,17 +2,20 @@
 @import "../bootstrap/variables";
 @import "../bootstrap/mixins";
 
+@import "../bootstrap/bootstrap";
+
 @import 'functions';
 @import 'variables';
 
 @import 'utilities/reset';
 @import 'utilities/core';
-// @import 'utilities/type';
+@import 'utilities/type';
 @import 'utilities/grid';
 @import 'utilities/colors';
 @import 'utilities/badge';
 @import 'utilities/button';
 @import 'utilities/text';
+@import 'utilities/tag';
 @import 'utilities/utilities';
 
 @import 'layout';
@@ -46,11 +49,10 @@
 @import 'chips';
 @import 'stamp';
 @import 'chat';
-@import 'utilities/tag';
 @import 'syntax';
 @import 'infobox';
 @import 'components/carousel';
-// @import 'datatables';
+@import 'datatables';
 @import 'bottombar';
 
 @import 'forms/custom-range';
