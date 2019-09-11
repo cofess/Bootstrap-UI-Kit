@@ -2,6 +2,7 @@ var gulp           = require('gulp')
 var changed        = require('gulp-changed')
 var logger         = require('gulp-spy')
 var gulpif         = require('gulp-if')
+var rename         = require('gulp-rename')
 var debug          = require('../../config').debug
 var config         = require('../../config').fonts.development
 
@@ -19,5 +20,6 @@ gulp.task('copy:fonts', function() {
   return gulp.src(config.src)
     .pipe(gulpif(debug.state, logger(debug.options)))
     .pipe(changed(config.dest)) // Ignore unchanged files
+    .pipe(rename({ dirname: '' }))
     .pipe(gulp.dest(config.dest));
 });
