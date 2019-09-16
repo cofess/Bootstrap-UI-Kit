@@ -1,0 +1,655 @@
+{# 
+  Nunjucks Templating! 
+  Homepage: https://mozilla.github.io/nunjucks/ 
+  Docs: https://mozilla.github.io/nunjucks/api.html 
+#}
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+<!-- 页面标题 -->
+{% block title %}{{ title }} | Favorite Icons{% endblock %}
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Favorite Icons</h1>
+  </div>
+</section>
+{% endblock %}
+<!-- 主体内容 -->
+{% block content %}
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">Favorite Icons</div>
+    </div>
+    <div class="card-body">
+      <div class="icons-list-wrap">
+        <h3>Buildings</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-bank-line" data-toggle="tooltip" title="" data-original-title="icon icon-bank-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-bank-fill" data-toggle="tooltip" title="" data-original-title="icon icon-bank-fill"></i></li>
+          <li class="icons-list-item"><i class="icon icon-building-line" data-toggle="tooltip" title="" data-original-title="icon icon-building-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-building-fill" data-toggle="tooltip" title="" data-original-title="icon icon-building-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-building-2-line" data-toggle="tooltip" title="" data-original-title="icon icon-building-2-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-building-2-fill" data-toggle="tooltip" title="" data-original-title="icon icon-building-2-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-building-3-line" data-toggle="tooltip" title="" data-original-title="icon icon-building-3-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-building-3-fill" data-toggle="tooltip" title="" data-original-title="icon icon-building-3-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-building-4-line" data-toggle="tooltip" title="" data-original-title="icon icon-building-4-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-building-4-fill" data-toggle="tooltip" title="" data-original-title="icon icon-building-4-fill"></i></li>
+
+          
+
+          <li class="icons-list-item"><i class="icon icon-community-line" data-toggle="tooltip" title="" data-original-title="icon icon-community-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-community-fill" data-toggle="tooltip" title="" data-original-title="icon icon-community-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-government-line" data-toggle="tooltip" title="" data-original-title="icon icon-government-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-government-fill" data-toggle="tooltip" title="" data-original-title="icon icon-government-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-home-line" data-toggle="tooltip" title="" data-original-title="icon icon-home-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-home-fill" data-toggle="tooltip" title="" data-original-title="icon icon-home-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-home-2-line" data-toggle="tooltip" title="" data-original-title="icon icon-home-2-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-home-2-fill" data-toggle="tooltip" title="" data-original-title="icon icon-home-2-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-home-3-line" data-toggle="tooltip" title="" data-original-title="icon icon-home-3-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-home-3-fill" data-toggle="tooltip" title="" data-original-title="icon icon-home-3-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-home-4-line" data-toggle="tooltip" title="" data-original-title="icon icon-home-4-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-home-4-fill" data-toggle="tooltip" title="" data-original-title="icon icon-home-4-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-home-5-line" data-toggle="tooltip" title="" data-original-title="icon icon-home-5-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-home-5-fill" data-toggle="tooltip" title="" data-original-title="icon icon-home-5-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-home-6-line" data-toggle="tooltip" title="" data-original-title="icon icon-home-6-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-home-6-fill" data-toggle="tooltip" title="" data-original-title="icon icon-home-6-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-home-7-line" data-toggle="tooltip" title="" data-original-title="icon icon-home-7-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-home-7-fill" data-toggle="tooltip" title="" data-original-title="icon icon-home-7-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-home-8-line" data-toggle="tooltip" title="" data-original-title="icon icon-home-8-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-home-8-fill" data-toggle="tooltip" title="" data-original-title="icon icon-home-8-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-home-gear-line" data-toggle="tooltip" title="" data-original-title="icon icon-home-gear-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-home-gear-fill" data-toggle="tooltip" title="" data-original-title="icon icon-home-gear-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-home-heart-line" data-toggle="tooltip" title="" data-original-title="icon icon-home-heart-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-home-heart-fill" data-toggle="tooltip" title="" data-original-title="icon icon-home-heart-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-home-smile-line" data-toggle="tooltip" title="" data-original-title="icon icon-home-smile-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-home-smile-fill" data-toggle="tooltip" title="" data-original-title="icon icon-home-smile-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-home-smile-2-line" data-toggle="tooltip" title="" data-original-title="icon icon-home-smile-2-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-home-smile-2-fill" data-toggle="tooltip" title="" data-original-title="icon icon-home-smile-2-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-home-wifi-line" data-toggle="tooltip" title="" data-original-title="icon icon-home-wifi-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-home-wifi-fill" data-toggle="tooltip" title="" data-original-title="icon icon-home-wifi-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-hospital-line" data-toggle="tooltip" title="" data-original-title="icon icon-hospital-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-hospital-fill" data-toggle="tooltip" title="" data-original-title="icon icon-hospital-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-hotel-line" data-toggle="tooltip" title="" data-original-title="icon icon-hotel-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-hotel-fill" data-toggle="tooltip" title="" data-original-title="icon icon-hotel-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-store-line" data-toggle="tooltip" title="" data-original-title="icon icon-store-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-store-fill" data-toggle="tooltip" title="" data-original-title="icon icon-store-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-store-2-line" data-toggle="tooltip" title="" data-original-title="icon icon-store-2-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-store-2-fill" data-toggle="tooltip" title="" data-original-title="icon icon-store-2-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-store-3-line" data-toggle="tooltip" title="" data-original-title="icon icon-store-3-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-store-3-fill" data-toggle="tooltip" title="" data-original-title="icon icon-store-3-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>Business</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-line" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-fill" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>Communication</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-chat-1-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-1-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-1-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-1-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-chat-2-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-2-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-2-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-2-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-chat-3-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-3-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-3-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-3-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-chat-4-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-4-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-4-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-4-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-chat-check-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-check-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-check-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-check-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-chat-delete-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-delete-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-delete-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-delete-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-chat-download-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-download-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-download-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-download-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-chat-forward-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-forward-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-forward-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-forward-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-chat-heart-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-heart-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-heart-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-heart-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-chat-new-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-new-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-new-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-new-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-chat-settings-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-settings-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-settings-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-settings-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-chat-smile-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-smile-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-smile-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-smile-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-chat-smile-2-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-smile-2-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-smile-2-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-smile-2-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-chat-smile-3-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-smile-3-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-smile-3-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-smile-3-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-chat-upload-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-upload-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-upload-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-upload-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-chat-voice-line" data-toggle="tooltip" title="" data-original-title="icon icon-chat-voice-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-chat-voice-fill" data-toggle="tooltip" title="" data-original-title="icon icon-chat-voice-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-discuss-line" data-toggle="tooltip" title="" data-original-title="icon icon-discuss-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-discuss-fill" data-toggle="tooltip" title="" data-original-title="icon icon-discuss-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-feedback-line" data-toggle="tooltip" title="" data-original-title="icon icon-feedback-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-feedback-fill" data-toggle="tooltip" title="" data-original-title="icon icon-feedback-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-message-line" data-toggle="tooltip" title="" data-original-title="icon icon-message-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-message-fill" data-toggle="tooltip" title="" data-original-title="icon icon-message-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-message-2-line" data-toggle="tooltip" title="" data-original-title="icon icon-message-2-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-message-2-fill" data-toggle="tooltip" title="" data-original-title="icon icon-message-2-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-message-3-line" data-toggle="tooltip" title="" data-original-title="icon icon-message-3-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-message-3-fill" data-toggle="tooltip" title="" data-original-title="icon icon-message-3-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-question-answer-line" data-toggle="tooltip" title="" data-original-title="icon icon-question-answer-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-question-answer-fill" data-toggle="tooltip" title="" data-original-title="icon icon-question-answer-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-questionnaire-line" data-toggle="tooltip" title="" data-original-title="icon icon-questionnaire-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-questionnaire-fill" data-toggle="tooltip" title="" data-original-title="icon icon-questionnaire-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-video-chat-line" data-toggle="tooltip" title="" data-original-title="icon icon-video-chat-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-video-chat-fill" data-toggle="tooltip" title="" data-original-title="icon icon-video-chat-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>Design</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-line" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-fill" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>Development</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-braces-line" data-toggle="tooltip" title="" data-original-title="icon icon-braces-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-braces-fill" data-toggle="tooltip" title="" data-original-title="icon icon-braces-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-brackets-line" data-toggle="tooltip" title="" data-original-title="icon icon-brackets-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-brackets-fill" data-toggle="tooltip" title="" data-original-title="icon icon-brackets-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-bug-line" data-toggle="tooltip" title="" data-original-title="icon icon-bug-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-bug-fill" data-toggle="tooltip" title="" data-original-title="icon icon-bug-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-bug-2-line" data-toggle="tooltip" title="" data-original-title="icon icon-bug-2-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-bug-2-fill" data-toggle="tooltip" title="" data-original-title="icon icon-bug-2-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-code-line" data-toggle="tooltip" title="" data-original-title="icon icon-code-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-code-fill" data-toggle="tooltip" title="" data-original-title="icon icon-code-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-code-box-line" data-toggle="tooltip" title="" data-original-title="icon icon-code-box-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-code-box-fill" data-toggle="tooltip" title="" data-original-title="icon icon-code-box-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-code-s-line" data-toggle="tooltip" title="" data-original-title="icon icon-code-s-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-code-s-fill" data-toggle="tooltip" title="" data-original-title="icon icon-code-s-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-code-s-slash-line" data-toggle="tooltip" title="" data-original-title="icon icon-code-s-slash-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-code-s-slash-fill" data-toggle="tooltip" title="" data-original-title="icon icon-code-s-slash-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-command-line" data-toggle="tooltip" title="" data-original-title="icon icon-command-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-command-fill" data-toggle="tooltip" title="" data-original-title="icon icon-command-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-css3-line" data-toggle="tooltip" title="" data-original-title="icon icon-css3-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-css3-fill" data-toggle="tooltip" title="" data-original-title="icon icon-css3-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-cursor-line" data-toggle="tooltip" title="" data-original-title="icon icon-cursor-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-cursor-fill" data-toggle="tooltip" title="" data-original-title="icon icon-cursor-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-git-branch-line" data-toggle="tooltip" title="" data-original-title="icon icon-git-branch-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-git-branch-fill" data-toggle="tooltip" title="" data-original-title="icon icon-git-branch-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-git-commit-line" data-toggle="tooltip" title="" data-original-title="icon icon-git-commit-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-git-commit-fill" data-toggle="tooltip" title="" data-original-title="icon icon-git-commit-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-git-merge-line" data-toggle="tooltip" title="" data-original-title="icon icon-git-merge-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-git-merge-fill" data-toggle="tooltip" title="" data-original-title="icon icon-git-merge-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-git-pull-request-line" data-toggle="tooltip" title="" data-original-title="icon icon-git-pull-request-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-git-pull-request-fill" data-toggle="tooltip" title="" data-original-title="icon icon-git-pull-request-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-git-repository-line" data-toggle="tooltip" title="" data-original-title="icon icon-git-repository-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-git-repository-fill" data-toggle="tooltip" title="" data-original-title="icon icon-git-repository-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-git-repository-commits-line" data-toggle="tooltip" title="" data-original-title="icon icon-git-repository-commits-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-git-repository-commits-fill" data-toggle="tooltip" title="" data-original-title="icon icon-git-repository-commits-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-git-repository-private-line" data-toggle="tooltip" title="" data-original-title="icon icon-git-repository-private-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-git-repository-private-fill" data-toggle="tooltip" title="" data-original-title="icon icon-git-repository-private-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-html5-line" data-toggle="tooltip" title="" data-original-title="icon icon-html5-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-html5-fill" data-toggle="tooltip" title="" data-original-title="icon icon-html5-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-parentheses-line" data-toggle="tooltip" title="" data-original-title="icon icon-parentheses-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-parentheses-fill" data-toggle="tooltip" title="" data-original-title="icon icon-parentheses-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-terminal-line" data-toggle="tooltip" title="" data-original-title="icon icon-terminal-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-terminal-fill" data-toggle="tooltip" title="" data-original-title="icon icon-terminal-fill"></i></li>
+
+          <li class="icons-list-item"><i class="icon icon-terminal-box-line" data-toggle="tooltip" title="" data-original-title="icon icon-terminal-box-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-terminal-box-fill" data-toggle="tooltip" title="" data-original-title="icon icon-terminal-box-fill"></i></li>
+          
+          <li class="icons-list-item"><i class="icon icon-terminal-window-line" data-toggle="tooltip" title="" data-original-title="icon icon-terminal-window-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-terminal-window-fill" data-toggle="tooltip" title="" data-original-title="icon icon-terminal-window-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>Device</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-line" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-fill" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>Document</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-line" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-fill" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>Editor</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-line" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-fill" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>Finance</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-line" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-fill" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>Life</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-line" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-fill" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>Logos</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-line" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-fill" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>Map</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-line" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-fill" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>Media</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-line" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-fill" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>System</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-line" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-fill" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>User</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-line" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-fill" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h3>Weather</h3>
+        <ul class="icons-list">
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-line" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-line"></i></li>
+          <li class="icons-list-item"><i class="icon icon-archive-drawer-fill" data-toggle="tooltip" title="" data-original-title="icon icon-archive-drawer-fill"></i></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
