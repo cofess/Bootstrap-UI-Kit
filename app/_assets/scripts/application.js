@@ -12,6 +12,44 @@ require(['jquery', 'bootstrap'], function($) {
   });
 });
 
+// card actions
+require(['jquery'], function($) {
+  $(function() {
+    /** Constant div card */
+    var DIV_CARD = 'div.card';
+
+    /** Function for remove card */
+    $('[data-toggle="card-remove"]').on('click', function(e) {
+      var $card = $(this).closest(DIV_CARD);
+
+      $card.remove();
+
+      e.preventDefault();
+      return false;
+    });
+
+    /** Function for collapse card */
+    $('[data-toggle="card-collapse"]').on('click', function(e) {
+      var $card = $(this).closest(DIV_CARD);
+
+      $card.toggleClass('card-collapsed');
+
+      e.preventDefault();
+      return false;
+    });
+
+    /** Function for fullscreen card */
+    $('[data-toggle="card-fullscreen"]').on('click', function(e) {
+      var $card = $(this).closest(DIV_CARD);
+
+      $card.toggleClass('card-fullscreen').removeClass('card-collapsed');
+
+      e.preventDefault();
+      return false;
+    });
+  });
+});
+
 // 导航菜单
 require(["jquery", "smartmenus"], function($) {
   console.log("SmartMenus Loaded :)");

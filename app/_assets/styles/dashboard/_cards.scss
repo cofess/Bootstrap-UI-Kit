@@ -273,7 +273,7 @@ Card options
 .card-options-collapse {
 	i:before {
 		.card-collapsed & {
-			content: '\e92d';
+			content: '\E597';
 		}
 	}
 }
@@ -281,7 +281,7 @@ Card options
 .card-options-fullscreen {
 	i:before {
 		.card-fullscreen & {
-			content: '\e992';
+			content: '\E479';
 		}
 	}
 }
