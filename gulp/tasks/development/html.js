@@ -6,6 +6,7 @@ var browserSync    = require('browser-sync')
 var gulp           = require('gulp')
 var data           = require('gulp-data')
 var render         = require('gulp-nunjucks-render')
+var dataFile     = require('../../config').data.dataFile
 var config         = require('../../config').html
 
 if (!config) return
@@ -13,8 +14,8 @@ if (!config) return
 var exclude = path.normalize('!**/{' + config.excludeFolders.join(',') + '}/**')
 
 var getData = function(file) {
-  var dataPath = path.resolve(config.src, config.dataFile)
-  return JSON.parse(fs.readFileSync(dataPath, 'utf8'))
+  // var dataPath = path.resolve(config.src, dataFile)
+  return JSON.parse(fs.readFileSync(dataFile, 'utf8'))
 }
 
 var htmlTask = function() {

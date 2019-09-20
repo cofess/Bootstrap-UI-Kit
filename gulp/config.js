@@ -2,6 +2,7 @@ var src = 'app'; // 源代码目录
 var build = 'build'; // 构建目录
 var static = src + '/_static';
 var srcAssets = src + '/_assets';
+var dataFolder = src + '/_data';
 var concatFolder = srcAssets + '/scripts/_concat';
 var development = 'build/development';
 var production = 'build/production';
@@ -284,6 +285,11 @@ module.exports = {
       // imgPath: '/assets/images/sprites/icon-sprite.png'
     }
   },
+  data: {
+    src: dataFolder + '/**/_*.json',
+    dataFile: dataFolder + '/data.json',
+    dest: dataFolder
+  },
   html: {
     src: src,
     dest: build,
@@ -295,7 +301,6 @@ module.exports = {
       src: src,
       dest: production
     },
-    dataFile: "_data/global.json",
     compile: {
       collapseWhitespace: true
     },
