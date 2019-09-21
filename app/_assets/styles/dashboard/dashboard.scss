@@ -51,7 +51,6 @@
 @import 'nav';
 @import 'close';
 
-@import 'product';
 @import 'image';
 @import 'social';
 @import 'maps';
@@ -63,12 +62,14 @@
 @import 'syntax';
 @import 'infobox';
 
+// @import 'browser';
+@import 'payments';
+
 @import 'vendors/sparkline';
 @import 'vendors/datatables';
 @import 'vendors/selectize';
 
-// @import 'browser';
-@import 'payments';
+@import 'post-type/product';
 
 @import 'example/example';
 @import 'example/icon';
