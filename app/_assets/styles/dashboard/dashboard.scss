@@ -7,41 +7,52 @@
 @import 'functions';
 @import 'variables';
 
+@import 'utilities/utilities';
 @import 'utilities/reset';
 @import 'utilities/core';
-@import 'utilities/type';
 @import 'utilities/grid';
+@import 'utilities/type';
 @import 'utilities/colors';
-@import 'utilities/button';
-@import 'utilities/badge';
 @import 'utilities/text';
-@import 'utilities/avatar';
-@import 'utilities/tag';
-@import 'utilities/utilities';
 
-@import 'layout';
-@import 'aside';
-@import 'header';
-@import 'footer';
+@import 'components/button';
+@import 'components/alert';
+@import 'components/badge';
+@import 'components/tables';
+@import 'components/breadcrumb';
+@import 'components/pagination';
+@import 'components/cards';
+@import 'components/popover';
+@import 'components/dropdown';
+@import 'components/list';
+@import 'components/list-group';
+@import 'components/avatar';
+@import 'components/progress';
+@import 'components/link';
+@import 'components/media';
+@import 'components/tag';
+@import 'components/carousel';
+@import 'components/timeline';
+@import 'components/flag';
+
+@import 'forms/form';
+@import 'forms/custom-range';
+@import 'forms/custom-selectgroup';
+@import 'forms/custom-switch';
+@import 'forms/custom-imagecheck';
+@import 'forms/custom-colorinput';
+
+@import 'layout/layout';
+@import 'layout/aside';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/bottombar';
 
 @import 'nav';
-@import 'alert';
 @import 'close';
-@import 'tables';
-@import 'breadcrumb';
-@import 'pagination';
-@import 'cards';
-@import 'popover';
-@import 'dropdown';
-@import 'list';
-@import 'list-group';
+
 @import 'product';
-@import 'progress';
 @import 'image';
-@import 'link';
-@import 'media';
-@import 'form';
-@import 'sparkline';
 @import 'social';
 @import 'maps';
 @import 'statuses';
@@ -51,18 +62,9 @@
 @import 'chat';
 @import 'syntax';
 @import 'infobox';
-@import 'components/carousel';
-@import 'datatables';
-@import 'bottombar';
 
-@import 'forms/custom-range';
-@import 'forms/custom-selectgroup';
-@import 'forms/custom-switch';
-@import 'forms/custom-imagecheck';
-@import 'forms/custom-colorinput';
-
-@import 'components/timeline';
-@import 'components/flag';
+@import 'vendors/sparkline';
+@import 'vendors/datatables';
 
 @import 'browser';
 @import 'payments';
@@ -70,5 +72,3 @@
 
 @import 'example/example';
 @import 'example/icon';
-
-// @import 'fonts/feather';
