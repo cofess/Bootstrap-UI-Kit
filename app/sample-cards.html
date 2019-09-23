@@ -11,7 +11,17 @@
 {% block breadcrumb %}
 <section class="page-header">
   <div class="container">
-    <h1 class="page-title">Page Title</h1>
+    <h1 class="page-title">Dashboard</h1>
+    <div class="page-description">
+      <ul class="list-inline list-inline-dots m-0">
+        <li class="list-inline-item">Section 500</li>
+        <li class="list-inline-item">English learning French</li>
+        <li class="list-inline-item">
+          <a href="javascript:void(0)">United states</a>
+        </li>
+        <li class="list-inline-item">7 students</li>
+      </ul>
+    </div>
   </div>
 </section>
 {% endblock %}
@@ -24,7 +34,7 @@
         <div class="card-body">
           <article class="media">
             <div class="mr-3">
-              <div class="avatar avatar-xl" style="background-image: url(demo/faces/female/17.jpg)"></div>
+              <div class="avatar avatar-xl" style="background-image: url(../assets/images/avatars/female/17.jpg)"></div>
             </div>
             <div class="media-body">
               <div class="content">
@@ -37,13 +47,13 @@
               </div>
               <nav class="d-flex text-muted">
                 <a href="#" class="icon mr-3">
-                  <i class="fe fe-repeat"></i>
+                  <i class="icon icon-repeat-line"></i>
                 </a>
                 <a href="#" class="icon mr-3">
-                  <i class="fe fe-twitter"></i> 24
+                  <i class="icon icon-twitter-line"></i> 24
                 </a>
                 <a href="#" class="icon mr-3">
-                  <i class="fe fe-heart"></i> 43
+                  <i class="icon icon-heart-line"></i> 43
                 </a>
                 <a href="" class="text-muted ml-auto">
                             5 notes
@@ -57,7 +67,7 @@
         <div class="card-body">
           <article class="media">
             <div class="mr-3">
-              <div class="avatar avatar-xl" style="background-image: url(demo/faces/female/17.jpg)"></div>
+              <div class="avatar avatar-xl" style="background-image: url(../assets/images/avatars/female/17.jpg)"></div>
             </div>
             <div class="media-body">
               <div class="content">
@@ -70,13 +80,13 @@
               </div>
               <nav class="d-flex text-muted">
                 <a href="#" class="icon mr-3">
-                  <i class="fe fe-repeat"></i>
+                  <i class="icon icon-repeat-line"></i>
                 </a>
                 <a href="#" class="icon mr-3">
-                  <i class="fe fe-twitter"></i> 24
+                  <i class="icon icon-twitter-line"></i> 24
                 </a>
                 <a href="#" class="icon mr-3">
-                  <i class="fe fe-heart"></i> 43
+                  <i class="icon icon-heart-line"></i> 43
                 </a>
                 <a href="" class="text-muted ml-auto">
                             5 notes
@@ -92,7 +102,7 @@
         <div class="card-body">
           <article class="media">
             <div class="mr-3">
-              <div class="avatar avatar-xl" style="background-image: url(demo/faces/female/17.jpg)"></div>
+              <div class="avatar avatar-xl" style="background-image: url(../assets/images/avatars/female/17.jpg)"></div>
             </div>
             <div class="media-body">
               <div class="content">
@@ -103,18 +113,18 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                 </p>
                 <figure>
-                  <img src="demo/photos/casey-horner-339165-500.jpg" alt="" class="rounded">
+                  <img src="../assets/images/demo/adrian-infernus-281832-500.jpg" alt="" class="rounded">
                 </figure>
               </div>
               <nav class="d-flex text-muted">
                 <a href="#" class="icon mr-3">
-                  <i class="fe fe-repeat"></i>
+                  <i class="icon icon-repeat-line"></i>
                 </a>
                 <a href="#" class="icon mr-3">
-                  <i class="fe fe-twitter"></i> 24
+                  <i class="icon icon-twitter-line"></i> 24
                 </a>
                 <a href="#" class="icon mr-3">
-                  <i class="fe fe-heart"></i> 43
+                  <i class="icon icon-heart-line"></i> 43
                 </a>
                 <a href="" class="text-muted ml-auto">
                             5 notes
@@ -461,7 +471,7 @@
           <div class="row">
             <div class="col-auto">
               <div class="stamp stamp-md bg-blue">
-                <i class="fe fe-twitter"></i>
+                <i class="icon icon-twitter-line"></i>
               </div>
             </div>
             <div class="col text-right">
@@ -765,47 +775,6 @@
             </tr>
           </tbody>
         </table>
-      </div>
-      <script>
-      require(['c3', 'jquery'], function(c3) {
-        var chart = c3.generate({
-          bindto: '#chart-browsers',
-          data: {
-            columns: [
-              ['Chrome', 36],
-              ['Firefox', 5],
-              ['Safari', 9],
-              ['Edge', 20],
-              ['Opera', 30],
-            ],
-            colors: {
-              Chrome: '{"hex"=>"#5eba00", "name"=>"Green"}',
-              Firefox: '{"hex"=>"#fd9644", "name"=>"Orange"}',
-              Safari: '{"hex"=>"#467fcf", "name"=>"Blue"}',
-              Edge: '{"hex"=>"#45aaf2", "name"=>"Azure"}',
-              Opera: '{"hex"=>"#e74c3c", "name"=>"Red"}',
-            },
-            type: 'donut'
-          },
-          legend: {
-            show: false
-          }
-        });
-      });
-      </script>
-    </div>
-    <div class="col-md-6 col-lg-4">
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">Email Statistics</h3>
-          <div>
-            <div id="chart-emails" style="height: 15rem"></div>
-            require(['c3', 'jquery'], function (c3, $) { $(document).ready(function() { var chart = c3.generate({ bindto: '#chart-emails', padding: { bottom: 24, top: 0 }, data: { type: 'donut', names: { data1: 'Open', data2: 'Bounce', data3: 'Unsubscribe', }, columns: [ ['data1', 30], ['data2', 50], ['data3', 25], ], colors: { data1: tabler.colors.blue, data2: tabler.colors.red, data3: tabler.colors.yellow, } }, donut: { label: { show: false } }, legend: { show: true }, }); }); });
-          </div>
-        </div>
-        <div class="card-footer">
-          <i class="fa fa-clock-o"></i> Campaign sent 2 days ago
-        </div>
       </div>
     </div>
     <div class="col-12">
@@ -1337,74 +1306,6 @@
           <div id="chart-visitors" style="min-height: 18rem"></div>
         </div>
       </div>
-      <script>
-      require(['c3', 'jquery'], function(c3) {
-        $(document).ready(function() {
-          var chart = c3.generate({
-            bindto: '#chart-visitors',
-            padding: {
-              bottom: 24
-            },
-            data: {
-              x: 'x',
-              names: {
-                data1: 'Referral',
-                data2: 'Calls',
-                data3: 'Prospects',
-              },
-              columns: [
-                ['x', '2013-07-12', '2013-07-13', '2013-07-14', '2013-07-15', '2013-07-16', '2013-07-17', '2013-07-18', '2013-07-19', '2013-07-20', '2013-07-21', '2013-07-22'],
-                ['data1', 22, 28, 21, 46, 48, 38, 48, 52, 28, 57, 32],
-                ['data2', 72, 61, 102, 104, 132, 86, 74, 108, 78, 106, 144],
-                ['data3', 125, 100, 72, 132, 154, 141, 178, 142, 146, 72, 186],
-              ],
-              types: {
-                data1: 'area',
-              }
-            },
-            point: {
-              show: false
-            },
-            legend: {
-              position: 'top',
-              padding: 16
-            },
-            transition: {
-              duration: 0
-            },
-            axis: {
-              y: {
-                tick: {
-                  fit: true
-                }
-              },
-              x: {
-                type: 'timeseries',
-                tick: {
-                  format: '%d %b'
-                },
-                padding: {
-                  top: 10,
-                  bottom: 0
-                }
-              }
-            },
-            grid: {
-              y: {
-                show: true
-              }
-            },
-            color: {
-              pattern: [
-                '#fca328',
-                '#7bd235',
-                '#76befe',
-              ]
-            }
-          });
-        });
-      });
-      </script>
     </div>
     <div class="col-lg-4 col-md-6">
       <div class="card">
@@ -1412,34 +1313,34 @@
           <div>
             <div class="chips">
               <a href="javascript:void(0)" class="chip">
-                <span class="avatar" style="background-image: url(demo/faces/female/16.jpg)"></span> Victoria
+                <span class="avatar" style="background-image: url(../assets/images/avatars/female/16.jpg)"></span> Victoria
               </a>
               <a href="javascript:void(0)" class="chip">
-                <span class="avatar" style="background-image: url(demo/faces/male/41.jpg)"></span> Nathan
+                <span class="avatar" style="background-image: url(../assets/images/avatars/male/41.jpg)"></span> Nathan
               </a>
               <a href="javascript:void(0)" class="chip">
-                <span class="avatar" style="background-image: url(demo/faces/female/1.jpg)"></span> Alice
+                <span class="avatar" style="background-image: url(../assets/images/avatars/female/1.jpg)"></span> Alice
               </a>
               <a href="javascript:void(0)" class="chip">
-                <span class="avatar" style="background-image: url(demo/faces/female/18.jpg)"></span> Rose
+                <span class="avatar" style="background-image: url(../assets/images/avatars/female/18.jpg)"></span> Rose
               </a>
               <a href="javascript:void(0)" class="chip">
-                <span class="avatar" style="background-image: url(demo/faces/male/16.jpg)"></span> Peter
+                <span class="avatar" style="background-image: url(../assets/images/avatars/male/16.jpg)"></span> Peter
               </a>
               <a href="javascript:void(0)" class="chip">
-                <span class="avatar" style="background-image: url(demo/faces/male/26.jpg)"></span> Wayne
+                <span class="avatar" style="background-image: url(../assets/images/avatars/male/26.jpg)"></span> Wayne
               </a>
               <a href="javascript:void(0)" class="chip">
-                <span class="avatar" style="background-image: url(demo/faces/female/7.jpg)"></span> Michelle
+                <span class="avatar" style="background-image: url(../assets/images/avatars/female/7.jpg)"></span> Michelle
               </a>
               <a href="javascript:void(0)" class="chip">
-                <span class="avatar" style="background-image: url(demo/faces/female/17.jpg)"></span> Debra
+                <span class="avatar" style="background-image: url(../assets/images/avatars/female/17.jpg)"></span> Debra
               </a>
               <a href="javascript:void(0)" class="chip">
-                <span class="avatar" style="background-image: url(demo/faces/male/30.jpg)"></span> Phillip
+                <span class="avatar" style="background-image: url(../assets/images/avatars/male/30.jpg)"></span> Phillip
               </a>
               <a href="javascript:void(0)" class="chip">
-                <span class="avatar" style="background-image: url(demo/faces/male/32.jpg)"></span> Jack
+                <span class="avatar" style="background-image: url(../assets/images/avatars/male/32.jpg)"></span> Jack
               </a>
             </div>
           </div>
@@ -1504,7 +1405,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="demo/photos/ales-krivec-107499-500.jpg" class="card-img-top" alt="">
+        <img src="../assets/images/demo/sean-afnan-244576-500.jpg" class="card-img-top" alt="">
         <div class="card-body">
           <h4 class="mb-4">Girl & Lake</h4>
           <div class="row mb-4">
@@ -1555,22 +1456,22 @@
             <div class="col-7">
               <ul class="avatar-list avatar-list-stacked">
                 <li class="avatar-list-item">
-                  <span class="avatar avatar-sm" style="background-image: url(demo/faces/male/41.jpg)"></span>
+                  <span class="avatar avatar-sm" style="background-image: url(../assets/images/avatars/male/41.jpg)"></span>
                 </li>
                 <li class="avatar-list-item">
-                  <span class="avatar avatar-sm" style="background-image: url(demo/faces/female/1.jpg)"></span>
+                  <span class="avatar avatar-sm" style="background-image: url(../assets/images/avatars/female/1.jpg)"></span>
                 </li>
                 <li class="avatar-list-item">
-                  <span class="avatar avatar-sm" style="background-image: url(demo/faces/female/18.jpg)"></span>
+                  <span class="avatar avatar-sm" style="background-image: url(../assets/images/avatars/female/18.jpg)"></span>
                 </li>
                 <li class="avatar-list-item">
-                  <span class="avatar avatar-sm" style="background-image: url(demo/faces/male/16.jpg)"></span>
+                  <span class="avatar avatar-sm" style="background-image: url(../assets/images/avatars/male/16.jpg)"></span>
                 </li>
                 <li class="avatar-list-item">
-                  <span class="avatar avatar-sm" style="background-image: url(demo/faces/male/26.jpg)"></span>
+                  <span class="avatar avatar-sm" style="background-image: url(../assets/images/avatars/male/26.jpg)"></span>
                 </li>
                 <li class="avatar-list-item">
-                  <span class="avatar avatar-sm" style="background-image: url(demo/faces/female/7.jpg)"></span>
+                  <span class="avatar avatar-sm" style="background-image: url(../assets/images/avatars/female/7.jpg)"></span>
                 </li>
               </ul>
             </div>
@@ -1665,14 +1566,12 @@
         <div class="card-body">
           <div class="row align-items-center gutters-sm">
             <div class="col text-left">
-              <img src="assets/images/teams/real-madrid.png" alt="">
             </div>
             <div class="col-auto text-center">
               <div class="display-4 font-weight-bold">2:4</div>
               <div class="text-muted">Today, 20:45</div>
             </div>
             <div class="col text-right">
-              <img src="assets/images/teams/fc-barcelona.png" alt="">
             </div>
           </div>
         </div>
@@ -1722,7 +1621,7 @@
           <form>
             <div class="row">
               <div class="col-auto">
-                <span class="avatar avatar-xl" style="background-image: url(demo/faces/female/9.jpg)"></span>
+                <span class="avatar avatar-xl" style="background-image: url(../assets/images/avatars/female/9.jpg)"></span>
               </div>
               <div class="col">
                 <div class="form-group">
@@ -1747,24 +1646,6 @@
               <button class="btn btn-primary btn-block">Save</button>
             </div>
           </form>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <div class="card-value float-right text-warning">
-            <div class="sparkline" data-sparkline="[10.5, 5.1, 14.7, 18.5, 2.5, 59.5, 79.6, 35.3, 70.1, 1.4, 8.1, 30.9, 31.8, 36.4, 28.8, 91.3]" data-sparkline-color="{" hex "=>"#467fcf ", "name "=>"Blue "}" data-sparkline-type="bar"></div>
-          </div>
-          <h3 class="mb-1">$10M <i class="mdi mdi-trending-up text-success"></i></h3>
-          <div class="text-muted">Profit for this month</div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <div class="card-value float-right text-warning">
-            <div class="sparkline" data-sparkline="[67.8, 57.4, 38.2, 77.9, 36.4, 39.0, 85.9, 24.9, 4.7, 40.6, 8.7, 36.9, 14.2, 53.0, 64.7, 28.2]" data-sparkline-color="{" hex "=>"#e74c3c ", "name "=>"Red "}" data-sparkline-type="line"></div>
-          </div>
-          <h3 class="mb-1">$10M <i class="mdi mdi-trending-up text-success"></i></h3>
-          <div class="text-muted">Profit for this month</div>
         </div>
       </div>
       <div class="card">
@@ -1805,66 +1686,6 @@
           <div id="chart-bg-users" style="height: 100%"></div>
         </div>
       </div>
-      <script>
-      require(['c3', 'jquery'], function(c3, $) {
-        $(document).ready(function() {
-          var chart = c3.generate({
-            bindto: '#chart-bg-users',
-            padding: {
-              bottom: -10,
-              left: -1,
-              right: -1
-            },
-            data: {
-              names: {
-                data1: 'Users online'
-              },
-              columns: [
-                ['data1', 30, 40, 10, 40, 12, 22, 40]
-              ],
-              type: 'area'
-            },
-            legend: {
-              show: false
-            },
-            transition: {
-              duration: 0
-            },
-            point: {
-              show: false
-            },
-            tooltip: {
-              format: {
-                title: function(x) {
-                  return '';
-                }
-              }
-            },
-            axis: {
-              y: {
-                padding: {
-                  bottom: 0,
-                },
-                show: false,
-                tick: {
-                  outer: false
-                }
-              },
-              x: {
-                padding: {
-                  left: 0,
-                  right: 0
-                },
-                show: false
-              }
-            },
-            color: {
-              pattern: ['#467fcf']
-            }
-          });
-        });
-      });
-      </script>
       <div class="card">
         <div class="card-header">
           <h4 class="card-title">New users</h4>
@@ -1893,47 +1714,47 @@
           <div class="card-text">
             <ul class="avatar-list">
               <li class="avatar-list-item">
-                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(demo/faces/female/1.jpg)">
+                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(../assets/images/avatars/female/1.jpg)">
                 </a>
               </li>
               <li class="avatar-list-item">
-                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(demo/faces/male/40.jpg)">
+                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(../assets/images/avatars/male/40.jpg)">
                 </a>
               </li>
               <li class="avatar-list-item">
-                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(demo/faces/male/7.jpg)">
+                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(../assets/images/avatars/male/7.jpg)">
                 </a>
               </li>
               <li class="avatar-list-item">
-                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(demo/faces/female/11.jpg)">
+                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(../assets/images/avatars/female/11.jpg)">
                   <span class="avatar-status bg-green"></span>
                 </a>
               </li>
               <li class="avatar-list-item">
-                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(demo/faces/male/21.jpg)">
+                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(../assets/images/avatars/male/21.jpg)">
                   <span class="avatar-status bg-green"></span>
                 </a>
               </li>
               <li class="avatar-list-item">
-                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(demo/faces/male/25.jpg)">
+                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(../assets/images/avatars/male/25.jpg)">
                   <span class="avatar-status bg-green"></span>
                 </a>
               </li>
               <li class="avatar-list-item">
-                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(demo/faces/female/5.jpg)">
+                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(../assets/images/avatars/female/5.jpg)">
                 </a>
               </li>
               <li class="avatar-list-item">
-                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(demo/faces/female/17.jpg)">
+                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(../assets/images/avatars/female/17.jpg)">
                 </a>
               </li>
               <li class="avatar-list-item">
-                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(demo/faces/male/40.jpg)">
+                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(../assets/images/avatars/male/40.jpg)">
                   <span class="avatar-status bg-green"></span>
                 </a>
               </li>
               <li class="avatar-list-item">
-                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(demo/faces/male/33.jpg)">
+                <a href="javascript:void(0)" class="avatar avatar-lg" style="background-image: url(../assets/images/avatars/male/33.jpg)">
                 </a>
               </li>
             </ul>
@@ -1968,7 +1789,7 @@
             <div class="row img-gallery">
               <div class="col-6">
                 <a href="javascript:void(0)" class="d-block link-overlay">
-                  <img class="d-block img-fluid rounded" src="demo/photos/nathan-anderson-316188-500.jpg" alt="">
+                  <img class="d-block img-fluid rounded" src="../assets/images/demo/adrian-infernus-281832-500.jpg" alt="">
                   <span class="link-overlay-bg rounded">
                               <i class="fa fa-search"></i>
                             </span>
@@ -1976,7 +1797,7 @@
               </div>
               <div class="col-6">
                 <a href="javascript:void(0)" class="d-block link-overlay">
-                  <img class="d-block img-fluid rounded" src="demo/photos/nathan-dumlao-287713-500.jpg" alt="">
+                  <img class="d-block img-fluid rounded" src="../assets/images/demo/joshua-earle-157231-500.jpg" alt="">
                   <span class="link-overlay-bg rounded">
                               <i class="fa fa-search"></i>
                             </span>
@@ -1984,7 +1805,7 @@
               </div>
               <div class="col-6">
                 <a href="javascript:void(0)" class="d-block link-overlay">
-                  <img class="d-block img-fluid rounded" src="demo/photos/nicolas-picard-208276-500.jpg" alt="">
+                  <img class="d-block img-fluid rounded" src="../assets/images/demo/mahkeo-222765-500.jpg" alt="">
                   <span class="link-overlay-bg rounded">
                               <i class="fa fa-search"></i>
                             </span>
@@ -1992,7 +1813,7 @@
               </div>
               <div class="col-6">
                 <a href="javascript:void(0)" class="d-block link-overlay">
-                  <img class="d-block img-fluid rounded" src="demo/photos/oskar-vertetics-53043-500.jpg" alt="">
+                  <img class="d-block img-fluid rounded" src="../assets/images/demo/sean-afnan-244576-500.jpg" alt="">
                   <span class="link-overlay-bg rounded">
                               <i class="fa fa-search"></i>
                             </span>
@@ -2010,7 +1831,7 @@
         </div>
       </div>
       <div class="card card-aside">
-        <div class="card-aside-column" style="background-image: url(demo/photos/wil-stewart-18242-500.jpg)"></div>
+        <div class="card-aside-column" style="background-image: url(../assets/images/demo/teddy-kelley-109202-500.jpg)"></div>
         <div class="card-body">
           <h4 class="card-title">Card with aside</h4>
           <p>
@@ -2062,7 +1883,7 @@
         <table class="table card-table">
           <tr>
             <td class="align-middle" width="1">
-              <span class="avatar avatar-md" style="background-image: url(demo/faces/male/42.jpg)"></span>
+              <span class="avatar avatar-md" style="background-image: url(../assets/images/avatars/male/42.jpg)"></span>
             </td>
             <td>
               <strong>Jacob Thornton</strong>
@@ -2076,7 +1897,7 @@
           </tr>
           <tr>
             <td class="align-middle" width="1">
-              <span class="avatar avatar-md" style="background-image: url(demo/faces/male/2.jpg)"></span>
+              <span class="avatar avatar-md" style="background-image: url(../assets/images/avatars/male/2.jpg)"></span>
             </td>
             <td>
               <strong>Dave Gamache</strong>
@@ -2090,7 +1911,7 @@
           </tr>
           <tr>
             <td class="align-middle" width="1">
-              <span class="avatar avatar-md" style="background-image: url(demo/faces/female/25.jpg)"></span>
+              <span class="avatar avatar-md" style="background-image: url(../assets/images/avatars/female/25.jpg)"></span>
             </td>
             <td>
               <strong>Mark Otto</strong>
@@ -2105,9 +1926,9 @@
         </table>
       </div>
       <div class="card card-profile">
-        <div class="card-header" style="background-image: url(demo/photos/eberhard-grossgasteiger-311213-500.jpg);"></div>
+        <div class="card-header" style="background-image: url(../assets/images/demo/eberhard-grossgasteiger-311213-500.jpg);"></div>
         <div class="card-body text-center">
-          <img class="card-profile-img" src="demo/faces/male/16.jpg">
+          <img class="card-profile-img" src="../assets/images/avatars/male/16.jpg">
           <h3 class="mb-3">Peter Richards</h3>
           <p class="mb-4">
             Big belly rude boy, million dollar hustler. Unemployed.
@@ -2186,323 +2007,6 @@
           </a>
         </div>
       </div>
-      <script>
-      require(['c3', 'jquery'], function(c3, $) {
-        $(document).ready(function() {
-          var chart = c3.generate({
-            bindto: '#chart-tasks', // id of chart wrapper
-            data: {
-              columns: [
-                // each columns data
-                ['data1', 0, 0, 1, 2, 21, 9, 12, 10, 31, 13, 65, 10, 12, 6, 4, 3, 0],
-                ['data2', 0, 0, 1, 2, 7, 5, 6, 8, 24, 7, 12, 5, 6, 3, 2, 2, 0],
-                ['data3', 0, 0, 1, 0, 2, 0, 1, 0, 2, 3, 0, 2, 3, 2, 1, 0, 0]
-              ],
-              classes: {
-                data1: 'filled',
-                data2: 'filled',
-                data3: 'filled'
-              },
-              type: 'line', // default type of chart
-              groups: [
-                ['data1', 'data2', 'data3']
-              ],
-              colors: {
-                'data1': tabler.colors["blue"],
-                'data2': tabler.colors["lime"],
-                'data3': tabler.colors["orange"]
-              },
-              names: {
-                // name of each serie
-                'data1': 'New',
-                'data2': 'Completed',
-                'data3': 'Closed'
-              }
-            },
-            axis: {
-              y: {
-                padding: {
-                  bottom: 0,
-                },
-                show: false,
-                tick: {
-                  outer: false
-                }
-              },
-              x: {
-                padding: {
-                  left: 0,
-                  right: 0
-                },
-                show: false
-              }
-            },
-            legend: {
-              position: 'inset',
-              padding: 0,
-              inset: {
-                anchor: 'top-left',
-                x: 20,
-                y: 8,
-                step: 10
-              }
-            },
-            tooltip: {
-              format: {
-                title: function(x) {
-                  return '';
-                }
-              }
-            },
-            padding: {
-              bottom: 0,
-              left: -1,
-              right: -1
-            },
-            point: {
-              show: false
-            }
-          });
-        });
-      });
-      </script>
-      <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Visitors map</h3>
-        </div>
-        <div class="card-body">
-          <div class="map">
-            <div class="map-content" id="map-world-svg"></div>
-          </div>
-        </div>
-      </div>
-      <script>
-      require(['jquery', 'vector-map', 'vector-map-world'], function() {
-        $(document).ready(function() {
-          var data = {
-            "AF": 16.63,
-            "AL": 11.58,
-            "DZ": 158.97,
-            "AO": 85.81,
-            "AG": 1.1,
-            "AR": 351.02,
-            "AM": 8.83,
-            "AU": 1219.72,
-            "AT": 366.26,
-            "AZ": 52.17,
-            "BS": 7.54,
-            "BH": 21.73,
-            "BD": 105.4,
-            "BB": 3.96,
-            "BY": 52.89,
-            "BE": 461.33,
-            "BZ": 1.43,
-            "BJ": 6.49,
-            "BT": 1.4,
-            "BO": 19.18,
-            "BA": 16.2,
-            "BW": 12.5,
-            "BR": 2023.53,
-            "BN": 11.96,
-            "BG": 44.84,
-            "BF": 8.67,
-            "BI": 1.47,
-            "KH": 11.36,
-            "CM": 21.88,
-            "CA": 1563.66,
-            "CV": 1.57,
-            "CF": 2.11,
-            "TD": 7.59,
-            "CL": 199.18,
-            "CN": 5745.13,
-            "CO": 283.11,
-            "KM": 0.56,
-            "CD": 12.6,
-            "CG": 11.88,
-            "CR": 35.02,
-            "CI": 22.38,
-            "HR": 59.92,
-            "CY": 22.75,
-            "CZ": 195.23,
-            "DK": 304.56,
-            "DJ": 1.14,
-            "DM": 0.38,
-            "DO": 50.87,
-            "EC": 61.49,
-            "EG": 216.83,
-            "SV": 21.8,
-            "GQ": 14.55,
-            "ER": 2.25,
-            "EE": 19.22,
-            "ET": 30.94,
-            "FJ": 3.15,
-            "FI": 231.98,
-            "FR": 2555.44,
-            "GA": 12.56,
-            "GM": 1.04,
-            "GE": 11.23,
-            "DE": 3305.9,
-            "GH": 18.06,
-            "GR": 305.01,
-            "GD": 0.65,
-            "GT": 40.77,
-            "GN": 4.34,
-            "GW": 0.83,
-            "GY": 2.2,
-            "HT": 6.5,
-            "HN": 15.34,
-            "HK": 226.49,
-            "HU": 132.28,
-            "IS": 12.77,
-            "IN": 1430.02,
-            "ID": 695.06,
-            "IR": 337.9,
-            "IQ": 84.14,
-            "IE": 204.14,
-            "IL": 201.25,
-            "IT": 2036.69,
-            "JM": 13.74,
-            "JP": 5390.9,
-            "JO": 27.13,
-            "KZ": 129.76,
-            "KE": 32.42,
-            "KI": 0.15,
-            "KR": 986.26,
-            "UNDEFINED": 5.73,
-            "KW": 117.32,
-            "KG": 4.44,
-            "LA": 6.34,
-            "LV": 23.39,
-            "LB": 39.15,
-            "LS": 1.8,
-            "LR": 0.98,
-            "LY": 77.91,
-            "LT": 35.73,
-            "LU": 52.43,
-            "MK": 9.58,
-            "MG": 8.33,
-            "MW": 5.04,
-            "MY": 218.95,
-            "MV": 1.43,
-            "ML": 9.08,
-            "MT": 7.8,
-            "MR": 3.49,
-            "MU": 9.43,
-            "MX": 1004.04,
-            "MD": 5.36,
-            "MN": 5.81,
-            "ME": 3.88,
-            "MA": 91.7,
-            "MZ": 10.21,
-            "MM": 35.65,
-            "NA": 11.45,
-            "NP": 15.11,
-            "NL": 770.31,
-            "NZ": 138,
-            "NI": 6.38,
-            "NE": 5.6,
-            "NG": 206.66,
-            "false": 413.51,
-            "OM": 53.78,
-            "PK": 174.79,
-            "PA": 27.2,
-            "PG": 8.81,
-            "PY": 17.17,
-            "PE": 153.55,
-            "PH": 189.06,
-            "PL": 438.88,
-            "PT": 223.7,
-            "QA": 126.52,
-            "RO": 158.39,
-            "RU": 1476.91,
-            "RW": 5.69,
-            "WS": 0.55,
-            "ST": 0.19,
-            "SA": 434.44,
-            "SN": 12.66,
-            "RS": 38.92,
-            "SC": 0.92,
-            "SL": 1.9,
-            "SG": 217.38,
-            "SK": 86.26,
-            "SI": 46.44,
-            "SB": 0.67,
-            "ZA": 354.41,
-            "ES": 1374.78,
-            "LK": 48.24,
-            "KN": 0.56,
-            "LC": 1,
-            "VC": 0.58,
-            "SD": 65.93,
-            "SR": 3.3,
-            "SZ": 3.17,
-            "SE": 444.59,
-            "CH": 522.44,
-            "SY": 59.63,
-            "TW": 426.98,
-            "TJ": 5.58,
-            "TZ": 22.43,
-            "TH": 312.61,
-            "TL": 0.62,
-            "TG": 3.07,
-            "TO": 0.3,
-            "TT": 21.2,
-            "TN": 43.86,
-            "TR": 729.05,
-            "TM": 0,
-            "UG": 17.12,
-            "UA": 136.56,
-            "AE": 239.65,
-            "GB": 2258.57,
-            "US": 14624.18,
-            "UY": 40.71,
-            "UZ": 37.72,
-            "VU": 0.72,
-            "VE": 285.21,
-            "VN": 101.99,
-            "YE": 30.02,
-            "ZM": 15.69,
-            "ZW": 5.5
-          };
-
-
-          var markers = false;
-
-
-          $('#map-world-svg').vectorMap({
-            map: 'world_mill',
-            zoomButtons: false,
-            zoomOnScroll: false,
-            panOnDrag: false,
-            backgroundColor: 'transparent',
-            markers: markers,
-            markerStyle: {
-              initial: {
-                fill: tabler.colors.blue,
-                stroke: '#fff',
-                "stroke-width": 1,
-                r: 5
-              },
-            },
-            onRegionTipShow: function(e, el, code, f) {
-              el.html(el.html() + (data[code] ? ': <small>' + data[code] + '</small>' : ''));
-            },
-            series: {
-              regions: [{
-                values: data,
-                scale: ['#EFF3F6', tabler.colors.blue],
-                normalizeFunction: 'polynomial'
-              }]
-            },
-            regionStyle: {
-              initial: {
-                fill: '#F4F4F4'
-              }
-            }
-          });
-        });
-      });
-      </script>
       <div class="card">
         <div class="card-body">
           <div class="row text-center">
@@ -2526,7 +2030,7 @@
           <div class="card">
             <div class="card-body">
               <div class="media">
-                <span class="avatar avatar-xxl mr-5" style="background-image: url(demo/faces/male/21.jpg)"></span>
+                <span class="avatar avatar-xxl mr-5" style="background-image: url(../assets/images/avatars/male/21.jpg)"></span>
                 <div class="media-body">
                   <h4 class="m-0">Juan Hernandez</h4>
                   <p class="text-muted mb-0">Webdeveloper</p>
@@ -2572,7 +2076,7 @@
                 </div>
               </div>
             </div>
-            <div class="card-map card-map-placeholder" style="background-image: url(./demo/staticmap.png)"></div>
+            <div class="card-map card-map-placeholder" style="background-image: url(../assets/images/demo/staticmap.png)"></div>
             <div class="card-body">
               <div class="media mb-5">
                 <img class="d-flex mr-5 rounded" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2264%22%20height%3D%2264%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ec911398e%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ec911398e%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2213.84375%22%20y%3D%2236.65%22%3E64x64%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Generic placeholder image">
@@ -2658,66 +2162,6 @@
               <div id="chart-bg-revenue" style="height: 100%"></div>
             </div>
           </div>
-          <script>
-          require(['c3', 'jquery'], function(c3, $) {
-            $(document).ready(function() {
-              var chart = c3.generate({
-                bindto: '#chart-bg-revenue',
-                padding: {
-                  bottom: -10,
-                  left: -1,
-                  right: -1
-                },
-                data: {
-                  names: {
-                    data1: 'Users online'
-                  },
-                  columns: [
-                    ['data1', 30, 40, 10, 40, 12, 22, 40]
-                  ],
-                  type: 'area'
-                },
-                legend: {
-                  show: false
-                },
-                transition: {
-                  duration: 0
-                },
-                point: {
-                  show: false
-                },
-                tooltip: {
-                  format: {
-                    title: function(x) {
-                      return '';
-                    }
-                  }
-                },
-                axis: {
-                  y: {
-                    padding: {
-                      bottom: 0,
-                    },
-                    show: false,
-                    tick: {
-                      outer: false
-                    }
-                  },
-                  x: {
-                    padding: {
-                      left: 0,
-                      right: 0
-                    },
-                    show: false
-                  }
-                },
-                color: {
-                  pattern: ['#f1c40f']
-                }
-              });
-            });
-          });
-          </script>
           <div class="card">
             <div class="card-header">
               <div class="card-title">
@@ -2797,7 +2241,7 @@
             </div>
           </div>
           <div class="card">
-            <img class="card-img-top" src="demo/photos/dino-reichmuth-84359-500.jpg" alt="Card image cap">
+            <img class="card-img-top" src="../assets/images/demo/dino-reichmuth-84359-500.jpg" alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Card title</h4>
               <div class="card-subtitle">Lorem ipsum dolor sit amet.</div>
@@ -2906,7 +2350,7 @@
             </table>
           </div>
           <div class="card">
-            <img class="card-img-top" src="demo/photos/aneta-ivanova-776-500.jpg" alt="Card image cap">
+            <img class="card-img-top" src="../assets/images/demo/grant-ritchie-338179-500.jpg" alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Card title</h4>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -3199,22 +2643,6 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">Pie chart</h3>
-            </div>
-            <div class="card-body">
-              <div id="chart-pie" style="height: 250px"></div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">Radar chart</h3>
-            </div>
-            <div class="card-body">
-              <canvas id="canvas1" height="200"></canvas>
-            </div>
-          </div>
-          <div class="card">
             <div class="card-body">
               <h3 class="card-title">Private message</h3>
               <div class="card-subtitle"> Send private message to Olivia Wenscombe </div>
@@ -3232,7 +2660,7 @@
             </div>
           </div>
           <div class="card bg-dark text-white">
-            <img class="card-img" src="demo/photos/teddy-kelley-109202-500.jpg" alt="Card image">
+            <img class="card-img" src="../assets/images/demo/teddy-kelley-109202-500.jpg" alt="Card image">
             <div class="card-img-overlay justify-content-end">
               <h4 class="card-title">Card title</h4>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -3317,35 +2745,35 @@
             </header>
             <div class="card-body">
               <div class="media mb-3">
-                <div class="media-object mr-4"><span class="avatar avatar-md" style="background-image: url(demo/faces/male/16.jpg)"></span></div>
+                <div class="media-object mr-4"><span class="avatar avatar-md" style="background-image: url(../assets/images/avatars/male/16.jpg)"></span></div>
                 <div class="media-body">
                   <h5 class="mb-0"><a href="javascript:void(0)" class="text-color">Some of the fantastic things people have had to say about Ooooh</a></h5>
                   <small class="text-muted">2 days ago</small>
                 </div>
               </div>
               <div class="media mb-3">
-                <div class="media-object mr-4"><span class="avatar avatar-md" style="background-image: url(demo/faces/male/26.jpg)"></span></div>
+                <div class="media-object mr-4"><span class="avatar avatar-md" style="background-image: url(../assets/images/avatars/male/26.jpg)"></span></div>
                 <div class="media-body">
                   <h5 class="mb-0"><a href="javascript:void(0)" class="text-color">Here are just some of the magazine reviews we have had</a></h5>
                   <small class="text-muted">1 day ago</small>
                 </div>
               </div>
               <div class="media mb-3">
-                <div class="media-object mr-4"><span class="avatar avatar-md" style="background-image: url(demo/faces/female/7.jpg)"></span></div>
+                <div class="media-object mr-4"><span class="avatar avatar-md" style="background-image: url(../assets/images/avatars/female/7.jpg)"></span></div>
                 <div class="media-body">
                   <h5 class="mb-0"><a href="javascript:void(0)" class="text-color">Lorem ipsum dolor amet, consectetur adipisicing elit.</a></h5>
                   <small class="text-muted">2 days ago</small>
                 </div>
               </div>
               <div class="media mb-3">
-                <div class="media-object mr-4"><span class="avatar avatar-md" style="background-image: url(demo/faces/female/17.jpg)"></span></div>
+                <div class="media-object mr-4"><span class="avatar avatar-md" style="background-image: url(../assets/images/avatars/female/17.jpg)"></span></div>
                 <div class="media-body">
                   <h5 class="mb-0"><a href="javascript:void(0)" class="text-color">“It’s just brilliant. I will recommend it to everyone!”</a></h5>
                   <small class="text-muted">2 mins ago</small>
                 </div>
               </div>
               <div class="media">
-                <div class="media-object mr-4"><span class="avatar avatar-md" style="background-image: url(demo/faces/male/30.jpg)"></span></div>
+                <div class="media-object mr-4"><span class="avatar avatar-md" style="background-image: url(../assets/images/avatars/male/30.jpg)"></span></div>
                 <div class="media-body">
                   <h5 class="mb-0"><a href="javascript:void(0)" class="text-color">John has just started working on the project</a></h5>
                   <small class="text-muted">right now</small>
@@ -3354,7 +2782,7 @@
             </div>
           </div>
           <div class="card">
-            <img class="card-img-top" src="demo/photos/artem-sapegin-229391-500.jpg" alt="Card image cap">
+            <img class="card-img-top" src="../assets/images/demo/tim-bogdanov-97988-500.jpg" alt="Card image cap">
             <ul class="list-group card-list-group">
               <li class="list-group-item">Cras justo odio</li>
               <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -3422,8 +2850,8 @@
               <div class="card-title">Forgot password</div>
               <p class="text-muted">Enter your email address and your password will be reset and emailed to you.</p>
               <div class="form-group">
-                <label class="form-label" for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <label class="form-label" for="exampleInputEmail2">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter email">
               </div>
               <div class="form-footer">
                 <button type="submit" class="btn btn-primary btn-block">Send me new password</button>
