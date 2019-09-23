@@ -259,6 +259,45 @@ $sizes: (
 	auto: auto
 );
 
+$size-spacers: (
+  9: 4rem,
+  10: 5rem,
+  11: 6rem,
+  12: 8rem,
+  13: 10rem,
+  14: 12rem,
+  15: 14rem,
+  16: 16rem,
+  17: 18rem,
+  18: 20rem,
+  auto: auto,
+  px: 1px,
+  full: 100%
+) !default;
+
+$size-max-spacers: (
+  xs: 20rem,
+  sm: 24rem,
+  md: 28rem,
+  lg: 32rem,
+  xl: 36rem,
+  2 xl: 42rem,
+  3 xl: 48rem,
+  4 xl: 56rem,
+  5 xl: 64rem,
+  6 xl: 72rem,
+  full: 100%
+) !default;
+
+$sizes-percentage: (
+  1: 1%,
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto
+) !default;
+
 // Footer
 $footer-bg: #fff;
 
