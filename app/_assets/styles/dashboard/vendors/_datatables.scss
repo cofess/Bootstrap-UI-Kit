@@ -6,15 +6,15 @@
         position: absolute;
         right: 0;
         bottom: 5px;
-        content: "\e92d";
-        font-family: 'feather' !important;
+        content: "\E597";
+        font-family: "iconfont" !important;
       }
       &:before{
         position: absolute;
         right: 0;
         top: 5px;
-        content: "\e930";
-        font-family: 'feather' !important;
+        content: "\E5BD";
+        font-family: "iconfont" !important;
       }
     }
     .sorting_desc{
@@ -23,8 +23,8 @@
         position: absolute;
         right: 0;
         bottom: 5px;
-        content: "\e92d";
-        font-family: 'feather' !important;
+        content: "\E597";
+        font-family: "iconfont" !important;
       }
     }
     .sorting_asc{
@@ -33,8 +33,8 @@
         position: absolute;
         right: 0;
         top: 5px;
-        content: "\e930";
-        font-family: 'feather' !important;
+        content: "\E5BD";
+        font-family: "iconfont" !important;
       }
     }
   }

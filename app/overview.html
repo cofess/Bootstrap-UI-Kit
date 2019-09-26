@@ -24,49 +24,6 @@
 <div class="container">
 <section class="card">
   <div class="card-header">
-    <h3 class="card-title">Border radius</h3>
-  </div>
-  <div class="card-body">
-    <div class="flex flex-gap-1">
-      <div class="bg-smoke radius-0 h-3 w-3 flex flex-center">radius-0</div>
-      <div class="bg-light radius-1 h-3 w-3 flex flex-center">radius-1</div>
-      <div class="bg-light radius-2 h-3 w-3 flex flex-center">radius-2</div>
-      <div class="bg-light radius-3 h-3 w-3 flex flex-center">radius-3</div>
-      <div class="bg-light radius-4 h-3 w-3 flex flex-center">radius-4</div>
-      <div class="bg-light radius-5 h-3 w-3 flex flex-center">radius-5</div>
-      <div class="bg-light rounded h-3 w-3 flex flex-center text-center">rounded</div>
-      <div class="bg-light circle h-3 w-3 flex flex-center text-center">circle</div>
-      <div class="bg-black text-smoke radius-max px-5 nowrap h-3 flex flex-center">radius-max</div>
-      <div class="bg-black text-smoke radius-100 h-3 w-3 flex flex-center">radius-100</div>
-    </div>
-  </div>
-</section>
-<section class="card">
-  <div class="card-header">
-    <h3 class="card-title">Display</h3>
-  </div>
-  <div class="card-body">
-    <div class="well">
-      <p>block</p>
-      <p>clearfix*</p>
-      <p>flex</p>
-      <p>grid</p>
-      <p>inline-block</p>
-      <p>inline-flex</p>
-      <p>inline-table</p>
-      <p>inline</p>
-      <p>none</p>
-      <p>table*</p>
-      <p>table-cell</p>
-      <p>table-column</p>
-      <p>table-row</p>
-    </div>
-    <p><code>.clearfix</code> is an after-before-content hack for clearing floats.</p>
-    <p><code>.table</code> has an extra attribute, layout: fixed.</p>
-  </div>
-</section>
-<section class="card">
-  <div class="card-header">
     <h3 class="card-title">Flex</h3>
   </div>
   <div class="card-body">
@@ -359,58 +316,6 @@
 </section>
 <section class="card">
   <div class="card-header">
-    <h3 class="card-title">Opacity</h3>
-  </div>
-  <div class="card-body">
-    <div class="grid grid-cols-5 grid-gap-1" data-reactid="292">
-      <div class="bg-gray p-1 opacity-100" data-reactid="293">opacity-100</div>
-      <div class="bg-gray p-1 opacity-90" data-reactid="294">opacity-90</div>
-      <div class="bg-gray p-1 opacity-80" data-reactid="295">opacity-80</div>
-      <div class="bg-gray p-1 opacity-70" data-reactid="296">opacity-70</div>
-      <div class="bg-gray p-1 opacity-60" data-reactid="297">opacity-60</div>
-      <div class="bg-gray p-1 opacity-50" data-reactid="298">opacity-50</div>
-      <div class="bg-gray p-1 opacity-40" data-reactid="299">opacity-40</div>
-      <div class="bg-gray p-1 opacity-30" data-reactid="300">opacity-30</div>
-      <div class="bg-gray p-1 opacity-20" data-reactid="301">opacity-20</div>
-      <div class="bg-gray p-1 opacity-10" data-reactid="302">opacity-10</div>
-      <div class="bg-gray p-1 opacity-0" data-reactid="303">opacity-0</div>
-    </div>
-  </div>
-</section>
-<section class="card">
-  <div class="card-header">
-    <h3 class="card-title">Position</h3>
-  </div>
-  <div class="card-body">
-    <div class="well">
-      <p>absolute</p>
-      <p>fixed</p>
-      <p>relative</p>
-      <p>sticky</p>
-      <hr />
-      <p>bottom-0</p>
-      <p>left-0</p>
-      <p>right-0</p>
-      <p>top-0</p>
-      <hr />
-      <p>z-min</p>
-      <p>z-0</p>
-      <p>z-1</p>
-      <p>z-2</p>
-      <p>z-3</p>
-      <p>z-4</p>
-      <p>z-5</p>
-      <p>z-6</p>
-      <p>z-7</p>
-      <p>z-8</p>
-      <p>z-9</p>
-      <p>z-10</p>
-      <p>z-max</p>
-    </div>
-  </div>
-</section>
-<section class="card">
-  <div class="card-header">
     <h3 class="card-title">Responsive Float</h3>
   </div>
   <div class="card-body">
@@ -452,4 +357,9 @@
   </div>
 </section>
 </div>
+{% include "_includes/_parts/utilities_borders.html" %}
+{% include "_includes/_parts/utilities_display.html" %}
+{% include "_includes/_parts/utilities_opacity.html" %}
+{% include "_includes/_parts/utilities_position.html" %}
+{% include "_includes/_parts/utilities_overflow.html" %}
 {% endblock %}
