@@ -6,16 +6,29 @@
 <!-- 模版 -->
 {% extends '_layouts/application.html' %}
 <!-- 页面标题 -->
-{% block title %}{{ global.title }} | Display{% endblock %}
+{% block title %}{{ global.title }} | Borders{% endblock %}
+<!-- Custom Style -->
+{% block style %}
+<style>
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+</style>
+{% endblock %}
 <!-- 面包屑导航 -->
 {% block breadcrumb %}
 <!-- <section class="page-header">
   <div class="container">
-    <h1 class="page-title">Display</h1>
+    <h1 class="page-title">Borders</h1>
   </div>
 </section> -->
 {% endblock %}
 <!-- 主体内容 -->
 {% block content %}
-{% include "_includes/_parts/utilities_display.html" %}
+{% include "_includes/_parts/utilities_borders.html" %}
 {% endblock %}
