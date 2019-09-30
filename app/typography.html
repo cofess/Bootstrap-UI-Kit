@@ -3,6 +3,15 @@
 {% extends '_layouts/application.html' %}
 <!-- 页面标题 -->
 {% block title %}{{ global.title }} | Typography{% endblock %}
+<!-- Custom Style -->
+{% block style %}
+<style>
+.bd-highlight {
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.15);
+}
+</style>
+{% endblock %}
 <!-- 面包屑导航 -->
 {% block breadcrumb %}
 <!-- <section class="page-header">
@@ -21,32 +30,6 @@
       <div class="text-wrap p-lg-6">
         <h2 class="mt-0 mb-4">Typography</h2>
         <p>Documentation and examples for common text utilities to control alignment, wrapping, weight, and more.</p>
-        <h3 id="text-alignment">Text alignment</h3>
-        <p>Easily realign text to components with text alignment classes.</p>
-        <div class="example">
-          <p class="text-left">Left aligned text on all viewport sizes.</p>
-          <p class="text-center">Center aligned text on all viewport sizes.</p>
-          <p class="text-right">Right aligned text on all viewport sizes.</p>
-          <p class="text-justify">Both aligned text on all viewport sizes. Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.</p>
-        </div>
-        <div class="highlight">
-          <pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-left"</span><span class="nt">&gt;</span>Left aligned text on all viewport sizes.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>Center aligned text on all viewport sizes.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>Right aligned text on all viewport sizes.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-justify"</span><span class="nt">&gt;</span>Both aligned text on all viewport sizes. Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.<span class="nt">&lt;/p&gt;</span></code></pre>
-        </div>
-        <h3 id="text-transform">Text transform</h3>
-        <p>Transform text in components with text capitalization classes.</p>
-        <div class="example">
-          <p class="text-lowercase">Lowercased text.</p>
-          <p class="text-uppercase">Uppercased text.</p>
-          <p class="text-capitalize">Capitalized text.</p>
-        </div>
-        <div class="highlight">
-          <pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-lowercase"</span><span class="nt">&gt;</span>Lowercased text.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-uppercase"</span><span class="nt">&gt;</span>Uppercased text.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-capitalize"</span><span class="nt">&gt;</span>Capitalized text.<span class="nt">&lt;/p&gt;</span></code></pre>
-        </div>
         <h3 id="letter-spacing">Letter spacing</h3>
         <p>Utilities for controlling the tracking (letter spacing) of an element.</p>
         <div class="example">
@@ -163,6 +146,13 @@
     <div class="card-body">
       <div class="row">
         <div class="col-md-6">
+          <h4>不换行+省略号</h4>
+          <p class="text-truncate">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <hr>
+          <h4>不换行</h4>
+          <p class="text-nowrap">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. </p>
+        </div>
+        <div class="col-md-6">
           <h4>一行文字截断</h4>
           <p class="text-nowrap-1">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
           <hr>
@@ -177,72 +167,7 @@
           <hr>
           <h4>五行文字截断</h4>
           <p class="text-nowrap-5">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        </div>
-        <div class="col-md-6">
-          <h4>不换行+省略号</h4>
-          <p class="text-nowrap">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <hr>
-          <h4>不换行</h4>
-          <p class="text-unbreak">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <hr>
-          <h4>改变大小写</h4>
-          <p class="text-lowercase">Lowercased text.</p>
-          <p class="text-uppercase">Uppercased text.</p>
-          <p class="text-capitalize">Capitalized text.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="card">
-    <div class="card-header">
-      <h3 class="card-title">对齐</h3>
-    </div>
-    <div class="card-body">
-      <p class="text-left">Left aligned text.</p>
-      <p class="text-center">Center aligned text.</p>
-      <p class="text-right">Right aligned text.</p>
-      <p class="text-justify">Justified text.</p>
-    </div>
-  </section>
-  <section class="card">
-    <div class="card-header">
-      <h3 class="card-title">responsive text align</h3>
-    </div>
-    <div class="card-body">
-      <div class="row">
-        <div class="col-md-4">
-          <h4>text align left</h4>
-          <div class="well">
-            <p class="text-left">text-left</p>
-            <p class="text-xs-left">text-xs-left</p>
-            <p class="text-sm-left">text-sm-left</p>
-            <p class="text-md-left">text-md-left</p>
-            <p class="text-lg-left">text-lg-left</p>
-            <p class="text-xl-left">text-xl-left</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <h4>text-align right</h4>
-          <div class="well">
-            <p class="text-right">text-right</p>
-            <p class="text-xs-right">text-xs-right</p>
-            <p class="text-sm-right">text-sm-right</p>
-            <p class="text-md-right">text-md-right</p>
-            <p class="text-lg-right">text-lg-right</p>
-            <p class="text-xl-right">text-xl-right</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <h4>text-align center</h4>
-          <div class="well">
-            <p class="text-center">text-center</p>
-            <p class="text-xs-center">text-xs-center</p>
-            <p class="text-sm-center">text-sm-center</p>
-            <p class="text-md-center">text-md-center</p>
-            <p class="text-lg-center">text-lg-center</p>
-            <p class="text-xl-center">text-xl-center</p>
-          </div>
-        </div>
+        </div> 
       </div>
     </div>
   </section>
