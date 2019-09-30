@@ -1,0 +1,135 @@
+<section class="section-opacity">
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">文本 Text</h3>
+      </div>
+      <div class="card-body">
+        <h1 class="bd-title" id="content">文本（Text）</h1>
+        <p class="bd-lead">举例说明用于控制文本内容的对齐、折行、字重等属性的工具类。</p>
+        <h2 id="文本对齐">文本对齐</h2>
+        <p>使用文本对齐类可以轻松地将文本重新对齐到组件。</p>
+        <div class="example">
+          <p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+        </div>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-justify"</span><span class="nt">&gt;</span>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+        <p>对于左对齐、右对齐和居中对齐，我们还提供了响应式工具类，这些工具类使用了与网格系统相同的基于视口（viewport）宽度的断点。</p>
+        <div class="example">
+          <p class="text-left">Left aligned text on all viewport sizes.</p>
+          <p class="text-center">Center aligned text on all viewport sizes.</p>
+          <p class="text-right">Right aligned text on all viewport sizes.</p>
+          <p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
+          <p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
+          <p class="text-lg-left">Left aligned text on viewports sized LG (large) or wider.</p>
+          <p class="text-xl-left">Left aligned text on viewports sized XL (extra-large) or wider.</p>
+        </div>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-left"</span><span class="nt">&gt;</span>Left aligned text on all viewport sizes.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>Center aligned text on all viewport sizes.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>Right aligned text on all viewport sizes.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-sm-left"</span><span class="nt">&gt;</span>Left aligned text on viewports sized SM (small) or wider.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-md-left"</span><span class="nt">&gt;</span>Left aligned text on viewports sized MD (medium) or wider.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-lg-left"</span><span class="nt">&gt;</span>Left aligned text on viewports sized LG (large) or wider.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-xl-left"</span><span class="nt">&gt;</span>Left aligned text on viewports sized XL (extra-large) or wider.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+        <h2 id="文字折行和溢出">文字折行和溢出</h2>
+        <p>利用 <code class="highlighter-rouge">.text-wrap</code> 类可以让文字折行。</p>
+        <div class="example">
+          <div class="badge badge-primary text-wrap" style="width: 6rem;">
+            This text should wrap.
+          </div>
+        </div>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"badge badge-primary text-wrap"</span> <span class="na">style=</span><span class="s">"width: 6rem;"</span><span class="nt">&gt;</span>
+  This text should wrap.
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+        <p>使用 <code class="highlighter-rouge">.text-nowrap</code> 类可以防止文字折行。</p>
+        <div class="example">
+          <div class="text-nowrap bd-highlight" style="width: 8rem;">
+            This text should overflow the parent.
+          </div>
+        </div>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-nowrap bd-highlight"</span> <span class="na">style=</span><span class="s">"width: 8rem;"</span><span class="nt">&gt;</span>
+  This text should overflow the parent.
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+        <p>对于较长的内容，你可以通过添加 <code class="highlighter-rouge">.text-truncate</code> 类将文本截断并添加省略号。 <strong>元素必须是 <code class="highlighter-rouge">display: inline-block</code> 或 <code class="highlighter-rouge">display: block</code> 类型。</strong></p>
+        <div class="example">
+          <!-- Block level -->
+          <div class="row">
+            <div class="col-2 text-truncate">
+              Praeterea iter est quasdam res quas ex communi.
+            </div>
+          </div>
+          <!-- Inline level -->
+          <span class="d-inline-block text-truncate" style="max-width: 150px;">
+  Praeterea iter est quasdam res quas ex communi.
+</span>
+        </div>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Block level --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2 text-truncate"</span><span class="nt">&gt;</span>
+    Praeterea iter est quasdam res quas ex communi.
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- Inline level --&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block text-truncate"</span> <span class="na">style=</span><span class="s">"max-width: 150px;"</span><span class="nt">&gt;</span>
+  Praeterea iter est quasdam res quas ex communi.
+<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+        <h2 id="单词中断">单词中断</h2>
+        <p>通过使用 <code class="highlighter-rouge">.text-break</code> 将长字符串设置为 <code class="highlighter-rouge">overflow-wrap: break-word</code> （和针对 IE 和 Edge 兼容的 <code class="highlighter-rouge">word-break: break-word</code> ）属性，可以防止长字符串破坏你的组件布局。</p>
+        <div class="example">
+          <p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+        </div>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-break"</span><span class="nt">&gt;</span>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+        <h2 id="文本转换">文本转换</h2>
+        <p>使用文本大小写类转换组件中的文本。</p>
+        <div class="example">
+          <p class="text-lowercase">转为小写的文本。</p>
+          <p class="text-uppercase">转为大写的文本。</p>
+          <p class="text-capitalize">转为首字母大写的文本。</p>
+        </div>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-lowercase"</span><span class="nt">&gt;</span>转为小写的文本。<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-uppercase"</span><span class="nt">&gt;</span>转为大写的文本。<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-capitalize"</span><span class="nt">&gt;</span>转为首字母大写的文本。<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+        <p>注意，<code class="highlighter-rouge">.text-capitalize</code> 只改变每个单词的第一个字母，不影响任何其他字母的大小写。</p>
+        <h2 id="字体粗细和斜体">字体粗细和斜体</h2>
+        <p>快速更改普通文本或斜体文本的字重（或粗细）。</p>
+        <div class="example">
+          <p class="font-weight-bold">Bold text.</p>
+          <p class="font-weight-bolder">Bolder weight text (relative to the parent element).</p>
+          <p class="font-weight-normal">Normal weight text.</p>
+          <p class="font-weight-light">Light weight text.</p>
+          <p class="font-weight-lighter">Lighter weight text (relative to the parent element).</p>
+          <p class="font-italic">Italic text.</p>
+        </div>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-weight-bold"</span><span class="nt">&gt;</span>Bold text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-weight-bolder"</span><span class="nt">&gt;</span>Bolder weight text (relative to the parent element).<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-weight-normal"</span><span class="nt">&gt;</span>Normal weight text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-weight-light"</span><span class="nt">&gt;</span>Light weight text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-weight-lighter"</span><span class="nt">&gt;</span>Lighter weight text (relative to the parent element).<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-italic"</span><span class="nt">&gt;</span>Italic text.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+        <h2 id="等宽字体monospace">等宽字体（Monospace）</h2>
+        <p>用 <code class="highlighter-rouge">.text-monospace</code> 类将所选内容更改为等宽字体（monospace font）。</p>
+        <div class="example">
+          <p class="text-monospace">This is in monospace</p>
+        </div>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-monospace"</span><span class="nt">&gt;</span>This is in monospace<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+        <h2 id="重置颜色">重置颜色</h2>
+        <p>用 <code class="highlighter-rouge">.text-reset</code> 类重置文本或链接的颜色，以便从父元素继承颜色属性。</p>
+        <div class="example">
+          <p class="text-muted">
+            Muted text with a <a href="#" class="text-reset">重置链接的颜色</a>.
+          </p>
+        </div>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>
+  Muted text with a <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"text-reset"</span><span class="nt">&gt;</span>重置链接的颜色<span class="nt">&lt;/a&gt;</span>.
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+        <h2 id="文字装饰">文字装饰</h2>
+        <p>用 <code class="highlighter-rouge">.text-decoration-none</code> 类去除文字的装饰。</p>
+        <div class="example">
+          <a href="#" class="text-decoration-none">不带下划线的链接</a>
+        </div>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"text-decoration-none"</span><span class="nt">&gt;</span>不带下划线的链接<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+      </div>
+    </div>
+  </div>
+</section>
