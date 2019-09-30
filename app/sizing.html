@@ -1,0 +1,22 @@
+{# 
+  Nunjucks Templating! 
+  Homepage: https://mozilla.github.io/nunjucks/ 
+  Docs: https://mozilla.github.io/nunjucks/api.html 
+#}
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+<!-- 页面标题 -->
+{% block title %}{{ global.title }} | Sizing{% endblock %}
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Sizing</h1>
+    <p>Easily make an element as wide or as tall with our width and height utilities.</p>
+  </div>
+</section>
+{% endblock %}
+<!-- 主体内容 -->
+{% block content %}
+{% include "_includes/_parts/utilities_sizing.html" %}
+{% endblock %}
