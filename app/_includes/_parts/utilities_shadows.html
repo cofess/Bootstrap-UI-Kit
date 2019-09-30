@@ -1,25 +1,24 @@
-<section class="section-overflow">
+<section class="section-opacity">
   <div class="container">
     <div class="card">
       <div class="card-header">
-        <h3 class="card-title">Overflow</h3>
+        <h3 class="card-title">阴影</h3>
       </div>
       <div class="card-body">
-        <p class="bd-lead">Use these shorthand utilities for quickly configuring how content overflows an element.</p>
-        <p>Barebones <code class="highlighter-rouge">overflow</code> functionality is provided for two values by default, and they are not responsive.</p>
-        <div class="example d-md-flex">
-          <div class="overflow-auto p-3 mb-3 mb-md-0 mr-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
-            This is an example of using <code>.overflow-auto</code> on an element with set width and height dimensions. By design, this content will vertically scroll.
-          </div>
-          <div class="overflow-hidden p-3 bg-light" style="max-width: 260px; max-height: 100px;">
-            This is an example of using <code>.overflow-hidden</code> on an element with set width and height dimensions.
-          </div>
+        <h1 class="bd-title" id="content">阴影</h1>
+        <p class="bd-lead">用于向 HTML 元素添加或删除阴影的工具类。</p>
+        <h2 id="examples">Examples</h2>
+        <p>在 Bootstrap 中，组件上的阴影（shadow）默认是被关闭的，但是通过开启 <code class="highlighter-rouge">$enable-shadows</code> 变量可以打开阴影效果，你还可以利用 <code class="highlighter-rouge">box-shadow</code> 工具类快速添加或删除阴影。还包括了对 <code class="highlighter-rouge">.shadow-none</code> 以及三种阴影尺寸（每种尺寸都有相对应的变量）的支持。</p>
+        <div class="bd-example">
+          <div class="shadow-none p-3 mb-5 bg-light rounded">无阴影</div>
+          <div class="shadow-sm p-3 mb-5 bg-white rounded">小阴影</div>
+          <div class="shadow p-3 mb-5 bg-white rounded">一般阴影</div>
+          <div class="shadow-lg p-3 mb-5 bg-white rounded">大阴影</div>
         </div>
-        <div class="highlight">
-          <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-auto"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-hidden"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre>
-        </div>
-        <p>Using Sass variables, you may customize the overflow utilities by changing the <code class="highlighter-rouge">$overflows</code> variable in <code class="highlighter-rouge">_variables.scss</code>.</p>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"shadow-none p-3 mb-5 bg-light rounded"</span><span class="nt">&gt;</span>无阴影<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"shadow-sm p-3 mb-5 bg-white rounded"</span><span class="nt">&gt;</span>小阴影<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"shadow p-3 mb-5 bg-white rounded"</span><span class="nt">&gt;</span>一般阴影<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"shadow-lg p-3 mb-5 bg-white rounded"</span><span class="nt">&gt;</span>大阴影<span class="nt">&lt;/div&gt;</span></code></pre></figure>
       </div>
     </div>
   </div>
