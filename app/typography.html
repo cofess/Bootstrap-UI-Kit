@@ -5,14 +5,15 @@
 {% block title %}{{ global.title }} | Typography{% endblock %}
 <!-- 面包屑导航 -->
 {% block breadcrumb %}
-<section class="page-header">
+<!-- <section class="page-header">
   <div class="container">
     <h1 class="page-title">Typography</h1>
   </div>
-</section>
+</section> -->
 {% endblock %}
 <!-- 主体内容 -->
 {% block content %}
+{% include "_includes/_parts/utilities_vertical-align.html" %}
 <div class="container">
   <div class="card">
     <div class="card-body">
