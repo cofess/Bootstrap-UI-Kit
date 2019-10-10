@@ -2,7 +2,7 @@
 <!-- 模版 -->
 {% extends '_layouts/application.html' %}
 <!-- 页面标题 -->
-{% block title %}{{ global.title }} | Text{% endblock %}
+{% block title %}{{ global.title }} | Tables{% endblock %}
 <!-- Custom Style -->
 {% block style %}
 <style>
@@ -16,12 +16,11 @@
 {% block breadcrumb %}
 <!-- <section class="page-header">
   <div class="container">
-    <h1 class="page-title">文本<small class="ml-2">Text</small></h1>
+    <h1 class="page-title">表格<small class="ml-2">Tables</small></h1>
   </div>
 </section> -->
 {% endblock %}
 <!-- 主体内容 -->
 {% block content %}
-{% include "_includes/_parts/utilities_text.html" %}
-{% include "_includes/_parts/utilities_vertical-align.html" %}
+{% include "_includes/_parts/components_tables.html" %}
 {% endblock %}
