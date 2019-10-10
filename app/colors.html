@@ -76,6 +76,40 @@
 <!-- 主体内容 -->
 {% block content %}
 <div class="container">
+  <h4 class="heading-2 pb-4">Text colors</h4>
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="text-primary">.text-primary</p>
+          <p class="text-secondary">.text-secondary</p>
+          <p class="text-success">.text-success</p>
+          <p class="text-danger">.text-danger</p>
+          <p class="text-warning">.text-warning</p>
+          <p class="text-info">.text-info</p>
+          <p class="text-light bg-dark">.text-light</p>
+          <p class="text-dark">.text-dark</p>
+          <p class="text-body">.text-body</p>
+          <p class="text-muted">.text-muted</p>
+          <p class="text-white bg-dark">.text-white</p>
+          <p class="text-black-50">.text-black-50</p>
+          <p class="text-white-50 bg-dark">.text-white-50</p>
+        </div>
+        <div class="col-md-6">
+          <p><a href="#" class="text-primary">Primary link</a></p>
+          <p><a href="#" class="text-secondary">Secondary link</a></p>
+          <p><a href="#" class="text-success">Success link</a></p>
+          <p><a href="#" class="text-danger">Danger link</a></p>
+          <p><a href="#" class="text-warning">Warning link</a></p>
+          <p><a href="#" class="text-info">Info link</a></p>
+          <p><a href="#" class="text-light bg-dark">Light link</a></p>
+          <p><a href="#" class="text-dark">Dark link</a></p>
+          <p><a href="#" class="text-muted">Muted link</a></p>
+          <p><a href="#" class="text-white bg-dark">White link</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
   <h4 class="heading-2 pb-4">Contextual colors</h4>
   <div class="row">
     <div class="col-md-3">
@@ -130,6 +164,12 @@
       <div class="color-swatch">
         <div class="color-swatch--bg bg-white"></div>
         <h6 class="color-swatch--title">White</h6>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="color-swatch">
+        <div class="color-swatch--bg bg-transparent"></div>
+        <h6 class="color-swatch--title">Transparent</h6>
       </div>
     </div>
   </div>
@@ -423,6 +463,22 @@
     </div>
   </div>
   <h4 class="heading-2 pb-4 mt-2">Gradients</h4>
+  <div class="card">
+    <div class="card-body">
+      <h5 id="background-gradient"><span class="bd-content-title">Background gradient<a class="anchorjs-link " href="#background-gradient" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></span></h5>
+      <p>When <code class="highlighter-rouge">$enable-gradients</code> is set to <code class="highlighter-rouge">true</code> (default is <code class="highlighter-rouge">false</code>), you can use <code class="highlighter-rouge">.bg-gradient-</code> utility classes. <a href="/docs/4.3/getting-started/theming/#sass-options">Learn about our Sass options</a> to enable these classes and more.</p>
+      <ul>
+        <li><code class="highlighter-rouge">.bg-gradient-primary</code></li>
+        <li><code class="highlighter-rouge">.bg-gradient-secondary</code></li>
+        <li><code class="highlighter-rouge">.bg-gradient-success</code></li>
+        <li><code class="highlighter-rouge">.bg-gradient-danger</code></li>
+        <li><code class="highlighter-rouge">.bg-gradient-warning</code></li>
+        <li><code class="highlighter-rouge">.bg-gradient-info</code></li>
+        <li><code class="highlighter-rouge">.bg-gradient-light</code></li>
+        <li><code class="highlighter-rouge">.bg-gradient-dark</code></li>
+      </ul>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-3">
       <div class="color-swatch">
