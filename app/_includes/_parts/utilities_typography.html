@@ -1,4 +1,4 @@
-<section class="section-opacity">
+<section>
   <div class="container">
     <div class="card">
       <div class="card-header">
@@ -281,6 +281,18 @@
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-inline-item"</span><span class="nt">&gt;</span>Nulla volutpat<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></figure>
         <h3 id="description-list-alignment">Description list alignment</h3>
+        <p>For simpler styling, clear hierarchy, and better spacing, description lists have updated <code class="highlighter-rouge">margin</code>s. <code class="highlighter-rouge">&lt;dd&gt;</code>s reset <code class="highlighter-rouge">margin-left</code> to <code class="highlighter-rouge">0</code> and add <code class="highlighter-rouge">margin-bottom: .5rem</code>. <code class="highlighter-rouge">&lt;dt&gt;</code>s are <strong>bolded</strong>.</p>
+        <div class="example">
+          <dl>
+            <dt>Description lists</dt>
+            <dd>A description list is perfect for defining terms.</dd>
+            <dt>Euismod</dt>
+            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem.</dd>
+            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+            <dt>Malesuada porta</dt>
+            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+          </dl>
+        </div>
         <p>Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a <code class="highlighter-rouge">.text-truncate</code> class to truncate the text with an ellipsis.</p>
         <div class="example">
           <dl class="row">
@@ -334,6 +346,62 @@
         <p>To support
           <abbr title="Responsive font sizes">RFS</abbr>, we use a Sass mixin to replace our normal <code class="highlighter-rouge">font-size</code> properties. Responsive font sizes will be compiled into <code class="highlighter-rouge">calc()</code> functions with a mix of <code class="highlighter-rouge">rem</code> and viewport units to enable the responsive scaling behavior. More about
           <abbr title="Responsive font sizes">RFS</abbr> and its configuration can be found on its <a href="https://github.com/twbs/rfs">GitHub repository</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Misc elements</h3>
+      </div>
+      <div class="card-body">
+        <h2 id="misc-elements">Misc elements</h2>
+        <h3 id="address">Address</h3>
+        <p>The <code class="highlighter-rouge">&lt;address&gt;</code> element is updated to reset the browser default <code class="highlighter-rouge">font-style</code> from <code class="highlighter-rouge">italic</code> to <code class="highlighter-rouge">normal</code>. <code class="highlighter-rouge">line-height</code> is also now inherited, and <code class="highlighter-rouge">margin-bottom: 1rem</code> has been added. <code class="highlighter-rouge">&lt;address&gt;</code>s are for presenting contact information for the nearest ancestor (or an entire body of work). Preserve formatting by ending lines with <code class="highlighter-rouge">&lt;br&gt;</code>.</p>
+        <div class="example">
+          <address>
+            <strong>Twitter, Inc.</strong>
+            <br /> 1355 Market St, Suite 900
+            <br /> San Francisco, CA 94103
+            <br />
+            <abbr title="Phone">P:</abbr> (123) 456-7890
+          </address>
+          <address>
+            <strong>Full Name</strong>
+            <br />
+            <a href="mailto:first.last@example.com">first.last@example.com</a>
+          </address>
+        </div>
+        <h3 id="blockquote">Blockquote</h3>
+        <p>The default <code class="highlighter-rouge">margin</code> on blockquotes is <code class="highlighter-rouge">1em 40px</code>, so we reset that to <code class="highlighter-rouge">0 0 1rem</code> for something more consistent with other elements.</p>
+        <div class="example">
+          <blockquote class="blockquote">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in
+              <cite title="Source Title">Source Title</cite>
+            </footer>
+          </blockquote>
+        </div>
+        <h3 id="inline-elements">Inline elements</h3>
+        <p>The <code class="highlighter-rouge">&lt;abbr&gt;</code> element receives basic styling to make it stand out amongst paragraph text.</p>
+        <div class="example">
+          Nulla
+          <abbr title="attribute">attr</abbr> vitae elit libero, a pharetra augue.
+        </div>
+        <h3 id="summary">Summary</h3>
+        <p>The default <code class="highlighter-rouge">cursor</code> on summary is <code class="highlighter-rouge">text</code>, so we reset that to <code class="highlighter-rouge">pointer</code> to convey that the element can be interacted with by clicking on it.</p>
+        <div class="example">
+          <details>
+            <summary>Some details</summary>
+            <p>More info about the details.</p>
+          </details>
+          <details open="">
+            <summary>Even more details</summary>
+            <p>Here are even more details about the details.</p>
+          </details>
+        </div>
       </div>
     </div>
   </div>
