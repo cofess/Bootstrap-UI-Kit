@@ -14,13 +14,12 @@ require.config({
     'bootstrap': ['assets/js/lib/bootstrap.bundle.min', 'https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js'],
     'smartmenus': 'assets/js/vendors/jquery.smartmenus',
     'sticky': 'assets/js/vendors/sticky-sidebar.min',
-    'blazy': 'assets/js/vendors/blazy.min',
     'royalslider': 'assets/js/vendors/jquery.royalslider.min',
     'superslides': 'assets/js/vendors/jquery.superslides.min',
     'fancybox': 'assets/js/vendors/jquery.fancybox.min',
     'owl.carousel': 'assets/js/vendors/owl.carousel',
-    'toTop': 'assets/js/vendors/jquery.toTop',
     'selectize': 'assets/js/vendors/selectize.min',
+    'plugin': 'assets/js/plugin.min',
     'core': 'assets/js/application',
   },
   map: {
@@ -56,6 +55,9 @@ require.config({
       dpes: ['jquery']
     },
     'toTop': {
+      dpes: ['jquery']
+    },
+    'plugin': {
       dpes: ['jquery']
     },
     'core': {

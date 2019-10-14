@@ -90,9 +90,9 @@ require(['jquery'], function($) {
   });
 });
 
-
-// 图片延迟加载
-require(['blazy'], function($) {
+require(['plugin'], function($) {
+  console.log("plugin Loaded :)");
+  // 图片延迟加载
   $(function() {
     var bLazy = new Blazy({
       selector: ".bs-lazy,.bs-lazy-iframe-wrapper iframe,img[data-src],iframe[data-src]",
@@ -106,6 +106,13 @@ require(['blazy'], function($) {
           element.className = element.className.replace("b-load-ready", "");
         }, 200);
       }
+    });
+  });
+  // 返回顶部
+  $(function() {
+    $(".js-toTop").toTop({
+      autohide: true,
+      position: false
     });
   });
 });
@@ -165,14 +172,3 @@ require(['jquery', 'fancybox']);
 //     });
 //   });
 // });
-
-// 返回顶部
-require(['jquery', 'toTop'], function($) {
-  console.log("toTop Loaded :)");
-  $(function() {
-    $(".js-toTop").toTop({
-      autohide: true,
-      position: false
-    });
-  });
-});
