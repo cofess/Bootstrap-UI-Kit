@@ -1,0 +1,9 @@
+@each $size-name, $size in $sizes-percentage {
+  .px-#{$size-name} { padding-left: $size !important; padding-right: $size !important; }
+  .py-#{$size-name} { padding-top: $size !important; padding-bottom: $size !important; }
+  .pl-#{$size-name} { padding-left: $size !important; }
+  .pr-#{$size-name} { padding-right: $size !important; }
+  .pt-#{$size-name} { padding-top: $size !important; }
+  .pb-#{$size-name} { padding-bottom: $size !important; }
+}
+

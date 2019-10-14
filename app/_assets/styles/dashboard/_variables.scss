@@ -292,7 +292,9 @@ $size-max-spacers: (
 $sizes-percentage: (
   1: 1%,
   25: 25%,
+  33: calc(100% / 3),
   50: 50%,
+  66: calc((100% / 3) * 2),
   75: 75%,
   100: 100%,
   auto: auto

@@ -1,0 +1,35 @@
+{# 
+  Nunjucks Templating! 
+  Homepage: https://mozilla.github.io/nunjucks/ 
+  Docs: https://mozilla.github.io/nunjucks/api.html 
+#}
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+<!-- 页面标题 -->
+{% block title %}{{ global.title }} | Img holder{% endblock %}
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Img holder</h1>
+  </div>
+</section>
+{% endblock %}
+<!-- 主体内容 -->
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="img-holder pb-50">
+        <img class="w-100 b-lazy" width="360" height="180" data-src="../assets/images/demo/adrian-infernus-281832-500.jpg">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="img-holder no_thumbnail pb-50"></div>
+    </div>
+    <div class="col-md-4">
+      <div class="img-background b-lazy" data-src="../assets/images/demo/mahkeo-222765-500.jpg"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}

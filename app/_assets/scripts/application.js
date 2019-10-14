@@ -90,6 +90,27 @@ require(['jquery'], function($) {
   });
 });
 
+
+// 图片延迟加载
+require(['blazy'], function($) {
+  $(function() {
+    var bLazy = new Blazy({
+      selector: ".bs-lazy,.bs-lazy-iframe-wrapper iframe,img[data-src],iframe[data-src]",
+      success: function(element) {
+        element.className = element.className + " b-load-ready", setTimeout(function() {
+          // We want to remove the loader gif now.
+          // First we find the parent container
+          // then we remove the "loading" class which holds the loader image
+          var parent = element.parentNode;
+          parent.className = parent.className.replace(/\bloading\b/, '');
+          element.className = element.className.replace("b-load-ready", "");
+        }, 200);
+      }
+    });
+  });
+});
+
+
 //轮播图
 require(['jquery', 'royalslider'], function($) {
   console.log("royalslider Loaded :)");

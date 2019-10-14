@@ -14,6 +14,7 @@ require.config({
     'bootstrap': ['assets/js/lib/bootstrap.bundle.min', 'https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js'],
     'smartmenus': 'assets/js/vendors/jquery.smartmenus',
     'sticky': 'assets/js/vendors/sticky-sidebar.min',
+    'blazy': 'assets/js/vendors/blazy.min',
     'royalslider': 'assets/js/vendors/jquery.royalslider.min',
     'superslides': 'assets/js/vendors/jquery.superslides.min',
     'fancybox': 'assets/js/vendors/jquery.fancybox.min',
