@@ -1,0 +1,52 @@
+{# 
+  Nunjucks Templating! 
+  Homepage: https://mozilla.github.io/nunjucks/ 
+  Docs: https://mozilla.github.io/nunjucks/api.html 
+#}
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+<!-- 页面标题 -->
+{% block title %}{{ global.title }} | Blank Template{% endblock %}
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Page Title</h1>
+  </div>
+</section>
+{% endblock %}
+<!-- 主体内容 -->
+{% block content %}
+<section>
+  <div class="container">
+    <div class="row gutter-lg">
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="counter">
+          <h3 class="title"><span class="timer display-4" data-to="13" data-speed="1500">0</span><small class="ml-1">years</small></h3>
+          <p class="text">Founded in 2004.More Than 14 years OEM Service.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="counter">
+          <h3 class="title"><span class="timer display-4" data-to="500" data-speed="1500">0</span><small class="ml-1">+</small></h3>
+          <p class="text">Update more than 500 test equipments every year.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="counter">
+          <h3 class="title"><span class="timer display-4" data-to="100" data-speed="1500">0</span><small class="ml-1">+</small></h3>
+          <p class="text">Exported to more than 100 countries worldwide.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="counter">
+          <h3 class="title"><span class="timer display-4" data-to="80" data-speed="1500">0</span><small class="ml-1">+</small></h3>
+          <p class="text">More than 48 agents in the world.
+            <br/>Build your new business with us.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

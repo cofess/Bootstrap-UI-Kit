@@ -1,0 +1,38 @@
+{# 
+  Nunjucks Templating! 
+  Homepage: https://mozilla.github.io/nunjucks/ 
+  Docs: https://mozilla.github.io/nunjucks/api.html 
+#}
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+<!-- 页面标题 -->
+{% block title %}{{ global.title }} | Blank Template{% endblock %}
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Page Title</h1>
+  </div>
+</section>
+{% endblock %}
+<!-- 主体内容 -->
+{% block content %}
+<section>
+  <div class="container">
+    <div class="waterfall-grid" data-margin="10" data-responsive='[{"1200": 5,"940": 4,"520": 2,"400": 2}]'>
+      <div class="item">
+        <a data-fancybox="group" href="../assets/images/demo/adrian-infernus-281832-500.jpg">
+          <img src="../assets/images/demo/adrian-infernus-281832-500.jpg">
+        </a>
+      </div>
+      <!--/ item -->
+      <div class="item">
+        <a data-fancybox="group" href="../assets/images/demo/adrian-infernus-281832-500.jpg">
+          <img src="../assets/images/demo/adrian-infernus-281832-500.jpg">
+        </a>
+      </div>
+      <!--/ item -->
+    </div>
+  </div>
+</section>
+{% endblock %}
