@@ -134,8 +134,31 @@ require(['plugin'], function($) {
     });
     wow.init();
   });
-});
 
+  // 瀑布流
+  $(function() {
+    $('.waterfall-grid').each(function() {
+      var container = $(this).context.className;
+      var margin = ($(this).data('margin')) ? $(this).data('margin') : 15;
+      var breakAt = ($(this).data('responsive')) ? $(this).data('responsive') : [{ "1200": 4, "940": 3, "520": 2, "400": 2 }];
+      breakAt = breakAt[0];
+      console.log($(this).data('responsive')[0]);
+      console.log('.' + container, margin, breakAt);
+
+      var masonry = new Macy({
+        container: '.' + container,
+        trueOrder: false,
+        waitForImages: false,
+        useOwnImageLoader: false,
+        debug: false,
+        mobileFirst: true,
+        columns: 1,
+        margin: margin,
+        breakAt: breakAt
+      });
+    });
+  });
+});
 
 //轮播图
 require(['jquery', 'royalslider'], function($) {
