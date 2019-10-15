@@ -29,40 +29,17 @@ require.config({
   },
   //第三方模块---未使用define来申明模块
   shim: {
-    jQuery: {
+    jquery: {
       exports: '$'
     },
-    'bootstrap': {
-      dpes: ['jquery'],
-      // init: function() {
-      //   // bootstrap tooltip
-      //   $('[data-toggle="tooltip"]').tooltip();
-      // }
-    },
-    'royalslider': {
-      dpes: ['jquery']
-    },
-    'sticky': {
-      dpes: ['jquery']
-    },
-    'superslides': {
-      dpes: ['jquery']
-    },
-    'fancybox': {
-      dpes: ['jquery']
-    },
-    'smartmenus': {
-      dpes: ['jquery']
-    },
-    'toTop': {
-      dpes: ['jquery']
-    },
-    'plugin': {
-      dpes: ['jquery']
-    },
-    'core': {
-      dpes: ['jquery', 'bootstrap']
-    },
+    'bootstrap': ['jquery'],
+    'royalslider': ['jquery'],
+    'sticky': ['jquery'],
+    'superslides': ['jquery'],
+    'fancybox': ['jquery'],
+    'smartmenus': ['jquery'],
+    'plugin': ['jquery'],
+    'core': ['bootstrap', 'jquery'],
   },
   waitSeconds: 0,
   // 加上时间戳
