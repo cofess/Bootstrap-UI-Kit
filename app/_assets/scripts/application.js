@@ -165,44 +165,46 @@ require(['plugin'], function($) {
 });
 
 //轮播图
-require(['jquery', 'royalslider'], function($) {
-  console.log("royalslider Loaded :)");
-  $(function() {
-    var slider = $('.full-width-slider').royalSlider({
-      arrowsNav: false,
-      arrowsNavAutoHide: false,
-      arrowsNavHideOnTouch: true,
-      // usePreloader: true,
-      loop: true,
-      keyboardNavEnabled: true,
-      controlsInside: false,
-      imageScaleMode: 'fill',
-      imageAlignCenter: true,
-      autoScaleSlider: true,
-      autoScaleSliderWidth: 1920,
-      autoScaleSliderHeight: 1040,
-      controlNavigation: 'bullets',
-      thumbsFitInViewport: false,
-      navigateByClick: false,
-      startSlideId: 0,
-      slidesSpacing: 0,
-      transitionSpeed: 1000,
-      autoPlay: {
-        // autoplay options go gere
-        enabled: true,
-        pauseOnHover: true
-      },
-      transitionType: 'move',
-      globalCaption: false,
-      deeplinking: {
-        enabled: true,
-        change: false
-      },
-      imgWidth: 1920,
-      imgHeight: 1040
-    }).data("royalSlider");
+if ($(".full-width-slider").length) {
+  require(['jquery', 'royalslider'], function($) {
+    console.log("royalslider Loaded :)");
+    $(function() {
+      var slider = $('.full-width-slider').royalSlider({
+        arrowsNav: false,
+        arrowsNavAutoHide: false,
+        arrowsNavHideOnTouch: true,
+        // usePreloader: true,
+        loop: true,
+        keyboardNavEnabled: true,
+        controlsInside: false,
+        imageScaleMode: 'fill',
+        imageAlignCenter: true,
+        autoScaleSlider: true,
+        autoScaleSliderWidth: 1920,
+        autoScaleSliderHeight: 1040,
+        controlNavigation: 'bullets',
+        thumbsFitInViewport: false,
+        navigateByClick: false,
+        startSlideId: 0,
+        slidesSpacing: 0,
+        transitionSpeed: 1000,
+        autoPlay: {
+          // autoplay options go gere
+          enabled: true,
+          pauseOnHover: true
+        },
+        transitionType: 'move',
+        globalCaption: false,
+        deeplinking: {
+          enabled: true,
+          change: false
+        },
+        imgWidth: 1920,
+        imgHeight: 1040
+      }).data("royalSlider");
+    });
   });
-});
+}
 
 // fancybox
 require(['fancybox']);
