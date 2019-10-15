@@ -51,17 +51,19 @@ require(['jquery'], function($) {
 });
 
 // 导航菜单
-require(["jquery", "smartmenus"], function($) {
-  console.log("SmartMenus Loaded :)");
-  // jquery.smartemnus.min.js has been loaded so init the menu
-  $(function() {
-    $('.sm').smartmenus({
-      mainMenuSubOffsetX: -1,
-      subMenusSubOffsetX: 0,
-      subMenusSubOffsetY: -1
+if ($('.sm').length) {
+  require(["smartmenus"], function($) {
+    console.log("SmartMenus Loaded :)");
+    // jquery.smartemnus.min.js has been loaded so init the menu
+    $(function() {
+      $('.sm').smartmenus({
+        mainMenuSubOffsetX: -1,
+        subMenusSubOffsetX: 0,
+        subMenusSubOffsetY: -1
+      });
     });
   });
-});
+}
 
 // 页面滚动，导航菜单固定在视窗顶部
 // require(['jquery', 'sticky'], function($) {
@@ -203,16 +205,18 @@ require(['jquery', 'royalslider'], function($) {
 });
 
 // fancybox
-require(['jquery', 'fancybox']);
+require(['fancybox']);
 
 // 图片轮播
-// require(['jquery', 'owl.carousel'], function($) {
-//   console.log("owl.carousel Loaded :)");
-//   $(function() {
-//     var owl = $(".owl-carousel");
-//     owl.owlCarousel({
-//       lazyLoad: true,
-//       stopOnHover: true
-//     });
-//   });
-// });
+if ($(".owl-carousel").length) {
+  require(['owl.carousel'], function($) {
+    console.log("owl.carousel Loaded :)");
+    $(function() {
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        lazyLoad: true,
+        stopOnHover: true
+      });
+    });
+  });
+}

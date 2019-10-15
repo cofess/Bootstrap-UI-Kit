@@ -37,6 +37,7 @@ require.config({
     'sticky': ['jquery'],
     'superslides': ['jquery'],
     'fancybox': ['jquery'],
+    'owl.carousel': ['jquery'],
     'smartmenus': ['jquery'],
     'plugin': ['jquery'],
     'core': ['bootstrap', 'jquery'],
