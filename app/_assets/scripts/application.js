@@ -187,15 +187,28 @@ if ($(".full-width-slider").length) {
 // fancybox
 require(['fancybox']);
 
-// 图片轮播
+/**
+ * 图片轮播
+ * http://codetheory.london/multiple-owlcarousel-init-based-on-data-attributes/
+ */
 if ($(".owl-carousel").length) {
   require(["jquery", 'owl.carousel'], function($) {
     console.log("owl.carousel Loaded :)");
     $(function() {
-      var owl = $(".owl-carousel");
-      owl.owlCarousel({
-        lazyLoad: true,
-        stopOnHover: true
+      $('.owl-carousel').each(function() {
+        var $carousel = $(this);
+        $carousel.owlCarousel({
+          dots: false,
+          items: $carousel.data("items"),
+          slideBy: $carousel.data("slideby"),
+          center: $carousel.data("center"),
+          loop: $carousel.data("loop"),
+          margin: $carousel.data("margin"),
+          nav: $carousel.data("nav"),
+          autoplay: $carousel.data("autoplay"),
+          autoplayTimeout: $carousel.data("autoplay-timeout"),
+          navText: ['<span class="icon icon-arrow-left-s-line"><span>', '<span class="icon icon-arrow-right-s-line"></span>']
+        });
       });
     });
   });
