@@ -110,7 +110,9 @@ require(['plugin'], function($) {
   });
 
   // match height
-  // $('[data-toggle="match-height"]').matchHeight();
+  $(function() {
+    $('[data-toggle="match-height"]').matchHeight();
+  });
 
   // 返回顶部
   $(function() {
