@@ -80,8 +80,8 @@ if ($('.sm').length) {
 
 require(['plugin'], function($) {
   console.log("plugin Loaded :)");
-  // 图片延迟加载
   $(function() {
+    // 图片延迟加载
     var bLazy = new Blazy({
       selector: ".bs-lazy,.bs-lazy-iframe-wrapper iframe,img[data-src],iframe[data-src]",
       success: function(element) {
@@ -95,23 +95,17 @@ require(['plugin'], function($) {
         }, 200);
       }
     });
-  });
 
-  // match height
-  $(function() {
+    // match height
     $('[data-toggle="match-height"]').matchHeight();
-  });
 
-  // 返回顶部
-  $(function() {
+    // 返回顶部
     $(".js-toTop").toTop({
       autohide: true,
       position: false
     });
-  });
 
-  // 页面加载动画
-  $(function() {
+    // 页面加载动画
     wow = new WOW({
       boxClass: 'wow',
       animateClass: 'animated',
@@ -123,10 +117,8 @@ require(['plugin'], function($) {
       }
     });
     wow.init();
-  });
 
-  // 瀑布流
-  $(function() {
+    // 瀑布流
     $('.waterfall-grid').each(function() {
       var container = $(this).context.className;
       var margin = ($(this).data('margin')) ? $(this).data('margin') : 15;
