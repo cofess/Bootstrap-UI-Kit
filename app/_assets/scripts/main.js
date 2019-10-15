@@ -29,10 +29,10 @@ require.config({
   },
   //第三方模块---未使用define来申明模块
   shim: {
-    jquery: {
+    'jquery': {
       exports: '$'
     },
-    'bootstrap': ['jquery'],
+    'bootstrap': { deps: ['jquery'], exports: '$' },
     'royalslider': ['jquery'],
     'sticky': ['jquery'],
     'superslides': ['jquery'],

@@ -52,7 +52,7 @@ require(['jquery'], function($) {
 
 // 导航菜单
 if ($('.sm').length) {
-  require(["smartmenus"], function($) {
+  require(["jquery", "smartmenus"], function($) {
     console.log("SmartMenus Loaded :)");
     // jquery.smartemnus.min.js has been loaded so init the menu
     $(function() {
@@ -77,20 +77,6 @@ if ($('.sm').length) {
 //     });
 //   });
 // });
-
-// 导航菜单鼠标移入移出
-require(['jquery'], function($) {
-  $(function() {
-    $(".header").mouseover(function() {
-      var s = event.fromElement || event.relatedTarget;
-      if (!this.contains(s)) { $(this).addClass('nav-hovered'); }
-    });
-    $(".header").mouseout(function() {
-      var s = event.toElement || event.relatedTarget;
-      if (!this.contains(s)) { $(this).removeClass('nav-hovered'); }
-    });
-  });
-});
 
 require(['plugin'], function($) {
   console.log("plugin Loaded :)");
@@ -211,7 +197,7 @@ require(['fancybox']);
 
 // 图片轮播
 if ($(".owl-carousel").length) {
-  require(['owl.carousel'], function($) {
+  require(["jquery", 'owl.carousel'], function($) {
     console.log("owl.carousel Loaded :)");
     $(function() {
       var owl = $(".owl-carousel");
