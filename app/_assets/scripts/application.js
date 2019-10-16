@@ -78,12 +78,12 @@ if ($('.sm').length) {
 //   });
 // });
 
-require(['plugin'], function($) {
-  console.log("plugin Loaded :)");
+// 图片延迟加载
+require(['blazy'], function(Blazy) {
+  console.log("blazy Loaded :)");
   $(function() {
-    // 图片延迟加载
     var bLazy = new Blazy({
-      selector: ".bs-lazy,.bs-lazy-iframe-wrapper iframe,img[data-src],iframe[data-src]",
+      selector: ".img-background,.bs-lazy,.bs-lazy-iframe-wrapper iframe,img[data-src],iframe[data-src]",
       success: function(element) {
         element.className = element.className + " b-load-ready", setTimeout(function() {
           // We want to remove the loader gif now.
@@ -95,30 +95,21 @@ require(['plugin'], function($) {
         }, 200);
       }
     });
+  });
+});
 
-    // match height
+// match height
+require(['jquery', 'matchHeight'], function($) {
+  console.log("matchHeight Loaded :)");
+  $(function() {
     $('[data-toggle="match-height"]').matchHeight();
+  });
+});
 
-    // 返回顶部
-    $(".js-toTop").toTop({
-      autohide: true,
-      position: false
-    });
-
-    // 页面加载动画
-    wow = new WOW({
-      boxClass: 'wow',
-      animateClass: 'animated',
-      offset: 100,
-      mobile: false,
-      live: true,
-      callback: function(box) {
-        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">");
-      }
-    });
-    wow.init();
-
-    // 瀑布流
+// 瀑布流
+require(['macy'], function(Macy) {
+  console.log("macy Loaded :)");
+  $(function() {
     $('.waterfall-grid').each(function() {
       var container = $(this).context.className;
       var margin = ($(this).data('margin')) ? $(this).data('margin') : 15;
@@ -140,6 +131,39 @@ require(['plugin'], function($) {
       });
     });
   });
+});
+
+// 页面加载动画
+require(['wow'], function() {
+  console.log("wow Loaded :)");
+  $(function() {
+    var wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 100,
+      mobile: false,
+      live: true,
+      callback: function(box) {
+        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">");
+      }
+    });
+    wow.init();
+  });
+});
+
+// 返回顶部
+require(['jquery', 'toTop'], function($) {
+  console.log("toTop Loaded :)");
+  $(function() {
+    $(".js-toTop").toTop({
+      autohide: true,
+      position: false
+    });
+  });
+});
+
+require(['jquery', 'plugin'], function($) {
+  console.log("plugin Loaded :)");
 });
 
 //轮播图
@@ -185,7 +209,9 @@ if ($(".full-width-slider").length) {
 }
 
 // fancybox
-require(['fancybox']);
+require(['jquery', 'fancybox'], function($) {
+  console.log("fancybox Loaded :)");
+});
 
 /**
  * 图片轮播

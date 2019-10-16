@@ -12,6 +12,15 @@ require.config({
     'animate-enhanced': 'assets/js/lib/jquery.animate-enhanced.min',
     'hammer': 'assets/js/lib/hammer.min',
     'bootstrap': ['assets/js/lib/bootstrap.bundle.min', 'https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js'],
+    // core
+    'blazy': 'assets/js/core/blazy.min',
+    'matchHeight': 'assets/js/core/jquery.matchHeight',
+    'slimscroll': 'assets/js/core/jquery.slimscroll.min',
+    'toTop': 'assets/js/core/jquery.toTop',
+    'macy': 'assets/js/core/macy',
+    'validator': 'assets/js/core/validator.min',
+    'wow': 'assets/js/core/wow.min',
+    // vendors
     'smartmenus': 'assets/js/vendors/jquery.smartmenus',
     'sticky': 'assets/js/vendors/sticky-sidebar.min',
     'royalslider': 'assets/js/vendors/jquery.royalslider.min',
