@@ -1,0 +1,13 @@
+.divider {
+  pointer-events: none;
+  z-index: 0;
+}
+
+.divider svg {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100vw;
+  min-width: 800px;
+  z-index: 2;
+}

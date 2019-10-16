@@ -1,0 +1,67 @@
+// skew background ground
+.bg-skew {
+  padding-top: 0px;
+  position: relative;
+  z-index: 10;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 320px;
+    top: -44px;
+    background: white;
+    -webkit-transform: skewY(-4deg);
+    -ms-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-skew:before {
+    top: -68px;
+  }
+}
+
+.bg-primary {
+  &.bg-skew:before {
+    @extend .bg-primary;
+  }
+}
+
+.bg-secondary {
+  &.bg-skew:before {
+    @extend .bg-secondary;
+  }
+}
+
+.bg-success {
+  &.bg-skew:before {
+    @extend .bg-success;
+  }
+}
+
+.bg-info {
+  &.bg-skew:before {
+    @extend .bg-info;
+  }
+}
+
+.bg-warning {
+  &.bg-skew:before {
+    @extend .bg-warning;
+  }
+}
+
+.bg-danger {
+  &.bg-skew:before {
+    @extend .bg-danger;
+  }
+}
+
+.bg-dark {
+  &.bg-skew:before {
+    @extend .bg-dark;
+  }
+}
