@@ -97,7 +97,7 @@
         <p>Add a dismiss button and the <code class="highlighter-rouge">.alert-dismissible</code> class, which adds extra padding to the right of the alert and positions the <code class="highlighter-rouge">.close</code> button. On the dismiss button, add the <code class="highlighter-rouge">data-dismiss="alert"</code> attribute, which triggers the JavaScript functionality. Be sure to use the <code class="highlighter-rouge">&lt;button&gt;</code> element with it for proper behavior across all devices.</p>
         <div class="example">
           <div class="alert alert-warning alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert"></button>
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span></button>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </div>
         </div>
@@ -129,7 +129,7 @@
         <h3 id="alert-with-buttons">Alert with buttons</h3>
         <div class="example">
           <div class="alert alert-success alert-dismissible">
-            <button data-dismiss="alert" class="close"></button>
+            <button data-dismiss="alert" class="close"><span aria-hidden="true">×</span></button>
             <h4>Some Message</h4>
             <p>
               Lorem ipsum Minim ad pariatur eiusmod ea ut nulla aliqua est quis id dolore minim voluptate.

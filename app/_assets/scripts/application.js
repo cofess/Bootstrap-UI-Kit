@@ -9,6 +9,11 @@ require(['jquery', 'bootstrap'], function($) {
     $('[data-toggle="popover"]').popover({
       html: true
     });
+
+    /* toast */
+    $(".toast").toast({
+      autohide: false
+    }).toast("show");
   });
 });
 
