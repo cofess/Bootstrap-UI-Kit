@@ -167,15 +167,18 @@ if ($(".slimContent").length) {
   require(['jquery', 'slimscroll'], function($) {
     console.log("slimscroll Loaded :)");
     if (typeof $.fn.slimScroll != 'undefined') {
-      $(".slimContent").slimScroll({
-        height: "auto",
-        color: "#000",
-        size: "3px",
-        alwaysVisible: true,
-        railVisible: true,
-        touchScrollStep: 200,
-        railDraggable: true,
-        allowPageScroll: true
+      $(".slimContent").each(function() {
+        var $slimScroll = $(this);
+        $slimScroll.slimScroll({
+          height: $slimScroll.data("height") ? $slimScroll.data("height") : "auto",
+          color: "#000",
+          size: "3px",
+          alwaysVisible: $slimScroll.data("always-visible") ? $slimScroll.data("always-visible") : false,
+          railVisible: true,
+          touchScrollStep: $slimScroll.data("touch-scroll-step") ? $slimScroll.data("touch-scroll-step") : 200,
+          railDraggable: true,
+          allowPageScroll: $slimScroll.data("allow-page-scroll") ? $slimScroll.data("allow-page-scroll") : false
+        });
       });
     }
   });
