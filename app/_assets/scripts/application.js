@@ -162,6 +162,25 @@ require(['jquery', 'toTop'], function($) {
   });
 });
 
+// slimscroll
+if ($(".slimContent").length) {
+  require(['jquery', 'slimscroll'], function($) {
+    console.log("slimscroll Loaded :)");
+    if (typeof $.fn.slimScroll != 'undefined') {
+      $(".slimContent").slimScroll({
+        height: "auto",
+        color: "#000",
+        size: "3px",
+        alwaysVisible: true,
+        railVisible: true,
+        touchScrollStep: 200,
+        railDraggable: true,
+        allowPageScroll: true
+      });
+    }
+  });
+}
+
 require(['jquery', 'plugin'], function($) {
   console.log("plugin Loaded :)");
 });
