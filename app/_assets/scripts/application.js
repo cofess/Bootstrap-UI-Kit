@@ -198,15 +198,18 @@ if ($(".owl-carousel").length) {
       $('.owl-carousel').each(function() {
         var $carousel = $(this);
         $carousel.owlCarousel({
-          dots: false,
+          dots: $carousel.data("dots"),
           items: $carousel.data("items"),
           slideBy: $carousel.data("slideby"),
           center: $carousel.data("center"),
           loop: $carousel.data("loop"),
           margin: $carousel.data("margin"),
           nav: $carousel.data("nav"),
+          autoWidth: $carousel.data("autoWidth"),
           autoplay: $carousel.data("autoplay"),
           autoplayTimeout: $carousel.data("autoplay-timeout"),
+          lazyLoad: $carousel.data("lazyload"),
+          responsive: $carousel.data("responsive"),
           navText: ['<span class="icon icon-arrow-left-s-line"><span>', '<span class="icon icon-arrow-right-s-line"></span>']
         });
       });
