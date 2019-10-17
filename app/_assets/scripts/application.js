@@ -112,31 +112,26 @@ require(['jquery', 'matchHeight'], function($) {
 });
 
 // 瀑布流
-require(['macy'], function(Macy) {
-  console.log("macy Loaded :)");
-  $(function() {
+if ($(".waterfall-grid").length) {
+  require(['macy'], function(Macy) {
+    console.log("macy Loaded :)");
     $('.waterfall-grid').each(function() {
-      var container = $(this).context.className;
-      var margin = ($(this).data('margin')) ? $(this).data('margin') : 15;
-      var breakAt = ($(this).data('responsive')) ? $(this).data('responsive') : [{ "1200": 4, "940": 3, "520": 2, "400": 2 }];
-      breakAt = breakAt[0];
-      console.log($(this).data('responsive')[0]);
-      console.log('.' + container, margin, breakAt);
-
-      var masonry = new Macy({
-        container: '.' + container,
+      var $macy = $(this);
+      var container = $macy.context.className;
+      var macy = new Macy({
+        container: $macy.data('container') ? $macy.data('container') : '.' + container,
         trueOrder: false,
         waitForImages: false,
         useOwnImageLoader: false,
         debug: false,
         mobileFirst: true,
-        columns: 1,
-        margin: margin,
-        breakAt: breakAt
+        columns: $macy.data('columns') ? $macy.data('columns') : 4,
+        margin: $macy.data('margin') ? $macy.data('margin') : 15,
+        breakAt: $macy.data('responsive') ? $macy.data('responsive') : { "1200": 4, "940": 3, "520": 2, "400": 2 },
       });
     });
   });
-});
+}
 
 // 页面加载动画
 require(['wow'], function() {
