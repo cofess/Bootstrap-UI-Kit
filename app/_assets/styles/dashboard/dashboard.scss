@@ -32,6 +32,7 @@
 @import 'interface/divider';
 
 // Components
+@import 'components/nav';
 @import 'components/alert';
 @import 'components/tables';
 @import 'components/breadcrumb';
@@ -63,12 +64,10 @@
 @import 'layout/footer';
 @import 'layout/bottombar';
 
-@import 'nav';
 // @import 'close';
 
 @import 'image';
 @import 'social';
-@import 'maps';
 @import 'statuses';
 // @import 'charts';
 @import 'chips';
