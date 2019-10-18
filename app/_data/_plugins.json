@@ -1,0 +1,73 @@
+[{
+  "name": "Bootstrap",
+  "description": "Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.",
+  "url": "http://getbootstrap.com"
+}, {
+  "name": "jQuery",
+  "description": "jQuery is a fast, small, and feature-rich JavaScript library. ",
+  "url": "https://jquery.com"
+}, {
+  "name": "Material Design Icons",
+  "description": "Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project.",
+  "url": "https://materialdesignicons.com"
+}, {
+  "name": "Font Awesome",
+  "description": "",
+  "url": "https://fontawesome.com"
+}, {
+  "name": "Chartjs",
+  "description": "",
+  "url": "http://www.chartjs.org/"
+}, {
+  "name": "Jvectormap",
+  "description": "",
+  "url": "http://jvectormap.com/"
+}, {
+  "name": "Select2",
+  "description": "",
+  "url": "https://select2.org/"
+}, {
+  "name": "Input Mask",
+  "description": "",
+  "url": "https://github.com/igorescobar/jQuery-Mask-Plugin"
+}, {
+  "name": "Daterangepicker",
+  "description": "",
+  "url": "http://www.daterangepicker.com"
+}, {
+  "name": "Slim Scroll",
+  "description": "",
+  "url": "http://rocha.la/jQuery-slimScroll"
+}, {
+  "name": "NProgress",
+  "description": "",
+  "url": "http://ricostacruz.com/nprogress/"
+}, {
+  "name": "Ladda Button",
+  "description": "",
+  "url": "https://lab.hakim.se/ladda/"
+}, {
+  "name": "Popper.js",
+  "description": "",
+  "url": "https://popper.js.org"
+}, {
+  "name": "Malihu Custom Scrollbar",
+  "description": "",
+  "url": "https://github.com/malihu/malihu-custom-scrollbar-plugin"
+}, {
+  "name": "Owl Carousel 2",
+  "description": "",
+  "url": "https://github.com/OwlCarousel2/OwlCarousel2"
+}, {
+  "name": "Macy.js",
+  "description": "",
+  "url": "https://github.com/bigbite/macy.js"
+}, {
+  "name": "jquery.matchHeight.js",
+  "description": "",
+  "url": "https://github.com/liabru/jquery-match-height"
+}, {
+  "name": "Blazy",
+  "description": "",
+  "url": "https://github.com/dinbror/blazy"
+}]
