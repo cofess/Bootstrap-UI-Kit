@@ -6,6 +6,7 @@
 
 @import 'functions';
 @import 'variables';
+@import 'mixins';
 
 // Utilities
 @import 'utilities/utilities';
@@ -64,18 +65,18 @@
 @import 'layout/footer';
 @import 'layout/bottombar';
 
-@import 'image';
-@import 'social';
-@import 'statuses';
-// @import 'charts';
-@import 'chips';
-@import 'stamp';
-@import 'chat';
-@import 'syntax';
-@import 'infobox';
+@import 'other/image';
+@import 'other/social';
+@import 'other/statuses';
+// @import 'other/charts';
+@import 'other/chips';
+@import 'other/stamp';
+@import 'other/chat';
+@import 'other/syntax';
+@import 'other/infobox';
 
-// @import 'browser';
-@import 'payments';
+// @import 'other/browser';
+@import 'other/payments';
 
 @import 'vendors/sparkline';
 @import 'vendors/datatables';
