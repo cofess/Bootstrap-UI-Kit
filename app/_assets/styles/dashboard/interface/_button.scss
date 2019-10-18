@@ -32,6 +32,27 @@
 	border-radius: 0;
 }
 
+// Circle
+.btn-circle {
+  border-radius: 100%;
+  padding: 0;
+  width: 2.62rem;
+  height: 2.62rem;
+  line-height: 2.62rem;
+
+  &.btn-sm {
+    width: 1.94rem;
+    height: 1.94rem;
+    line-height: 1.94rem;
+  }
+
+  &.btn-lg {
+    width: 3.25rem;
+    height: 3.25rem;
+    line-height: 3.25rem;
+  }
+}
+
 @each $vendor, $color in $social-colors {
 	.btn-#{$vendor} {
 		@include button-variant($color, $color);
