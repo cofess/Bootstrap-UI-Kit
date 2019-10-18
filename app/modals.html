@@ -1,0 +1,36 @@
+{# 
+  Nunjucks Templating! 
+  Homepage: https://mozilla.github.io/nunjucks/ 
+  Docs: https://mozilla.github.io/nunjucks/api.html 
+#}
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+<!-- 页面标题 -->
+{% block title %}{{ global.title }} | Blank Template{% endblock %}
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Modal</h1>
+    <p class="bd-lead">Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+  </div>
+</section>
+{% endblock %}
+<!-- 主体内容 -->
+{% block content %}
+{% include "_includes/_parts/component_modals.html" %}
+{% endblock %}
+<!-- Custom JS SCRIPTS -->
+{% block script %}
+<script type="text/javascript">
+require(['jquery'], function($) {
+  $("#exampleModal").on("show.bs.modal", function(t) {
+    var e = $(t.relatedTarget);
+    var n = e.data("whatever");
+    var o = $(this);
+    o.find(".modal-title").text("New message to " + n);
+    o.find(".modal-body input").val(n)
+  });
+});
+</script>
+{% endblock %}
