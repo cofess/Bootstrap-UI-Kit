@@ -28,7 +28,6 @@
 @import 'core/utilities/utilities';
 @import 'core/utilities/reset';
 @import 'core/utilities/core';
-@import 'core/utilities/grid';
 @import 'core/utilities/type';
 @import 'core/utilities/colors';
 @import 'core/utilities/text';
@@ -39,6 +38,10 @@
 @import 'core/utilities/opacity';
 @import 'core/utilities/shadow';
 
+// layout
+@import 'core/layout/grid';
+@import 'core/layout/row-columns';
+
 // Interface
 @import 'core/interface/button';
 @import 'core/interface/badge';
@@ -47,10 +50,6 @@
 @import 'core/interface/tag';
 @import 'core/interface/bg-skew';
 @import 'core/interface/divider';
-
-// layout
-@import 'core/layout/row-columns';
-@import 'core/layout/gutter';
 
 // Components
 @import 'core/components/nav';
