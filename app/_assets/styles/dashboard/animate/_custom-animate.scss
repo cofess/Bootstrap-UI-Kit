@@ -1,0 +1,69 @@
+.brand-logo {
+  position: relative;
+  overflow: hidden;
+  transition-duration: .5s;
+}
+
+@media screen and (min-width: 900px) {
+  .brand-logo:before {
+    content: "";
+    position: absolute;
+    left: -665px;
+    top: -460px;
+    width: 220px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, .5);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: blink 1s ease-in 1s infinite;
+    -o-animation: blink 1s ease-in 1s infinite;
+    animation: blink 1s ease-in 1s infinite;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    left: -100px;
+    top: 0;
+  }
+  to {
+    left: 120px;
+    top: 100px;
+  }
+}
+
+@-o-keyframes blink {
+  0% {
+    left: -100px;
+    top: 0;
+  }
+  to {
+    left: 120px;
+    top: 100px;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    left: -100px;
+    top: 0;
+  }
+  to {
+    left: 120px;
+    top: 100px;
+  }
+}
+
+@keyframes blink {
+  0% {
+    left: -100px;
+    top: 0;
+  }
+  to {
+    left: 120px;
+    top: 100px;
+  }
+}
