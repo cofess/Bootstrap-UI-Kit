@@ -1,4 +1,10 @@
 {
+	"config": {
+		"theme_color": "#000000",
+		"author": "Cofess, cofess@foxmail.com",
+		"owner": "Cofess, cofess@foxmail.com",
+		"reply_to": "cofess@foxmail.com"
+	},
 	"fontawesome": [
 		"fa-500px",
 		"fa-address-book",
