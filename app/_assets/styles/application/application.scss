@@ -48,6 +48,10 @@
 @import 'core/interface/bg-skew';
 @import 'core/interface/divider';
 
+// layout
+@import 'core/layout/row-columns';
+@import 'core/layout/gutter';
+
 // Components
 @import 'core/components/nav';
 @import 'core/components/alert';

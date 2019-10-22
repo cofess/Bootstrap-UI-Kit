@@ -1,0 +1,226 @@
+[class*="column-"] {
+  .col {
+    flex-basis: auto;
+    flex-grow: unset;
+  }
+}
+
+.column-1 {
+  .col {
+    width: 100%;
+  }
+}
+
+.column-2 {
+  .col {
+    width: 50%;
+  }
+}
+
+.column-3 {
+  .col {
+    width: 33.33333%;
+  }
+}
+
+.column-4 {
+  .col {
+    width: 25%;
+  }
+}
+
+.column-5 {
+  .col {
+    width: 20%;
+  }
+}
+
+.column-6 {
+  .col {
+    width: 16.66667%;
+  }
+}
+
+.column-7 {
+  .col {
+    width: 14.28571%;
+  }
+}
+
+.column-8 {
+  .col {
+    width: 12.5%;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .column-sm-1 {
+    .col {
+      width: 100%;
+    }
+  }
+  .column-sm-2 {
+    .col {
+      width: 50%;
+    }
+  }
+  .column-sm-3 {
+    .col {
+      width: 33.33333%;
+    }
+  }
+  .column-sm-4 {
+    .col {
+      width: 25%;
+    }
+  }
+  .column-sm-5 {
+    .col {
+      width: 20%;
+    }
+  }
+  .column-sm-6 {
+    .col {
+      width: 16.66667%;
+    }
+  }
+  .column-sm-7 {
+    .col {
+      width: 14.28571%;
+    }
+  }
+  .column-sm-8 {
+    .col {
+      width: 12.5%;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .column-md-1 {
+    .col {
+      width: 100%;
+    }
+  }
+  .column-md-2 {
+    .col {
+      width: 50%;
+    }
+  }
+  .column-md-3 {
+    .col {
+      width: 33.33333%;
+    }
+  }
+  .column-md-4 {
+    .col {
+      width: 25%;
+    }
+  }
+  .column-md-5 {
+    .col {
+      width: 20%;
+    }
+  }
+  .column-md-6 {
+    .col {
+      width: 16.66667%;
+    }
+  }
+  .column-md-7 {
+    .col {
+      width: 14.28571%;
+    }
+  }
+  .column-md-8 {
+    .col {
+      width: 12.5%;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .column-lg-1 {
+    .col {
+      width: 100%;
+    }
+  }
+  .column-lg-2 {
+    .col {
+      width: 50%;
+    }
+  }
+  .column-lg-3 {
+    .col {
+      width: 33.33333%;
+    }
+  }
+  .column-lg-4 {
+    .col {
+      width: 25%;
+    }
+  }
+  .column-lg-5 {
+    .col {
+      width: 20%;
+    }
+  }
+  .column-lg-6 {
+    .col {
+      width: 16.66667%;
+    }
+  }
+  .column-lg-7 {
+    .col {
+      width: 14.28571%;
+    }
+  }
+  .column-lg-8 {
+    .col {
+      width: 12.5%;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .column-xl-1 {
+    .col {
+      width: 100%;
+    }
+  }
+  .column-xl-2 {
+    .col {
+      width: 50%;
+    }
+  }
+  .column-xl-3 {
+    .col {
+      width: 33.33333%;
+    }
+  }
+  .column-xl-4 {
+    .col {
+      width: 25%;
+    }
+  }
+  .column-xl-5 {
+    .col {
+      width: 20%;
+    }
+  }
+  .column-xl-6 {
+    .col {
+      width: 16.66667%;
+    }
+  }
+  .column-xl-7 {
+    .col {
+      width: 14.28571%;
+    }
+  }
+  .column-xl-8 {
+    .col {
+      width: 12.5%;
+    }
+  }
+}
