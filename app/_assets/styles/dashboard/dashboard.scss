@@ -1,83 +1,84 @@
+/*
+|--------------------------------------------------------------------------
+| Bootstrap
+|--------------------------------------------------------------------------
+*/
 @import "../bootstrap/functions";
 @import "../bootstrap/variables";
 @import "../bootstrap/mixins";
 
 @import "../bootstrap/bootstrap";
 
+/*
+|--------------------------------------------------------------------------
+| mixins and variables
+|--------------------------------------------------------------------------
+*/
 @import 'functions';
 @import 'variables';
+@import 'variables-custom';
 @import 'mixins';
 
+/*
+|--------------------------------------------------------------------------
+| core
+|--------------------------------------------------------------------------
+*/
 // Utilities
-@import 'utilities/utilities';
-@import 'utilities/reset';
-@import 'utilities/core';
-@import 'utilities/grid';
-@import 'utilities/type';
-@import 'utilities/colors';
-@import 'utilities/text';
-@import 'utilities/sizing';
-@import 'utilities/spacing';
-@import 'utilities/scroll';
-@import 'utilities/border';
-@import 'utilities/opacity';
-@import 'utilities/shadow';
+@import 'core/utilities/utilities';
+@import 'core/utilities/reset';
+@import 'core/utilities/core';
+@import 'core/utilities/grid';
+@import 'core/utilities/type';
+@import 'core/utilities/colors';
+@import 'core/utilities/text';
+@import 'core/utilities/sizing';
+@import 'core/utilities/spacing';
+@import 'core/utilities/scroll';
+@import 'core/utilities/border';
+@import 'core/utilities/opacity';
+@import 'core/utilities/shadow';
 
 // Interface
-@import 'interface/button';
-@import 'interface/badge';
-@import 'interface/avatar';
-@import 'interface/progress';
-@import 'interface/tag';
-@import 'interface/bg-skew';
-@import 'interface/divider';
+@import 'core/interface/button';
+@import 'core/interface/badge';
+@import 'core/interface/avatar';
+@import 'core/interface/progress';
+@import 'core/interface/tag';
+@import 'core/interface/bg-skew';
+@import 'core/interface/divider';
 
 // Components
-@import 'components/nav';
-@import 'components/alert';
-@import 'components/tables';
-@import 'components/breadcrumb';
-@import 'components/pagination';
-@import 'components/cards';
-@import 'components/popover';
-@import 'components/dropdown';
-@import 'components/list';
-@import 'components/list-group';
-@import 'components/link';
-@import 'components/media';
-@import 'components/carousel';
-@import 'components/timeline';
-@import 'components/flag';
-@import 'components/img-holder';
+@import 'core/components/nav';
+@import 'core/components/alert';
+@import 'core/components/tables';
+@import 'core/components/breadcrumb';
+@import 'core/components/pagination';
+@import 'core/components/cards';
+@import 'core/components/popover';
+@import 'core/components/dropdown';
+@import 'core/components/list';
+@import 'core/components/list-group';
+@import 'core/components/link';
+@import 'core/components/media';
+@import 'core/components/carousel';
+@import 'core/components/timeline';
+@import 'core/components/flag';
+@import 'core/components/img-holder';
 
 // Forms
-@import 'forms/form';
-@import 'forms/custom-range';
-@import 'forms/custom-selectgroup';
-@import 'forms/custom-switch';
-@import 'forms/custom-imagecheck';
-@import 'forms/custom-colorinput';
+@import 'core/forms/form';
+@import 'core/forms/custom-range';
+@import 'core/forms/custom-selectgroup';
+@import 'core/forms/custom-switch';
+@import 'core/forms/custom-imagecheck';
+@import 'core/forms/custom-colorinput';
 
-// Layout
-@import 'layout/layout';
-@import 'layout/aside';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/bottombar';
-
-@import 'other/image';
-@import 'other/social';
-@import 'other/statuses';
-// @import 'other/charts';
-@import 'other/chips';
-@import 'other/stamp';
-@import 'other/chat';
-@import 'other/syntax';
-@import 'other/infobox';
-
-// @import 'other/browser';
-@import 'other/payments';
-
+/*
+|--------------------------------------------------------------------------
+| vendors
+|--------------------------------------------------------------------------
+*/
 @import 'vendors/sparkline';
 @import 'vendors/datatables';
 @import 'vendors/selectize';
@@ -86,9 +87,43 @@
 @import 'vendors/fancybox/jquery.fancybox';
 @import 'vendors/fancybox/fancybox-custom-layout';
 
+/*
+|--------------------------------------------------------------------------
+| custom
+|--------------------------------------------------------------------------
+*/
+// Layout
+@import 'custom/layout/layout';
+@import 'custom/layout/aside';
+@import 'custom/layout/header';
+@import 'custom/layout/footer';
+@import 'custom/layout/bottombar';
+
+// icon
+// @import 'custom/icon/browser';
+@import 'custom/icon/payments';
+
+// post type
+@import 'custom/post-type/product';
+
+// other
+@import 'custom/other/image';
+@import 'custom/other/social';
+@import 'custom/other/statuses';
+// @import 'custom/other/charts';
+@import 'custom/other/chips';
+@import 'custom/other/stamp';
+@import 'custom/other/chat';
+@import 'custom/other/syntax';
+@import 'custom/other/infobox';
+
+// example
+@import 'custom/example/example';
+@import 'custom/example/icon';
+
+/*
+|--------------------------------------------------------------------------
+| animate
+|--------------------------------------------------------------------------
+*/
 @import 'animate/custom-animate';
-
-@import 'post-type/product';
-
-@import 'example/example';
-@import 'example/icon';
