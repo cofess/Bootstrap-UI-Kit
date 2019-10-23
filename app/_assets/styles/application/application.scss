@@ -9,6 +9,13 @@
 
 /*
 |--------------------------------------------------------------------------
+| Bootstrap
+|--------------------------------------------------------------------------
+*/
+@import "../bootstrap/bootstrap";
+
+/*
+|--------------------------------------------------------------------------
 | mixins and variables
 |--------------------------------------------------------------------------
 */
@@ -16,13 +23,6 @@
 @import 'variables';
 @import 'variables-custom';
 @import 'mixins';
-
-/*
-|--------------------------------------------------------------------------
-| Bootstrap
-|--------------------------------------------------------------------------
-*/
-@import "../bootstrap/bootstrap";
 
 /*
 |--------------------------------------------------------------------------
@@ -118,7 +118,6 @@
 @import 'custom/other/image';
 @import 'custom/other/social';
 @import 'custom/other/statuses';
-// @import 'custom/other/charts';
 @import 'custom/other/chips';
 @import 'custom/other/stamp';
 @import 'custom/other/chat';
