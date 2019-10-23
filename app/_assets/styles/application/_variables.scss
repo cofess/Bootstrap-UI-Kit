@@ -199,18 +199,20 @@ $grid-columns: 12;
 $grid-gutter-width: 1.5rem;
 
 $grid-breakpoints: (
-	xs: 0,
-	sm: 576px,
-	md: 768px,
-	lg: 992px,
-	xl: 1280px
+	nm: 0,
+	xs: 576px,
+	sm: 768px,
+	md: 992px,
+	lg: 1280px,
+	xl: 1440px
 );
 
 $container-max-widths: (
-	sm: 540px,
-	md: 720px,
-	lg: 960px,
-	xl: 1200px
+	xs: 540px,
+	sm: 720px,
+	md: 960px,
+	lg: 1200px,
+	xl: 1366px
 );
 
 // Header
