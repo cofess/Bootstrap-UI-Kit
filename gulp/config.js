@@ -149,12 +149,14 @@ module.exports = {
         level: 0, // The level option can be either 0, 1 (default), or 2, e.g.
         compatibility: 'ie8', // Internet Explorer 8+ compatibility mode
         keepSpecialComments: 0,
+        removeDuplicateRules: true,
         format: 'keep-breaks' // formats output the default way but adds line breaks for improved readability
       },
       minify: {
         debug: true,
         level: 2, // The level option can be either 0, 1 (default), or 2, e.g.
         compatibility: 'ie8', // Internet Explorer 8+ compatibility mode
+        removeDuplicateRules: true,
         // format: 'keep-breaks' // formats output the default way but adds line breaks for improved readability
       },
       autoprefixer: {

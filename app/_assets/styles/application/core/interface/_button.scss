@@ -59,11 +59,11 @@
 	}
 }
 
-@each $vendor, $color in $colors {
-	.btn-#{$vendor} {
-		@include button-variant($color, $color);
-	}
-}
+// @each $vendor, $color in $colors {
+// 	.btn-#{$vendor} {
+// 		@include button-variant($color, $color);
+// 	}
+// }
 
 .btn-option {
 	background: transparent;
