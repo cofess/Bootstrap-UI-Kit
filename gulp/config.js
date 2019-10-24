@@ -148,9 +148,10 @@ module.exports = {
         debug: true,
         level: 0, // The level option can be either 0, 1 (default), or 2, e.g.
         compatibility: 'ie8', // Internet Explorer 8+ compatibility mode
-        keepSpecialComments: 0,
+        specialComments: 0,
         removeDuplicateRules: true,
-        format: 'keep-breaks' // formats output the default way but adds line breaks for improved readability
+        format: 'beautify' // formats output in a really nice way
+        // format: 'keep-breaks' // formats output the default way but adds line breaks for improved readability
       },
       minify: {
         debug: true,

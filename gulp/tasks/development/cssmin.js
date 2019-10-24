@@ -1,5 +1,5 @@
 var gulp           = require('gulp')
-var minify         = require('gulp-clean-css')
+var cleancss       = require('gulp-clean-css')
 var plumber        = require('gulp-plumber')
 // var sourcemap      = require('gulp-sourcemaps')
 var gutil          = require('gulp-util')
@@ -25,7 +25,7 @@ gulp.task('cssmin', function() {
       errorHandler: onError
     }))
     // .pipe(sourcemap.init())
-    .pipe(minify(config.options.minify))
+    .pipe(cleancss(config.options.minify))
     // .pipe(sourcemap.write('.'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(config.dest))
