@@ -1,0 +1,314 @@
+{# 
+  Nunjucks Templating! 
+  Homepage: https://mozilla.github.io/nunjucks/ 
+  Docs: https://mozilla.github.io/nunjucks/api.html 
+#}
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+<!-- 页面标题 -->
+{% block title %}{{ global.title }} | Blank Template{% endblock %}
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Page Title</h1>
+  </div>
+</section>
+{% endblock %}
+<!-- 主体内容 -->
+{% block content %}
+<div class="container">
+  <form>
+    <!-- General Form Controls -->
+    <div class="row mb-4">
+      <!-- Form Controls -->
+      <div class="col-lg-6 mb-3">
+        <div class="card">
+          <!-- Card Header -->
+          <div class="card-header">
+            <h3 class="h6 mb-0">Form Controls</h3>
+          </div>
+          <!-- End Card Header -->
+          <!-- Card Body -->
+          <div class="card-body">
+            <div class="form-group mb-4">
+              <label for="defaultInput" class="form-label">Default input</label>
+              <input type="email" class="form-control" id="defaultInput" aria-describedby="emailHelp" placeholder="Placeholder">
+            </div>
+            <hr class="my-4">
+            <div class="form-group mb-4">
+              <label for="inputLeftIcon" class="form-label">Input with left icon</label>
+              <div class="input-icon">
+                <span class="input-icon-addon">
+                              <i class="icon icon-user-fill"></i>
+                            </span>
+                <input type="email" class="form-control" id="inputLeftIcon" aria-describedby="emailHelp" placeholder="Placeholder">
+              </div>
+            </div>
+            <div class="form-group mb-4">
+              <label for="inputRightIcon" class="form-label">Input with right icon</label>
+              <div class="input-icon">
+                <input type="email" class="form-control" id="inputRightIcon" aria-describedby="emailHelp" placeholder="Placeholder">
+                <span class="input-icon-addon">
+                              <i class="icon icon-user-fill"></i>
+                            </span>
+              </div>
+            </div>
+            <hr class="my-4">
+            <div class="form-group mb-4">
+              <label for="disabledTextInput" class="form-label">Disabled</label>
+              <input type="email" class="form-control" id="disabledTextInput" aria-describedby="disabledTextInput" placeholder="Placeholder" disabled>
+              <small class="form-text text-muted">Text feedback.</small>
+            </div>
+            <div class="form-group mb-4">
+              <label for="disabledTextInput" class="form-label">Success</label>
+              <input type="email" class="form-control is-valid" id="disabledTextInput" aria-describedby="disabledTextInput" placeholder="Placeholder">
+              <div class="valid-feedback">Success feedback.</div>
+            </div>
+            <div class="form-group">
+              <label for="disabledTextInput" class="form-label">Error</label>
+              <input type="email" class="form-control is-invalid" id="disabledTextInput" aria-describedby="disabledTextInput" placeholder="Placeholder">
+              <div class="invalid-feedback">Error feedback.</div>
+            </div>
+          </div>
+          <!-- End Card Body -->
+        </div>
+      </div>
+      <!-- End Form Controls -->
+      <!-- Pilled Form Controls -->
+      <div class="col-lg-6 mb-3">
+        <div class="card">
+          <!-- Card Header -->
+          <div class="card-header">
+            <h3 class="h6 mb-0">Pilled Form Controls</h3>
+          </div>
+          <!-- End Card Header -->
+          <!-- Card Body -->
+          <div class="card-body">
+            <div class="form-group mb-4">
+              <label for="defaultInput1" class="form-label">Default input</label>
+              <input type="email" class="form-control form-pill" id="defaultInput1" aria-describedby="emailHelp" placeholder="Placeholder">
+            </div>
+            <hr class="my-4">
+            <div class="form-group mb-4">
+              <label for="inputLeftIcon1" class="form-label">Input with left icon</label>
+              <div class="input-icon">
+                <span class="input-icon-addon">
+                              <i class="icon icon-user-fill"></i>
+                            </span>
+                <input type="email" class="form-control form-pill" id="inputLeftIcon" aria-describedby="emailHelp" placeholder="Placeholder">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputRightIcon1" class="form-label">Input with right icon</label>
+              <div class="input-icon">
+                <input type="email" class="form-control form-pill" id="inputRightIcon" aria-describedby="emailHelp" placeholder="Placeholder">
+                <span class="input-icon-addon">
+                              <i class="icon icon-user-fill"></i>
+                            </span>
+              </div>
+            </div>
+            <hr class="my-4">
+            <div class="form-group mb-4">
+              <label for="disabledTextInput1" class="form-label">Disabled</label>
+              <input type="email" class="form-control form-pill" id="disabledTextInput1" aria-describedby="disabledTextInput1" placeholder="Placeholder" disabled>
+              <small class="form-text text-muted">Text feedback.</small>
+            </div>
+            <div class="form-group mb-4">
+              <label for="disabledTextInput1" class="form-label">Success</label>
+              <input type="email" class="form-control form-pill is-valid" id="disabledTextInput1" aria-describedby="disabledTextInput1" placeholder="Placeholder">
+              <div class="valid-feedback">Success feedback.</div>
+            </div>
+            <div class="form-group">
+              <label for="disabledTextInput1" class="form-label">Error</label>
+              <input type="email" class="form-control form-pill is-invalid" id="disabledTextInput1" aria-describedby="disabledTextInput1" placeholder="Placeholder">
+              <div class="invalid-feedback">Error feedback.</div>
+            </div>
+          </div>
+          <!-- End Card Body -->
+        </div>
+      </div>
+      <!-- End Pilled Form Controls -->
+    </div>
+    <!-- End General Form Controls -->
+    <!-- Checkboxes and Radios -->
+    <div class="row mb-4">
+      <!-- Checkboxes -->
+      <div class="col-lg-6 mb-3">
+        <div class="card">
+          <!-- Card Header -->
+          <div class="card-header">
+            <h3 class="h6 mb-0">Checkboxes</h3>
+          </div>
+          <!-- End Card Header -->
+          <!-- Card Body -->
+          <div class="card-body">
+            <div class="custom-control custom-checkbox mb-2">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label u-font-size-90" for="customCheck1">Unchecked</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input type="checkbox" class="custom-control-input" id="customCheck2" checked>
+              <label class="custom-control-label u-font-size-90" for="customCheck2">Checked</label>
+            </div>
+            <hr class="my-4">
+            <div class="custom-control custom-checkbox mb-2">
+              <input type="checkbox" class="custom-control-input" id="customCheck3" disabled>
+              <label class="custom-control-label u-font-size-90" for="customCheck3">Disabled Unchecked</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input type="checkbox" class="custom-control-input" id="customCheck4" checked disabled>
+              <label class="custom-control-label u-font-size-90" for="customCheck4">Disabled Checked</label>
+            </div>
+            <hr class="my-4">
+            <div class="custom-control custom-checkbox mb-2">
+              <input type="checkbox" class="custom-control-input is-valid" id="customCheck5-1" checked>
+              <label class="custom-control-label u-font-size-90" for="customCheck5-1">Checked Success</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input type="checkbox" class="custom-control-input is-invalid" id="customCheck5-2">
+              <label class="custom-control-label u-font-size-90" for="customCheck5-2">Unchecked Error</label>
+            </div>
+          </div>
+          <!-- End Card Body -->
+        </div>
+      </div>
+      <!-- End Checkboxes -->
+      <!-- Radios -->
+      <div class="col-lg-6 mb-3">
+        <div class="card">
+          <!-- Card Header -->
+          <div class="card-header">
+            <h3 class="h6 mb-0">Radios</h3>
+          </div>
+          <!-- End Card Header -->
+          <!-- Card Body -->
+          <div class="card-body">
+            <div class="custom-control custom-radio mb-2">
+              <input type="radio" class="custom-control-input" name="customRadio" id="customRadio1">
+              <label class="custom-control-label u-font-size-90" for="customRadio1">Unchecked</label>
+            </div>
+            <div class="custom-control custom-radio mb-2">
+              <input type="radio" class="custom-control-input" name="customRadio" id="customRadio2" checked>
+              <label class="custom-control-label u-font-size-90" for="customRadio2">Checked</label>
+            </div>
+            <hr class="my-4">
+            <div class="custom-control custom-radio mb-2">
+              <input type="radio" class="custom-control-input" name="customRadioDisabled" id="customRadio3" disabled>
+              <label class="custom-control-label u-font-size-90" for="customRadio3">Disabled Unchecked</label>
+            </div>
+            <div class="custom-control custom-radio mb-2">
+              <input type="radio" class="custom-control-input" name="customRadioDisabled" id="customRadio4" checked disabled>
+              <label class="custom-control-label u-font-size-90" for="customRadio4">Disabled Checked</label>
+            </div>
+            <hr class="my-4">
+            <div class="custom-control custom-radio mb-2">
+              <input type="radio" class="custom-control-input is-valid" name="customRadioUncheckedValidation" id="customRadio5-1" checked>
+              <label class="custom-control-label u-font-size-90" for="customRadio5-1">Checked Success</label>
+            </div>
+            <div class="custom-control custom-radio mb-2">
+              <input type="radio" class="custom-control-input is-invalid" name="customRadioUncheckedValidation" id="customRadio5-2">
+              <label class="custom-control-label u-font-size-90" for="customRadio5-2">Unchecked Error</label>
+            </div>
+          </div>
+          <!-- End Card Body -->
+        </div>
+      </div>
+      <!-- End Radios -->
+    </div>
+    <!-- End Checkboxes and Radios -->
+    <!-- Toggles -->
+    <div class="row">
+      <!-- Toggles -->
+      <div class="col-lg-6 mb-3">
+        <div class="card">
+          <!-- Card Header -->
+          <div class="card-header">
+            <h3 class="h6 mb-0">Toggles</h3>
+          </div>
+          <!-- End Card Header -->
+          <!-- Card Body -->
+          <div class="card-body">
+            <!-- Default Toggle (Off) -->
+            <div class="form-group">
+              <label class="d-flex align-items-center justify-content-between">
+                <span class="form-label">Toggle off</span>
+                <div class="form-toggle">
+                  <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
+                  <span class="custom-switch-indicator"></span>
+                </div>
+              </label>
+            </div>
+            <!-- End Default Toggle (Off) -->
+            <!-- Default Toggle (On) -->
+            <div class="form-group">
+              <label class="d-flex align-items-center justify-content-between">
+                <span class="form-label">Toggle on</span>
+                <div class="form-toggle">
+                  <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked>
+                  <span class="custom-switch-indicator"></span>
+                </div>
+              </label>
+            </div>
+            <!-- Default Toggle (On) -->
+            <hr class="my-4">
+            <!-- Disabled Toggle (Off) -->
+            <div class="form-group is-disabled">
+              <label class="d-flex align-items-center justify-content-between">
+                <span class="form-label">Disabled toggle off</span>
+                <div class="form-toggle">
+                  <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" disabled>
+                  <span class="custom-switch-indicator"></span>
+                </div>
+              </label>
+            </div>
+            <!-- End Disabled Toggle (Off) -->
+            <!-- Disabled Toggle (On) -->
+            <div class="form-group is-disabled">
+              <label class="d-flex align-items-center justify-content-between">
+                <span class="form-label">Disabled toggle on</span>
+                <div class="form-toggle">
+                  <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked disabled>
+                  <span class="custom-switch-indicator"></span>
+                </div>
+              </label>
+            </div>
+            <!-- End Disabled Toggle (On) -->
+            <hr class="my-4">
+            <!-- Success Toggle (Off) -->
+            <div class="form-group is-invalid">
+              <label class="d-flex align-items-center justify-content-between u-font-size-90">
+                <span class="form-label-text">Error toggle off</span>
+                <div class="form-toggle">
+                  <input name="toggleCheckbox" type="checkbox">
+                  <div class="form-toggle__item">
+                    <i class="d-inline-block"></i>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <!-- End Success Toggle (Off) -->
+            <!-- Success Toggle (On) -->
+            <div class="form-group is-valid">
+              <label class="d-flex align-items-center justify-content-between u-font-size-90">
+                <span class="form-label">Success toggle on</span>
+                <div class="form-toggle">
+                  <input name="toggleCheckbox" type="checkbox" checked>
+                  <div class="form-toggle__item">
+                    <i class="d-inline-block"></i>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <!-- End Success Toggle (On) -->
+          </div>
+          <!-- End Card Body -->
+        </div>
+      </div>
+      <!-- End Toggles -->
+    </div>
+    <!-- End Toggles -->
+  </form>
+</div>
+
+{% endblock %}
