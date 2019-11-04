@@ -1,0 +1,48 @@
+.owl-nav-aside {}
+
+.owl-nav-outside {
+  .owl-nav {
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      top: 50%;
+      margin: 0;
+    }
+    .owl-prev {
+      left: px2rem(-50px);
+    }
+    .owl-next {
+      right: px2rem(-50px);
+    }
+  }
+}
+
+.owl-nav-vertical-center {}
+
+.owl-nav-circle{
+
+}
+
+.owl-nav-square{
+	
+}
+
+// .owl-theme {
+//   .owl-nav {
+//     button {
+//       width: 32px;
+//       height: 50px;
+//       background: #fff!important;
+//       border: 1px solid #eee!important;
+//       position: absolute;
+//       top: 50%;
+//       margin-top: -10px;
+//     }
+//     .owl-prev {
+//       left: 0;
+//     }
+//     .owl-next {
+//       right: 0;
+//     }
+//   }
+// }

@@ -1,5 +1,5 @@
 /*----------------------------------------------------
- * Hyperlink
+ * reboot
  *---------------------------------------------------*/
 
 a {
@@ -17,14 +17,11 @@ a[href^="http"]:empty::before {
   content: attr(href);
 }
 
-// a:not([href]):not([tabindex]),
-// a:not([href]):not([tabindex]):focus,
-// a:not([href]):not([tabindex]):hover {
-//   color: inherit;
-//   text-decoration: none
-// }
-a:not([href]):not([tabindex]):focus {
-  outline: 0
+button {
+  &:hover,
+  &:focus {
+    outline: 0;
+  }
 }
 
 
