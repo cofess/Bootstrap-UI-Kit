@@ -1,6 +1,19 @@
 $nav-size:32px;
 $nav-size-sm:24px;
 $nav-size-lg:48px;
+.owl-carousel {
+  .owl-nav {
+    .owl-prev,
+    .owl-next {
+      &:focus,
+      &:hover {
+        background: transparent;
+        color: $primary;
+      }
+    }
+  }
+}
+
 // control position
 .owl-nav-aside {}
 
