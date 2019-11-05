@@ -222,3 +222,39 @@ $nav-hover-color:$primary;
     }
   }
 }
+
+// nav fadein
+.owl-nav-fadein {
+  overflow: hidden;
+  .owl-nav {
+    margin: 0;
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      top: 50%;
+      margin-top: px2rem(- $control-size / 2);
+      opacity: 0;
+      transition: all ease .3s;
+    }
+    .owl-prev {
+      left: px2rem(- $control-size);
+    }
+    .owl-next {
+      right: px2rem(- $control-size);
+    }
+  }
+  &:hover {
+    .owl-nav {
+      .owl-prev,
+      .owl-next {
+        opacity: 1;
+      }
+      .owl-prev {
+        left: 0;
+      }
+      .owl-next {
+        right: 0;
+      }
+    }
+  }
+}
