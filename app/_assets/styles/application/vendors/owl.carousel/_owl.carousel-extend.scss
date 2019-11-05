@@ -1,6 +1,10 @@
 $nav-size:32px;
 $nav-size-sm:24px;
 $nav-size-lg:48px;
+$control-bg:rgba(0, 0, 0, 0.65);
+$control-hover-bg:rgba(0, 0, 0, 0.85);
+$nav-color:inherit;
+$nav-hover-color:$primary;
 .owl-carousel {
   .owl-nav {
     .owl-prev,
@@ -8,7 +12,12 @@ $nav-size-lg:48px;
       &:focus,
       &:hover {
         background: transparent;
-        color: $primary;
+        color: $nav-hover-color;
+      }
+      i,
+      span,
+      .icon {
+        line-height: inherit
       }
     }
   }
@@ -26,21 +35,21 @@ $nav-size-lg:48px;
       margin: 0;
     }
     .owl-prev {
-      left: px2rem(-50px);
+      left: px2rem(- $nav-size);
     }
     .owl-next {
-      right: px2rem(-50px);
+      right: px2rem(- $nav-size);
     }
   }
 }
 
-.owl-nav-vertical-center {
+.owl-nav-middle {
   .owl-nav {
     .owl-prev,
     .owl-next {
       position: absolute;
       top: 50%;
-      margin-top: -10px;
+      margin-top: px2rem(- $nav-size / 2);
     }
     .owl-prev {
       left: 0;
@@ -61,16 +70,11 @@ $nav-size-lg:48px;
       width: px2rem($nav-size);
       height: px2rem($nav-size);
       line-height: px2rem($nav-size);
-      background: rgba(0, 0, 0, 0.65)!important;
+      background: $control-bg!important;
       color: #fff!important;
-      i,
-      span,
-      .icon {
-        line-height: inherit
-      }
       &:hover,
       &:focus {
-        background: rgba(0, 0, 0, 0.85)!important;
+        background: $control-hover-bg!important;
       }
     }
   }
@@ -101,4 +105,18 @@ $nav-size-lg:48px;
 .owl-dot-square {}
 
 // control style
-.owl-control-outline {}
+.owl-control-outline {
+  .owl-nav {
+    .owl-prev,
+    .owl-next {
+      background: transparent!important;
+      border: 1px solid $control-bg!important;
+      color: $nav-color!important;
+      &:hover,
+      &:focus {
+        background: $control-hover-bg!important;
+        color: #fff!important;
+      }
+    }
+  }
+}
