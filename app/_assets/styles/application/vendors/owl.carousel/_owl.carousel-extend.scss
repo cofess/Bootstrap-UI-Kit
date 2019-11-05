@@ -69,7 +69,7 @@ $nav-hover-color:$primary;
     .owl-next {
       width: px2rem($nav-size);
       height: px2rem($nav-size);
-      line-height: px2rem($nav-size);
+      line-height: px2rem($nav-size)!important;
       background: $control-bg!important;
       color: #fff!important;
       &:hover,
@@ -100,9 +100,23 @@ $nav-hover-color:$primary;
 }
 
 // dot style
-.owl-dot-line {}
+.owl-dot-line {
+  .owl-dot {
+    span {
+      width: px2rem($nav-size)!important;
+      height: px2rem(3px)!important;
+      border-radius: 0!important;
+    }
+  }
+}
 
-.owl-dot-square {}
+.owl-dot-square {
+  .owl-dot {
+    span {
+      border-radius: 0!important;
+    }
+  }
+}
 
 // control style
 .owl-control-outline {

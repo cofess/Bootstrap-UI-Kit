@@ -2,7 +2,7 @@
  * 	Default theme - Owl Carousel CSS File
  */
 
-$color-base:			#869791 !default;
+$color-base:			rgba(0, 0, 0, 0.85) !default;
 $color-white:			#FFF !default;
 $color-gray:			#D6D6D6 !default;
 
@@ -24,7 +24,7 @@ $dot-width:				10px !default;
 $dot-height:			10px !default;
 $dot-rounded:			30px !default;
 $dot-margin: 			5px 7px !default;
-$dot-background:		$color-gray !default;
+$dot-background:		rgba(0, 0, 0, 0.35) !default;
 $dot-background-active:	$color-base !default;
 
 @import 'theme';
