@@ -1,14 +1,15 @@
-$nav-size:32px;
-$nav-size-sm:24px;
-$nav-size-lg:48px;
-$control-bg:rgba(0, 0, 0, 0.65);
-$control-hover-bg:rgba(0, 0, 0, 0.85);
+$control-size:32px;
+$control-size-sm:24px;
+$control-size-lg:48px;
+$control-bg:rgba(0, 0, 0, 0.5);
+$control-hover-bg:rgba(0, 0, 0, 0.75);
 $nav-color:inherit;
 $nav-hover-color:$primary;
 .owl-carousel {
   .owl-nav {
     .owl-prev,
     .owl-next {
+      font-size: px2rem($control-size / 1.5)!important;
       &:focus,
       &:hover {
         background: transparent;
@@ -35,21 +36,22 @@ $nav-hover-color:$primary;
       margin: 0;
     }
     .owl-prev {
-      left: px2rem(- $nav-size);
+      left: px2rem(- $control-size);
     }
     .owl-next {
-      right: px2rem(- $nav-size);
+      right: px2rem(- $control-size);
     }
   }
 }
 
 .owl-nav-middle {
   .owl-nav {
+    margin: 0;
     .owl-prev,
     .owl-next {
       position: absolute;
       top: 50%;
-      margin-top: px2rem(- $nav-size / 2);
+      margin-top: px2rem(- $control-size / 2);
     }
     .owl-prev {
       left: 0;
@@ -67,9 +69,9 @@ $nav-hover-color:$primary;
   .owl-nav {
     .owl-prev,
     .owl-next {
-      width: px2rem($nav-size);
-      height: px2rem($nav-size);
-      line-height: px2rem($nav-size)!important;
+      width: px2rem($control-size);
+      height: px2rem($control-size);
+      line-height: px2rem($control-size)!important;
       background: $control-bg!important;
       color: #fff!important;
       &:hover,
@@ -80,7 +82,7 @@ $nav-hover-color:$primary;
   }
 }
 
-.owl-nav-square {
+.owl-nav-circle {
   .owl-nav {
     .owl-prev,
     .owl-next {
@@ -93,7 +95,7 @@ $nav-hover-color:$primary;
   .owl-nav {
     .owl-prev,
     .owl-next {
-      width: px2rem($nav-size / 1.5);
+      width: px2rem($control-size / 1.5);
       border-radius: 0!important;
     }
   }
@@ -103,7 +105,7 @@ $nav-hover-color:$primary;
 .owl-dot-line {
   .owl-dot {
     span {
-      width: px2rem($nav-size)!important;
+      width: px2rem($control-size)!important;
       height: px2rem(3px)!important;
       border-radius: 0!important;
     }
@@ -130,6 +132,72 @@ $nav-hover-color:$primary;
       &:focus {
         background: $control-hover-bg!important;
         color: #fff!important;
+      }
+    }
+  }
+  .owl-dot {
+    span {
+      border: 1px solid $control-hover-bg;
+      background: transparent!important;
+    }
+    &.active,
+    &:hover,
+    &:focus {
+      span {
+        background: $control-hover-bg!important;
+      }
+    }
+  }
+}
+
+// control size
+.owl-control-sm {
+  .owl-nav {
+    .owl-prev,
+    .owl-next {
+      width: px2rem($control-size-sm);
+      height: px2rem($control-size-sm);
+      line-height: px2rem($control-size-sm)!important;
+      font-size: px2rem($control-size-sm / 1.75)!important;
+    }
+  }
+  .owl-dot {
+    span {
+      width: px2rem($control-size-sm / 3)!important;
+      height: px2rem($control-size-sm / 3)!important;
+    }
+  }
+  &.owl-nav-rect {
+    .owl-nav {
+      .owl-prev,
+      .owl-next {
+        width: px2rem($control-size-sm / 1.5);
+      }
+    }
+  }
+}
+
+.owl-control-lg {
+  .owl-nav {
+    .owl-prev,
+    .owl-next {
+      width: px2rem($control-size-lg);
+      height: px2rem($control-size-lg);
+      line-height: px2rem($control-size-lg)!important;
+      font-size: px2rem($control-size-lg / 1.5)!important;
+    }
+  }
+  .owl-dot {
+    span {
+      width: px2rem($control-size-lg / 3)!important;
+      height: px2rem($control-size-lg / 3)!important;
+    }
+  }
+  &.owl-nav-rect {
+    .owl-nav {
+      .owl-prev,
+      .owl-next {
+        width: px2rem($control-size-lg / 1.5);
       }
     }
   }
