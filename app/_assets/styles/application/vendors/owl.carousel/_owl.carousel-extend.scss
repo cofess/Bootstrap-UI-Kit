@@ -210,13 +210,23 @@ $control-white-active-bg:$primary;
       width: px2rem($control-size-lg);
       height: px2rem($control-size-lg);
       line-height: px2rem($control-size-lg)!important;
-      font-size: px2rem($control-size-lg / 1.75)!important;
+      font-size: px2rem($control-size-lg / 1.2)!important;
     }
   }
   .owl-dot {
     span {
       width: px2rem($control-size-lg / 3)!important;
       height: px2rem($control-size-lg / 3)!important;
+    }
+  }
+  &.owl-nav-rect,
+  &.owl-nav-square,
+  &.owl-nav-circle {
+    .owl-nav {
+      .owl-prev,
+      .owl-next {
+        font-size: px2rem($control-size-lg / 2)!important;
+      }
     }
   }
   &.owl-nav-rect {
