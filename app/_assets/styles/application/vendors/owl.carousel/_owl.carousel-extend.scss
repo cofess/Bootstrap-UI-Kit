@@ -195,6 +195,14 @@ $nav-hover-color:$primary;
       }
     }
   }
+  &.owl-nav-middle {
+    .owl-nav {
+      .owl-prev,
+      .owl-next {
+        margin-top: px2rem(- $control-size-sm / 2);
+      }
+    }
+  }
 }
 
 .owl-control-lg {
@@ -218,6 +226,14 @@ $nav-hover-color:$primary;
       .owl-prev,
       .owl-next {
         width: px2rem($control-size-lg / 1.5);
+      }
+    }
+  }
+  &.owl-nav-middle {
+    .owl-nav {
+      .owl-prev,
+      .owl-next {
+        margin-top: px2rem(- $control-size-lg / 2);
       }
     }
   }
