@@ -94,19 +94,33 @@ $control-white-active-bg:$primary;
 
 // control position
 .owl-nav-leftside,
-.owl-nav-rightside {
-  padding-bottom: px2rem(30px);
+.owl-nav-rightside,
+.owl-nav-topleftside,
+.owl-nav-toprightside {
   .owl-nav {
-    position: absolute;
-    bottom: 0;
-    margin: unset;
     .owl-prev,
     .owl-next {
       margin: unset;
     }
-    .owl-next {
-      margin-left: px2rem(10px);
+  }
+  &.owl-nav-rect,
+  &.owl-nav-square,
+  &.owl-nav-circle {
+    .owl-nav {
+      .owl-next {
+        margin-left: px2rem(10px);
+      }
     }
+  }
+}
+
+.owl-nav-leftside,
+.owl-nav-rightside {
+  padding-bottom: px2rem($control-size);
+  .owl-nav {
+    position: absolute;
+    bottom: 0;
+    margin: unset;
   }
   .owl-dots {
     position: absolute;
@@ -116,18 +130,11 @@ $control-white-active-bg:$primary;
 
 .owl-nav-topleftside,
 .owl-nav-toprightside {
-  padding-top: px2rem(30px);
+  padding-top: px2rem($control-size + 10px);
   .owl-nav {
     position: absolute;
     top: 0;
     margin: unset;
-    .owl-prev,
-    .owl-next {
-      margin: unset;
-    }
-    .owl-next {
-      margin-left: px2rem(10px);
-    }
   }
   .owl-dots {
     position: absolute;
@@ -141,7 +148,7 @@ $control-white-active-bg:$primary;
     left: 0;
   }
   .owl-dots {
-    left: px2rem($control-size * 2 - 10px);
+    left: px2rem($control-size * 2 - 15px);
   }
   &.owl-nav-square,
   &.owl-nav-circle {
@@ -157,7 +164,7 @@ $control-white-active-bg:$primary;
     right: 0;
   }
   .owl-dots {
-    right: px2rem($control-size * 2 - 10px);
+    right: px2rem($control-size * 2 - 15px);
   }
   &.owl-nav-square,
   &.owl-nav-circle {
@@ -305,6 +312,44 @@ $control-white-active-bg:$primary;
         .owl-next {
           right: px2rem(- ($control-size-sm + 10px));
         }
+      }
+    }
+  }
+  &.owl-nav-leftside,
+  &.owl-nav-rightside {
+    padding-bottom: px2rem($control-size-sm);
+    .owl-dots {
+      bottom: 0;
+    }
+  }
+  &.owl-nav-topleftside,
+  &.owl-nav-toprightside {
+    padding-top: px2rem($control-size-sm + 10px);
+    .owl-dots {
+      top: px2rem(3px);
+    }
+  }
+  &.owl-nav-leftside,
+  &.owl-nav-topleftside {
+    .owl-dots {
+      left: px2rem($control-size-sm * 2);
+    }
+    &.owl-nav-square,
+    &.owl-nav-circle {
+      .owl-dots {
+        left: px2rem($control-size-sm * 2 + 15px);
+      }
+    }
+  }
+  &.owl-nav-rightside,
+  &.owl-nav-toprightside {
+    .owl-dots {
+      right: px2rem($control-size-sm * 2);
+    }
+    &.owl-nav-square,
+    &.owl-nav-circle {
+      .owl-dots {
+        right: px2rem($control-size-sm * 2 + 15px);
       }
     }
   }
