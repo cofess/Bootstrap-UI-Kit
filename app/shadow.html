@@ -6,25 +6,17 @@
 <!-- 模版 -->
 {% extends '_layouts/application.html' %}
 <!-- 页面标题 -->
-{% block title %}{{ global.title }} | Blank Template{% endblock %}
+{% block title %}{{ global.title }} | Shadows{% endblock %}
 <!-- 面包屑导航 -->
 {% block breadcrumb %}
 <section class="page-header">
   <div class="container">
-    <h1 class="page-title">Page Title</h1>
+    <h1 class="page-title">阴影<small class="ml-2">Shadows</small></h1>
+    <p>用于向 HTML 元素添加或删除阴影的工具类。</p>
   </div>
 </section>
 {% endblock %}
 <!-- 主体内容 -->
 {% block content %}
-<div class="container">
-  <div class="card">
-    <div class="card-header">
-      <div class="card-title">Card Title</div>
-    </div>
-    <div class="card-body">
-      <p>Card Content</p>
-    </div>
-  </div>
-</div>
+{% include "_includes/_parts/utilities_shadows.html" %}
 {% endblock %}
