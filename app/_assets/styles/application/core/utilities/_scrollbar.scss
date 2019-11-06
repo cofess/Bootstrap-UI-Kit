@@ -1,6 +1,12 @@
+body *::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  background: transparent;
+}
+
 body *::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
+  background: transparent;
   transition: .3s background;
 }
 
@@ -10,4 +16,24 @@ body *::-webkit-scrollbar-thumb {
 
 body *:hover::-webkit-scrollbar-thumb {
   background: $gray-500;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: #F2F2F2;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: #F2F2F2;
+  transition: .3s background;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $gray-600;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $gray-600;
 }
