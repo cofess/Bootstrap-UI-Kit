@@ -93,15 +93,87 @@ $control-white-active-bg:$primary;
 }
 
 // control position
-.owl-nav-aside {}
+.owl-nav-leftside,
+.owl-nav-rightside {
+  padding-bottom: px2rem(30px);
+  .owl-nav {
+    position: absolute;
+    bottom: 0;
+    margin: unset;
+    .owl-prev,
+    .owl-next {
+      margin: unset;
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.owl-nav-leftside {
+  .owl-nav {
+    left: 0;
+  }
+  .owl-dots {
+    left: px2rem(50px);
+  }
+}
+
+.owl-nav-rightside {
+  .owl-nav {
+    right: 0;
+  }
+  .owl-dots {
+    right: px2rem(50px);
+  }
+}
+
+.owl-nav-topleftside,
+.owl-nav-toprightside {
+  padding-top: px2rem(30px);
+  .owl-nav {
+    position: absolute;
+    top: 0;
+    margin: unset;
+    .owl-prev,
+    .owl-next {
+      margin: unset;
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.owl-nav-topleftside {
+  .owl-nav {
+    left: 0;
+  }
+  .owl-dots {
+    left: px2rem(50px);
+  }
+}
+
+.owl-nav-toprightside {
+  .owl-nav {
+    right: 0;
+  }
+  .owl-dots {
+    right: px2rem(50px);
+  }
+}
 
 .owl-nav-outside {
   .owl-nav {
+    margin: 0;
     .owl-prev,
     .owl-next {
       position: absolute;
       top: 50%;
-      margin: 0;
+      margin: unset;
+      margin-top: px2rem(- $control-size / 2);
     }
     .owl-prev {
       left: px2rem(- $control-size);
@@ -204,6 +276,7 @@ $control-white-active-bg:$primary;
       }
     }
   }
+  &.owl-nav-outside,
   &.owl-nav-middle {
     .owl-nav {
       .owl-prev,
@@ -269,6 +342,7 @@ $control-white-active-bg:$primary;
       }
     }
   }
+  &.owl-nav-outside,
   &.owl-nav-middle {
     .owl-nav {
       .owl-prev,
