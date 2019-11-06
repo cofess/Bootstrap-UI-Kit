@@ -104,28 +104,13 @@ $control-white-active-bg:$primary;
     .owl-next {
       margin: unset;
     }
+    .owl-next {
+      margin-left: px2rem(10px);
+    }
   }
   .owl-dots {
     position: absolute;
-    bottom: 0;
-  }
-}
-
-.owl-nav-leftside {
-  .owl-nav {
-    left: 0;
-  }
-  .owl-dots {
-    left: px2rem(50px);
-  }
-}
-
-.owl-nav-rightside {
-  .owl-nav {
-    right: 0;
-  }
-  .owl-dots {
-    right: px2rem(50px);
+    bottom: px2rem(2px);
   }
 }
 
@@ -140,28 +125,45 @@ $control-white-active-bg:$primary;
     .owl-next {
       margin: unset;
     }
+    .owl-next {
+      margin-left: px2rem(10px);
+    }
   }
   .owl-dots {
     position: absolute;
-    top: 0;
+    top: px2rem(5px);
   }
 }
 
+.owl-nav-leftside,
 .owl-nav-topleftside {
   .owl-nav {
     left: 0;
   }
   .owl-dots {
-    left: px2rem(50px);
+    left: px2rem($control-size * 2 - 10px);
+  }
+  &.owl-nav-square,
+  &.owl-nav-circle {
+    .owl-dots {
+      left: px2rem($control-size * 2 + 15px);
+    }
   }
 }
 
+.owl-nav-rightside,
 .owl-nav-toprightside {
   .owl-nav {
     right: 0;
   }
   .owl-dots {
-    right: px2rem(50px);
+    right: px2rem($control-size * 2 - 10px);
+  }
+  &.owl-nav-square,
+  &.owl-nav-circle {
+    .owl-dots {
+      right: px2rem($control-size * 2 + 15px);
+    }
   }
 }
 
