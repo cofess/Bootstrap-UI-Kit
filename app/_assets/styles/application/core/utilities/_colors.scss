@@ -1,12 +1,20 @@
 // Background
  
 @each $color, $value in $colors {
+  @include bg-variant(".bg-#{$color}", $value);
 	@include bg-variant(".bg-#{$color}-lightest", mix($value, #fff, 10%));
 	@include bg-variant(".bg-#{$color}-lighter", mix($value, #fff, 30%));
 	@include bg-variant(".bg-#{$color}-light", mix($value, #fff, 70%));
 	@include bg-variant(".bg-#{$color}-dark", mix($value, #000, 80%));
 	@include bg-variant(".bg-#{$color}-darker", mix($value, #000, 40%));
 	@include bg-variant(".bg-#{$color}-darkest", mix($value, #000, 20%));
+}
+
+// Text color
+@each $color, $value in $colors {
+  .text-#{$color} {
+    color: $value !important;
+  }
 }
 
 // Neutral

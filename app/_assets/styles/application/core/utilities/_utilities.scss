@@ -1,12 +1,3 @@
-@each $color, $value in $colors {
-	@include bg-variant(".bg-#{$color}", $value);
-
-	.text-#{$color} {
-		color: $value !important;
-	}
-}
-
-
 .icon {
 	// color: $text-muted !important;
 
