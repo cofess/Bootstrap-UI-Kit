@@ -28,6 +28,8 @@ require.config({
     'fancybox': 'assets/js/vendors/jquery.fancybox.min',
     'owl.carousel': 'assets/js/vendors/owl.carousel',
     'selectize': 'assets/js/vendors/selectize.min',
+    'spin': 'assets/js/vendors/spin.min',
+    'ladda': 'assets/js/vendors/ladda.min',
     'plugin': 'assets/js/plugin.min',
     'core': 'assets/js/application',
   },
