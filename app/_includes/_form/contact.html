@@ -1,0 +1,67 @@
+<form enctype="multipart/form-data" role="form" class="validator-form">
+  <div class="row gutter-sm">
+    <div class="col-md-7">
+      <div class="row gutter-sm">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="form-group">
+            <label class="form-required regular" for="name">Full Name</label>
+            <input type="text" name="name" id="name" class="form-control" required>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <div class="form-group">
+            <label class="form-required regular" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" data-error="Bruh, that email address is invalid." required>
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="form-group">
+            <label class="regular" for="phone">Phone Number</label>
+            <input type="text" name="phone" id="phone" class="form-control">
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <div class="form-group">
+            <label class="regular" for="skype">Skype</label>
+            <input type="text" name="skype" id="skype" class="form-control">
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="form-group">
+            <label class="regular" for="company">Company Name</label>
+            <input type="text" name="company" id="company" class="form-control">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="form-group">
+            <label class="form-required regular" for="country">Country</label>
+            <input type="text" name="country" id="country" class="form-control" required>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ col -->
+    <div class="col-md-5">
+      <div class="form-group">
+        <label class="form-required regular" for="message">Message</label>
+        <textarea name="message" id="message" class="form-control" rows="5" required style="height: 132px"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-block btn-primary">
+          <span class="text block">
+            <span class="pull-left text-uppercase">Submit</span>
+          <span class="pull-right"><i class="fa fa-send-o"></i></span>
+          </span>
+          <span class="text-active block">
+            <span class="pull-left text-uppercase">Sending</span>
+          <span class="pull-right"><i class="fa fa-spinner fa-spin"></i></span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <!--/ col -->
+  </div>
+</form>
+<!--/ form -->

@@ -118,12 +118,17 @@ Icon input
 }
 
 .form-required {
-	color: $red;
-
-	&:before {
-		content: ' ';
-	}
+  // color: $red;
+  &:after {
+    content: '*';
+    color: $red;
+    margin-left: 5px
+  }
+  // &:before {
+  //   content: ' ';
+  // }
 }
+
 
 .state-valid {
 	padding-right: 2rem;

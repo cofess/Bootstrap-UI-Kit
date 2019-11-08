@@ -1,0 +1,103 @@
+<form enctype="multipart/form-data" role="form" class="validator-form">
+  <div class="row gutter-sm">
+    <div class="col-md-7">
+      <div class="row gutter-sm">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="form-group">
+            <label class="form-required regular" for="name">Full Name</label>
+            <input type="text" name="name" id="name" class="form-control" required>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="form-group">
+            <label class="form-required regular" for="company">Company Name</label>
+            <input type="text" name="company" id="company" class="form-control" required>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <div class="form-group">
+            <label class="regular" for="phone">Phone Number</label>
+            <input type="text" name="phone" id="phone" class="form-control" required>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <div class="form-group">
+            <label class="form-required regular" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" data-error="Bruh, that email address is invalid." required>
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <div class="form-group">
+            <label class="form-required regular" for="country">Country</label>
+            <input type="text" name="country" id="country" class="form-control" required>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <div class="form-group">
+            <label class="form-required regular" for="city">City</label>
+            <input type="text" name="city" id="city" class="form-control" required>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="form-group">
+            <label class="regular" for="address"> Street Address</label>
+            <input type="text" name="address" id="address" class="form-control">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ col -->
+    <div class="col-md-5">
+      <div class="form-group">
+        <label class="form-required regular" for="product-type">Product Type </label>
+        <select name="product-type" id="product-type" class="form-control" required>
+          <option value=" "> </option>
+          <option value="Laser">Laser</option>
+          <option value="Copier Toner Cartridge">Copier Toner Cartridge</option>
+          <option value="Printing Consumables Parts">Printing Consumables Parts</option>
+          <option value="Label">Label</option>
+          <option value="Barcode Printer">Barcode Printer</option>
+          <option value="Thermal Transfer Ribbon">Thermal Transfer Ribbon</option>
+          <option value="Thermal Paper Roll">Thermal Paper Roll</option>
+          <option value="Coated Label Paper">Coated Label Paper</option>
+          <option value="Label Tape Cassette">Label Tape Cassette</option>
+          <option value="Cleaning Cards">Cleaning Cards</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-required regular" for="message">Message</label>
+        <textarea name="message" id="message" class="form-control" rows="5" required style="height: 180px"></textarea>
+      </div>
+    </div>
+    <!--/ col -->
+  </div>
+  <!--/ row -->
+  <div class="row gutter-sm">
+    <div class="col-md-7">
+      <div class="form-group">
+        <label class="regular">
+          <span>Send inquiry list attachment right now here.</span>
+          <a href="mailto:marketing@astatoner.com"><i class="fa fa-envelope fa-fw"></i>marketing@astatoner.com</a>
+        </label>
+      </div>
+    </div>
+    <!--/ col -->
+    <div class="col-md-5">
+      <button type="submit" class="btn btn-block btn-primary">
+        <span class="text block">
+          <span class="pull-left text-uppercase">Submit</span>
+        <span class="pull-right"><i class="fa fa-send-o"></i></span>
+        </span>
+        <span class="text-active block">
+          <span class="pull-left text-uppercase">Sending</span>
+        <span class="pull-right"><i class="fa fa-spinner fa-spin"></i></span>
+        </span>
+      </button>
+    </div>
+    <!--/ col -->
+  </div>
+  <!--/ row -->
+</form>
+<!--/ form -->

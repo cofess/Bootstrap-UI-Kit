@@ -189,6 +189,23 @@ require(['jquery', 'plugin'], function($) {
   console.log("plugin Loaded :)");
 });
 
+// Form validator
+require(['jquery', 'validator'], function($) {
+  console.log("Form validator Loaded :)");
+  $('.validator-form').validator();
+  $('.validator-form').validator().on('submit', function(e) {
+    if (e.isDefaultPrevented()) {
+      // handle the invalid form...
+      console.log('Bruh, Please complete form fields.');
+      // console.log($(this).find('[type=submit]'));
+    } else {
+      // everything looks good!
+      $(this).find('[type=submit]').attr("status", "sending");
+      $(this).find('[type=submit]').addClass('active');
+    }
+  })
+});
+
 // ladda
 require(['jquery', 'spin', 'ladda'], function($, spin, Ladda) {
   console.log("ladda Loaded :)");
