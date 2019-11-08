@@ -8,19 +8,13 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 320px;
-    top: -44px;
+    height: px2rem(320px);
+    top: px2rem(-44px);
     background: white;
     -webkit-transform: skewY(-4deg);
     -ms-transform: skewY(-4deg);
     transform: skewY(-4deg);
     z-index: -1;
-  }
-}
-
-@media (min-width: 1200px) {
-  .bg-skew:before {
-    top: -68px;
   }
 }
 
@@ -63,5 +57,11 @@
 .bg-dark {
   &.bg-skew:before {
     @extend .bg-dark;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .bg-skew:before {
+    top: px2rem(-68px);
   }
 }

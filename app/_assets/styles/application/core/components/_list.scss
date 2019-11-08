@@ -79,7 +79,7 @@
       height: px2rem(24px);
       line-height: px2rem(24px);
       text-align: center;
-      font-size: 12px;
+      font-size: px2rem(12px);
       border: 1px solid $gray-600;
       color: $gray-600;
       margin: 0 10px 0 0;
@@ -92,7 +92,6 @@
     &:before {
       counter-increment: list1;
       content: counter(list1) '';
-      font-size: 12px;
     }
     > ol,
     > ul {
@@ -102,7 +101,6 @@
         &:before {
           counter-increment: list2;
           content: counter(list1) "." counter(list2) "";
-          font-size: 85%;
         }
       }
     }
