@@ -26,7 +26,7 @@ require.config({
     'royalslider': 'assets/js/vendors/jquery.royalslider.min',
     'superslides': 'assets/js/vendors/jquery.superslides.min',
     'fancybox': 'assets/js/vendors/jquery.fancybox.min',
-    'owl.carousel': 'assets/js/vendors/owl.carousel',
+    'owl.carousel': 'assets/js/vendors/owl.carousel.min',
     'selectize': 'assets/js/vendors/selectize.min',
     'spin': 'assets/js/vendors/spin.min',
     'ladda': 'assets/js/vendors/ladda.min',
