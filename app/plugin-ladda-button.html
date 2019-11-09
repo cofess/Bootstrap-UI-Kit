@@ -6,12 +6,15 @@
 <!-- 模版 -->
 {% extends '_layouts/application.html' %}
 <!-- 页面标题 -->
-{% block title %}{{ global.title }} | Blank Template{% endblock %}
+{% block title %}{{ global.title }} | Ladda Button{% endblock %}
 <!-- 面包屑导航 -->
 {% block breadcrumb %}
 <section class="page-header">
   <div class="container">
-    <h1 class="page-title">Page Title</h1>
+    <h1 class="page-title">Ladda Button</h1>
+    <p>
+      A UI concept which merges loading indicators into the action that invoked them. Primarily intended for use with forms where it gives users immediate feedback upon submit rather than leaving them wondering while the browser does its thing. For a real-world example, check out any of the forms on <a href="http://slid.es">slid.es</a>.
+    </p>
   </div>
 </section>
 {% endblock %}
@@ -19,97 +22,88 @@
 {% block content %}
 <div class="container">
   <div class="card">
-    <div class="card-header">
-      <div class="card-title">Card Title</div>
-    </div>
     <div class="card-body">
-      <div class="intro">
-        <h1>Ladda</h1>
-        <p>
-          A UI concept which merges loading indicators into the action that invoked them. Primarily intended for use with forms where it gives users immediate feedback upon submit rather than leaving them wondering while the browser does its thing. For a real-world example, check out any of the forms on <a href="http://slid.es">slid.es</a>.
-        </p>
-      </div>
       <div class="row">
         <section class="col-md-3">
-          <h3 class="h6">expand-left</h3>
+          <h3 class="h6 mt-3">expand-left</h3>
           <button class="btn btn-primary ladda-button" data-color="green" data-style="expand-left"><span class="ladda-label">Submit</span></button>
         </section>
         <section class="col-md-3">
-          <h3 class="h6">expand-right</h3>
+          <h3 class="h6 mt-3">expand-right</h3>
           <button class="btn btn-primary ladda-button" data-color="green" data-style="expand-right"><span class="ladda-label">Submit</span></button>
         </section>
         <section class="col-md-3">
-          <h3 class="h6">expand-up</h3>
+          <h3 class="h6 mt-3">expand-up</h3>
           <button class="btn btn-primary ladda-button" data-color="green" data-style="expand-up"><span class="ladda-label">Submit</span></button>
         </section>
         <section class="col-md-3">
-          <h3 class="h6">expand-down</h3>
+          <h3 class="h6 mt-3">expand-down</h3>
           <button class="btn btn-primary ladda-button" data-color="green" data-style="expand-down"><span class="ladda-label">Submit</span></button>
         </section>
         <section class="col-md-3">
-          <h3 class="h6">zoom-in</h3>
+          <h3 class="h6 mt-3">zoom-in</h3>
           <button class="btn btn-info ladda-button" data-color="red" data-style="zoom-in"><span class="ladda-label">Submit</span></button>
         </section>
         <section class="col-md-3">
-          <h3 class="h6">zoom-out</h3>
+          <h3 class="h6 mt-3">zoom-out</h3>
           <button class="btn btn-info ladda-button" data-color="red" data-style="zoom-out"><span class="ladda-label">Submit</span></button>
         </section>
         <section class="col-md-3">
-          <h3 class="h6">slide-left</h3>
+          <h3 class="h6 mt-3">slide-left</h3>
           <button class="btn btn-warning ladda-button" data-color="blue" data-style="slide-left"><span class="ladda-label">Submit</span></button>
         </section>
         <section class="col-md-3">
-          <h3 class="h6">slide-right</h3>
+          <h3 class="h6 mt-3">slide-right</h3>
           <button class="btn btn-warning ladda-button" data-color="blue" data-style="slide-right"><span class="ladda-label">Submit</span></button>
         </section>
         <section class="col-md-3">
-          <h3 class="h6">slide-up</h3>
+          <h3 class="h6 mt-3">slide-up</h3>
           <button class="btn btn-warning ladda-button" data-color="blue" data-style="slide-up"><span class="ladda-label">Submit</span></button>
         </section>
         <section class="col-md-3">
-          <h3 class="h6">slide-down</h3>
+          <h3 class="h6 mt-3">slide-down</h3>
           <button class="btn btn-warning ladda-button" data-color="blue" data-style="slide-down"><span class="ladda-label">Submit</span></button>
         </section>
         <section class="col-md-3">
-          <h3 class="h6">contract</h3>
+          <h3 class="h6 mt-3">contract</h3>
           <button class="btn btn-danger ladda-button" data-color="purple" data-style="contract"><span class="ladda-label">Submit</span></button>
         </section>
         <section class="col-md-3">
-          <h3 class="h6">contract-overlay</h3>
+          <h3 class="h6 mt-3">contract-overlay</h3>
           <button class="btn btn-danger ladda-button" data-color="purple" data-style="contract-overlay"><span class="ladda-label">Submit</span></button>
         </section>
       </div>
-      <h3 class="mt-3" id="progress">Built-in progress bar</h3>
+      <h3 class="mt-5" id="progress">Built-in progress bar</h3>
       <div class="row">
         <section class="col-md-3 progress-demo">
-          <h3 class="h6">expand-left</h3>
+          <h3 class="h6 mt-3">expand-left</h3>
           <button class="btn btn-danger ladda-button" data-color="purple" data-style="expand-left"><span class="ladda-label">Submit</span></button>
         </section>
         <section class="col-md-3 progress-demo">
-          <h3 class="h6">expand-right</h3>
+          <h3 class="h6 mt-3">expand-right</h3>
           <button class="btn btn-danger ladda-button" data-color="purple" data-style="expand-right"><span class="ladda-label">Submit</span></button>
         </section>
         <section class="col-md-3 progress-demo">
-          <h3 class="h6">contract</h3>
+          <h3 class="h6 mt-3">contract</h3>
           <button class="btn btn-danger ladda-button" data-color="purple" data-style="contract"><span class="ladda-label">Submit</span></button>
         </section>
       </div>
-      <h3 class="mt-3" id="sizes">Sizes</h3>
+      <h3 class="mt-5" id="sizes">Sizes</h3>
       <div class="row">
         <section class="col-md-3 progress-demo">
-          <h3 class="h6">Extra Small</h3>
+          <h3 class="h6 mt-3">Extra Small</h3>
           <button class="btn btn-danger btn-xs ladda-button" data-color="mint" data-style="expand-right" data-size="xs"><span class="ladda-label">Submit</span></button>
         </section>
         <section class="col-md-3 progress-demo">
-          <h3 class="h6">Small</h3>
+          <h3 class="h6 mt-3">Small</h3>
           <button class="btn btn-danger btn-sm ladda-button" data-color="mint" data-style="expand-right" data-size="s"><span class="ladda-label">Submit</span></button>
         </section>
         <section class="col-md-3 progress-demo">
-          <h3 class="h6">Large</h3>
+          <h3 class="h6 mt-3">Large</h3>
           <button class="btn btn-danger btn-lg ladda-button" data-color="mint" data-style="expand-right" data-size="l"><span class="ladda-label">Submit</span></button>
         </section>
       </div>
-      <h3 class="mt-3">Buttons in forms containing required inputs</h3>
+      <h3 class="mt-5">Buttons in forms containing required inputs</h3>
         <section>
           <form>
             <div class="form-group">
