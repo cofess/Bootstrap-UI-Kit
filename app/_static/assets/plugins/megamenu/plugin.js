@@ -1,8 +1,10 @@
 require.config({
-    shim: {
-        'maxmegamenu': ['jquery','core'],
-    },
-    paths: {
-        'maxmegamenu': 'assets/plugins/megamenu/maxmegamenu',
-    }
+  shim: {
+    'hoverIntent': ['jquery', 'core'],
+    'maxmegamenu': ['jquery', 'hoverIntent', 'core'],
+  },
+  paths: {
+    'hoverIntent': 'assets/plugins/megamenu/hoverIntent.min',
+    'maxmegamenu': 'assets/plugins/megamenu/maxmegamenu',
+  }
 });
