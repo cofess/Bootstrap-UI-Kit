@@ -211,10 +211,10 @@ require(['jquery', 'spin', 'ladda'], function($, spin, Ladda) {
   console.log("ladda Loaded :)");
   
   // Bind normal buttons
-  Ladda.bind( 'div:not(.progress-demo) button', { timeout: 2000 } );
+  Ladda.bind( '[data-trigger="ladda-button"]', { timeout: 2000 } );
 
   // Bind progress buttons and simulate loading progress
-  Ladda.bind('.progress-demo button', {
+  Ladda.bind('[data-trigger="ladda-progress-button"]', {
     callback: function(instance) {
       var progress = 0;
       var interval = setInterval(function() {

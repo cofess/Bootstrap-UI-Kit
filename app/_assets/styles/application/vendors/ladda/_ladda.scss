@@ -370,13 +370,16 @@ $spinnerSize: 32px !default;
 	}
 	.ladda-button[data-style=zoom-out] .ladda-label {
 		position: relative;
-		display: inline-block;
+		// display: inline-block;
 	}
 
 .ladda-button[data-style=zoom-out][data-loading] .ladda-label {
 	opacity: 0;
 
 	@include transform( scale( 0.5 ) );
+	*{
+		opacity: 0;
+	}
 }
 .ladda-button[data-style=zoom-out][data-loading] .ladda-spinner {
 	opacity: 1;
@@ -401,13 +404,16 @@ $spinnerSize: 32px !default;
 	}
 	.ladda-button[data-style=zoom-in] .ladda-label {
 		position: relative;
-		display: inline-block;
+		// display: inline-block;
 	}
 
 .ladda-button[data-style=zoom-in][data-loading] .ladda-label {
 	opacity: 0;
 
 	@include transform( scale( 2.2 ) );
+	*{
+		opacity: 0;
+	}
 }
 .ladda-button[data-style=zoom-in][data-loading] .ladda-spinner {
 	opacity: 1;

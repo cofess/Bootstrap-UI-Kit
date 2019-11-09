@@ -43,11 +43,11 @@
   }
   [data-status='sending'] {
     pointer-events: none!important;
-    .text {
-      display: none!important;
-    }
-    .text-active {
-      display: block!important;
-    }
+    // .text {
+    //   display: none!important;
+    // }
+    // .text-active {
+    //   display: block!important;
+    // }
   }
 }
