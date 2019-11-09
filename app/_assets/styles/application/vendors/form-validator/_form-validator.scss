@@ -1,0 +1,53 @@
+// Feedback states
+.has-success {
+  @include form-control-validation($success, $success, $success);
+}
+
+.has-warning {
+  @include form-control-validation($warning, $warning, $warning);
+}
+
+.has-error {
+  @include form-control-validation($danger, $danger, $danger);
+}
+
+// Reposition feedback icon if input has visible label above
+.has-feedback label ~ .form-control-feedback {
+  top: 25px;
+}
+
+.has-feedback label.sr-only ~ .form-control-feedback {
+  top: 0;
+}
+
+// Help text
+//
+// Apply to any element you wish to create light text for placement immediately
+// below a form control. Use for general help, formatting, or instructional text.
+// .help-block {
+//   display: block;
+//   margin-top: 5px;
+//   margin-bottom: 10px;
+//   color: #26267c;
+// }
+
+// form-validator
+[data-trigger="form-validator"] {
+  .form-group {
+    position: relative;
+  }
+  .help-block {
+    position: absolute;
+    width: 100%;
+    font-size: 75%;
+  }
+  [data-status='sending'] {
+    pointer-events: none!important;
+    .text {
+      display: none!important;
+    }
+    .text-active {
+      display: block!important;
+    }
+  }
+}

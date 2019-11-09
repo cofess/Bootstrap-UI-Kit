@@ -192,8 +192,8 @@ require(['jquery', 'plugin'], function($) {
 // Form validator
 require(['jquery', 'validator'], function($) {
   console.log("Form validator Loaded :)");
-  $('.validator-form').validator();
-  $('.validator-form').validator().on('submit', function(e) {
+  $('[data-trigger="form-validator"]').validator();
+  $('[data-trigger="form-validator"]').validator().on('submit', function(e) {
     if (e.isDefaultPrevented()) {
       // handle the invalid form...
       console.log('Bruh, Please complete form fields.');
