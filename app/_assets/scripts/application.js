@@ -192,8 +192,8 @@ require(['jquery', 'plugin'], function($) {
 // Form validator
 require(['jquery', 'validator'], function($) {
   console.log("Form validator Loaded :)");
-  $('[data-trigger="form-validator"]').validator();
-  $('[data-trigger="form-validator"]').validator().on('submit', function(e) {
+  $('[data-toggle="form-validator"]').validator();
+  $('[data-toggle="form-validator"]').validator().on('submit', function(e) {
     if (e.isDefaultPrevented()) {
       // handle the invalid form...
       console.log('Bruh, Please complete form fields.');
@@ -211,10 +211,10 @@ require(['jquery', 'spin', 'ladda'], function($, spin, Ladda) {
   console.log("ladda Loaded :)");
   
   // Bind normal buttons
-  Ladda.bind( '[data-trigger="ladda-button"]', { timeout: 2000 } );
+  Ladda.bind( '[data-toggle="ladda-button"]', { timeout: 2000 } );
 
   // Bind progress buttons and simulate loading progress
-  Ladda.bind('[data-trigger="ladda-progress-button"]', {
+  Ladda.bind('[data-toggle="ladda-progress-button"]', {
     callback: function(instance) {
       var progress = 0;
       var interval = setInterval(function() {
