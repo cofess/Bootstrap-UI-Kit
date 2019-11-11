@@ -4,6 +4,28 @@
 
 .mega-menu-last-modified-1573459105 { content: 'Monday 11th November 2019 07:58:25 UTC'; }
 
+.mmm-menu {
+  background: #222;
+}
+
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu:before,
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu:after {
+  display:block!important;
+  content: " ";
+  left: -2000px;
+  top: 0;
+  bottom: 0;
+  width: 2000px;
+  background: #f1f1f1;
+  position: absolute;
+  height: 100%;
+}
+
+#mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu:after {
+  left: auto;
+  right: -2000px;
+}
+
 #mega-menu-wrap-primary-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu ul.mega-sub-menu, #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-item, #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-row, #mega-menu-wrap-primary-menu #mega-menu-primary-menu li.mega-menu-column, #mega-menu-wrap-primary-menu #mega-menu-primary-menu a.mega-menu-link {
   transition: none;
   border-radius: 0;
