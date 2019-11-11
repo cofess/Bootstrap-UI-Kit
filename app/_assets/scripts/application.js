@@ -212,6 +212,7 @@ require(['jquery', 'spin', 'ladda'], function($, spin, Ladda) {
   
   // Bind normal buttons
   Ladda.bind( '[data-toggle="ladda-button"]', { timeout: 2000 } );
+  // Ladda.bind( '[data-toggle="ladda-button"]:not(.disabled)', { timeout: 2000 } );
 
   // Bind progress buttons and simulate loading progress
   Ladda.bind('[data-toggle="ladda-progress-button"]', {
