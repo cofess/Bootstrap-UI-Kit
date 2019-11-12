@@ -1,19 +1,21 @@
 // options
-$resets: 'on';
-$transitions:'on';
+$shadow:'off';
+$resets: 'off';
+$transitions:'off';
 $menu_item_divider:'off';
-$menu_item_highlight_current:'on';
+$menu_item_highlight_current:'off';
 // global
-$wrap:'#mega-menu-wrap-primary-menu';
-$menu:'#mega-menu-primary-menu';
+$wrap:'#mega_menu_wrap_primary_menu';
+$menu:'#mega_menu_primary_menu';
 $line_height:1.7;
 $responsive_breakpoint:600px;
 // panel
 $z_index:999;
-$panel-width:100%;
+$panel_width:100%;
+$panel_inner_width:100%;
+$panel_font_size:14px;
 $panel_font_color:#666666;
 $panel_font_family:inherit;
-$panel_font_size:14px;
 $panel_background_from: #f1f1f1;
 $panel_background_to: #f1f1f1;
 $panel_padding_top:0;
@@ -24,6 +26,21 @@ $panel_border_radius_top_left:0;
 $panel_border_radius_top_right:0;
 $panel_border_radius_bottom_right:0;
 $panel_border_radius_bottom_left:0;
+// panel second
+$panel_second_level_font_color:#555;
+$panel_second_level_font_color_hover:#555;
+$panel_second_level_text_transform:uppercase;
+$panel_second_level_font:inherit;
+$panel_second_level_font_size:16px;
+$panel_second_level_font_weight:bold;
+$panel_second_level_font_weight_hover:bold;
+$panel_second_level_text_decoration:none;
+$panel_second_level_text_decoration_hover:none;
+// panel third
+$panel_third_level_font_color:#666;
+$panel_third_level_font_color_hover:#666;
+$panel_third_level_font:inherit;
+$panel_third_level_font_size:14px;
 // container
 $container_background_from:#222222; // #363636 | #222222
 $container_background_to:#222222; // #363636 | #222222
@@ -31,25 +48,25 @@ $container_border_radius_top_left:0;
 $container_border_radius_top_right:0;
 $container_border_radius_bottom_right:0;
 $container_border_radius_bottom_left:0;
-$container-padding-top:0;
-$container-padding-right:0;
-$container-padding-bottom:0;
-$container-padding-left:0;
+$container_padding_top:0;
+$container_padding_right:0;
+$container_padding_bottom:0;
+$container_padding_left:0;
 // // menu item
-$menu-item-align:left;
-$menu-item-spacing:0;
+$menu_item_align:left;
+$menu_item_spacing:0;
 $menu_item_link_height:40px;
-$menu-item-link-color:#ffffff;
-$menu-item-background-from:rgba(0, 0, 0, 0);
+$menu_item_link_color:#ffffff;
+$menu_item_background_from:rgba(0, 0, 0, 0);
 $menu_item_background_to:rgba(0, 0, 0, 0);
-$menu-item-background-hover-from:#333333; // #2b2b2b | #333333
-$menu-item-background-hover-to:#333333; // #2b2b2b | #333333
-$menu-item-link-color-hover:#ffffff;
-$menu-item-link-weight-hover:normal;
-$menu-item-link-text-decoration-hover:none;
-$menu-item-border-color-hover:#ffffff;
-$menu-item-link-border-radius-top-left:0;
-$menu-item-link-border-radius-top-right:0;
+$menu_item_background_hover_from:#333333; // #2b2b2b | #333333
+$menu_item_background_hover_to:#333333; // #2b2b2b | #333333
+$menu_item_link_color_hover:#ffffff;
+$menu_item_link_weight_hover:normal;
+$menu_item_link_text_decoration_hover:none;
+$menu_item_border_color_hover:#ffffff;
+$menu_item_link_border_radius_top_left:0;
+$menu_item_link_border_radius_top_right:0;
 $menu_item_link_padding_top:0;
 $menu_item_link_padding_right:10px;
 $menu_item_link_padding_bottom:0;
@@ -57,10 +74,38 @@ $menu_item_link_padding_left:10px;
 $menu_item_link_text_transform: none;
 $menu_item_link_text_decoration: none;
 $menu_item_link_text_align: left;
-// // mobile menu item
-$mobile-menu-item-background-hover-from:#333333; // #2b2b2b | #333333
-$mobile-menu-item-background-hover-to:#333333; // #2b2b2b | #333333
-$mobile-menu-item-link-color-hover:#ffffff;
-$mobile-menu-item-height:40px;
-// // effect
-$effect-speed:200ms;
+$menu_item_border_top:0;
+$menu_item_border_left:0;
+$menu_item_border_right:0;
+$menu_item_border_bottom:0;
+$menu_item_border_color:#ffffff;
+$menu_item_link_border_radius_top_left:0;
+$menu_item_link_border_radius_top_right:0;
+$menu_item_link_border_radius_bottom_right:0;
+$menu_item_link_border_radius_bottom_left:0;
+$menu_item_link_font: inherit;
+$menu_item_link_font_size: 14px;
+$menu_item_link_weight: normal;
+// mobile menu item
+$mobile_background_from:#222;
+$mobile_background_to:#222;
+$mobile_menu_item_background_hover_from:#333333; // #2b2b2b | #333333
+$mobile_menu_item_background_hover_to:#333333; // #2b2b2b | #333333
+$mobile_menu_item_link_color_hover:#ffffff;
+$mobile_menu_item_height:40px;
+$mobile_menu_item_link_font_size:14px;
+$mobile_menu_item_link_color:#ffffff;
+$mobile_menu_item_link_text_align:left;
+$mobile_menu_item_link_color_hover:#ffffff;
+$mobile_menu_item_background_hover_from:#333;
+$mobile_menu_item_background_hover_to:#333;
+// effect
+$effect_speed:200ms;
+// flyout link
+$flyout_link_size:14px;
+$flyout_link_color:#666;
+$flyout_link_color_hover:#666;
+$flyout_link_family:inherit;
+// toggle
+$toggle_background_from:#222;
+$toggle_background_to:#222;
