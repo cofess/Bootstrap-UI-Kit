@@ -1,39 +1,41 @@
-/*.badge {
-	color: #fff;
-}*/
+@if($enable-interface-badge == true){
+  /*.badge {
+  	color: #fff;
+  }*/
 
-.badge-default {
-  background: $gray-200;
-  color: $gray-600;
-}
+  .badge-default {
+    background: $gray-200;
+    color: $gray-600;
+  }
 
-.badge-dot {
-  width: px2rem(10px);
-  height: px2rem(10px);
-  line-height: px2rem(10px);
-  border-radius: 50%;
-}
+  .badge-dot {
+    width: px2rem(10px);
+    height: px2rem(10px);
+    line-height: px2rem(10px);
+    border-radius: 50%;
+  }
 
-.badge-count {
-  height: px2rem(20px);
-  line-height: px2rem(20px);
-  min-width: px2rem(20px);
-  border-radius: px2rem(10px);
-}
+  .badge-count {
+    height: px2rem(20px);
+    line-height: px2rem(20px);
+    min-width: px2rem(20px);
+    border-radius: px2rem(10px);
+  }
 
-.badge-status {
-  position: relative;
-  display: inline-block;
-  .badge {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 1px solid #fff;
-    font-size: 10px;
-    line-height: 1;
-    white-space: nowrap;
-    transform: translate(30%, -30%);
-    transform-origin: 100% 0%;
-    overflow: hidden;
+  .badge-status {
+    position: relative;
+    display: inline-block;
+    .badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 1px solid #fff;
+      font-size: 10px;
+      line-height: 1;
+      white-space: nowrap;
+      transform: translate(30%, -30%);
+      transform-origin: 100% 0%;
+      overflow: hidden;
+    }
   }
 }
