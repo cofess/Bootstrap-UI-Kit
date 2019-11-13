@@ -21,7 +21,7 @@ require.config({
     'validator': 'assets/js/core/validator.min',
     'wow': 'assets/js/core/wow.min',
     // vendors
-    'smartmenus': 'assets/js/vendors/jquery.smartmenus',
+    'smartmenus': 'assets/js/vendors/jquery.smartmenus.min',
     'sticky': 'assets/js/vendors/sticky-sidebar.min',
     'royalslider': 'assets/js/vendors/jquery.royalslider.min',
     'superslides': 'assets/js/vendors/jquery.superslides.min',
