@@ -34,19 +34,6 @@
       }
     }
   }
-  // svg separator
-  .svg-separator {
-    pointer-events: none;
-    z-index: 0;
-    svg {
-      position: absolute;
-      left: 0;
-      bottom: -5px;
-      width: 100vw;
-      min-width: 800px;
-      z-index: 2;
-    }
-  }
   // split layout
   .split-layout {
     display: flex;

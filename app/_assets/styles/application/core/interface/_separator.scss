@@ -1,0 +1,74 @@
+@if($enable-interface-separator==true) {
+  // skew background ground
+  .bg-skew {
+    padding-top: 0px;
+    position: relative;
+    z-index: 10;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: px2rem(320px);
+      top: px2rem(-44px);
+      background: white;
+      -webkit-transform: skewY(-4deg);
+      -ms-transform: skewY(-4deg);
+      transform: skewY(-4deg);
+      z-index: -1;
+    }
+  }
+  .bg-primary {
+    &.bg-skew:before {
+      @extend .bg-primary;
+    }
+  }
+  .bg-secondary {
+    &.bg-skew:before {
+      @extend .bg-secondary;
+    }
+  }
+  .bg-success {
+    &.bg-skew:before {
+      @extend .bg-success;
+    }
+  }
+  .bg-info {
+    &.bg-skew:before {
+      @extend .bg-info;
+    }
+  }
+  .bg-warning {
+    &.bg-skew:before {
+      @extend .bg-warning;
+    }
+  }
+  .bg-danger {
+    &.bg-skew:before {
+      @extend .bg-danger;
+    }
+  }
+  .bg-dark {
+    &.bg-skew:before {
+      @extend .bg-dark;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .bg-skew:before {
+      top: px2rem(-68px);
+    }
+  }
+  // svg separator
+  .svg-separator {
+    pointer-events: none;
+    z-index: 0;
+    svg {
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100vw;
+      min-width: 800px;
+      z-index: 2;
+    }
+  }
+}
