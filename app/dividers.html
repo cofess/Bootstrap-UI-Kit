@@ -6,25 +6,17 @@
 <!-- 模版 -->
 {% extends '_layouts/application.html' %}
 <!-- 页面标题 -->
-{% block title %}{{ global.title }} | Blank Template{% endblock %}
+{% block title %}{{ global.title }} | Dividers{% endblock %}
 <!-- 面包屑导航 -->
 {% block breadcrumb %}
 <section class="page-header">
   <div class="container">
-    <h1 class="page-title">Page Title</h1>
+    <h1 class="page-title">Dividers</h1>
+    <p>The divider element presented in the following on screen is a line with text in the centre which splits the content.</p>
   </div>
 </section>
 {% endblock %}
 <!-- 主体内容 -->
 {% block content %}
-<div class="container">
-  <div class="card">
-    <div class="card-header">
-      <div class="card-title">Card Title</div>
-    </div>
-    <div class="card-body">
-      <p>Card Content</p>
-    </div>
-  </div>
-</div>
+{% include "_includes/_parts/interface_dividers.html" %}
 {% endblock %}
