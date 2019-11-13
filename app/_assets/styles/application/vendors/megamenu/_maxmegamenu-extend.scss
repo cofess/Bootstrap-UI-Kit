@@ -1,0 +1,74 @@
+.mmm-menu {
+  background: #222;
+}
+
+.max-mega-menu > li.mega-menu-megamenu > ul.mega-sub-menu:before,
+.max-mega-menu > li.mega-menu-megamenu > ul.mega-sub-menu:after {
+  display: block!important;
+  content: " ";
+  left: -2000px;
+  top: 0;
+  bottom: 0;
+  width: 2000px;
+  background: #f1f1f1;
+  position: absolute;
+  height: 100%;
+}
+
+.max-mega-menu > li.mega-menu-megamenu > ul.mega-sub-menu:after {
+  left: auto;
+  right: -2000px;
+}
+
+// down arrow
+.max-mega-menu li.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator:after {
+  content: "\E597"!important;
+  font-family: "iconfont" !important;
+}
+
+// up arrow
+.max-mega-menu li.mega-menu-item-has-children.mega-collapse-children.mega-toggle-on > a.mega-menu-link > span.mega-indicator:after {
+  content: "\E5BD"!important;
+}
+
+@media only screen and (max-width: 968px) {
+  // up arrow
+  .max-mega-menu li.mega-menu-item-has-children.mega-toggle-on > a.mega-menu-link > span.mega-indicator:after {
+    content: "\E5BD"!important;
+  }
+}
+
+@media only screen and (min-width: 969px) {
+  // right arrow
+  .max-mega-menu li.mega-menu-flyout li.mega-menu-item a.mega-menu-link > span.mega-indicator:after {
+    content: "\E5B5"!important;
+  }
+  // left arrow
+  .max-mega-menu li.mega-menu-flyout.mega-align-bottom-right li.mega-menu-item a.mega-menu-link > span.mega-indicator:after {
+    content: "\E5AB"!important;
+    margin: 0 6px 0 0;
+  }
+}
+
+@media only screen and (min-width: 969px) {
+  // right arrow
+  .max-mega-menu.mega-menu-vertical li.mega-align-bottom-right.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator:after,
+  .max-mega-menu.mega-menu-vertical li.mega-align-bottom-right.mega-menu-flyout li.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator:after {
+    content: "\E5B5"!important;
+    margin: 0;
+  }
+  // left arrow
+  .max-mega-menu.mega-menu-vertical li.mega-align-bottom-left.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator:after,
+  .max-mega-menu.mega-menu-vertical li.mega-align-bottom-left.mega-menu-flyout li.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator:after {
+    content: "\E5AB"!important;
+    margin: 0;
+  }
+  // up arrow
+  .max-mega-menu.mega-menu-accordion li.mega-menu-item-has-children.mega-toggle-on > a.mega-menu-link > span.mega-indicator:after {
+    content: "\E5BD"!important;
+  }
+  // right arrow
+  .max-mega-menu li.mega-menu-tabbed > ul.mega-sub-menu > li.mega-menu-item.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator:after {
+    content: "\E5B5"!important;
+  }
+}
