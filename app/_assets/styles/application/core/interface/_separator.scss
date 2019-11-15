@@ -59,7 +59,6 @@
 //     }
 //   }
 // }
-
 @if($enable-interface-separator==true) {
   // svg separator
   .separator-svg {
@@ -71,6 +70,7 @@
       bottom: -5px;
       width: 100vw;
       min-width: 800px;
+      fill: $gray-100;
       z-index: 2;
     }
     @each $color, $value in $theme-colors {
@@ -84,11 +84,14 @@
   // separator-skew
   .separator-skew {
     width: 100%;
-    height: px2rem(100px);
+    height: px2rem(80px);
     // position: absolute;
     // left: 0px;
     pointer-events: none;
     z-index: 0;
+    @include media-breakpoint-down(xs) {
+      height: px2rem(50px);
+    }
   }
   .separator-skew-left {
     background: linear-gradient(to right bottom, $gray-100 49%, #fff 50%);
@@ -105,5 +108,33 @@
         background: linear-gradient(to left bottom, #fff 49%, $value 50%);
       }
     }
+  }
+  // edge
+  .edge {
+    height: 0;
+    padding-bottom: 6.666666666666667%;
+    position: relative;
+    width: 100%;
+    svg {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      fill: $gray-100;
+      width: 100%
+    }
+    @each $color, $value in $theme-colors {
+      &.edge-#{$color} {
+        svg {
+          fill: $value;
+        }
+      }
+    }
+  }
+  .edge-top {
+    top: 1px
+  }
+  .edge-bottom {
+    top: -1px;
   }
 }
