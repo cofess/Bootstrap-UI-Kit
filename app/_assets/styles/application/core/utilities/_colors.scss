@@ -21,9 +21,10 @@
 }
 
 // Neutral
-
-@each $color, $value in $theme-colors-neutral {
-  @include bg-variant(".bg-neutral-#{$color}", $value);
+@if($enable-color-neutral == true){
+  @each $color, $value in $theme-colors-neutral {
+    @include bg-variant(".bg-neutral-#{$color}", $value);
+  }
 }
 
 // Gradient background
