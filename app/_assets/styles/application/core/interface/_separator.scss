@@ -139,62 +139,9 @@
   }
 }
 
-
-/* General styles and layout */
-
-section {
-  position: relative;
-  // background: #2980b9;
-  // color: #fff;
-  // text-align: center;
-}
-
-.color {
-  background: #3498db;
-}
-
-/*** Individual section styles and separators ***/
-
-/* Common style for pseudo-elements */
-section::before,
-section::after {
-  position: absolute;
-  content: '';
-  pointer-events: none;
-}
-
 /* Curves */
 #curveUpColor path,
 #curveDownColor path {
   fill: #3498db;
   stroke: #3498db;
-}
-
-/* Zig Zag (3d up and simple down) */
-.ss-style-zigzag::before,
-.ss-style-zigzag::after {
-    right: 0;
-    left: 0;
-    z-index: 10;
-    display: block;
-    height: 50px;
-    background-size: 30px 100%;
-  }
-
-.ss-style-zigzag::before {
-  top: -50px;
-  background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, transparent), color-stop(0.25, #3498db));
-  background-image:
-    linear-gradient(315deg, #3093d5 25%, transparent 25%),
-    linear-gradient( 45deg, #3498db 25%, transparent 25%);
-  background-position: 50%;
-}
-
-.ss-style-zigzag::after {
-  top: 100%;
-  background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, #3498db), color-stop(0.25, #2980b9));
-  background-image: 
-    linear-gradient(135deg, #3498db 25%, transparent 25%),
-    linear-gradient(225deg, #3498db 25%, transparent 25%);
-  background-position: 50%;
 }
