@@ -30,6 +30,8 @@ require.config({
     'selectize': 'assets/js/vendors/selectize.min',
     'spin': 'assets/js/vendors/spin.min',
     'ladda': 'assets/js/vendors/ladda.min',
+    'darkmode': '//cdn.jsdelivr.net/npm/darkmode-js@1.5.3/lib/darkmode-js.min',
+    // application
     'plugin': 'assets/js/plugin.min',
     'core': 'assets/js/application',
   },

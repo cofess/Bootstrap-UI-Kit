@@ -294,7 +294,7 @@ require(['jquery', 'fancybox'], function($) {
  * http://codetheory.london/multiple-owlcarousel-init-based-on-data-attributes/
  */
 if ($(".owl-carousel").length) {
-  require(["jquery", 'owl.carousel'], function($) {
+  require(['jquery', 'owl.carousel'], function($) {
     console.log("owl.carousel Loaded :)");
     $(function() {
       $('.owl-carousel').each(function() {
@@ -318,3 +318,4 @@ if ($(".owl-carousel").length) {
     });
   });
 }
+
