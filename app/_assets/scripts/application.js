@@ -56,19 +56,24 @@ require(['jquery'], function($) {
 });
 
 // 导航菜单
-if ($('.sm').length) {
-  require(["jquery", "smartmenus"], function($) {
-    console.log("SmartMenus Loaded :)");
-    // jquery.smartemnus.min.js has been loaded so init the menu
-    $(function() {
-      $('.sm').smartmenus({
-        mainMenuSubOffsetX: -1,
-        subMenusSubOffsetX: 0,
-        subMenusSubOffsetY: -1
-      });
-    });
-  });
-}
+require(["jquery", "smartmenus", "smartmenus.bootstrap"], function($) {
+  console.log("SmartMenus Loaded :)");
+  // jquery.smartemnus.min.js has been loaded so init the menu
+});
+
+// if ($('.sm').length) {
+//   require(["jquery", "smartmenus"], function($) {
+//     console.log("SmartMenus Loaded :)");
+//     // jquery.smartemnus.min.js has been loaded so init the menu
+//     $(function() {
+//       $('.sm').smartmenus({
+//         mainMenuSubOffsetX: -1,
+//         subMenusSubOffsetX: 0,
+//         subMenusSubOffsetY: -1
+//       });
+//     });
+//   });
+// }
 
 // 页面滚动，导航菜单固定在视窗顶部
 // require(['jquery', 'sticky'], function($) {

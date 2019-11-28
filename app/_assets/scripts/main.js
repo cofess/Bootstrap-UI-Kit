@@ -22,6 +22,7 @@ require.config({
     'wow': 'assets/js/core/wow.min',
     // vendors
     'smartmenus': 'assets/js/vendors/jquery.smartmenus.min',
+    'smartmenus.bootstrap': 'assets/js/vendors/jquery.smartmenus.bootstrap-4.min',
     'sticky': 'assets/js/vendors/sticky-sidebar.min',
     'royalslider': 'assets/js/vendors/jquery.royalslider.min',
     'superslides': 'assets/js/vendors/jquery.superslides.min',

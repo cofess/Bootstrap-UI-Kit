@@ -57,7 +57,6 @@
 @import 'core/interface/divider';
 
 // Components
-@import 'core/components/nav';
 @import 'core/components/alert';
 @import 'core/components/tables';
 @import 'core/components/breadcrumb';
@@ -102,6 +101,9 @@
 @import 'vendors/ladda/ladda';
 // Form Validator
 @import 'vendors/form-validator/form-validator';
+// smartmenus
+// @import 'vendors/smartmenus/sm-core';
+@import 'vendors/smartmenus/smartmenus.bootstrap-4';
 // mega menu
 @import 'vendors/megamenu/maxmegamenu-extend';
 
@@ -113,6 +115,7 @@
 // Layout
 @import 'custom/layout/layout';
 @import 'custom/layout/aside';
+@import 'custom/layout/nav';
 @import 'custom/layout/header';
 @import 'custom/layout/footer';
 @import 'custom/layout/bottombar';

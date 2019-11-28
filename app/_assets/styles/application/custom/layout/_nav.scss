@@ -1,0 +1,24 @@
+.header {
+  .nav-link,
+  .nav-item {
+    padding: 0 .75rem;
+    min-width: 2rem;
+    transition: .3s color;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    .badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: .2rem .25rem;
+      min-width: 1rem
+    }
+  }
+}
+
+.nav-link {
+  //display: block;
+  //padding: 0.25rem 0.75rem;
+}
