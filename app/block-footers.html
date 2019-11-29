@@ -7,6 +7,10 @@
 {% extends '_layouts/application.html' %}
 <!-- 页面标题 -->
 {% block title %}{{ global.title }} | Blank Template{% endblock %}
+<!-- 自定义样式 -->
+{% block style %}
+<link href="assets/css/froala_blocks.css" rel="stylesheet" />
+{% endblock %}
 <!-- 面包屑导航 -->
 {% block breadcrumb %}
 <!-- <section class="page-header">
