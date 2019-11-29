@@ -14,12 +14,12 @@
   right: 0;
   margin: -0.7em 0.5em 0 0;
   border: 1px solid rgba(0, 0, 0, .1);
-  border-radius: .25rem;
+  border-radius: 50%;
   padding: 0;
-  width: 2em;
+  width: 1.4em;
   height: 1.4em;
   font-size: 1.25rem;
-  line-height: 1.2em;
+  line-height: 1;
   text-align: center;
 }
 
@@ -149,4 +149,41 @@
 
 .navbar-nav:not(.sm-collapsible) .sm-nowrap > li > .dropdown-item {
   white-space: nowrap;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| navbar-simple
+|--------------------------------------------------------------------------
+*/
+
+.navbar-simple {
+  .navbar-nav {
+    ul {
+      padding: 0;
+    }
+    li {
+      li {
+        border-top: 1px solid rgba(0, 0, 0, .05);
+        &:first-child {
+          border-top: 0
+        }
+      }
+    }
+    .dropdown-divider {
+      display: none;
+    }
+  }
+  // @include media-breakpoint-up(md) {
+  //   .navbar-nav {
+  //     >li {
+  //       .nav-link {
+  //         .sub-arrow {
+  //           display: none;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
