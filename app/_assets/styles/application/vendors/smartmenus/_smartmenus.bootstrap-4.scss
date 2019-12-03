@@ -175,6 +175,30 @@
       display: none;
     }
   }
+  @include media-breakpoint-down(md) {
+    padding-left: 0;
+    padding-right: 0;
+    .navbar-nav {
+      >li {
+        border-top: 1px solid rgba(0, 0, 0, .05);
+        padding-right: .75rem;
+        padding-left: .75rem;
+        &:first-child {
+          border-top: 0
+        }
+        .dropdown-menu {
+          // position: relative;
+          border: none;
+        }
+      }
+      li {
+        a {
+          padding-top: 0.75rem;
+          padding-bottom: 0.75rem;
+        }
+      }
+    }
+  }
   // @include media-breakpoint-up(md) {
   //   .navbar-nav {
   //     >li {
