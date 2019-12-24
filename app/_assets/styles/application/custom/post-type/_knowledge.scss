@@ -1,14 +1,9 @@
 /*
 |--------------------------------------------------------------------------
-| product - 产品
+| knowledge - 帮助文档
 |--------------------------------------------------------------------------
 */
 
-@if($enable-type-product) {
-  .product-price {
-    font-size: 1rem;
-    strong {
-      font-size: 1.5rem;
-    }
-  }
+@if($enable-type-knowledge) {
+	
 }

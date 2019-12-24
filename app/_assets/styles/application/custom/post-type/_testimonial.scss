@@ -1,14 +1,9 @@
 /*
 |--------------------------------------------------------------------------
-| product - 产品
+| testimonial - 客户评价
 |--------------------------------------------------------------------------
 */
 
-@if($enable-type-product) {
-  .product-price {
-    font-size: 1rem;
-    strong {
-      font-size: 1.5rem;
-    }
-  }
+@if($enable-type-testimonial) {
+
 }
