@@ -1,10 +1,16 @@
+/*
+|--------------------------------------------------------------------------
+| animate logo
+|--------------------------------------------------------------------------
+*/
+
 .brand-logo {
   position: relative;
   overflow: hidden;
   transition-duration: .5s;
 }
 
-@media screen and (min-width: 900px) {
+@include media-breakpoint-up(md) {
   .brand-logo:before {
     content: "";
     position: absolute;
@@ -65,5 +71,104 @@
   to {
     left: 120px;
     top: 100px;
+  }
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| animate background
+|--------------------------------------------------------------------------
+*/
+
+.bg-fly-circle1 {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(100, 84, 239, 0.07) 0%, rgba(48, 33, 236, 0.04) 100%);
+  animation: move 2.5s linear infinite;
+}
+
+.bg-fly-circle2 {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(100, 84, 239, 0.07) 0%, rgba(48, 33, 236, 0.01) 100%);
+  animation: move 3s linear infinite;
+}
+
+.bg-fly-circle3 {
+  position: absolute;
+  right: 10px;
+  top: 140px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(100, 84, 239, 0.1) 0%, rgba(48, 33, 236, 0.04) 100%);
+  animation: move 2.5s linear infinite;
+}
+
+.bg-fly-circle4 {
+  position: absolute;
+  left: 65%;
+  top: 50px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(100, 84, 239, 0.02) 0%, rgba(48, 33, 236, 0.04) 100%);
+  animation: move 3.5s linear infinite;
+}
+
+@-webkit-keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@-moz-keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@-o-keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
