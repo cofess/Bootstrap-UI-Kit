@@ -4,5 +4,24 @@
 // Options
 $enable-chat: true;
 $enable-syntax-highlight: true;
+
 // Post Type Options
-$enable-type-product: true;
+$enable-type-download: true; // 下载
+$enable-type-event: true; // 活动
+$enable-type-faq: true; // 常见问题
+$enable-type-gallery: true; // 图集
+$enable-type-glossary: true; // 名词术语解释
+$enable-type-job: true; // 工作
+$enable-type-knowledge: true; // 帮助文档
+$enable-type-office: true; // 分公司、办事处
+$enable-type-person: true; // 团队人员
+$enable-type-portfolio: true; // 作品
+$enable-type-product: true; // 产品
+$enable-type-project: true; // 项目、案例
+$enable-type-service: true; // 服务
+$enable-type-testimonial: true; // 客户评语
+$enable-type-topic: true; // 专题
+$enable-type-video: true; // 视频
+
+// color
+$base-dark-color: #08081a;

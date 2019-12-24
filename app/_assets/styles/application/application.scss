@@ -124,8 +124,26 @@
 // @import 'custom/icon/browser';
 @import 'custom/icon/payments';
 
+// animate
+@import 'custom/animate/custom-animate';
+
 // post type
+@import 'custom/post-type/download';
+@import 'custom/post-type/event';
+@import 'custom/post-type/faq';
+@import 'custom/post-type/gallery';
+@import 'custom/post-type/glossary';
+@import 'custom/post-type/job';
+@import 'custom/post-type/knowledge';
+@import 'custom/post-type/office';
+@import 'custom/post-type/person';
+@import 'custom/post-type/portfolio';
 @import 'custom/post-type/product';
+@import 'custom/post-type/project';
+@import 'custom/post-type/service';
+@import 'custom/post-type/testimonial';
+@import 'custom/post-type/topic';
+@import 'custom/post-type/video';
 
 // other
 @import 'custom/other/image';
@@ -139,10 +157,3 @@
 // example
 @import 'custom/example/example';
 @import 'custom/example/icon';
-
-/*
-|--------------------------------------------------------------------------
-| animate
-|--------------------------------------------------------------------------
-*/
-@import 'animate/custom-animate';
