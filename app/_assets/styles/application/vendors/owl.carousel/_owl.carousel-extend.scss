@@ -458,18 +458,8 @@ $control-white-active-bg:$primary;
 }
 
 // control white
-.owl-control-white {
-  .owl-nav {
-    .owl-prev,
-    .owl-next {
-      background: #fff!important;
-      color: #343434!important;
-      &:hover {
-        background: $control-white-active-bg!important;
-        color: #fff!important;
-      }
-    }
-  }
+.owl-control-white,
+.owl-dot-white {
   .owl-dot {
     span {
       background: rgba(255, 255, 255, 0.35)!important;
@@ -479,6 +469,21 @@ $control-white-active-bg:$primary;
     &:focus {
       span {
         background: #fff!important;
+      }
+    }
+  }
+}
+
+.owl-control-white,
+.owl-nav-white {
+  .owl-nav {
+    .owl-prev,
+    .owl-next {
+      background: #fff!important;
+      color: #343434!important;
+      &:hover {
+        background: $control-white-active-bg!important;
+        color: #fff!important;
       }
     }
   }
