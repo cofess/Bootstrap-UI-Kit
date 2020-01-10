@@ -9,7 +9,7 @@
   display: -webkit-box;
   font-size: $font-size;
   line-height: $line-height;
-  // height: $font-size*$line-height*$lines-to-show;
+  min-height: $font-size*$line-height*$lines-to-show;
   max-height: $font-size*$line-height*$lines-to-show;
   // word-break: break-all !important;
   // word-wrap: break-word !important;
