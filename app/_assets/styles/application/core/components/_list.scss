@@ -1,139 +1,141 @@
-.list-inline-dots {
-  .list-inline-item {
-    + .list-inline-item {
-      &:before {
-        content: '· ';
-        margin-left: -2px;
-        margin-right: 3px;
-      }
-    }
-  }
-}
-
-.list-separated {}
-
-.list-separated-item {
-  padding: 1rem 0;
-  &:first-child {
-    padding-top: 0;
-  }
-  &:last-child {
-    padding-bottom: 0;
-  }
-  & + & {
-    border-top: 1px solid $border-color;
-  }
-}
-
-.list-disc {
-  list-style: disc!important;
-  /*实心圆形符号*/
-}
-
-.list-alpha {
-  list-style: upper-alpha!important;
-  /*标记是大写字母*/
-}
-
-.list-decimal {
-  list-style: decimal!important;
-  /*标记是数字*/
-}
-
-.list-outside {
-  list-style-position: outside!important;
-  /*凸排*/
-}
-
-.list-inside {
-  list-style-position: inside!important;
-  /*缩进*/
-}
-
-.list-square {
-  padding-left: 0;
-  li {
-    list-style: none;
-    &:before {
-      color: #999;
-      content: "▪";
-      font-size: 12px;
-      margin-right: 6px;
-      -webkit-transition: 0.2s ease;
-      -moz-transition: 0.2s ease;
-      -ms-transition: 0.2s ease;
-      transition: 0.2s ease;
-    }
-  }
-}
-
-.list-circle-num,
-.list-square-num {
-  padding-left: 0;
-  counter-reset: list1;
-  li {
-    margin-top: px2rem(6px);
-    margin-bottom: px2rem(6px);
-    &:before {
-      width: px2rem(24px);
-      height: px2rem(24px);
-      line-height: px2rem(24px);
-      text-align: center;
-      font-size: px2rem(12px);
-      border: 1px solid $gray-600;
-      color: $gray-600;
-      margin: 0 10px 0 0;
-      display: inline-block;
-      vertical-align: middle;
-    }
-  }
-  > li {
-    list-style: none outside none;
-    &:before {
-      counter-increment: list1;
-      content: counter(list1) '';
-    }
-    > ol,
-    > ul {
-      list-style: none;
-      counter-reset: list2;
-      > li {
+@if ($enable-component-list == true) {
+  .list-inline-dots {
+    .list-inline-item {
+      + .list-inline-item {
         &:before {
-          counter-increment: list2;
-          content: counter(list1) "." counter(list2) "";
+          content: '· ';
+          margin-left: -2px;
+          margin-right: 3px;
         }
       }
     }
   }
-  @each $color,$value in $theme-colors {
-    .list-#{$color}-item {
+
+  .list-separated {}
+
+  .list-separated-item {
+    padding: 1rem 0;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+    & + & {
+      border-top: 1px solid $border-color;
+    }
+  }
+
+  .list-disc {
+    list-style: disc!important;
+    /*实心圆形符号*/
+  }
+
+  .list-alpha {
+    list-style: upper-alpha!important;
+    /*标记是大写字母*/
+  }
+
+  .list-decimal {
+    list-style: decimal!important;
+    /*标记是数字*/
+  }
+
+  .list-outside {
+    list-style-position: outside!important;
+    /*凸排*/
+  }
+
+  .list-inside {
+    list-style-position: inside!important;
+    /*缩进*/
+  }
+
+  .list-square {
+    padding-left: 0;
+    li {
+      list-style: none;
       &:before {
-        background: $value;
-        border-color: $value;
-        color: #fff;
+        color: #999;
+        content: "▪";
+        font-size: 12px;
+        margin-right: 6px;
+        -webkit-transition: 0.2s ease;
+        -moz-transition: 0.2s ease;
+        -ms-transition: 0.2s ease;
+        transition: 0.2s ease;
       }
     }
   }
-}
 
-.list-circle-num {
-  li {
-    &:before {
-      border-radius: 50%;
+  .list-circle-num,
+  .list-square-num {
+    padding-left: 0;
+    counter-reset: list1;
+    li {
+      margin-top: px2rem(6px);
+      margin-bottom: px2rem(6px);
+      &:before {
+        width: px2rem(24px);
+        height: px2rem(24px);
+        line-height: px2rem(24px);
+        text-align: center;
+        font-size: px2rem(12px);
+        border: 1px solid $gray-600;
+        color: $gray-600;
+        margin: 0 10px 0 0;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    > li {
+      list-style: none outside none;
+      &:before {
+        counter-increment: list1;
+        content: counter(list1) '';
+      }
+      > ol,
+      > ul {
+        list-style: none;
+        counter-reset: list2;
+        > li {
+          &:before {
+            counter-increment: list2;
+            content: counter(list1) "." counter(list2) "";
+          }
+        }
+      }
+    }
+    @each $color,$value in $theme-colors {
+      .list-#{$color}-item {
+        &:before {
+          background: $value;
+          border-color: $value;
+          color: #fff;
+        }
+      }
     }
   }
-}
 
-.list-square-num {
-  li {
-    &:before {
-      border-radius: 3px;
+  .list-circle-num {
+    li {
+      &:before {
+        border-radius: 50%;
+      }
     }
   }
-}
 
-.list-circle-num[class*="list-full"] > li::before,
-.list-square-num[class*="list-full"] > li::before {
-  background: #de4a32;
-  color: #ffffff;
+  .list-square-num {
+    li {
+      &:before {
+        border-radius: 3px;
+      }
+    }
+  }
+
+  .list-circle-num[class*="list-full"] > li::before,
+  .list-square-num[class*="list-full"] > li::before {
+    background: #de4a32;
+    color: #ffffff;
+  }
 }

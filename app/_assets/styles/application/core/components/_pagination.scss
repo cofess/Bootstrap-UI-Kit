@@ -25,3 +25,99 @@
   align-self: center;
   color: $text-muted-dark;
 }
+
+.pagination-rounded {
+  li {
+    &:first-child,
+    &:last-child {
+      .page-link {
+        min-width: px2rem(36px);
+        text-align: center;
+      }
+    }
+  }
+  li {
+    &:first-child {
+      .page-link {
+        border-top-left-radius: px2rem(18px);
+        border-bottom-left-radius: px2rem(18px);
+      }
+    }
+  }
+  li {
+    &:last-child {
+      .page-link {
+        border-top-right-radius: px2rem(18px);
+        border-bottom-right-radius: px2rem(18px);
+      }
+    }
+  }
+  &.pagination-lg {
+    li {
+      &:first-child,
+      &:last-child {
+        .page-link {
+          min-width: px2rem(53px);
+          text-align: center;
+        }
+      }
+    }
+    li {
+      &:first-child {
+        .page-link {
+          border-top-left-radius: px2rem(26.5px);
+          border-bottom-left-radius: px2rem(26.5px);
+        }
+      }
+    }
+    li {
+      &:last-child {
+        .page-link {
+          border-top-right-radius: px2rem(26.5px);
+          border-bottom-right-radius: px2rem(26.5px);
+        }
+      }
+    }
+  }
+}
+
+.pagination-circle {
+  li {
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+    &:first-child,
+    &:last-child {
+      .page-link {
+        border-radius: 50%;
+      }
+    }
+  }
+  .page-link {
+    padding: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    border-radius: 50%;
+  }
+  &.pagination-lg {
+    li {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+      &:first-child,
+      &:last-child {
+        .page-link {
+          border-radius: 50%;
+        }
+      }
+    }
+    .page-link {
+      padding: 0;
+      width: px2rem(53px);
+      height: px2rem(53px);
+      line-height: px2rem(53px);
+      text-align: center;
+      border-radius: 50%;
+    }
+  }
+}
