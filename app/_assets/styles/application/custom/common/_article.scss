@@ -1,0 +1,143 @@
+.article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .article-body {
+    flex: 1 1 auto;
+  }
+  .article-header {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.article-meta {
+  .meta {
+    display: inline;
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.article {
+  .article-action {
+    position: relative;
+    z-index: 10;
+  }
+  .article-label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px;
+    line-height: 1.0;
+    background-color: $base-dark-color;
+    color: #fff!important;
+    font-size: 12px;
+    z-index: 10;
+    &:focus,
+    &:hover {
+      color: #fff;
+      opacity: 0.8
+    }
+  }
+  .article-extra {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: -1;
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      margin-top: -24px;
+      margin-left: -24px;
+      background: #fff;
+      text-align: center;
+      color: $primary;
+      z-index: 9;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      &.icon-round {
+        border-radius: 50%;
+      }
+    }
+  }
+  .article-label,
+  .article-date {
+    display: none;
+  }
+  .article-title {
+    margin-top: 0;
+    color: $base-dark-color;
+    font-size: 16px;
+    max-width: 100%;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+    // word-wrap: normal;
+    // overflow: hidden;
+    a {
+      color: $base-dark-color;
+    }
+  }
+  .article-link {
+    color: $gray-500
+  }
+  .article-meta {
+    font-size: 13px;
+    .meta {
+      display: inline;
+      margin-left: 10px;
+      color: $gray-500;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .article-desc {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    @include text-line-clamp($font-size-base, 1.15, 3);
+    word-wrap: break-word;
+    color: $gray-500;
+    overflow: hidden;
+  }
+  .article-meta,
+  .article-footer {
+    a {
+      color: $gray-500;
+      &:focus,
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+
+.article-list {
+  .col {
+    margin-bottom: px2rem(16px);
+  }
+  .not-found {
+    position: relative;
+    padding: 1.5rem 1.5rem;
+    background: #fff;
+    border: 1px solid $border-color;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .03);
+    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, .03);
+    -ms-box-shadow: 0 5px 15px rgba(0, 0, 0, .03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .03);
+    border-radius: .25rem;
+    overflow: hidden;
+  }
+}

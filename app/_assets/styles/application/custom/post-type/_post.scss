@@ -5,5 +5,143 @@
 */
 
 @if($enable-type-post) {
-
+  .article-post {
+    border-radius: .25rem;
+    overflow: hidden;
+  }
+  .article-post {
+    background-color: #fff;
+    border: 1px solid $border-color;
+    // box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    // overflow: hidden;
+    .article-body,
+    .article-footer {
+      position: relative;
+      z-index: 3;
+    }
+    .article-date {
+      display: block;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      color: #fff;
+      -webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+      -moz-text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+      -ms-text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+      text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+      text-align: center;
+      .day {
+        display: block;
+        font-size: 48px;
+        line-height: 1.0;
+      }
+    }
+    .article-title {
+      @include text-line-clamp(18px, 1.15, 2);
+      word-wrap: break-word;
+      white-space: normal;
+      a {
+        word-wrap: break-word;
+        word-break: break-all;
+      }
+    }
+    .article-meta {
+      .meta-comment,
+      .meta-read {
+        float: right;
+      }
+    }
+    .article-thumb {
+      overflow: hidden;
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto
+      }
+    }
+    .article-link {
+      display: block;
+      @include clearfix;
+      .icon-arrow {
+        float: right
+      }
+    }
+    .article-header {
+      padding: 15px 15px;
+      border-bottom: 1px solid $border-color;
+      @include clearfix;
+    }
+    .article-body {
+      position: relative;
+      background-color: #fff;
+      padding: 15px 15px;
+      @include clearfix;
+    }
+    .article-footer {
+      background-color: #fff;
+      border-top: 1px solid $border-color;
+      @include clearfix;
+      a {
+        display: block;
+        padding: 12px 15px;
+      }
+    }
+    .article-link {
+      display: none;
+    }
+    .article-share {
+      position: absolute;
+      right: 0;
+      top: -24px;
+      background-color: #fff;
+      padding: 0 15px;
+    }
+  }
+  // img-holder
+  .article-post {
+    .img-holder {
+      padding-bottom: 60%;
+    }
+  }
+  // 文章列表
+  .post-list {
+    .owl-carousel {
+      .item {
+        margin-top: 5px
+      }
+    }
+    @include media-breakpoint-up(md) {
+      .article {
+        // border: 0;
+        &:hover {
+          // -webkit-transform: translateY(-2px);
+          // -ms-transform: translateY(-2px);
+          // transform: translateY(-2px);
+          .article-extra {
+            display: block;
+            z-index: 1;
+            .icon {
+              transform: scale(1);
+              -ms-transform: scale(1);
+              -moz-transform: scale(1);
+              -webkit-transform: scale(1);
+              -o-transform: scale(1);
+            }
+            &:before {
+              display: block;
+              content: '';
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              background: $primary;
+              opacity: 0.75;
+              z-index: 1;
+            }
+          }
+        }
+      }
+    }
+  }
 }

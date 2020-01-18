@@ -26,4 +26,6 @@ $enable-type-video: true; // 视频
 
 // color
 $base-dark-color: #08081a;
+$link-normal-color: $base-dark-color;
+$link-hover-color: $primary;
 $base-shadow: 0 20px 40px -5px rgba(9, 30, 66, 0.25);

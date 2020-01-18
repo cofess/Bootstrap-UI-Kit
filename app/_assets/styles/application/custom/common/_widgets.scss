@@ -1,0 +1,145 @@
+.widget {
+  // line-height: 1.5;
+  + .widget {
+    margin-top: 30px;
+  }
+  // p{
+  //   line-height: 1.25
+  // }
+  ol,
+  ul {
+    padding-left: 0;
+    list-style: none;
+    li {
+      list-style: none;
+      padding: 8px 0;
+      &:not(:first-child) {
+        border-top: 1px solid #e8e8e8
+      }
+      // .badge {
+      //   background-color: #bbb;
+      //   min-width: 30px;
+      //   font-weight: normal;
+      //   float: right
+      // }
+    }
+  }
+  .item-title {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0
+  }
+  .item-meta {
+    color: $gray-700;
+    font-size: 12px
+  }
+  a:not(.btn) {
+    color: $link-normal-color;
+    &:focus,
+    &:hover,
+    &.active {
+      color: $link-hover-color;
+    }
+  }
+  // &:hover {
+  //   .widget-title {
+  //     &:after {
+  //       width: 30px
+  //     }
+  //   }
+  // }
+}
+
+.widget-title {
+  position: relative;
+  margin-top: 0;
+  color: $primary;
+  font-size: $font-size-lg;
+  // &:before {
+  //   display: block;
+  //   content: '';
+  //   width: 100%;
+  //   height: 1px;
+  //   position: absolute;
+  //   bottom: 0;
+  //   background-color: $border-color;
+  //   z-index: -1;
+  //   -webkit-transition: width .3s ease;
+  //   transition: width .3s ease;
+  // }
+  // &:after {
+  //   display: block;
+  //   content: '';
+  //   width: 50px;
+  //   height: 1px;
+  //   margin-top: 10px;
+  //   background-color: $widget-title-border-color;
+  //   -webkit-transition: width .3s ease;
+  //   transition: width .3s ease;
+  // }
+}
+
+// .widget-category-list {
+//   li {
+//     list-style: none;
+//     padding: 5px 0;
+//     &:not(:first-child) {
+//       border-top: 1px solid #e8e8e8
+//     }
+//     .badge {
+//       background-color: #bbb;
+//       min-width: 30px;
+//       font-weight: normal;
+//       float: right
+//     }
+//   }
+// }
+
+.widget-post-list {
+  .media-object {
+    width: 48px
+  }
+  li {
+    list-style: none;
+    a {
+      line-height: 1.25;
+    }
+    .post-date {
+      display: block;
+      color: $gray-700;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .widget-related-article {
+    .widget-list {
+      .item {
+        position: relative;
+        padding: 5px 0;
+        @include clearfix;
+      }
+    }
+    .item-meta {
+      position: absolute;
+      top: 3px
+    }
+    .item-title {
+      padding-left: 90px;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+    }
+  }
+}
+
+.widget_recent_entries {
+  .post-date {
+    display: block;
+    color: #777;
+    font-size: 12px;
+  }
+}
+
