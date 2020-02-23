@@ -6,14 +6,14 @@
 <!-- 模版 -->
 {% extends '_layouts/application.html' %}
 <!-- 页面标题 -->
-{% block title %}{{ global.title }} | Products{% endblock %}
+{% block title %}{{ global.title }} | FAQ{% endblock %}
 <!-- 面包屑导航 -->
 {% block breadcrumb %}
 <section class="page-header">
   <div class="container">
     <div class="page-header">
-      <h1 class="page-title">Products</h1>
-      <div class="page-subtitle">1 - 12 of 1713 products</div>
+      <h1 class="page-title">FAQ</h1>
+      <div class="page-subtitle">1 - 12 of 1713 photos</div>
       <div class="page-options d-flex">
         <select class="form-control custom-select w-auto">
           <option value="asc">Newest</option>
@@ -32,17 +32,6 @@
 {% endblock %}
 <!-- 主体内容 -->
 {% block content %}
-<section class="articles article-list product-list">
-  <div class="container">
-    <div class="row column-sm-2 column-md-3 column-lg-4 column-xl-5 gutters-sm">
-      {% for i in range(0, (content.news.list or 12)) -%}
-      <div class="col wow" data-wow-delay=".{{i%2}}s">
-        {% include "_includes/_post-type/product/item-product.html" %}
-      </div>
-      <!--/ col -->
-      {%- endfor %}
-    </div>
-  </div>
-</section>
+{% include "_includes/_post-type/faq/list-faq.html" %}
 {% include "_includes/_common/pagination.html" %}
 {% endblock %}
