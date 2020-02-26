@@ -6,3 +6,4 @@
 - [ ] 内容块Contents
 - [ ] 轮播Owl Carousel优化
 - [ ] 大图轮播Banner
+- [ ] Card组件优化
