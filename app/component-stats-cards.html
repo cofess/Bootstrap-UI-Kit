@@ -1,0 +1,34 @@
+{# 
+  Nunjucks Templating! 
+  Homepage: https://mozilla.github.io/nunjucks/ 
+  Docs: https://mozilla.github.io/nunjucks/api.html 
+#}
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+<!-- 页面标题 -->
+{% block title %}{{ global.title }} | Sample Cards{% endblock %}
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Dashboard</h1>
+    <div class="page-description">
+      <ul class="list-inline list-inline-dots m-0">
+        <li class="list-inline-item">Section 500</li>
+        <li class="list-inline-item">English learning French</li>
+        <li class="list-inline-item">
+          <a href="javascript:void(0)">United states</a>
+        </li>
+        <li class="list-inline-item">7 students</li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}
+<!-- 主体内容 -->
+{% block content %}
+<div class="container">
+  <div class="row row-cards">
+  </div>
+</div>
+{% endblock %}
