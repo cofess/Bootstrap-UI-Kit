@@ -5,21 +5,21 @@
 */
 
 @if($enable-type-post) {
-  .article-post {
+  .entry-post {
     border-radius: .25rem;
     overflow: hidden;
   }
-  .article-post {
+  .entry-post {
     background-color: #fff;
     border: 1px solid $border-color;
     // box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     // overflow: hidden;
-    .article-body,
-    .article-footer {
+    .entry-body,
+    .entry-footer {
       position: relative;
       z-index: 3;
     }
-    .article-date {
+    .entry-date {
       display: block;
       position: absolute;
       top: 15px;
@@ -36,7 +36,7 @@
         line-height: 1.0;
       }
     }
-    .article-title {
+    .entry-title {
       @include text-line-clamp(18px, 1.15, 2);
       word-wrap: break-word;
       white-space: normal;
@@ -45,13 +45,13 @@
         word-break: break-all;
       }
     }
-    .article-meta {
+    .entry-meta {
       .meta-comment,
       .meta-read {
         float: right;
       }
     }
-    .article-thumb {
+    .entry-thumb {
       overflow: hidden;
       img {
         width: 100%;
@@ -59,25 +59,25 @@
         height: auto
       }
     }
-    .article-link {
+    .entry-link {
       display: block;
       @include clearfix;
       .icon-arrow {
         float: right
       }
     }
-    .article-header {
+    .entry-header {
       padding: 15px 15px;
       border-bottom: 1px solid $border-color;
       @include clearfix;
     }
-    .article-body {
+    .entry-body {
       position: relative;
       background-color: #fff;
       padding: 15px 15px;
       @include clearfix;
     }
-    .article-footer {
+    .entry-footer {
       background-color: #fff;
       border-top: 1px solid $border-color;
       @include clearfix;
@@ -86,10 +86,10 @@
         padding: 12px 15px;
       }
     }
-    .article-link {
+    .entry-link {
       display: none;
     }
-    .article-share {
+    .entry-share {
       position: absolute;
       right: 0;
       top: -24px;
@@ -98,7 +98,7 @@
     }
   }
   // img-holder
-  .article-post {
+  .entry-post {
     .img-holder {
       padding-bottom: 60%;
     }
@@ -111,13 +111,13 @@
       }
     }
     @include media-breakpoint-up(md) {
-      .article {
+      .entry {
         // border: 0;
         &:hover {
           // -webkit-transform: translateY(-2px);
           // -ms-transform: translateY(-2px);
           // transform: translateY(-2px);
-          .article-extra {
+          .entry-extra {
             display: block;
             z-index: 1;
             .icon {

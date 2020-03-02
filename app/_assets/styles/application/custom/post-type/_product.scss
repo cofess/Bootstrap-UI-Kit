@@ -5,15 +5,15 @@
 */
 
 @if($enable-type-product) {
-  .article-product {
+  .entry-product {
     border-radius: .25rem;
     overflow: hidden;
   }
-  .article-product {
+  .entry-product {
     background-color: #fff;
     border: 1px solid $border-color;
     overflow: hidden;
-    .article-title {
+    .entry-title {
       font-size: 14px;
       display: -webkit-box;
       @include text-line-clamp($font-size-base, $line-height-base, 2);
@@ -25,7 +25,7 @@
         word-break: break-all;
       }
     }
-    .article-thumb {
+    .entry-thumb {
       // padding: 15px;
       overflow: hidden;
       img {
@@ -34,14 +34,14 @@
         height: auto
       }
     }
-    .article-link {
+    .entry-link {
       display: block;
       @include clearfix;
       .icon-arrow {
         float: right
       }
     }
-    .article-param {
+    .entry-param {
       // position: absolute;
       // bottom: 0;
       // left: 0;
@@ -63,7 +63,7 @@
         margin: 0
       }
     }
-    .article-body {
+    .entry-body {
       background-color: #fff;
       height: 77px;
       padding: 15px 15px 15px 15px;
@@ -71,7 +71,7 @@
     }
   }
   // img-holder
-  .article-product {
+  .entry-product {
     .img-holder {
       padding-bottom: 100%;
     }
@@ -79,7 +79,7 @@
   // list
   .product-list {
     @include media-breakpoint-up(md) {
-      .article {
+      .entry {
         &:hover {
           // border: 1px solid #000;
           -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .03);
@@ -91,7 +91,7 @@
           transform: translateY(-2px);
           -webkit-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
-          .article-extra {
+          .entry-extra {
             display: block;
           }
         }

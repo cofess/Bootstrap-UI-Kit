@@ -1,17 +1,17 @@
-.article {
+.entry {
   position: relative;
   display: flex;
   flex-direction: column;
-  .article-body {
+  .entry-body {
     flex: 1 1 auto;
   }
-  .article-header {
+  .entry-header {
     display: flex;
     align-items: center;
   }
 }
 
-.article-meta {
+.entry-meta {
   .meta {
     display: inline;
     margin-left: 10px;
@@ -21,12 +21,12 @@
   }
 }
 
-.article {
-  .article-action {
+.entry {
+  .entry-action {
     position: relative;
     z-index: 10;
   }
-  .article-label {
+  .entry-label {
     position: absolute;
     left: 0;
     top: 0;
@@ -42,7 +42,7 @@
       opacity: 0.8
     }
   }
-  .article-extra {
+  .entry-extra {
     position: absolute;
     top: 0;
     right: 0;
@@ -73,11 +73,11 @@
       }
     }
   }
-  .article-label,
-  .article-date {
+  .entry-label,
+  .entry-date {
     display: none;
   }
-  .article-title {
+  .entry-title {
     margin-top: 0;
     color: $base-dark-color;
     font-size: 16px;
@@ -90,10 +90,10 @@
       color: $base-dark-color;
     }
   }
-  .article-link {
+  .entry-link {
     color: $gray-500
   }
-  .article-meta {
+  .entry-meta {
     font-size: 13px;
     .meta {
       display: inline;
@@ -104,7 +104,7 @@
       }
     }
   }
-  .article-desc {
+  .entry-desc {
     display: -webkit-box;
     text-overflow: ellipsis;
     @include text-line-clamp($font-size-base, 1.15, 3);
@@ -112,8 +112,8 @@
     color: $gray-500;
     overflow: hidden;
   }
-  .article-meta,
-  .article-footer {
+  .entry-meta,
+  .entry-footer {
     a {
       color: $gray-500;
       &:focus,
@@ -124,7 +124,7 @@
   }
 }
 
-.article-list {
+.entry-list {
   .col {
     margin-bottom: px2rem(16px);
   }
