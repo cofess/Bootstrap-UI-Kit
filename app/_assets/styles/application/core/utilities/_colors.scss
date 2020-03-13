@@ -109,3 +109,8 @@
     background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364) !important;
   }
 }
+
+// 条纹背景
+.bg-stripe {
+  background-image: repeating-linear-gradient(150deg, #ff6969, #ff6969 8px, #ffffff 0px, #ffffff 16px, #85adff 0px, #85adff 24px, #ffffff 0px, #ffffff 32px) !important;
+}
