@@ -137,4 +137,35 @@
   .edge-bottom {
     top: -1px;
   }
+  .separator-serrate {
+    position: relative;
+    background-color: #135c97;
+    color: #FFFFFF;
+    &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      background-size: 2em 2em !important;
+      bottom: -2em;
+      background-repeat: repeat-x;
+      height: 2em;
+      width: 100%;
+      background-position: left bottom;
+      background: linear-gradient(45deg, transparent 75%, #135c97 75%) 0 50%, linear-gradient(-45deg, transparent 75%, #135c97 75%) 0 50%, linear-gradient(45deg, transparent 65%, black 95%) 0 50%, linear-gradient(-45deg, transparent 65%, black 95%) 0 50%;
+    }
+    &.separator-serrate-top {
+      &:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        background-size: 2em 2em !important;
+        top: -2em;
+        background-repeat: repeat-x;
+        height: 2em;
+        width: 100%;
+        background-position: left top;
+        background: linear-gradient(45deg, #135c97 25%, transparent 25%) 0 50%, linear-gradient(-45deg, #135c97 25%, transparent 25%) 0 50%, linear-gradient(45deg, black 5%, transparent 35%) 0 50%, linear-gradient(-45deg, black 5%, transparent 35%) 0 50%;
+      }
+    }
+  }
 }
