@@ -1,0 +1,46 @@
+.card {
+  .figure-img {
+    position: relative;
+    margin-bottom: 0;
+  }
+}
+
+.card-mark-rt,
+.card-mark-rb {
+  position: absolute;
+  right: 0;
+  padding: .35rem 0.5rem;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+
+.card-mark-rt {
+  top: 0.75rem;
+}
+
+.card-mark-rb {
+  bottom: 0.75rem;
+}
+
+.card-mark-lt,
+.card-mark-lb {
+  position: absolute;
+  left: 0;
+  padding: .35rem 0.5rem;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+
+.card-mark-lt {
+  top: 0.75rem;
+}
+
+.card-mark-lb {
+  bottom: 0.75rem;
+}
