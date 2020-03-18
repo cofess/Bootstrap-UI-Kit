@@ -9,19 +9,6 @@
     display: flex;
     align-items: center;
   }
-}
-
-.entry-meta {
-  .meta {
-    display: inline;
-    margin-left: 10px;
-    &:first-child {
-      margin-left: 0;
-    }
-  }
-}
-
-.entry {
   .entry-action {
     position: relative;
     z-index: 10;
@@ -93,17 +80,6 @@
   .entry-link {
     color: $gray-500
   }
-  .entry-meta {
-    font-size: 13px;
-    .meta {
-      display: inline;
-      margin-left: 10px;
-      color: $gray-500;
-      &:first-child {
-        margin-left: 0;
-      }
-    }
-  }
   .entry-desc {
     display: -webkit-box;
     text-overflow: ellipsis;
@@ -124,6 +100,24 @@
   }
 }
 
+.entry-meta {
+  font-size: 13px;
+  .meta {
+    display: inline;
+    color: $gray-500;
+    + .meta {
+      margin-left: 0.5rem;
+    }
+    // &.meta-category,
+    // &.meta-date {
+    //   &:before {
+    //     content: '▪';
+    //   }
+    // }
+  }
+}
+
+// 列表
 .entry-list {
   .col {
     margin-bottom: px2rem(16px);
