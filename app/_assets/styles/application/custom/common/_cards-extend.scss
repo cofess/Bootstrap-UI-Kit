@@ -5,6 +5,7 @@
   }
 }
 
+// mark
 .card-mark-rt,
 .card-mark-rb {
   position: absolute;
@@ -15,14 +16,6 @@
   background-color: rgba(0, 0, 0, 0.5);
   border-top-left-radius: .25rem;
   border-bottom-left-radius: .25rem;
-}
-
-.card-mark-rt {
-  top: 0.75rem;
-}
-
-.card-mark-rb {
-  bottom: 0.75rem;
 }
 
 .card-mark-lt,
@@ -37,14 +30,68 @@
   border-bottom-right-radius: .25rem;
 }
 
-.card-mark-lt {
+.card-mark-lt,
+.card-mark-rt {
   top: 0.75rem;
 }
 
-.card-mark-lb {
+.card-mark-lb,
+.card-mark-rb {
   bottom: 0.75rem;
 }
 
+// corner
+.card-corner-rt,
+.card-corner-rb {
+  position: absolute;
+  right: 0;
+  padding: .35rem 0.5rem;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  // border-top-left-radius: .25rem;
+  // border-bottom-left-radius: .25rem;
+}
+
+.card-corner-lt,
+.card-corner-lb {
+  position: absolute;
+  left: 0;
+  padding: .35rem 0.5rem;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  // border-top-right-radius: .25rem;
+  // border-bottom-right-radius: .25rem;
+}
+
+.card-corner-lt,
+.card-corner-rt {
+  top: 0;
+}
+
+.card-corner-lb,
+.card-corner-rb {
+  bottom: 0;
+}
+
+.card-corner-lt {
+  border-bottom-right-radius: .5rem;
+}
+
+.card-corner-rt {
+  border-bottom-left-radius: .5rem;
+}
+
+.card-corner-lb {
+  border-top-right-radius: .5rem;
+}
+
+.card-corner-rb {
+  border-top-left-radius: .5rem;
+}
+
+// post format
 .card-post-format {
   display: block;
   position: absolute;
