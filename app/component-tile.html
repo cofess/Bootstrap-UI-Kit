@@ -6,25 +6,354 @@
 <!-- 模版 -->
 {% extends '_layouts/application.html' %}
 <!-- 页面标题 -->
-{% block title %}{{ global.title }} | Blank Template{% endblock %}
+{% block title %}{{ global.title }} | Tile{% endblock %}
 <!-- 面包屑导航 -->
 {% block breadcrumb %}
 <section class="page-header">
   <div class="container">
-    <h1 class="page-title">Page Title</h1>
+    <h1 class="page-title">Tile</h1>
   </div>
 </section>
 {% endblock %}
 <!-- 主体内容 -->
 {% block content %}
 <div class="container">
-  <div class="card">
-    <div class="card-header">
-      <div class="card-title">Card Title</div>
+  <div class="row row-cards row-deck">
+    <div class="col-12 col-md-8">
+      <div class="card bg-dark text-white">
+        <img class="card-img" src="assets/images/demo/teddy-kelley-109202-500.jpg" alt="Card image">
+        <div class="card-img-overlay justify-content-end">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
     </div>
-    <div class="card-body">
-      <p>Card Content</p>
+    <!-- /col -->
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card">
+        <a href="#"><img class="card-img-top" src="assets/images/demo/adrian-infernus-281832-500.jpg" alt="And this isn't my nose. This is a false one."></a>
+        <div class="card-body d-flex flex-column">
+          <div class="entry-meta d-flex align-items-center pb-3">
+            <span class="meta meta-category">
+              <a href="#" title="Industry News" class="category-link text-muted">Industry News</a>
+            </span>
+            <i class="text-muted px-2">▪</i>
+            <span class="meta meta-date text-muted">
+              <time datetime="2017-09-06T01:19:34.000Z" itemprop="datePublished">2017-09-06</time>
+            </span>
+          </div>
+          <h4><a href="#">And this isn't my nose. This is a false one.</a></h4>
+          <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migr...</div>
+          <div class="d-flex align-items-center pt-5 mt-auto">
+            <div class="avatar avatar-md mr-3" style="background-image: url(assets/images/avatars/female/7.jpg)"></div>
+            <div>
+              <a href="./profile.html" class="text-default">Michelle Ross</a>
+              <small class="d-block text-muted">3 days ago</small>
+            </div>
+            <div class="ml-auto text-muted">
+              <span>
+                <i class="fa fa-eye fa-fw"></i><span class="read-count">330</span>
+              </span>
+              <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="icon icon-heart-line mr-1"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="d-flex align-items-center">
+            <span>Read More</span>
+            <span class="ml-auto">→</span>
+          </a>
+        </div>
+      </div>
     </div>
+    <!-- /col -->
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card">
+        <a href="#"><img class="card-img-top" src="assets/images/demo/adrian-infernus-281832-500.jpg" alt="And this isn't my nose. This is a false one."></a>
+        <div class="card-body d-flex flex-column">
+          <div class="entry-meta d-flex align-items-center pb-3">
+            <span class="meta meta-category">
+              <a href="#" title="Industry News" class="category-link text-muted">Industry News</a>
+            </span>
+            <i class="text-muted px-2">▪</i>
+            <span class="meta meta-date text-muted">
+              <time datetime="2017-09-06T01:19:34.000Z" itemprop="datePublished">2017-09-06</time>
+            </span>
+          </div>
+          <h4><a href="#">And this isn't my nose. This is a false one.</a></h4>
+          <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migr...</div>
+          <div class="d-flex align-items-center pt-5 mt-auto">
+            <div class="avatar avatar-md mr-3" style="background-image: url(assets/images/avatars/female/7.jpg)"></div>
+            <div>
+              <a href="./profile.html" class="text-default">Michelle Ross</a>
+              <small class="d-block text-muted">3 days ago</small>
+            </div>
+            <div class="ml-auto text-muted">
+              <span>
+                <i class="fa fa-eye fa-fw"></i><span class="read-count">330</span>
+              </span>
+              <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="icon icon-heart-line mr-1"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="d-flex align-items-center">
+            <span>Read More</span>
+            <span class="ml-auto">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- /col -->
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card">
+        <a href="#"><img class="card-img-top" src="assets/images/demo/adrian-infernus-281832-500.jpg" alt="And this isn't my nose. This is a false one."></a>
+        <div class="card-body d-flex flex-column">
+          <div class="entry-meta d-flex align-items-center pb-3">
+            <span class="meta meta-category">
+              <a href="#" title="Industry News" class="category-link text-muted">Industry News</a>
+            </span>
+            <i class="text-muted px-2">▪</i>
+            <span class="meta meta-date text-muted">
+              <time datetime="2017-09-06T01:19:34.000Z" itemprop="datePublished">2017-09-06</time>
+            </span>
+          </div>
+          <h4><a href="#">And this isn't my nose. This is a false one.</a></h4>
+          <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migr...</div>
+          <div class="d-flex align-items-center pt-5 mt-auto">
+            <div class="avatar avatar-md mr-3" style="background-image: url(assets/images/avatars/female/7.jpg)"></div>
+            <div>
+              <a href="./profile.html" class="text-default">Michelle Ross</a>
+              <small class="d-block text-muted">3 days ago</small>
+            </div>
+            <div class="ml-auto text-muted">
+              <span>
+                <i class="fa fa-eye fa-fw"></i><span class="read-count">330</span>
+              </span>
+              <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="icon icon-heart-line mr-1"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="d-flex align-items-center">
+            <span>Read More</span>
+            <span class="ml-auto">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- /col -->
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card">
+        <a href="#"><img class="card-img-top" src="assets/images/demo/adrian-infernus-281832-500.jpg" alt="And this isn't my nose. This is a false one."></a>
+        <div class="card-body d-flex flex-column">
+          <div class="entry-meta d-flex align-items-center pb-3">
+            <span class="meta meta-category">
+              <a href="#" title="Industry News" class="category-link text-muted">Industry News</a>
+            </span>
+            <i class="text-muted px-2">▪</i>
+            <span class="meta meta-date text-muted">
+              <time datetime="2017-09-06T01:19:34.000Z" itemprop="datePublished">2017-09-06</time>
+            </span>
+          </div>
+          <h4><a href="#">And this isn't my nose. This is a false one.</a></h4>
+          <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migr...</div>
+          <div class="d-flex align-items-center pt-5 mt-auto">
+            <div class="avatar avatar-md mr-3" style="background-image: url(assets/images/avatars/female/7.jpg)"></div>
+            <div>
+              <a href="./profile.html" class="text-default">Michelle Ross</a>
+              <small class="d-block text-muted">3 days ago</small>
+            </div>
+            <div class="ml-auto text-muted">
+              <span>
+                <i class="fa fa-eye fa-fw"></i><span class="read-count">330</span>
+              </span>
+              <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="icon icon-heart-line mr-1"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="d-flex align-items-center">
+            <span>Read More</span>
+            <span class="ml-auto">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- /col -->
+  </div>
+  <!-- /row -->
+  <h3>图片排版,支持2-9张图</h3>
+  <div class="weui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+    </ul>
+  </div>
+  <h3>3张图</h3>
+  <div class="weui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+    </ul>
+  </div>
+  <h3>4张图</h3>
+  <div class="weui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+    </ul>
+  </div>
+  <h3>5张图</h3>
+  <div class="weui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+    </ul>
+  </div>
+  <h3>6张图</h3>
+  <div class="weui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+    </ul>
+  </div>
+  <h3>7张图</h3>
+  <div class="weui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+    </ul>
+  </div>
+  <h3>8张图</h3>
+  <div class="weui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+    </ul>
+  </div>
+  <h3>9张图</h3>
+  <div class="weui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+      <li>
+        <span style="background-image:url(../images/1.jpg);background-repeat:no-repeat;background-size:cover;"></span>
+      </li>
+    </ul>
   </div>
 </div>
 {% endblock %}
