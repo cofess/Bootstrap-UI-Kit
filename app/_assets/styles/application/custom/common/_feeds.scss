@@ -42,56 +42,51 @@
       }
       &:first-child:nth-last-child(3),
       &:first-child:nth-last-child(3) ~ li {
-        width: 50%
+        width: 33.33333%;
+        padding-bottom: 2px;
       }
       &:first-child:nth-last-child(3) {
-        width: 100%;
-        padding-bottom: 2px
-      }
-      &:first-child:nth-last-child(3):after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        height: 2px;
-        width: 100%;
-        background-color: #fff;
-        z-index: 99
-      }
-      &:first-child:nth-last-child(3)>span {
-        padding-top: 50%
-      }
-      &:first-child:nth-last-child(3) ~ li {
-        width: 50%
-      }
-      &:first-child:nth-last-child(3) ~ li>span {
-        padding-top: 100%;
-        position: relative
+        width: 66.66667%;
+        padding-bottom: 2px;
+        // &:after {
+        //   content: "";
+        //   position: absolute;
+        //   bottom: 0;
+        //   height: 2px;
+        //   width: 100%;
+        //   background-color: #fff;
+        //   z-index: 99
+        // }
+        >span {
+          padding-top: calc(50% - 3px);
+        }
+        ~ li>span {
+          padding-top: calc(50% - 2px);
+          position: relative
+        }
       }
       &:first-child:nth-last-child(4),
       &:first-child:nth-last-child(4) ~ li {
-        width: 50%
+        width: 33.33333%
       }
       &:first-child:nth-last-child(4) {
         width: 100%;
-        padding-bottom: 2px
-      }
-      &:first-child:nth-last-child(4):after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        height: 2px;
-        width: 100%;
-        background-color: #fff;
-        z-index: 99
-      }
-      &:first-child:nth-last-child(4)>span {
-        padding-top: 50%
-      }
-      &:first-child:nth-last-child(4) ~ li {
-        width: 33.3%
-      }
-      &:first-child:nth-last-child(4) ~ li>span {
-        padding-top: 100%
+        padding-bottom: 2px;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          height: 2px;
+          width: 100%;
+          background-color: #fff;
+          z-index: 99
+        }
+        >span {
+          padding-top: 50%
+        }
+        ~ li>span {
+          padding-top: 100%
+        }
       }
       &:first-child:nth-last-child(5),
       &:first-child:nth-last-child(5) ~ li:nth-child(2) {
@@ -113,13 +108,13 @@
         padding-top: 100%
       }
       &:first-child:nth-last-child(5) ~ li {
-        width: 33.3%
+        width: 33.33333%
       }
       &:first-child:nth-last-child(5) ~ li>span {
         padding-top: 100%
       }
       &:first-child:nth-last-child(6) {
-        width: 66.666%;
+        width: 66.66667%;
         padding-bottom: 1px
       }
       &i:first-child:nth-last-child(6):after {
@@ -135,14 +130,14 @@
         padding-top: 100.3%
       }
       &:first-child:nth-last-child(6) ~ li {
-        width: 33.3%
+        width: 33.33333%
       }
       &:first-child:nth-last-child(6) ~ li>span {
         padding-top: 100%
       }
       &:first-child:nth-last-child(6) ~ li:nth-child(2) {
         padding-bottom: 2px;
-        width: 33.333%
+        width: 33.33333%
       }
       &:first-child:nth-last-child(6) ~ li:nth-child(2):after {
         content: "";
@@ -158,7 +153,7 @@
       }
       &:first-child:nth-last-child(6) ~ li:nth-child(3) {
         padding-bottom: 2px;
-        width: 33.333%
+        width: 33.33333%
       }
       &:first-child:nth-last-child(6) ~ li:nth-child(3):after {
         content: "";
@@ -208,7 +203,7 @@
         z-index: 99
       }
       &:first-child:nth-last-child(7) ~ li {
-        width: 33.3%
+        width: 33.33333%
       }
       &:first-child:nth-last-child(7) ~ li>span {
         padding-top: 100%
@@ -249,14 +244,14 @@
         z-index: 99
       }
       &:first-child:nth-last-child(8) ~ li {
-        width: 33.3%
+        width: 33.33333%
       }
       &:first-child:nth-last-child(8) ~ li>span {
         padding-top: 100%
       }
       &:first-child:nth-last-child(9),
       &:first-child:nth-last-child(9) ~ li {
-        width: 33.333%
+        width: 33.33333%
       }
       &:first-child:nth-last-child(9),
       &:first-child:nth-last-child(9) ~ li:nth-child(2),
