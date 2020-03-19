@@ -1,0 +1,76 @@
+{# 
+  Nunjucks Templating! 
+  Homepage: https://mozilla.github.io/nunjucks/ 
+  Docs: https://mozilla.github.io/nunjucks/api.html 
+#}
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+<!-- 页面标题 -->
+{% block title %}{{ global.title }} | Tile{% endblock %}
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Tile</h1>
+  </div>
+</section>
+{% endblock %}
+<!-- 主体内容 -->
+{% block content %}
+<div class="container">
+  <div class="wrapper">
+    <div class="masonry masonry--h">
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/400?image=1" class="masonry-img" alt="Masonry Brick #1"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/300?image=2" class="masonry-img" alt="Masonry Brick #2"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/500?image=3" class="masonry-img" alt="Masonry Brick #3"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/250?image=4" class="masonry-img" alt="Masonry Brick #4"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/450?image=5" class="masonry-img" alt="Masonry Brick #5"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/350?image=6" class="masonry-img" alt="Masonry Brick #6"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/600?image=18" class="masonry-img" alt="Masonry Brick #7"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/700?image=8" class="masonry-img" alt="Masonry Brick #8"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/200?image=19" class="masonry-img" alt="Masonry Brick #9"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/300?image=10" class="masonry-img" alt="Masonry Brick #10"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/420?image=11" class="masonry-img" alt="Masonry Brick #11"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/450?image=12" class="masonry-img" alt="Masonry Brick #12"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/550?image=13" class="masonry-img" alt="Masonry Brick #13"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/640?image=14" class="masonry-img" alt="Masonry Brick #14"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/420?image=15" class="masonry-img" alt="Masonry Brick #15"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/430?image=16" class="masonry-img" alt="Masonry Brick #16"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/340?image=17" class="masonry-img" alt="Masonry Brick #17"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/240?image=27" class="masonry-img" alt="Masonry Brick #18"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/780?image=19" class="masonry-img" alt="Masonry Brick #19"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/470?image=20" class="masonry-img" alt="Masonry Brick #20"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/380?image=21" class="masonry-img" alt="Masonry Brick #21"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/240?image=22" class="masonry-img" alt="Masonry Brick #22"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/900?image=23" class="masonry-img" alt="Masonry Brick #23"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/480?image=24" class="masonry-img" alt="Masonry Brick #24"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/300?image=25" class="masonry-img" alt="Masonry Brick #25"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/400?image=26" class="masonry-img" alt="Masonry Brick #26"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/500?image=27" class="masonry-img" alt="Masonry Brick #27"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/520?image=28" class="masonry-img" alt="Masonry Brick #28"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/920?image=29" class="masonry-img" alt="Masonry Brick #29"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/400?image=30" class="masonry-img" alt="Masonry Brick #30"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/560?image=31" class="masonry-img" alt="Masonry Brick #31"></figure>
+      <figure class="masonry-brick masonry-brick--h"><img src="https://unsplash.it/700/370?image=32" class="masonry-img" alt="Masonry Brick #32"></figure>
+    </div>
+    <div class="masonry masonry--v">
+      <figure class="masonry-brick masonry-brick--v"><img src="https://unsplash.it/700/500?image=1" class="masonry-img" alt="Masonry Brick #1"></figure>
+      <figure class="masonry-brick masonry-brick--v"><img src="https://unsplash.it/700/900?image=2" class="masonry-img" alt="Masonry Brick #2"></figure>
+      <figure class="masonry-brick masonry-brick--v"><img src="https://unsplash.it/700/600?image=3" class="masonry-img" alt="Masonry Brick #3"></figure>
+      <figure class="masonry-brick masonry-brick--v"><img src="https://unsplash.it/700/1024?image=4" class="masonry-img" alt="Masonry Brick #4"></figure>
+      <figure class="masonry-brick masonry-brick--v"><img src="https://unsplash.it/700/450?image=5" class="masonry-img" alt="Masonry Brick #5"></figure>
+      <figure class="masonry-brick masonry-brick--v"><img src="https://unsplash.it/700/600?image=6" class="masonry-img" alt="Masonry Brick #6"></figure>
+      <figure class="masonry-brick masonry-brick--v"><img src="https://unsplash.it/700/550?image=18" class="masonry-img" alt="Masonry Brick #7"></figure>
+      <figure class="masonry-brick masonry-brick--v"><img src="https://unsplash.it/700/800?image=8" class="masonry-img" alt="Masonry Brick #8"></figure>
+      <figure class="masonry-brick masonry-brick--v"><img src="https://unsplash.it/700/600?image=19" class="masonry-img" alt="Masonry Brick #9"></figure>
+      <figure class="masonry-brick masonry-brick--v"><img src="https://unsplash.it/700/500?image=10" class="masonry-img" alt="Masonry Brick #10"></figure>
+      <figure class="masonry-brick masonry-brick--v"><img src="https://unsplash.it/700/450?image=11" class="masonry-img" alt="Masonry Brick #11"></figure>
+      <figure class="masonry-brick masonry-brick--v"><img src="https://unsplash.it/700/550?image=12" class="masonry-img" alt="Masonry Brick #12"></figure>
+      <figure class="masonry-brick masonry-brick--v"><img src="https://unsplash.it/700/650?image=13" class="masonry-img" alt="Masonry Brick #13"></figure>
+      <figure class="masonry-brick masonry-brick--v"><img src="https://unsplash.it/700/450?image=14" class="masonry-img" alt="Masonry Brick #14"></figure>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
