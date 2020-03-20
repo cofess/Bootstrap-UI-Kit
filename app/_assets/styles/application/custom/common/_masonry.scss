@@ -61,11 +61,12 @@
 .masonry--h,
 .masonry--v {
   margin-left: -8px;
+  margin-right: -8px;
   /* Adjustment for the gutter */
   counter-reset: brick;
 }
 
-@media only screen and (min-width: 1024px) {
+@include media-breakpoint-up(lg) {
   /* Horizontal masonry bricks on desktop-sized screen */
   .masonry-brick--h:nth-child(4n+1) {
     width: 250px;
@@ -89,7 +90,7 @@
   }
 }
 
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
+@include media-breakpoint-only(md) {
   /* Horizontal masonry bricks on tabled-sized screen */
   .masonry-brick--h:nth-child(4n+1) {
     width: 200px;
@@ -112,6 +113,7 @@
     width: 50%;
   }
 }
+
 
 /* ============= Portfolio Tiles ============== */
 
