@@ -10,6 +10,43 @@
     vertical-align: middle;
     max-width: 100%;
   }
+  .masonry-brick {
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 0 0 8px 8px;
+    /* Some Gutter */
+    background-color: #333;
+    color: white;
+    position: relative;
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 5000;
+      transform: translate(-50%, -50%);
+      counter-increment: brick;
+      content: counter(brick);
+      transition: font-size .25s, opacity .25s ease-in-out;
+      font-weight: 700;
+      opacity: .5;
+      font-size: 1.25em;
+    }
+    &:hover:after {
+      font-size: 2.25em;
+      opacity: 1;
+    }
+  }
+  .masonry-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+  }
+  .masonry-brick--h {
+    flex: auto;
+    height: 250px;
+    min-width: 150px;
+  }
 }
 
 .masonry--h {
@@ -26,41 +63,6 @@
   margin-left: -8px;
   /* Adjustment for the gutter */
   counter-reset: brick;
-}
-
-.masonry-brick {
-  overflow: hidden;
-  border-radius: 5px;
-  margin: 0 0 8px 8px;
-  /* Some Gutter */
-  background-color: #333;
-  color: white;
-  position: relative;
-}
-
-.masonry-brick:after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 5000;
-  transform: translate(-50%, -50%);
-  counter-increment: brick;
-  content: counter(brick);
-  transition: font-size .25s, opacity .25s ease-in-out;
-  font-weight: 700;
-  opacity: .5;
-  font-size: 1.25em;
-}
-
-.masonry-brick:hover:after {
-  font-size: 2.25em;
-  opacity: 1;
-}
-
-.masonry-brick--h {
-  flex: auto;
-  height: 250px;
-  min-width: 150px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -111,9 +113,99 @@
   }
 }
 
-.masonry-img {
+/* ============= Portfolio Tiles ============== */
+
+#portfolio {
+  background-color: white;
+}
+
+.portfolio-wrap a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.portfolio-wrap {
+  max-width: 90%;
+  max-height: 2300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.portfolio-tile {
+  max-width: 30%;
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.portfolio-tile:hover {
+  cursor: pointer;
+}
+
+.portfolio-tile:hover img {
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+}
+
+.portfolio-tile:active {
+  box-shadow: none;
+  transform: translate(2px, 2px);
+  cursor: pointer;
+}
+
+.portfolio-img {
+  overflow: hidden;
+}
+
+.portfolio-tile img {
+  max-width: 100%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   object-fit: cover;
-  width: 100%;
-  height: 100%;
-  filter: brightness(50%);
+}
+
+.portfolio-tile p {
+  font-size: 12px;
+  margin: 0 10px 10px 5px;
+  letter-spacing: 0.04em;
+  line-height: 1.3em;
+}
+
+
+/* =================== MEDIA ======================*/
+
+@media (min-width: 1500px) {
+  .portfolio-wrap {
+    margin: 0 auto;
+    max-height: 1800px;
+  }
+  .portfolio-tile {
+    width: 25%;
+  }
+}
+
+@media (max-width: 900px) {
+  .portfolio-wrap {
+    max-height: 3200px;
+  }
+  .portfolio-tile {
+    width: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  .portfolio-wrap {
+    margin: 0 auto;
+    display: block;
+  }
+  .portfolio-tile {
+    width: 100%;
+  }
 }
