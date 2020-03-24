@@ -160,3 +160,66 @@
     line-height: inherit;
   }
 }
+
+/*--------------------------------------------------------------
+    media style
+--------------------------------------------------------------*/
+.card {
+  .card-media {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    &:after {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+    .media-content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 0;
+      border-radius: inherit;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-color: rgba(120, 120, 120, 0.1);
+      img {
+        width: 100%;
+        height: auto;
+        min-height: -webkit-fill-available;
+        min-height: -moz-fill-available;
+        min-height: -moz-available;
+        min-height: fill-available;
+        display: block
+      }
+    }
+    .media-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: .5rem .75rem;
+      z-index: 2;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: #fff;
+      &.overlay-top {
+        bottom: auto
+      }
+      &.overlay-bottom {
+        top: auto
+      }
+    }
+  }
+}
