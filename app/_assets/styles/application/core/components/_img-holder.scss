@@ -137,9 +137,9 @@
 }
 
 /*--------------------------------------------------------------
-    hold
+    holder
 --------------------------------------------------------------*/
-[class*='hold-'] {
+[class*='holder-'] {
   &:after {
     content: '';
     display: block;
@@ -147,61 +147,61 @@
   }
 }
 
-.hold-36x17:after {
+.holder-36x17:after {
   padding-top: 47.222222%!important;
 }
 
-.hold-21x9:after {
+.holder-21x9:after {
   padding-top: 42.857143%!important;
 }
 
-.hold-16x9:after {
+.holder-16x9:after {
   padding-top: 56.25%!important;
 }
 
-.hold-4x3:after {
+.holder-4x3:after {
   padding-top: 75%!important;
 }
 
-.hold-2x3:after {
+.holder-2x3:after {
   padding-top: 150%!important;
 }
 
-.hold-3x2:after {
+.holder-3x2:after {
   padding-top: 66.66666%!important;
 }
 
-.hold-3x4:after {
+.holder-3x4:after {
   padding-top: 133.33333%!important;
 }
 
-.hold-1x2:after {
+.holder-1x2:after {
   padding-top: 200%!important;
 }
 
-.hold-2x1:after {
+.holder-2x1:after {
   padding-top: 50%!important;
 }
 
-.hold-3x1:after {
+.holder-3x1:after {
   padding-top: 33%!important;
 }
 
-.hold-4x1:after {
+.holder-4x1:after {
   padding-top: 25%!important;
 }
 
-.hold-1-4:after {
+.holder-1-4:after {
   padding-top: 25vh!important;
   min-height: 10rem
 }
 
-.hold-1-3:after {
+.holder-1-3:after {
   padding-top: 33vh!important;
   min-height: 12.5rem
 }
 
-.hold-1-2:after {
+.holder-1-2:after {
   padding-top: 50vh!important;
   min-height: 15rem
 }
