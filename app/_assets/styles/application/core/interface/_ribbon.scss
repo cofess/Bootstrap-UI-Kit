@@ -1,6 +1,50 @@
 @if($enable-interface-ribbon==true) {
   /*
   |--------------------------------------------------------------------------
+  | ribbon
+  |--------------------------------------------------------------------------
+  */
+  .ribbon {
+    position: absolute;
+    top: 2.1rem;
+    width: 10rem;
+    padding: 1px 0;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
+    &.left {
+      left: -2.1rem;
+      transform: rotate(-45deg);
+    }
+    &.right {
+      right: -2.1rem;
+      transform: rotate(45deg);
+    }
+    &.bg-white {
+      background: #eee;
+      color: black;
+    }
+    span,
+    a,
+    a:visited,
+    a:active,
+    a:hover {
+      display: block;
+      height: 1.5rem;
+      line-height: 1.5rem;
+      color: inherit;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Cabin Condensed', sans-serif;
+      font-size: .85rem;
+      font-weight: 500;
+      // border: 1px solid rgba(255, 255, 255, 0.3);
+      text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  /*
+  |--------------------------------------------------------------------------
   | ribbon-triangle
   |--------------------------------------------------------------------------
   */
@@ -55,50 +99,6 @@
         border-bottom: 1.8rem solid $primary;
         border-left: 1.8rem solid transparent;
       }
-    }
-  }
-
-  /*
-  |--------------------------------------------------------------------------
-  | ribbon-triangle
-  |--------------------------------------------------------------------------
-  */
-  .ribbon {
-    position: absolute;
-    top: 2.625rem;
-    width: 12.5rem;
-    padding: 1px 0;
-    background: #000;
-    color: #eee;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
-    &.left {
-      left: -2.625rem;
-      transform: rotate(-45deg);
-    }
-    &.right {
-      right: -2.625rem;
-      transform: rotate(45deg);
-    }
-    &.bg-white {
-      background: #eee;
-      color: black;
-    }
-    span,
-    a,
-    a:visited,
-    a:active,
-    a:hover {
-      display: block;
-      height: 1.5rem;
-      line-height: 1.5rem;
-      color: inherit;
-      text-align: center;
-      text-decoration: none;
-      font-family: 'Cabin Condensed', sans-serif;
-      font-size: .85rem;
-      font-weight: 500;
-      // border: 1px solid rgba(255, 255, 255, 0.3);
-      text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
     }
   }
 }
