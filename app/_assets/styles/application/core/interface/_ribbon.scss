@@ -65,44 +65,37 @@
   */
   .ribbon {
     position: absolute;
-    top: 42px;
-    width: 200px;
+    top: 2.625rem;
+    width: 12.5rem;
     padding: 1px 0;
     background: #000;
     color: #eee;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
     &.left {
-      left: -42px;
+      left: -2.625rem;
       transform: rotate(-45deg);
     }
     &.right {
-      right: -42px;
+      right: -2.625rem;
       transform: rotate(45deg);
-    }
-    .card-img-overlay {
-      @each $color,$value in $theme-colors {
-        &.bg-#{$color} {
-          background: rgba($value, .85)!important;
-        }
-      }
     }
     &.bg-white {
       background: #eee;
       color: black;
     }
+    span,
     a,
     a:visited,
     a:active,
     a:hover {
       display: block;
-      padding: 1px 0;
-      height: 24px;
-      line-height: 24px;
+      height: 1.5rem;
+      line-height: 1.5rem;
       color: inherit;
       text-align: center;
       text-decoration: none;
       font-family: 'Cabin Condensed', sans-serif;
-      font-size: 14px;
+      font-size: .85rem;
       font-weight: 500;
       // border: 1px solid rgba(255, 255, 255, 0.3);
       text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
