@@ -1,24 +1,49 @@
 @if($enable-interface-ribbon==true) {
   /*
   |--------------------------------------------------------------------------
-  | ribbon
+  | corner-ribbon
   |--------------------------------------------------------------------------
   */
-  .ribbon {
+  .corner-ribbon {
+    width: 12.5rem;
     position: absolute;
-    top: 2.1rem;
-    width: 10rem;
-    padding: 1px 0;
-    background-color: rgba(0,0,0,0.5);
-    color: #fff;
+    top: 1.5rem;
+    left: -3.6rem;
+    text-align: center;
+    line-height: 1.75rem;
+    // letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f0f0f0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
-    &.left {
-      left: -2.1rem;
+    &.position-tl {
+      top: 1.5rem;
+      left: -3.6rem;
       transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
     }
-    &.right {
-      right: -2.1rem;
+    &.position-tr {
+      top: 1.5rem;
+      right: -3.6rem;
+      left: auto;
       transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+    &.position-bl {
+      top: auto;
+      bottom: 1.5rem;
+      left: -3.6rem;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+    &.position-br {
+      top: auto;
+      right: -3.6rem;
+      bottom: 1.5rem;
+      left: auto;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
     }
     &.bg-white {
       background: #eee;
@@ -30,15 +55,12 @@
     a:active,
     a:hover {
       display: block;
-      height: 1.5rem;
-      line-height: 1.5rem;
+      // line-height: 1.75rem;
       color: inherit;
       text-align: center;
       text-decoration: none;
-      font-family: 'Cabin Condensed', sans-serif;
       font-size: .85rem;
       font-weight: 500;
-      // border: 1px solid rgba(255, 255, 255, 0.3);
       text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
     }
   }
