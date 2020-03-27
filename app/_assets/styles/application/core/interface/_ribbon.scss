@@ -151,41 +151,37 @@
       background: #eee;
       color: black;
     }
-    &.ribbon-rect-rounded {
-      width: 45px;
-      height: 45px;
-      line-height: 35px;
-      text-align: center;
-      font-size: 14px;
-      border-radius: 0% 0% 50% 0%;
+  }
+
+  /*
+  |--------------------------------------------------------------------------
+  | ribbon square
+  |--------------------------------------------------------------------------
+  */
+  .ribbon-square {
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0 0.5rem;
+    line-height: 2.4rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 0.85rem;
+    color: #fff;
+    &.position-tl{
+      border-bottom-right-radius: 50%;
     }
-    &[data-position*=top-right] {
-      left: auto;
-      right: 0;
-      border-radius: 0 0 0 6px;
-      &.ribbon-rect-rounded {
-        border-radius: 0% 0% 0% 50%;
-      }
+    &.position-tr{
+      border-bottom-left-radius: 50%;
     }
-    &[data-position*=bottom-left] {
-      top: auto;
-      bottom: 0;
-      border-radius: 0 6px 0 0;
-      &.ribbon-rect-rounded {
-        line-height: 45px;
-        border-radius: 0% 50% 0% 0%;
-      }
+    &.position-bl{
+      border-top-right-radius: 50%;
     }
-    &[data-position*=bottom-right] {
-      top: auto;
-      right: 0;
-      bottom: 0;
-      left: auto;
-      border-radius: 6px 0 0 0;
-      &.ribbon-rect-rounded {
-        line-height: 45px;
-        border-radius: 50% 0% 0% 0%;
-      }
+    &.position-br{
+      border-top-left-radius: 50%;
+    }
+    &.bg-white {
+      background: #eee;
+      color: black;
     }
   }
 
