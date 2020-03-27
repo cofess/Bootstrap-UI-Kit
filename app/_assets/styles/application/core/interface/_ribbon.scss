@@ -126,6 +126,70 @@
 
   /*
   |--------------------------------------------------------------------------
+  | ribbon rectangle
+  |--------------------------------------------------------------------------
+  */
+  .ribbon-rect {
+    padding: .35rem 0.5rem;
+    font-size: 0.85rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    &.position-tl{
+      border-bottom-right-radius: .5rem;
+    }
+    &.position-tr{
+      border-bottom-left-radius: .5rem;
+    }
+    &.position-bl{
+      border-top-right-radius: .5rem;
+    }
+    &.position-br{
+      border-top-left-radius: .5rem;
+    }
+    &.bg-white {
+      background: #eee;
+      color: black;
+    }
+    &.ribbon-rect-rounded {
+      width: 45px;
+      height: 45px;
+      line-height: 35px;
+      text-align: center;
+      font-size: 14px;
+      border-radius: 0% 0% 50% 0%;
+    }
+    &[data-position*=top-right] {
+      left: auto;
+      right: 0;
+      border-radius: 0 0 0 6px;
+      &.ribbon-rect-rounded {
+        border-radius: 0% 0% 0% 50%;
+      }
+    }
+    &[data-position*=bottom-left] {
+      top: auto;
+      bottom: 0;
+      border-radius: 0 6px 0 0;
+      &.ribbon-rect-rounded {
+        line-height: 45px;
+        border-radius: 0% 50% 0% 0%;
+      }
+    }
+    &[data-position*=bottom-right] {
+      top: auto;
+      right: 0;
+      bottom: 0;
+      left: auto;
+      border-radius: 6px 0 0 0;
+      &.ribbon-rect-rounded {
+        line-height: 45px;
+        border-radius: 50% 0% 0% 0%;
+      }
+    }
+  }
+
+  /*
+  |--------------------------------------------------------------------------
   | ribbon
   |--------------------------------------------------------------------------
   */
@@ -147,11 +211,11 @@
       content: '';
       position: absolute;
       left: 0;
-      bottom: -0.625rem;
+      bottom: -0.5rem;
       width: 0px;
       height: 0px;
       border-style: solid;
-      border-width: 0 0.375rem 0.625rem 0;
+      border-width: 0 0.375rem 0.5rem 0;
       border-color: transparent #917055 transparent transparent;
       z-index: 2;
     }
@@ -171,8 +235,8 @@
         position: absolute;
         left: auto;
         right: 0;
-        bottom: -0.625rem;
-        border-width: 0 0 0.625rem 0.375rem;
+        bottom: -0.5rem;
+        border-width: 0 0 0.5rem 0.375rem;
         border-color: transparent transparent transparent #917055;
         z-index: 2;
       }
@@ -191,31 +255,6 @@
   | riband
   |--------------------------------------------------------------------------
   */
-  .ribbon2 {
-    display: inline-block;
-    width: 60px;
-    padding: 10px 0;
-    background: #F47530;
-    top: 0;
-    left: 25px;
-    position: absolute;
-    text-align: center;
-    border-top-left-radius: 3px;
-    &:after {
-      content: "";
-      position: absolute;
-    }
-    &:after {
-      height: 0;
-      width: 0;
-      border-left: 30px solid #F47530;
-      border-right: 30px solid #F47530;
-      border-bottom: 30px solid transparent;
-      bottom: -30px;
-      left: 0;
-    }
-  }
-
   .ribbon-buy {
     position: absolute;
     z-index: 9999;
@@ -412,81 +451,5 @@
 
   .riband-left .riband-dark {
     border-left-color: #222;
-  }
-
-
-  /*
-  |--------------------------------------------------------------------------
-  | riband
-  |--------------------------------------------------------------------------
-  */
-  .belt {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 3px 7px;
-    font-size: 12px;
-    background: #999;
-    border-radius: 0 0 6px 0;
-    color: #fff;
-    &.belt-rounded {
-      width: 45px;
-      height: 45px;
-      line-height: 35px;
-      text-align: center;
-      font-size: 14px;
-      border-radius: 0% 0% 50% 0%;
-    }
-  }
-
-  .belt[data-position*=top-right] {
-    left: auto;
-    right: 0;
-    border-radius: 0 0 0 6px;
-    &.belt-rounded {
-      border-radius: 0% 0% 0% 50%;
-    }
-  }
-
-  .belt[data-position*=bottom-left] {
-    top: auto;
-    bottom: 0;
-    border-radius: 0 6px 0 0;
-    &.belt-rounded {
-      line-height: 45px;
-      border-radius: 0% 50% 0% 0%;
-    }
-  }
-
-  .belt[data-position*=bottom-right] {
-    top: auto;
-    right: 0;
-    bottom: 0;
-    left: auto;
-    border-radius: 6px 0 0 0;
-    &.belt-rounded {
-      line-height: 45px;
-      border-radius: 50% 0% 0% 0%;
-    }
-  }
-
-  .belt-primary {
-    @extend .bg-primary;
-  }
-
-  .belt-success {
-    @extend .bg-success;
-  }
-
-  .belt-info {
-    @extend .bg-info;
-  }
-
-  .belt-warning {
-    @extend .bg-warning;
-  }
-
-  .belt-danger {
-    @extend .bg-danger;
   }
 }
