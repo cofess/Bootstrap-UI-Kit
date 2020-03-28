@@ -207,7 +207,7 @@
 
   /*
   |--------------------------------------------------------------------------
-  | ribbon
+  | ribbon band
   |--------------------------------------------------------------------------
   */
   .ribbon-band {
@@ -269,34 +269,50 @@
 
   /*
   |--------------------------------------------------------------------------
+  | ribbon mark
+  |--------------------------------------------------------------------------
+  */
+ .ribbon-mark {
+   position: absolute;
+   top: 0;
+   left: 2em;
+   background: #FE453E;
+   color: #fff;
+   padding: 0.5rem 1rem 0 1rem;
+   border-radius: 0;
+   &:before,
+   &:after {
+     content: '';
+     position: absolute;
+     top: 100%;
+     width: 50%;
+     height: 1.5rem;
+     border-top: solid 0.75rem #FE453E;
+     border-bottom: solid 0.75rem transparent;
+   }
+   &:before {
+     left: 0;
+     border-left: solid 1.75rem #FE453E;
+     border-right: solid 1.75rem transparent;
+   }
+   &:after {
+     right: 0;
+     border-right: solid 1.75rem #FE453E;
+     border-left: solid 1.75rem transparent;
+   }
+   span {
+     display: block;
+     letter-spacing: 0.07rem;
+     text-align: center;
+     line-height: 1.15;
+   }
+ }
+
+  /*
+  |--------------------------------------------------------------------------
   | riband
   |--------------------------------------------------------------------------
   */
-  .ribbon-buy {
-    position: absolute;
-    z-index: 9999;
-    top: 0;
-    right: 20px;
-    display: block;
-    width: 48px;
-    height: 48px;
-    text-align: center;
-    background: #a00;
-    color: #fff;
-    padding: 15px 0;
-    &:after {
-      position: absolute;
-      bottom: -8px;
-      right: 0;
-      content: "";
-      border: 24px solid transparent;
-      border-top: none;
-      border-bottom-width: 8px;
-      border-left-color: #a00;
-      border-right-color: #a00;
-    }
-  }
-
   .riband {
     position: absolute;
     top: 20px;
