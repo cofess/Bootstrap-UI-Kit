@@ -46,7 +46,7 @@
       -webkit-transform: rotate(-45deg);
     }
     &.bg-white {
-      background: #eee;
+      background: #fff;
       color: black;
     }
     span,
@@ -148,7 +148,7 @@
       border-top-left-radius: .5rem;
     }
     &.bg-white {
-      background: #eee;
+      background: #fff;
       color: black;
     }
     &.ribbon-rect-rounded {
@@ -200,7 +200,7 @@
       border-top-left-radius: 50%;
     }
     &.bg-white {
-      background: #eee;
+      background: #fff;
       color: black;
     }
   }
@@ -273,13 +273,20 @@
   |--------------------------------------------------------------------------
   */
  .ribbon-mark {
-   position: absolute;
-   top: 0;
-   left: 2em;
    background: #FE453E;
    color: #fff;
    padding: 0.5rem 1rem 0 1rem;
    border-radius: 0;
+   &.position-tl {
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+   }
+   &.position-tr {
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+   }
    &:before,
    &:after {
      content: '';
@@ -306,6 +313,34 @@
      text-align: center;
      line-height: 1.15;
    }
+   @each $color,$value in $theme-colors {
+     &.bg-#{$color} {
+       &:before,
+       &:after {
+         border-top-color: $value;
+       }
+       &:before {
+         border-left-color: $value;
+       }
+       &:after {
+         border-right-color: $value;
+       }
+     }
+   }
+   &.bg-white {
+    background: #fff;
+    color: black;
+    &:before,
+    &:after {
+      border-top-color: #fff;
+    }
+    &:before {
+      border-left-color: #fff;
+    }
+    &:after {
+      border-right-color: #fff;
+    }
+  }
  }
 
   /*
