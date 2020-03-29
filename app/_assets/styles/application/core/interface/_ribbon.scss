@@ -287,7 +287,7 @@
  .ribbon-mark {
    background: $purple;
    color: #fff;
-   padding: 0.5rem 1rem 0 1rem;
+   padding: 0.75rem 1rem 0 1rem;
    border-radius: 0;
    &.position-tl {
     position: absolute;
@@ -305,19 +305,19 @@
      position: absolute;
      top: 100%;
      width: 50%;
-     height: 1.5rem;
-     border-top: solid 0.75rem $purple;
-     border-bottom: solid 0.75rem transparent;
+     // height: 1.5rem;
+     border-top: solid 0.65rem $purple;
+     border-bottom: solid 0.65rem transparent;
    }
    &:before {
      left: 0;
-     border-left: solid 1.75rem $purple;
-     border-right: solid 1.75rem transparent;
+     border-left: solid 2.0rem $purple;
+     border-right: solid 0.65rem transparent;
    }
    &:after {
      right: 0;
-     border-right: solid 1.75rem $purple;
-     border-left: solid 1.75rem transparent;
+     border-right: solid 2.0rem $purple;
+     border-left: solid 0.65rem transparent;
    }
    span {
      display: block;
