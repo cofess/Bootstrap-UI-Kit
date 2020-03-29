@@ -217,7 +217,7 @@
     display: inline-block;
     padding: 0 0.625rem 0 0.85rem;
     line-height: 24px;
-    background: #ae8f75;
+    background: $purple;
     border-radius: 0 0.25rem 0.25rem 0;
     color: #fff;
     font-size: 14px;
@@ -233,7 +233,7 @@
       height: 0px;
       border-style: solid;
       border-width: 0 0.375rem 0.5rem 0;
-      border-color: transparent #917055 transparent transparent;
+      border-color: transparent darken($purple, 10%) transparent transparent;
       z-index: 2;
     }
     @each $color,$value in $theme-colors {
@@ -241,6 +241,13 @@
         &:before {
           border-color: transparent darken($value, 10%) transparent transparent;
         }
+      }
+    }
+    &.bg-white {
+      background: #fff;
+      color: black;
+      &:before {
+        border-color: transparent darken(#fff, 30%) transparent transparent;
       }
     }
     &.position-tr {
@@ -254,7 +261,7 @@
         right: 0;
         bottom: -0.5rem;
         border-width: 0 0 0.5rem 0.375rem;
-        border-color: transparent transparent transparent #917055;
+        border-color: transparent transparent transparent darken($purple, 10%);
         z-index: 2;
       }
       @each $color,$value in $theme-colors {
@@ -262,6 +269,11 @@
           &:before {
             border-color: transparent transparent transparent darken($value, 10%);
           }
+        }
+      }
+      &.bg-white {
+        &:before {
+          border-color: transparent transparent transparent darken(#fff, 30%);
         }
       }
     }
@@ -273,7 +285,7 @@
   |--------------------------------------------------------------------------
   */
  .ribbon-mark {
-   background: #FE453E;
+   background: $purple;
    color: #fff;
    padding: 0.5rem 1rem 0 1rem;
    border-radius: 0;
@@ -294,17 +306,17 @@
      top: 100%;
      width: 50%;
      height: 1.5rem;
-     border-top: solid 0.75rem #FE453E;
+     border-top: solid 0.75rem $purple;
      border-bottom: solid 0.75rem transparent;
    }
    &:before {
      left: 0;
-     border-left: solid 1.75rem #FE453E;
+     border-left: solid 1.75rem $purple;
      border-right: solid 1.75rem transparent;
    }
    &:after {
      right: 0;
-     border-right: solid 1.75rem #FE453E;
+     border-right: solid 1.75rem $purple;
      border-left: solid 1.75rem transparent;
    }
    span {
