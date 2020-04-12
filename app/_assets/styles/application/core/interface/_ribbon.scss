@@ -176,6 +176,37 @@
       }
     }
   }
+  
+  /*
+  |--------------------------------------------------------------------------
+  | ribbon square
+  |--------------------------------------------------------------------------
+  */
+  .ribbon-half-circle {
+    padding: .5rem 1.0rem .5rem 0.75rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    &.position-tl,
+    &.position-tr {
+      top: 0.75rem;
+    }
+    &.position-bl,
+    &.position-br {
+      bottom: 0.75rem;
+    }
+    &.position-tl,
+    &.position-bl {
+      border-top-right-radius: 100rem;
+      border-bottom-right-radius: 100rem;
+    }
+    &.position-tr,
+    &.position-br {
+      padding: .5rem 0.75rem .5rem 1.0rem;
+      border-top-left-radius: 100rem;
+      border-bottom-left-radius: 100rem;
+    }
+  }
 
   /*
   |--------------------------------------------------------------------------
