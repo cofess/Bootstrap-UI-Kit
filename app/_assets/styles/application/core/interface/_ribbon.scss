@@ -82,6 +82,7 @@
     position: absolute;
     span {
       position: relative;
+      padding: 0.35rem;
       color: #fff;
     }
     &:before {
@@ -96,8 +97,8 @@
       &:before {
         top: 0;
         left: 0;
-        border-top: 1.8rem solid $primary;
-        border-right: 1.8rem solid transparent;
+        border-top: 2.4rem solid $primary;
+        border-right: 2.4rem solid transparent;
       }
     }
     &.triangle-tr {
@@ -106,8 +107,8 @@
       &:before {
         top: 0;
         right: 0;
-        border-top: 1.8rem solid $primary;
-        border-left: 1.8rem solid transparent;
+        border-top: 2.4rem solid $primary;
+        border-left: 2.4rem solid transparent;
       }
     }
     &.triangle-bl {
@@ -116,8 +117,8 @@
       &:before {
         bottom: 0;
         left: 0;
-        border-bottom: 1.8rem solid $primary;
-        border-right: 1.8rem solid transparent;
+        border-bottom: 2.4rem solid $primary;
+        border-right: 2.4rem solid transparent;
       }
     }
     &.triangle-br {
@@ -126,8 +127,8 @@
       &:before {
         bottom: 0;
         right: 0;
-        border-bottom: 1.8rem solid $primary;
-        border-left: 1.8rem solid transparent;
+        border-bottom: 2.4rem solid $primary;
+        border-left: 2.4rem solid transparent;
       }
     }
   }
