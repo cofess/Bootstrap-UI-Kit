@@ -220,7 +220,8 @@
     line-height: 2.2rem;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
-    font-size: 1.25rem;
+    // vertical-align: middle;
+    font-size: 1.5rem;
     color: #fff;
     &.position-tl{
       border-bottom-right-radius: 50%;
