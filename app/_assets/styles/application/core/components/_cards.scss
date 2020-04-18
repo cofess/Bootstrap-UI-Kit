@@ -134,22 +134,6 @@
 		}
 	}
 
-	.card-profile {
-		.card-header {
-			height: 9rem;
-			background-size: cover;
-		}
-	}
-
-	.card-profile-img {
-		max-width: 6rem;
-		margin-top: -5rem;
-		margin-bottom: 1rem;
-		border: 3px solid #fff;
-		border-radius: 100%;
-		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-	}
-
 	.card-link {
 		+ .card-link {
 			margin-left: 1rem;
