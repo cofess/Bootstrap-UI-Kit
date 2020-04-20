@@ -20,6 +20,67 @@
       }
     }
   }
+  .card-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: -1;
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      margin-top: -24px;
+      margin-left: -24px;
+      background: #fff;
+      text-align: center;
+      color: $primary;
+      z-index: 9;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      &.icon-round {
+        border-radius: 50%;
+      }
+    }
+  }
+  @include media-breakpoint-up(md) {
+    &:hover {
+      // -webkit-transform: translateY(-2px);
+      // -ms-transform: translateY(-2px);
+      // transform: translateY(-2px);
+      .card-mask {
+        display: block;
+        z-index: 1;
+        .icon {
+          transform: scale(1);
+          -ms-transform: scale(1);
+          -moz-transform: scale(1);
+          -webkit-transform: scale(1);
+          -o-transform: scale(1);
+        }
+        &:before {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: $primary;
+          opacity: 0.75;
+          z-index: 1;
+        }
+      }
+    }
+  }
 }
 
 // cover

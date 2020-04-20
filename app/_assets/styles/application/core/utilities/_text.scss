@@ -27,17 +27,17 @@
 }
 
 .text-line-2 {
-  @include text-line-clamp($font-size-base, $line-height-base, 2)
+  @include text-line-clamp($font-size-base, $line-height-base * 0.85 , 2)
 }
 
 .text-line-3 {
-  @include text-line-clamp($font-size-base, $line-height-base, 3)
+  @include text-line-clamp($font-size-base, $line-height-base * 0.85, 3)
 }
 
 .text-line-4 {
-  @include text-line-clamp($font-size-base, $line-height-base, 4)
+  @include text-line-clamp($font-size-base, $line-height-base * 0.85, 4)
 }
 
 .text-line-5 {
-  @include text-line-clamp($font-size-base, $line-height-base, 5)
+  @include text-line-clamp($font-size-base, $line-height-base * 0.85, 5)
 }

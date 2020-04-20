@@ -29,37 +29,6 @@
       opacity: 0.8
     }
   }
-  .entry-extra {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    z-index: -1;
-    .icon {
-      display: inline-block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 48px;
-      height: 48px;
-      line-height: 48px;
-      margin-top: -24px;
-      margin-left: -24px;
-      background: #fff;
-      text-align: center;
-      color: $primary;
-      z-index: 9;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s;
-      -webkit-transform: scale(0);
-      transform: scale(0);
-      &.icon-round {
-        border-radius: 50%;
-      }
-    }
-  }
   .entry-label,
   .entry-date {
     display: none;
@@ -119,8 +88,8 @@
 
 // 列表
 .entry-list {
-  .col {
-    margin-bottom: px2rem(16px);
+  .entry {
+    margin-bottom: px2rem(20px);
   }
   .not-found {
     position: relative;

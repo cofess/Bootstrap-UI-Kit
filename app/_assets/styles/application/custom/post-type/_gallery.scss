@@ -5,5 +5,10 @@
 */
 
 @if($enable-type-gallery) {
-	
+  // img-holder
+  .entry-gallery {
+    .img-holder {
+      padding-bottom: 75%;
+    }
+  }
 }
