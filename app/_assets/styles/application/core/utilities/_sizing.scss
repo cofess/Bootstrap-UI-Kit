@@ -31,3 +31,41 @@
   .max-h-#{$size-name} { max-height: $size !important; }
 }
 
+// square
+.square-xs {
+  width: $spacer * 1.5;
+  height: $spacer * 1.5;
+}
+
+.square-sm {
+  width: $spacer * 2;
+  height: $spacer * 2;
+}
+
+.square {
+  width: $spacer * 3;
+  height: $spacer * 3;
+}
+
+.square-md {
+  width: $spacer * 4;
+  height: $spacer * 4;
+}
+
+.square-lg {
+  width: $spacer * 6;
+  height: $spacer * 6;
+}
+
+.square-xl {
+  width: $spacer * 8;
+  height: $spacer * 8;
+}
+
+.square-xxl {
+  width: $spacer * 10;
+  height: $spacer * 10;
+}
+
+
+
