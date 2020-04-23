@@ -1,0 +1,71 @@
+{# 
+  Nunjucks Templating! 
+  Homepage: https://mozilla.github.io/nunjucks/ 
+  Docs: https://mozilla.github.io/nunjucks/api.html 
+#}
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+<!-- 页面标题 -->
+{% block title %}{{ global.title }} | Hover Animate{% endblock %}
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Hover Animate</h1>
+  </div>
+</section>
+{% endblock %}
+<!-- 主体内容 -->
+{% block content %}
+<div class="container">
+  <div class="row row-cards row-deck">
+    <div class="col-md-4">
+      <div class="card hover-zoom bg-dark text-white">
+        <img class="card-img" src="assets/images/demo/teddy-kelley-109202-500.jpg" alt="Card image">
+        <div class="card-img-overlay justify-content-end">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card hover-grow">
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card hover-gray">
+        <img class="card-img-top" src="assets/images/demo/tim-bogdanov-97988-500.jpg" alt="Card image cap">
+        <ul class="list-group card-list-group">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card hover-burn">
+        <img class="card-img-top" src="assets/images/demo/tim-bogdanov-97988-500.jpg" alt="Card image cap">
+        <ul class="list-group card-list-group">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card hover-gray">
+        <img class="card-img-top" src="assets/images/demo/tim-bogdanov-97988-500.jpg" alt="Card image cap">
+        <ul class="list-group card-list-group">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
