@@ -88,8 +88,17 @@
 
 // 列表
 .entry-list {
+  visibility: visible;
+  animation-duration: 1.2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: fadeInUp;
   .entry {
     margin-bottom: px2rem(20px);
+    visibility: visible;
+    animation-duration: .4s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
   }
   .not-found {
     position: relative;

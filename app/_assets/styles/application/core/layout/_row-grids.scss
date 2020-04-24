@@ -1,0 +1,27 @@
+.row-grids {
+  margin-right: 0;
+  margin-left: 0;
+  border-right: 1px solid $card-border-color;
+  border-bottom: 1px solid $card-border-color;
+  >.col,
+  >[class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .grid-item {
+    margin: 0;
+    border: none;
+    border-left: 1px solid $card-border-color;
+    border-top: 1px solid $card-border-color;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s;
+    transition: all .5s;
+    &:hover {
+      z-index: 9;
+      -webkit-box-shadow: rgba($primary, .2) 0 0 1.5rem;
+      -moz-box-shadow: rgba($primary, .2) 0 0 1.5rem;
+      box-shadow: rgba($primary, .2) 0 0 1.5rem
+    }
+  }
+}
