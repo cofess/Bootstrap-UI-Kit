@@ -118,26 +118,19 @@
     }
   }
   .heading-5 {
-  	position: relative;
-    &:after {
-      display: block;
-      content: '';
-      width: 4.0rem;
-      height: 2px;
-      margin-top: 0.5rem;
-      background-color: $gray-700;
-    }
+    position: relative;
+    z-index: 1;
+    border-left: 3px solid $gray-700;
+    padding-left: 1.0rem;
     &.text-center {
-      &:after {
-        margin-left: auto;
-        margin-right: auto;
-      }
+      padding-right: 1.0rem;
+      border-right: 3px solid $gray-700;
     }
     &.text-right {
-      &:after {
-        margin-left: auto;
-        margin-right: 0;
-      }
+      padding-left: 0;
+      padding-right: 1.0rem;
+      border-left: 0;
+      border-right: 3px solid $gray-700;
     }
   }
 }
