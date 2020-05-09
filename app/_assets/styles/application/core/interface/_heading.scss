@@ -73,45 +73,91 @@
     }
   }
   .heading-4 {
-    display: table;
-    white-space: nowrap;
+    padding-bottom: 0.15rem;
+    overflow: hidden;
     &:before,
     &:after {
-      border-top: 1px solid $gray-300;
-      content: '';
-      // display: table-cell;
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      height: 1px;
+      background-color: $gray-300;
       position: relative;
-      top: 0.5em;
-      // width: 45%;
     }
     &:before {
-      right: 0.75rem;
+      margin-left: -100%;
+      left: -14px;
     }
     &:after {
-      display: table-cell;
-      width: 100%;
-      left: 0.75rem;
+      margin-right: -100%;
+      right: -14px;
     }
-    &.text-center {
-      &:before {
-        display: table-cell;
-        width: 45%;
-      }
+  }
+  // .heading-4 {
+  //   display: table;
+  //   white-space: nowrap;
+  //   &:before,
+  //   &:after {
+  //     border-top: 1px solid $gray-300;
+  //     content: '';
+  //     // display: table-cell;
+  //     position: relative;
+  //     top: 0.5em;
+  //     // width: 45%;
+  //   }
+  //   &:before {
+  //     right: 0.75rem;
+  //   }
+  //   &:after {
+  //     display: table-cell;
+  //     width: 100%;
+  //     left: 0.75rem;
+  //   }
+  //   &.text-center {
+  //     &:before {
+  //       display: table-cell;
+  //       width: 45%;
+  //     }
+  //     &:after {
+  //       width: 45%;
+  //     }
+  //   }
+  //   &.text-right {
+  //     &:before {
+  //       display: table-cell;
+  //       width: 100%;
+  //     }
+  //     &:after {
+  //       display: none;
+  //     }
+  //   }
+  // }
+  .heading-5 {
+    &:before {
+      content: '●';
+      padding-right: 0.5rem;
+      font-size: 0.75rem;
+      vertical-align: middle;
+      line-height: inherit;
+    }
+    &.text-center,
+    &.text-right {
       &:after {
-        width: 45%;
+        content: '●';
+        padding-left: 0.5rem;
+        font-size: 0.75rem;
+        vertical-align: middle;
+        line-height: inherit;
       }
     }
     &.text-right {
       &:before {
-        display: table-cell;
-        width: 100%;
-      }
-      &:after {
-        display: none;
+        content: none;
       }
     }
   }
-  .heading-5 {
+  .heading-6 {
     position: relative;
     z-index: 1;
     border-left: 3px solid $gray-700;
