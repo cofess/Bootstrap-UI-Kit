@@ -221,4 +221,44 @@
       }
     }
   }
+  /* === heading-8 === */
+  .heading-8 {
+    position: relative;
+    padding-bottom: 0.75rem;
+    &:after,
+    &:before {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 3.0rem;
+      height: 0.25rem;
+      content: "";
+      right: 3.0rem;
+      background-color: $gray-300;
+    }
+    &:before {
+      background-color: $gray-700;
+      left: 3.0rem;
+      // width: 6.0rem;
+    }
+    &.text-center,
+    &.text-right {
+      &:before {
+        width: 6.0rem;
+      }
+    }
+    &.text-center {
+      &:after,
+      &:before {
+        margin: auto;
+      }
+    }
+    &.text-right {
+      &:after,
+      &:before {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
 }
