@@ -223,6 +223,38 @@
   }
   /* === heading-8 === */
   .heading-8 {
+    display: flex;
+    align-items: center;
+    &:before {
+      content: " ";
+      display: block;
+      width: 0.25rem;
+      height: 1.25rem;
+      margin-right: 0.5rem;
+      background-color: $gray-300;
+    }
+    &.text-center,
+    &.text-right,
+    &.justify-content-center,
+    &.justify-content-end {
+      &:after {
+        content: " ";
+        display: block;
+        width: 0.25rem;
+        height: 1.25rem;
+        margin-left: 0.5rem;
+        background-color: $gray-300;
+      }
+    }
+    &.text-right,
+    &.justify-content-end {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  /* === heading-9 === */
+  .heading-9 {
     position: relative;
     padding-bottom: 0.75rem;
     &:after,
@@ -258,6 +290,48 @@
       &:before {
         left: auto;
         right: 0;
+      }
+    }
+  }
+  /* === heading-10 === */
+  .heading-10 {
+    position: relative;
+    padding-bottom: 0.75rem;
+    &:after,
+    &:before {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 3.0rem;
+      height: 0.375rem;
+      content: "";
+      right: 3.0rem;
+      background-color: $gray-700;
+      border-radius: 3.0rem;
+    }
+    &:before {
+      width: 0.375rem;
+      height: 0.375rem;
+      left: 3.25rem;
+    }
+    &.text-center {
+      &:after,
+      &:before {
+        margin: auto;
+        right: 0;
+      }
+      &:before {
+        left: 3.875rem;
+      }
+    }
+    &.text-right {
+      &:after,
+      &:before {
+        left: auto;
+        right: 0;
+      }
+      &:before {
+        right: 3.25rem;
       }
     }
   }
