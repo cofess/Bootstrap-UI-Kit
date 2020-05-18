@@ -7,16 +7,24 @@
   >[class*='col-'] {
     padding-right: 0;
     padding-left: 0;
+    &:last-child {
+      -webkit-box-flex: 1 !important;
+      -ms-flex-positive: 1 !important;
+      flex-grow: 1 !important;
+      -webkit-box-flex: 1 !important;
+      -ms-flex: 1 1 auto !important;
+      flex: 1 1 auto !important;
+    }
   }
   .grid-item {
+    position: relative;
     margin: 0;
     border: none;
     border-left: 1px solid $card-border-color;
     border-top: 1px solid $card-border-color;
-    position: relative;
+    border-radius: 0;
+    transition: all .5s;
     overflow: hidden;
-    transition: all .5s;
-    transition: all .5s;
     &:hover {
       z-index: 9;
       -webkit-box-shadow: rgba($primary, .2) 0 0 1.5rem;
