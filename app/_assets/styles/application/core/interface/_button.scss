@@ -12,9 +12,54 @@
 }
 
 .btn-icon {
-	padding-left: .5rem;
-	padding-right: .5rem;
-	text-align: center;
+  text-align: center;
+  width: 2.125rem;
+  height: 2.125rem;
+  padding: 0 !important;
+  position: relative;
+  font-size: 1rem;
+  span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  &.btn-sm {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  &.btn-md {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.125rem;
+  }
+  &.btn-lg {
+    width: 2.875rem;
+    height: 2.875rem;
+    font-size: 1.375rem;
+  }
+  &.btn-xl {
+    width: 4rem;
+    height: 4rem;
+  }
+  @include media-breakpoint-down(sm) {
+    .btn-md {
+      width: 2.25rem;
+      height: 2.25rem;
+    }
+  }
 }
 
 .btn-secondary {
