@@ -114,24 +114,3 @@
     }
   }
 }
-
-// post format
-.card-post-format {
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 2.8rem;
-  height: 2.8rem;
-  margin-left: -1.4rem;
-  margin-top: -1.4rem;
-  line-height: 2.8rem;
-  font-size: 1.25rem;
-  text-align: center;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  .icon {
-    line-height: inherit;
-  }
-}
