@@ -4,7 +4,7 @@
     &:after {
       display: block;
       content: '';
-      width: 4.0rem;
+      width: 3.0rem;
       height: 2px;
       margin-top: 0.75rem;
       background-color: $gray-700;
@@ -194,7 +194,7 @@
     &:before {
       content: " ";
       display: block;
-      width: 3.0rem;
+      width: 2.0rem;
       height: 0.5rem;
       margin-right: 0.75rem;
       border-bottom: 1px solid $gray-300;
@@ -207,7 +207,7 @@
       &:after {
         content: " ";
         display: block;
-        width: 3.0rem;
+        width: 2.0rem;
         height: 0.5rem;
         margin-left: 0.75rem;
         border-bottom: 1px solid $gray-300;
@@ -256,7 +256,7 @@
   /* === heading-9 === */
   .heading-9 {
     position: relative;
-    padding-bottom: 0.75rem;
+    padding-bottom: 1.0rem;
     &:after,
     &:before {
       position: absolute;
@@ -296,7 +296,7 @@
   /* === heading-10 === */
   .heading-10 {
     position: relative;
-    padding-bottom: 0.75rem;
+    padding-bottom: 1.0rem;
     &:after,
     &:before {
       position: absolute;
@@ -333,6 +333,35 @@
       &:before {
         right: 3.25rem;
       }
+    }
+  }
+  /* === heading-11 === */
+  .heading-11 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: initial;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: initial;
+    &:after {
+      content: '';
+      align-self: flex-end;
+      margin-left: 3px;
+      margin-bottom: 3px;
+      width: 6px;
+      height: 6px;
+      background-color: rgb(40, 178, 139);
+    }
+    &:before {
+      content: '';
+      align-self: flex-start;
+      margin-right: -25px;
+      margin-top: -17px;
+      width: 42px;
+      height: 42px;
+      background-image: linear-gradient(138deg, rgba(81, 217, 191, 0.17) 1%, rgba(40, 178, 139, 0) 94%);
+      border-radius: 21px;
     }
   }
 }
