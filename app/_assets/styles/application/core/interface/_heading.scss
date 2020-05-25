@@ -36,7 +36,9 @@
       background-color: rgba($gray-700, 0.3);
     }
     &:after {
+      display: block;
       clear: both;
+      content: "";
     }
   }
   /* === heading-3 === */
@@ -303,15 +305,15 @@
       left: 0;
       bottom: 0;
       width: 3.0rem;
-      height: 0.375rem;
+      height: 0.25rem;
       content: "";
       right: 3.0rem;
       background-color: $gray-700;
       border-radius: 3.0rem;
     }
     &:before {
-      width: 0.375rem;
-      height: 0.375rem;
+      width: 0.25rem;
+      height: 0.25rem;
       left: 3.25rem;
     }
     &.text-center {
@@ -362,6 +364,32 @@
       height: 42px;
       background-image: linear-gradient(138deg, rgba(81, 217, 191, 0.17) 1%, rgba(40, 178, 139, 0) 94%);
       border-radius: 21px;
+    }
+  }
+  /* === heading-12 === */
+  .heading-12 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1.25rem;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 2.0rem;
+      height: 1.0rem;
+      border-bottom-left-radius: 1.75rem;
+      border-bottom-right-radius: 1.75rem;
+      border: 0.2rem solid $gray-700;
+      border-top: 0;
+      transform: scaleY(0.75);
+    }
+    &:after {
+      display: block;
+      clear: both;
+      content: "";
     }
   }
 }
