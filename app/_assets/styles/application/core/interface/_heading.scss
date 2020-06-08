@@ -106,18 +106,18 @@
     }
     &:before {
       margin-left: -100%;
-      left: -0.875rem;
+      left: -1.75rem;
     }
     &:after {
       margin-right: -100%;
-      right: -0.875rem;
+      right: -1.75rem;
     }
     &:hover {
       &:before {
-        left: -1.75rem;
+        left: -0.875rem;
       }
       &:after {
-        right: -1.75rem;
+        right: -0.875rem;
       }
     }
   }
@@ -187,26 +187,48 @@
   }
   /* === heading-6 === */
   .heading-6 {
+    display: flex;
+    align-items: center;
     &:before {
-      content: '◆';
-      padding-right: 0.5rem;
-      font-size: 0.75rem;
-      vertical-align: middle;
-      line-height: inherit;
+      content: " ";
+      display: block;
+      width: 2.0rem;
+      height: 1px;
+      margin-right: 1.5rem;
+      background-color: $gray-700;
+      transition: all 0.3s ease 0s;
     }
     &.text-center,
-    &.text-right {
+    &.text-right,
+    &.justify-content-center,
+    &.justify-content-end {
       &:after {
-        content: '◆';
-        padding-left: 0.5rem;
-        font-size: 0.75rem;
-        vertical-align: middle;
-        line-height: inherit;
+        content: " ";
+        display: block;
+        width: 2.0rem;
+        height: 1px;
+        margin-left: 1.5rem;
+        background-color: $gray-700;
+        transition: all 0.3s ease 0s;
       }
     }
-    &.text-right {
+    &.text-right,
+    &.justify-content-end {
       &:before {
-        content: none;
+        display: none;
+      }
+    }
+    &:hover {
+      &:before {
+        margin-right: 1.0rem;
+      }
+      &.text-center,
+      &.text-right,
+      &.justify-content-center,
+      &.justify-content-end {
+        &:after {
+          margin-left: 1.0rem;
+        }
       }
     }
   }
@@ -219,9 +241,10 @@
       display: block;
       width: 2.0rem;
       height: 0.5rem;
-      margin-right: 0.75rem;
-      border-bottom: 1px solid $gray-300;
-      border-top: 1px solid $gray-300;
+      margin-right: 1.5rem;
+      border-bottom: 1px solid $gray-700;
+      border-top: 1px solid $gray-700;
+      transition: all 0.3s ease 0s;
     }
     &.text-center,
     &.text-right,
@@ -232,15 +255,29 @@
         display: block;
         width: 2.0rem;
         height: 0.5rem;
-        margin-left: 0.75rem;
-        border-bottom: 1px solid $gray-300;
-        border-top: 1px solid $gray-300;
+        margin-left: 1.5rem;
+        border-bottom: 1px solid $gray-700;
+        border-top: 1px solid $gray-700;
+        transition: all 0.3s ease 0s;
       }
     }
     &.text-right,
     &.justify-content-end {
       &:before {
         display: none;
+      }
+    }
+    &:hover {
+      &:before {
+        margin-right: 1.0rem;
+      }
+      &.text-center,
+      &.text-right,
+      &.justify-content-center,
+      &.justify-content-end {
+        &:after {
+          margin-left: 1.0rem;
+        }
       }
     }
   }
