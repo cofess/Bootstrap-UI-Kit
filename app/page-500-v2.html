@@ -1,0 +1,16 @@
+{# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #}
+<!-- 模版 -->
+{% extends '_layouts/error.html' %}
+<!-- 页面标题 -->
+{% block title %}{{ global.title }} | Page 500{% endblock %}
+<!-- 主体内容 -->
+{% block content %}
+<div class="container text-center">
+  <div class="display-1 text-muted mb-5"><i class="si si-exclamation"></i> 500</div>
+  <h1 class="h2 mb-3">Oops.. You just found an error page..</h1>
+  <p class="h4 text-muted font-weight-normal mb-7">We are sorry but your request contains bad syntax and cannot be fulfilled…</p>
+  <a class="btn btn-primary" href="javascript:history.back()">
+    <i class="icon icon-arrow-left-line mr-2"></i>Go back
+  </a>
+</div>
+{% endblock %}
