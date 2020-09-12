@@ -14,10 +14,10 @@ body {
   touch-action: manipulation;
   -webkit-font-feature-settings: "liga" 0;
   font-feature-settings: "liga" 0;
-  height: 100%;
+  // height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
-  position: relative;
+  // position: relative;
   @media print {
     background: none;
   }
