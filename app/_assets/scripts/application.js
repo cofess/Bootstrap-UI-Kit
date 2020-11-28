@@ -320,6 +320,21 @@ if ($(".owl-carousel").length) {
           navText: ['<span class="icon icon-arrow-left-s-line"><span>', '<span class="icon icon-arrow-right-s-line"></span>']
         });
       });
+      // $('.owl-container').each(function() {
+      //   if ($(this).find('.owl-nav').hasClass('disabled')) {
+      //     $(this).find('.customNavigation').hide();
+      //   } else {
+      //     $(this).find('.customNavigation').show();
+      //   }
+      // });
+      $(".owl-container .customNavigation .next").click(function() {
+        var wrap = $(this).closest('.owl-container');
+        $(wrap).find('.owl-carousel').trigger('next.owl.carousel');
+      });
+      $(".owl-container .customNavigation .prev").click(function() {
+        var wrap = $(this).closest('.owl-container');
+        $(wrap).find('.owl-carousel').trigger('prev.owl.carousel');
+      });
     });
   });
 }
