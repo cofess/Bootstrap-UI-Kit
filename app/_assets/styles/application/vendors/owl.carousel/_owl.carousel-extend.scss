@@ -1,8 +1,8 @@
 $control-size:32px;
 $control-size-sm:24px;
 $control-size-lg:48px;
-$control-bg:rgba(0, 0, 0, 0.5);
-$control-hover-bg:rgba(0, 0, 0, 0.75);
+$control-bg:rgba(0, 0, 0, 0.15);
+$control-hover-bg:rgba(0, 0, 0, 0.3);
 $nav-color:inherit;
 $nav-hover-color:$primary;
 $control-white-active-bg:$primary;
@@ -408,8 +408,8 @@ $control-white-active-bg:$primary;
   }
   .owl-dot {
     span {
-      width: px2rem($control-size-lg / 3)!important;
-      height: px2rem($control-size-lg / 3)!important;
+      width: px2rem($control-size-lg / 3.2)!important;
+      height: px2rem($control-size-lg / 3.2)!important;
     }
   }
   &.owl-nav-rect,
