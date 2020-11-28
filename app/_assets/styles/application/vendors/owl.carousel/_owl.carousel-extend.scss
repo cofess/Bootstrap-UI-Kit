@@ -75,11 +75,52 @@ $control-white-active-bg:$primary;
 
 // dot style
 .owl-dot-line {
-  .owl-dot {
-    span {
-      width: px2rem($control-size)!important;
-      height: px2rem(3px)!important;
-      border-radius: 0!important;
+  .owl-dots {
+    .owl-dot {
+      span {
+        width: px2rem(15px)!important;
+        height: px2rem(3px)!important;
+        border-radius: 0!important;
+        margin: 5px 2px;
+        transition: all .35s ease;
+      }
+      &.active {
+        span {
+          width: px2rem($control-size)!important;
+        }
+      }
+    }
+  }
+}
+
+.owl-dot-blow {
+  .owl-dots {
+    .owl-dot {
+      span {
+        border: 4px solid transparent;
+        box-sizing: border-box;
+        background-clip: content-box;
+        transition: all .35s ease;
+      }
+    }
+  }
+  &.owl-control-outline {
+    .owl-dots {
+      .owl-dot {
+        span {
+          border: 4px solid transparent!important;
+          box-sizing: border-box!important;
+          background: $dot-background!important;
+          background-clip: content-box!important;
+        }
+        &.active {
+          span {
+            border-width: 2px!important;
+            border-color: $dot-background-active!important;
+            background: transparent!important;
+          }
+        }
+      }
     }
   }
 }
@@ -247,14 +288,14 @@ $control-white-active-bg:$primary;
   }
   .owl-dot {
     span {
-      border: 1px solid $control-hover-bg;
+      border: 2px solid $dot-background;
       background: transparent!important;
     }
     &.active,
     &:hover,
     &:focus {
       span {
-        background: $control-hover-bg!important;
+        border-color: $dot-background-active;
       }
     }
   }
