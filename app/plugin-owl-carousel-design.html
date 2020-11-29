@@ -1,0 +1,39 @@
+{# 
+  Nunjucks Templating! 
+  Homepage: https://mozilla.github.io/nunjucks/ 
+  Docs: https://mozilla.github.io/nunjucks/api.html 
+#}
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+<!-- 页面标题 -->
+{% block title %}{{ global.title }} | Owl Carousel 2{% endblock %}
+<!-- Custom Style -->
+{% block style %}
+<style type="text/css">
+  .owl-demo .item {
+    height: 10rem;
+    background: #4DC7A0;
+    padding: 1rem;
+}
+.owl-demo .item h2 {
+    color: #FFF;
+    font-weight: 400;
+    margin-top: 0rem;
+}
+</style>
+{% endblock %}
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Owl Carousel 2</h1>
+    <p>Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider.</p>
+    <a class="btn btn-primary" href="http://owlcarousel2.github.io/OwlCarousel2/" target="_blank">Website</a>
+    <a class="btn btn-dark" href="https://github.com/OwlCarousel2/OwlCarousel2" target="_blank">Github</a>
+  </div>
+</section>
+{% endblock %}
+<!-- 主体内容 -->
+{% block content %}
+{% include "_includes/_parts/plugin-owl-carousel-design.html" %}
+{% endblock %}
