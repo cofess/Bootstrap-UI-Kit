@@ -1,6 +1,27 @@
 //
 // File for your custom SCSS variables
 //
+
+/*
+|--------------------------------------------------------------------------
+| Bootstrap Options
+|--------------------------------------------------------------------------
+| Quickly modify global styling by enabling or disabling optional features.
+*/
+$enable-caret:                                true;
+$enable-rounded:                              true;
+$enable-shadows:                              false;
+$enable-gradients:                            false;
+$enable-transitions:                          true;
+$enable-prefers-reduced-motion-media-query:   true;
+$enable-hover-media-query:                    false; // Deprecated, no longer affects any compiled CSS
+$enable-grid-classes:                         true;
+$enable-pointer-cursor-for-buttons:           true;
+$enable-print-styles:                         true;
+$enable-responsive-font-sizes:                false;
+$enable-validation-icons:                     true;
+$enable-deprecation-messages:                 false;
+
 // Options
 $enable-chat: true;
 $enable-syntax-highlight: true;
