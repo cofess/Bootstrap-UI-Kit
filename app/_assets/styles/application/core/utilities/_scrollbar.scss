@@ -8,8 +8,8 @@ body *::-webkit-scrollbar-track {
 }
 
 body *::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+  width: 6px;
+  height: 6px;
   background: transparent;
   transition: .3s background;
 }
@@ -23,13 +23,13 @@ body *:hover::-webkit-scrollbar-thumb {
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
   background: #F2F2F2;
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   background: #F2F2F2;
   transition: .3s background;
 }

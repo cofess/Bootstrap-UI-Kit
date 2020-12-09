@@ -22,11 +22,43 @@ $enable-responsive-font-sizes:                false;
 $enable-validation-icons:                     true;
 $enable-deprecation-messages:                 false;
 
-// Options
+/*
+|--------------------------------------------------------------------------
+| Components Options
+|--------------------------------------------------------------------------
+*/
+$enable-component-cards: true;
+$enable-component-flag: true;
+$enable-component-list: true;
+$enable-component-timeline: true;
+
+/*
+|--------------------------------------------------------------------------
+| Interface Options
+|--------------------------------------------------------------------------
+*/
+$enable-interface-avatar: true;
+$enable-interface-badge: true;
+$enable-interface-divider: true;
+$enable-interface-heading: true;
+$enable-interface-ribbon: true;
+$enable-interface-separator: true;
+$enable-interface-progress: true;
+$enable-interface-tag: true;
+
+/*
+|--------------------------------------------------------------------------
+| Options
+|--------------------------------------------------------------------------
+*/
 $enable-chat: true;
 $enable-syntax-highlight: true;
 
-// Post Type Options
+/*
+|--------------------------------------------------------------------------
+| Post Type Options
+|--------------------------------------------------------------------------
+*/
 $enable-type-download: true; // 下载
 $enable-type-event: true; // 活动
 $enable-type-faq: true; // 常见问题
@@ -45,7 +77,11 @@ $enable-type-testimonial: true; // 客户评语
 $enable-type-topic: true; // 专题
 $enable-type-video: true; // 视频
 
-// color
+/*
+|--------------------------------------------------------------------------
+| Other Options
+|--------------------------------------------------------------------------
+*/
 $base-dark-color: #08081a;
 $link-normal-color: $base-dark-color;
 $link-hover-color: $primary;
