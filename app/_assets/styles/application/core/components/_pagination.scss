@@ -121,3 +121,15 @@
     }
   }
 }
+
+.pagination {
+  a {
+    &.current {
+      z-index: 1;
+      color: #fff;
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+}
+
