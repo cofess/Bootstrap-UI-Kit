@@ -1,6 +1,6 @@
 <section class="entries entry-list product-list">
   <div class="container">
-    <div class="row column-sm-2 column-md-3 column-lg-4 column-xl-5 gutters-sm">
+    <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gutters-sm">
       {% for i in range(0, (content.news.list or 12)) -%}
       <div class="col wow" data-wow-delay=".{{i%2}}s">
         {% include "_includes/_post-type/product/item-product.html" %}
