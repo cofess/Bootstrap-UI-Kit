@@ -15,11 +15,6 @@ h6,
   }
 }
 
-strong,
-b {
-  font-weight: 600;
-}
-
 p,
 ul,
 ol,
@@ -27,22 +22,22 @@ blockquote {
   margin-bottom: 1em;
 }
 
-blockquote {
-  font-style: italic;
-  color: $text-muted-dark;
-  padding-left: 2rem;
-  border-left: 2px solid $border-color;
-  p {
-    margin-bottom: 1rem;
-  }
-  cite {
-    display: block;
-    text-align: right;
-    &:before {
-      content: '— ';
-    }
-  }
-}
+// blockquote {
+//   font-style: italic;
+//   color: $text-muted-dark;
+//   padding-left: 2rem;
+//   border-left: 2px solid $border-color;
+//   p {
+//     margin-bottom: 1rem;
+//   }
+//   cite {
+//     display: block;
+//     text-align: right;
+//     &:before {
+//       content: '— ';
+//     }
+//   }
+// }
 
 code {
   background: rgba(0, 0, 0, 0.025);
