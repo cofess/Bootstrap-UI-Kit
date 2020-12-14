@@ -99,50 +99,8 @@
 | Font Size style
 |--------------------------------------------------------------------------
 */
-
-.font-1x {
-  font-size: 0.75rem !important
-}
-
-.font-2x {
-  font-size: 0.875rem !important
-}
-
-.font-3x {
-  font-size: 0.9375rem !important
-}
-
-.font-4x {
-  font-size: 1.125rem !important
-}
-
-.font-5x {
-  font-size: 1.625rem !important
-}
-
-@include media-breakpoint-down(sm) {
-  .font-5x {
-    font-size: 1.5rem !important
-  }
-  .font-4x {
-    font-size: 0.9375rem !important
-  }
-  .font-4x.iconfont {
-    font-size: 1.125rem !important;
-  }
-  .font-3x {
-    font-size: 0.875rem !important;
-  }
-}
-
-@include media-breakpoint-only(md) {
-  .font-5x {
-    font-size: 1.5rem !important
-  }
-  .font-4x {
-    font-size: 1rem !important
-  }
-  .font-3x {
-    font-size: .875rem !important
+@each $size, $value in $display-font-sizes {
+  .font-#{$size} {
+    font-size: $value !important;
   }
 }

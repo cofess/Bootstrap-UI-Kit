@@ -28,6 +28,15 @@ $display2-size: 4rem;
 $display3-size: 3.5rem;
 $display4-size: 3rem;
 
+$display-font-sizes: (
+  1x: 2.5rem,
+  2x: 3rem,
+  3x: 3.5rem,
+  4x: 4rem,
+  5x: 4.5rem,
+  6x: 5rem
+) !default;
+
 // Colors
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -282,6 +291,7 @@ $size-max-spacers: (
 ) !default;
 
 $sizes-percentage: (
+  1: 1%,
   25: 25%,
   33: calc(100% / 3),
   50: 50%,
