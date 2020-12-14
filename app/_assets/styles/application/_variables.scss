@@ -244,10 +244,12 @@ $sizes: (
 	8: $spacer * 4,
 	9: $spacer * 6,
 	25: 25%,
-	50: 50%,
-	75: 75%,
-	100: 100%,
-	auto: auto
+  	33: calc(100% / 3),
+  	50: 50%,
+  	66: calc((100% / 3) * 2),
+  	75: 75%,
+  	100: 100%,
+  	auto: auto
 );
 
 $size-spacers: (
@@ -280,7 +282,6 @@ $size-max-spacers: (
 ) !default;
 
 $sizes-percentage: (
-  1: 1%,
   25: 25%,
   33: calc(100% / 3),
   50: 50%,

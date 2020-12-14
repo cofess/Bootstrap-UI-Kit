@@ -13,11 +13,6 @@
 .min-w-0	{ min-width: 0 !important; }
 .min-w-full	{ min-width: 100% !important; }
 
-@each $size-name, $size in $sizes-percentage {
-  .w-#{$size-name}p { width: $size !important; }
-  .h-#{$size-name}p { height: $size !important; }
-}
-
 @each $size-name, $size in map_merge($spacers, $size-spacers) {
   .w-#{$size-name} { width: $size !important; }
   .h-#{$size-name} { height: $size !important; }
