@@ -236,9 +236,9 @@ $spacers: (
 	4: $spacer * 1,
 	5: $spacer * 1.5,
 	6: $spacer * 2,
-	7: $spacer * 3,
-	8: $spacer * 4,
-	9: $spacer * 6
+	7: $spacer * 4,
+	8: $spacer * 6,
+	9: $spacer * 8
 );
 
 $sizes: (
@@ -249,9 +249,9 @@ $sizes: (
 	4: $spacer * 1,
 	5: $spacer * 1.5,
 	6: $spacer * 2,
-	7: $spacer * 3,
-	8: $spacer * 4,
-	9: $spacer * 6,
+	7: $spacer * 4,
+	8: $spacer * 6,
+	9: $spacer * 8,
 	25: 25%,
   	33: calc(100% / 3),
   	50: 50%,
@@ -262,31 +262,8 @@ $sizes: (
 );
 
 $size-spacers: (
-  10: 5rem,
-  11: 6rem,
-  12: 8rem,
-  13: 10rem,
-  14: 12rem,
-  15: 14rem,
-  16: 16rem,
-  17: 18rem,
-  18: 20rem,
   auto: auto,
   px: 1px,
-  full: 100%
-) !default;
-
-$size-max-spacers: (
-  xs: 20rem,
-  sm: 24rem,
-  md: 28rem,
-  lg: 32rem,
-  xl: 36rem,
-  2 xl: 42rem,
-  3 xl: 48rem,
-  4 xl: 56rem,
-  5 xl: 64rem,
-  6 xl: 72rem,
   full: 100%
 ) !default;
 
