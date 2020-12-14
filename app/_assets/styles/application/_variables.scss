@@ -39,6 +39,7 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 
+$white: #fff;
 $blue: #007bff;
 $azure: #45aaf2;
 $indigo: #6574cd;
@@ -52,11 +53,8 @@ $green: #5eba00;
 $teal: #2bcbba;
 $cyan: #17a2b8;
 
-
 $text-muted: #9aa0ac;
 $text-muted-dark: #6e7687;
-
-$white: #fff;
 
 $primary: $blue;
 $secondary: $gray-600;
@@ -203,7 +201,7 @@ $container-max-widths: (
 	sm: 720px,
 	md: 960px,
 	lg: 1200px,
-	xl: 1366px
+	xl: 1340px
 );
 
 // Header
@@ -253,7 +251,6 @@ $sizes: (
 );
 
 $size-spacers: (
-  9: 4rem,
   10: 5rem,
   11: 6rem,
   12: 8rem,
