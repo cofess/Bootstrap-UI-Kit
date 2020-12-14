@@ -20,6 +20,13 @@
   color: $text-muted-dark !important;
 }
 
+
+/*
+|--------------------------------------------------------------------------
+| text letter spacing
+|--------------------------------------------------------------------------
+*/
+
 .tracking-tight {
   letter-spacing: -0.05em !important;
 }
@@ -31,6 +38,13 @@
 .tracking-wide {
   letter-spacing: 0.05em !important;
 }
+
+
+/*
+|--------------------------------------------------------------------------
+| text line height
+|--------------------------------------------------------------------------
+*/
 
 .lead {
   line-height: 1.4;
@@ -53,9 +67,11 @@
 }
 
 
-/*--------------------------------------------------------------
-    text line clamp
---------------------------------------------------------------*/
+/*
+|--------------------------------------------------------------------------
+| text line clamp
+|--------------------------------------------------------------------------
+*/
 
 .text-line-1 {
   @include text-line-clamp($font-size-base, $line-height-base, 1)
@@ -78,60 +94,55 @@
 }
 
 
-/*--------------------------------------------------------------
-    title Font Size style
---------------------------------------------------------------*/
+/*
+|--------------------------------------------------------------------------
+| Font Size style
+|--------------------------------------------------------------------------
+*/
 
-.text-xs {
+.font-1x {
   font-size: 0.75rem !important
 }
 
-.text-sm {
+.font-2x {
   font-size: 0.875rem !important
 }
 
-.text-md {
+.font-3x {
   font-size: 0.9375rem !important
 }
 
-.text-lg {
+.font-4x {
   font-size: 1.125rem !important
 }
 
-.text-xl {
+.font-5x {
   font-size: 1.625rem !important
 }
 
-.text-sl {
-  font-size: 4rem !important
-}
-
 @include media-breakpoint-down(sm) {
-  .text-xl {
+  .font-5x {
     font-size: 1.5rem !important
   }
-  .text-lg {
+  .font-4x {
     font-size: 0.9375rem !important
   }
-  .text-lg.iconfont {
+  .font-4x.iconfont {
     font-size: 1.125rem !important;
   }
-  .text-md {
+  .font-3x {
     font-size: 0.875rem !important;
-  }
-  .text-ss {
-    font-size: 0.6875rem !important;
   }
 }
 
 @include media-breakpoint-only(md) {
-  .text-xl {
+  .font-5x {
     font-size: 1.5rem !important
   }
-  .text-lg {
+  .font-4x {
     font-size: 1rem !important
   }
-  .text-md {
+  .font-3x {
     font-size: .875rem !important
   }
 }
