@@ -1,6 +1,6 @@
 .pattern {
   position: relative;
-  background: $primary;
+  background: $gray-900;
   @include clearfix;
   .pattern-content,
   .container {
@@ -33,7 +33,7 @@
   }
   &.pattern-opacity {
     .pattern-cover {
-      opacity: .75;
+      opacity: .5;
     }
   }
   &.pattern-gradient {
@@ -52,6 +52,7 @@
   }
   &.pattern-grid {
     .pattern-cover {
+      opacity: .75;
       &:before {
         content: '';
         position: absolute;
