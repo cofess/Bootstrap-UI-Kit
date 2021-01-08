@@ -794,7 +794,8 @@
 		"fa-youtube-square"
 	],
 	"global": {
-		"title": "Tabler"
+		"title": "Tabler",
+		"lang": "en-US"
 	},
 	"iconfonts": [
 		{
