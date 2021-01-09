@@ -1,0 +1,82 @@
+.icon-round,
+.icon-circle {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-round,
+.icon-circle {
+  width: $spacer * 1.15;
+  height: $spacer * 1.15;
+  background: $primary;
+  text-align: center;
+  color: #fff;
+  i,
+  .icon {
+    font-size: 75%;
+  }
+}
+
+.icon-round {
+  border-radius: 0.25rem;
+}
+
+.icon-circle {
+  border-radius: 50%!important;
+}
+
+.icon-outline {
+  background: transparent;
+  border: 1px solid $primary;
+  color: $primary;
+}
+
+.icon-1x {
+  width: $spacer * 1.5;
+  height: $spacer * 1.5;
+  i,
+  .icon {
+    font-size: inherit;
+  }
+}
+
+.icon-2x {
+  width: $spacer * 2;
+  height: $spacer * 2;
+  i,
+  .icon {
+    font-size: 1.0rem;
+  }
+}
+
+.icon-3x {
+  width: $spacer * 3;
+  height: $spacer * 3;
+  border-radius: 0.35rem;
+  i,
+  .icon {
+    font-size: 1.5rem;
+  }
+}
+
+.icon-4x {
+  width: $spacer * 4;
+  height: $spacer * 4;
+  border-radius: 0.45rem;
+  i,
+  .icon {
+    font-size: 2.0rem;
+  }
+}
+
+.icon-5x {
+  width: $spacer * 5;
+  height: $spacer * 5;
+  border-radius: 0.55rem;
+  i,
+  .icon {
+    font-size: 2.5rem;
+  }
+}
