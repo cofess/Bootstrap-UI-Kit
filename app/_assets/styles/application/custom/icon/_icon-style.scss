@@ -1,7 +1,8 @@
 .icon-round,
 .icon-circle {
-  display: flex;
-  display: -webkit-flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
