@@ -7,6 +7,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  i,
+  .icon {
+    font-size: 75%;
+  }
 }
 
 .icon-round,
@@ -16,10 +20,6 @@
   background: $primary;
   text-align: center;
   color: #fff;
-  i,
-  .icon {
-    font-size: 75%;
-  }
 }
 
 .icon-round {
@@ -30,15 +30,12 @@
   border-radius: 50%!important;
 }
 
-.icon-gear {
+.icon-gear,
+.icon-hexagon {
   position: relative;
-  margin: 50px auto;
-  width: 100px;
-  height: 58px;
   background: $primary;
   text-align: center;
   color: #fff;
-  border-radius: 0.15rem!important;
   transition-property: background, color;
   transition-duration: .3s;
   transition-timing-function: cubic-bezier(.95, .01, .22, .65);
@@ -52,7 +49,6 @@
     top: 0;
     left: 0;
     background-color: $primary;
-    border-radius: 0.15rem!important;
     z-index: -1;
   }
   &:before {
@@ -69,42 +65,41 @@
   }
 }
 
-.icon-hexagon {
-  position: relative;
-  margin: 50px auto;
-  width: 100px;
-  height: 58px;
-  background: $primary;
-  text-align: center;
-  color: #fff;
-  border-radius: 3px;
-  transition-property: background, color;
-  transition-duration: .3s;
-  transition-timing-function: cubic-bezier(.95, .01, .22, .65);
-  z-index: 1;
+.icon-gear {
+  width: $spacer * 1.15;
+  height: $spacer * 1.15;
+  &,
   &:before,
   &:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: $primary;
-    border-radius: 3px;
-    z-index: -1;
+    border-radius: 0.15rem!important;
   }
-  &:before {
-    transform: rotate(60deg);
-    -webkit-transform: rotate(60deg);
-    -moz-transform: rotate(60deg);
-    -ms-transform: rotate(60deg)
-  }
+}
+
+.icon-hexagon {
+  width: $spacer * 1.15;
+  height: $spacer * 1.15 * 0.58;
+  &,
+  &:before,
   &:after {
-    transform: rotate(120deg);
-    -webkit-transform: rotate(120deg);
-    -moz-transform: rotate(120deg);
-    -ms-transform: rotate(120deg)
+    border-radius: 0!important;
+  }
+  &.icon-1x {
+    height: $spacer * 1.5 * 0.58;
+  }
+  &.icon-2x {
+    height: $spacer * 2 * 0.58;
+  }
+  &.icon-3x {
+    height: $spacer * 3 * 0.58;
+  }
+  &.icon-4x {
+    height: $spacer * 4 * 0.58;
+  }
+  &.icon-5x {
+    height: $spacer * 5 * 0.58;
+  }
+  &.icon-6x {
+    height: $spacer * 6 * 0.58;
   }
 }
 
