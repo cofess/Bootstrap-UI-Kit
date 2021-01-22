@@ -1,0 +1,37 @@
+{# 
+  Nunjucks Templating! 
+  Homepage: https://mozilla.github.io/nunjucks/ 
+  Docs: https://mozilla.github.io/nunjucks/api.html 
+#}
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+<!-- 页面标题 -->
+{% block title %}{{ global.title }} | Timeline{% endblock %}
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Animate.css</h1>
+    <p>Animate.css 是一个有趣的，跨浏览器的 css3 动画库，内置了很多典型的 css3 动画，兼容性好使用方便。</p>
+    <a class="btn btn-primary" href="https://animate.style/" target="_blank">官网</a>
+    <a class="btn btn-dark" href="http://www.animate.net.cn/" target="_blank">使用说明</a>
+  </div>
+</section>
+{% endblock %}
+<!-- 主体内容 -->
+{% block content %}
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <div class="social-links">
+        <a class="btn btn-dark animated hinge fadeIn" href="#">fadeIn</a>
+        <a class="btn btn-dark animated hinge fadeInDown" href="#">fadeInDown</a>
+        <a class="btn btn-dark animated hinge fadeInUp" href="#">fadeInUp</a>
+        <a class="btn btn-dark animated hinge flipInX" href="#">flipInX</a>
+        <a class="btn btn-dark animated hinge flipInY" href="#">flipInY</a>
+        <a class="btn btn-dark animated hinge fadeInUp" href="#">fadeInUp</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
