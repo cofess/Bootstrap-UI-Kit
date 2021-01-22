@@ -13,3 +13,21 @@
     }
   }
 }
+
+.breadcrumb-transparent {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+}
+
+.text-white {
+  .breadcrumb {
+    .breadcrumb-item {
+      &,
+      a,
+      &:before {
+        color: #fff;
+      }
+    }
+  }
+}

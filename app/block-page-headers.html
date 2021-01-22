@@ -1,0 +1,60 @@
+{# 
+  Nunjucks Templating! 
+  Homepage: https://mozilla.github.io/nunjucks/ 
+  Docs: https://mozilla.github.io/nunjucks/api.html 
+#}
+<!-- 模版 -->
+{% extends '_layouts/application.html' %}
+<!-- 页面标题 -->
+{% block title %}{{ global.title }} | Blank Template{% endblock %}
+<!-- 自定义样式 -->
+{% block style %}
+<link href="assets/css/froala_blocks.css" rel="stylesheet" />
+{% endblock %}
+<!-- 面包屑导航 -->
+{% block breadcrumb %}
+<!-- <section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Page Title</h1>
+  </div>
+</section> -->
+{% endblock %}
+<!-- 主体内容 -->
+{% block content %}
+<section class="page-header pattern text-primary">
+  <div class="container py-8">
+    <p class="text-uppercase mb-0">Join Us</p>
+    <h1 class="page-title mt-0">加入我们</h1> </div>
+  <div class="pattern-cover" style="background-image: url(assets/images/patterns/pattern-job.jpg);"></div>
+</section>
+<section class="page-header pattern pattern-opacity text-white">
+  <div class="container py-8">
+    <p class="text-uppercase mb-0">Join Us</p>
+    <h1 class="page-title mt-0">加入我们</h1> </div>
+  <div class="pattern-cover" style="background-image: url(assets/images/patterns/pattern-job.jpg);"></div>
+</section>
+<section class="page-header pattern pattern-grid text-white">
+  <div class="container py-8">
+    <p class="text-uppercase mb-0">Join Us</p>
+    <h1 class="page-title mt-0">加入我们</h1> </div>
+  <div class="pattern-cover" style="background-image: url(assets/images/patterns/pattern-job.jpg);"></div>
+</section>
+<section class="page-header pattern pattern-gradient text-white">
+  <div class="container py-8">
+    <p class="text-uppercase mb-0">Join Us</p>
+    <h1 class="page-title mt-0">加入我们</h1> </div>
+  <div class="pattern-cover" style="background-image: url(assets/images/patterns/pattern-job.jpg);"></div>
+</section>
+<section class="page-header pattern pattern-opacity text-center text-white">
+  <div class="container py-8">
+    <h1 class="page-title mt-0">Contact Us</h1>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb breadcrumb-transparent justify-content-center">
+        <li class="level-1 top breadcrumb-item"><a href="#">Home</a></li>
+        <li class="level-2 sub tail breadcrumb-item current active">Contact Us</li>
+      </ol>
+    </nav>
+  </div>
+  <div class="pattern-cover" style="background-image: url(assets/images/patterns/pattern-job.jpg);"></div>
+</section>
+{% endblock %}
