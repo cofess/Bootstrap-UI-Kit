@@ -3,7 +3,10 @@ require(['jquery', 'bootstrap'], function($) {
   console.log("Bootstrap Loaded :)");
   $(function() {
     /** Initialize tooltips */
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').tooltip({
+      animated: 'fade',
+      html: true
+    });
 
     /** Initialize popovers */
     $('[data-toggle="popover"]').popover({
