@@ -49,15 +49,16 @@
 @import 'core/layout/row-grids';
 
 // Interface
-@import 'core/interface/button';
-@import 'core/interface/badge';
 @import 'core/interface/avatar';
-@import 'core/interface/progress';
-@import 'core/interface/tag';
-@import 'core/interface/ribbon';
-@import 'core/interface/separator';
+@import 'core/interface/badge';
+@import 'core/interface/button';
 @import 'core/interface/divider';
 @import 'core/interface/heading';
+@import 'core/interface/progress';
+@import 'core/interface/ribbon';
+@import 'core/interface/separator';
+@import 'core/interface/skeleton';
+@import 'core/interface/tag';
 
 // Components
 @import 'core/components/alert';

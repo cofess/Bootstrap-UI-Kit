@@ -174,6 +174,13 @@ $custom-select-focus-border-color: #1991eb;
 
 // Borders
 $border-width: 1px;
+$border-width: 1px !default;
+$border-width-wide: 2px !default;
+
+$border-radius-sm: 2px !default;
+$border-radius: 4px !default;
+$border-radius-lg: 8px !default;
+$border-radius-pill: 50% !default;
 //$border-color: #dee3eb;
 $border-color: rgba(0, 40, 100, .12);
 $border-color-dark: rgba(0, 40, 100, .24);
@@ -280,6 +287,18 @@ $sizes-percentage: (
 
 // Footer
 $footer-bg: #fff;
+
+// Avatars
+$avatar-size: 2.5rem !default;
+$avatar-sizes: (
+  "xs": 1.25rem,
+  "sm": 2rem,
+  "md": 3.75rem,
+  "lg": 5rem,
+  "xl": 7rem
+) !default;
+$avatar-border-radius: $border-radius !default;
+$avatar-font-size: $h4-font-size;
 
 // Dropdowns
 $dropdown-border-color: $border-color;
