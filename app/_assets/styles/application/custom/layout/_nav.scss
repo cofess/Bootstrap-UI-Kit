@@ -22,3 +22,20 @@
   //display: block;
   //padding: 0.25rem 0.75rem;
 }
+
+// mega menu
+.navbar-nav {
+  .mega-menu {
+    width: auto!important;
+    max-width: inherit!important;
+  }
+  .dropdown-menu-columns {
+    display: flex;
+  }
+  .dropdown-menu-column {
+    min-width: 11rem;
+  }
+}
+
+
+
